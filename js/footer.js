@@ -3,6 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector('.header__menu-toggle');
     const headerNav = document.querySelector('.header__nav');
     
+    // Prevent redirect for "Experiencias" click on mobile
+    const expLink = document.querySelector('.header__nav-link[href="index.html#experiencias"]');
+    if (expLink) {
+        expLink.addEventListener('click', (e) => {
+            if (window.innerWidth <= 767) {
+                e.preventDefault();
+            }
+        });
+    }
+
     if (menuToggle && headerNav) {
         menuToggle.addEventListener('click', () => {
             const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
