@@ -1,0 +1,20 @@
+/* SolyMar Paracas - Estilos Tablet para Buceo */
+@media (min-width: 768px) {
+    .header__nav {
+        display: flex;
+    }
+
+    .content {
+        padding: 6rem 6rem;
+    }
+
+    .content__grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .gallery,
+    .includes,
+    .cta {
+        padding: 6rem 6rem;
+    }
+}

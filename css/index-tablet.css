@@ -1,0 +1,44 @@
+/* SolyMar Paracas - Estilos Tablet para Index */
+@media (min-width: 768px) {
+    .header__nav {
+        display: flex;
+    }
+
+    .content {
+        padding: 6rem 6rem;
+    }
+
+    .content__grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .gallery,
+    .includes,
+    .activities,
+    .about,
+    .testimonials,
+    .routes,
+    .wildlife,
+    .flights,
+    .cta {
+        padding: 6rem 6rem;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        max-width: 800px;
+    }
+
+    .about__title {
+        font-size: 2.75rem;
+    }
+
+    .activities__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
