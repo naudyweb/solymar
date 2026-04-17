@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../img/SolyMar-ico.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog in Paracas | Guides and Tips — SolyMar Paracas</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <style>
+        .blog-hero { padding: 120px 20px 60px; background: var(--primary); color: white; text-align: center; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+        .blog-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+        .blog-card:hover { transform: translateY(-10px); }
+        .blog-card__img { width: 100%; height: 200px; object-fit: cover; }
+        .blog-card__content { padding: 25px; flex-grow: 1; }
+        .blog-card__title { font-size: 1.25rem; margin-bottom: 15px; color: var(--primary); }
+    </style>
+</head>
+<body>
+    <nav class="header">
+        <div class="header__container">
+            <div class="header__brand"><a href="index.html"><img alt="SolyMar Paracas Logo" class="header__logo" src="../img/SolyMar-web.png" /></a></div>
+            <button class="header__menu-toggle" aria-label="Menu"><span class="header__menu-icon"></span></button>
+            <div class="header__nav">
+                <a class="header__nav-link" href="index.html#experiencias">Experiences</a>
+                <a class="header__nav-link" href="index.html#nosotros">About Us</a>
+                <a class="header__nav-link" href="blog.html">Blog</a>
+                <a class="header__nav-link" href="index.html#faq">FAQ</a>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=+51961542547" class="header__cta">Book Now</a>
+        </div>
+    </nav>
+    <header class="blog-hero"><h1>SolyMar Blog</h1><p>Your definitive guide to exploring Paracas.</p></header>
+    <main class="blog-grid">
+        <a href="blog-lima-a-paracas.html" class="blog-card">
+            <img src="../img/Reserva nacional de Paracas.jpg" alt="Lima to Paracas" class="blog-card__img">
+            <div class="blog-card__content">
+                <h3 class="blog-card__title">3 safe ways to get to Paracas from Lima</h3>
+                <p>Planning to visit from Miraflores or Barranco? Here are the best options.</p>
+                <span style="color: var(--secondary); font-weight: 700;">READ MORE →</span>
+            </div>
+        </a>
+    </main>
+    <footer class="footer"></footer>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

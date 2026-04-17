@@ -403,3 +403,53 @@ body { font-family: 'Manrope', sans-serif; background-color: var(--surface); col
     .whatsapp-float { width: 50px !important; height: 50px !important; bottom: 20px !important; right: 20px !important; }
     .whatsapp-float__icon { width: 30px !important; height: 30px !important; }
 }
+
+/* Language Switcher Floating Button */
+.lang-switcher {
+    position: fixed !important;
+    bottom: 40px !important;
+    left: 40px !important;
+    background-color: rgba(250, 249, 246, 0.9) !important;
+    backdrop-filter: blur(8px) !important;
+    padding: 10px 20px !important;
+    border-radius: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    z-index: 9999 !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+.lang-link {
+    text-decoration: none !important;
+    font-size: 0.85rem !important;
+    font-weight: 800 !important;
+    color: var(--on-surface-variant) !important;
+    transition: all 0.3s ease !important;
+    opacity: 0.6 !important;
+}
+
+.lang-link.active {
+    opacity: 1 !important;
+    color: var(--primary) !important;
+}
+
+.lang-link:hover {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+}
+
+.lang-divider {
+    color: rgba(0,0,0,0.1) !important;
+    font-weight: 300 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .lang-switcher {
+        bottom: 20px !important;
+        left: 20px !important;
+        padding: 8px 15px !important;
+    }
+    .lang-link { font-size: 0.75rem !important; }
+}
