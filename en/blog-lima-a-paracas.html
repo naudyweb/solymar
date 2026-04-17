@@ -7,7 +7,35 @@
     <style> .post { padding: 120px 20px 80px; max-width: 800px; margin: 0 auto; line-height: 1.8; } .post__title { font-size: 2.5rem; color: var(--primary); } .post__image { width: 100%; border-radius: 20px; margin-bottom: 40px; } </style>
 </head>
 <body>
-    <nav class="header"><div class="header__container"><a href="index.html"><img class="header__logo" src="../img/SolyMar-web.png" /></a><div class="header__nav"><a class="header__nav-link" href="blog.html">Blog</a></div></div></nav>
+    <nav class="header">
+        <div class="header__container">
+            <div class="header__brand">
+                <a href="index.html"><img alt="SolyMar Paracas Logo" class="header__logo" src="../img/SolyMar-web.png" /></a>
+            </div>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span class="header__menu-icon"></span>
+            </button>
+            <div class="header__nav">
+                <div class="header__nav-item">
+                    <a class="header__nav-link" href="index.html#experiencias">Experiences</a>
+                    <div class="header__dropdown">
+                        <a href="snorkel.html" class="header__dropdown-link">Snorkeling</a>
+                        <a href="buceo.html" class="header__dropdown-link">Diving</a>
+                        <a href="trekking.html" class="header__dropdown-link">Trekking</a>
+                        <a href="parapente.html" class="header__dropdown-link">Paragliding</a>
+                        <a href="adrenarena.html" class="header__dropdown-link">Adrenarena</a>
+                        <a href="atv-gokart.html" class="header__dropdown-link">ATV y Go Kart</a>
+                        <a href="islas-ballestas.html" class="header__dropdown-link">Ballestas Islands</a>
+                        <a href="reserva-nacional-paracas.html" class="header__dropdown-link">National Reserve</a>
+                    </div>
+                </div>
+                <a class="header__nav-link" href="index.html#nosotros">About Us</a>
+                <a class="header__nav-link" href="blog.html">Blog</a>
+                <a class="header__nav-link" href="index.html#faq">FAQ</a>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+a+Tour" class="header__cta">Book Now</a>
+        </div>
+    </nav>
     <article class="post">
         <h1 class="post__title">3 safe ways to get to Paracas from Lima</h1>
         <img src="../img/Reserva nacional de Paracas.jpg" class="post__image">
