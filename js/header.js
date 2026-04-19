@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerHTML = `
         <div class="header__container">
             <div class="header__brand">
-                <a href="${rootPath}index.html">
+                <a href="${rootPath}index">
                     <img class="header__logo" src="${rootPath}img/SolyMar-web.webp" alt="SolyMar Paracas" fetchpriority="high" decoding="async" />
                 </a>
             </div>
@@ -57,19 +57,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="header__nav-item">
                     <a class="header__nav-link" href="javascript:void(0);">${t.experiences}</a>
                     <div class="header__dropdown">
-                        <a href="${rootPath}snorkel.html" class="header__dropdown-link">${t.tours.snorkel}</a>
-                        <a href="${rootPath}buceo.html" class="header__dropdown-link">${t.tours.buceo}</a>
-                        <a href="${rootPath}trekking.html" class="header__dropdown-link">${t.tours.trekking}</a>
-                        <a href="${rootPath}parapente.html" class="header__dropdown-link">${t.tours.parapente}</a>
-                        <a href="${rootPath}adrenarena.html" class="header__dropdown-link">${t.tours.adrenarena}</a>
-                        <a href="${rootPath}atv-gokart.html" class="header__dropdown-link">${t.tours.atv}</a>
-                        <a href="${rootPath}islas-ballestas.html" class="header__dropdown-link">${t.tours.ballestas}</a>
-                        <a href="${rootPath}reserva-nacional-paracas.html" class="header__dropdown-link">${t.tours.reserva}</a>
+                        <a href="${rootPath}snorkel" class="header__dropdown-link">${t.tours.snorkel}</a>
+                        <a href="${rootPath}buceo" class="header__dropdown-link">${t.tours.buceo}</a>
+                        <a href="${rootPath}trekking" class="header__dropdown-link">${t.tours.trekking}</a>
+                        <a href="${rootPath}parapente" class="header__dropdown-link">${t.tours.parapente}</a>
+                        <a href="${rootPath}adrenarena" class="header__dropdown-link">${t.tours.adrenarena}</a>
+                        <a href="${rootPath}atv-gokart" class="header__dropdown-link">${t.tours.atv}</a>
+                        <a href="${rootPath}islas-ballestas" class="header__dropdown-link">${t.tours.ballestas}</a>
+                        <a href="${rootPath}reserva-nacional-paracas" class="header__dropdown-link">${t.tours.reserva}</a>
                     </div>
                 </div>
-                <a class="header__nav-link" href="${rootPath}index.html#nosotros">${t.about}</a>
-                <a class="header__nav-link" href="${rootPath}blog.html">${t.blog}</a>
-                <a class="header__nav-link" href="${rootPath}index.html#faq">${t.faq}</a>
+                <a class="header__nav-link" href="${rootPath}index#nosotros">${t.about}</a>
+                <a class="header__nav-link" href="${rootPath}blog">${t.blog}</a>
+                <a class="header__nav-link" href="${rootPath}index#faq">${t.faq}</a>
             </div>
             <a href="https://wa.me/51961542547" class="header__cta">${t.book}</a>
         </div>

@@ -83,20 +83,20 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div>
                         <h5 class="footer__nav-column-title">${t.experiences}</h5>
                         <ul class="footer__nav-list">
-                            <li><a class="footer__nav-link" href="${pathPrefix}snorkel.html">Snorkel</a></li>
-                            <li><a class="footer__nav-link" href="${pathPrefix}buceo.html">Buceo</a></li>
-                            <li><a class="footer__nav-link" href="${pathPrefix}trekking.html">Trekking</a></li>
-                            <li><a class="footer__nav-link" href="${pathPrefix}parapente.html">Parapente</a></li>
-                            <li><a class="footer__nav-link" href="${pathPrefix}adrenarena.html">Adrenarena</a></li>
-                            <li><a class="footer__nav-link" href="${pathPrefix}atv-gokart.html">ATV & Go Kart</a></li>
-                            <li><a class="footer__nav-link" href="${pathPrefix}islas-ballestas.html">Islas Ballestas</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}snorkel">Snorkel</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}buceo">Buceo</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}trekking">Trekking</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}parapente">Parapente</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}adrenarena">Adrenarena</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}atv-gokart">ATV & Go Kart</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}islas-ballestas">Islas Ballestas</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="footer__nav-column-title">${t.support}</h5>
                         <ul class="footer__nav-list">
-                            <li><a class="footer__nav-link" href="${pathPrefix}index.html#faq">${t.faq}</a></li>
-                            <li><a class="footer__nav-link" href="${pathPrefix}index.html#nosotros">${t.about}</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}index#faq">${t.faq}</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}index#nosotros">${t.about}</a></li>
                             <li><a class="footer__nav-link" href="https://api.whatsapp.com/send?phone=51961542547&text=${t.waText}">${t.contact}</a></li>
                         </ul>
                     </div>
@@ -122,13 +122,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const langSwitcher = document.createElement('div');
     langSwitcher.className = "lang-switcher";
     
-    // Obtener el nombre del archivo actual (ej: snorkel.html)
+    // Obtener el nombre del archivo actual (ej: snorkel)
     let currentPath = window.location.pathname;
-    let currentFile = currentPath.split('/').pop();
+    let currentFile = currentPath.split('/').pop().replace('.html', '');
     
     // Manejar el caso de que el path sea la raíz / o /en/
     if (!currentFile || currentFile === "" || currentFile === "en") {
-        currentFile = "index.html";
+        currentFile = "index";
     }
 
     const esLink = isEn ? `../${currentFile}` : currentFile;
