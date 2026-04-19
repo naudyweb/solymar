@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </button>
             <div class="header__nav">
                 <div class="header__nav-item">
-                    <a class="header__nav-link" href="${rootPath}index.html#experiencias">${t.experiences}</a>
+                    <a class="header__nav-link" href="javascript:void(0);">${t.experiences}</a>
                     <div class="header__dropdown">
                         <a href="${rootPath}snorkel.html" class="header__dropdown-link">${t.tours.snorkel}</a>
                         <a href="${rootPath}buceo.html" class="header__dropdown-link">${t.tours.buceo}</a>
