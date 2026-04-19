@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="img/SolyMar-ico.png" />
+    <link rel="icon" type="image/webp" href="img/SolyMar-ico.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>Snorkel en Paracas con Lobos Marinos | Desde S/150 — SolyMar Paracas</title>
@@ -11,14 +11,17 @@
     <meta name="keywords" content="snorkel paracas, snorkel reserva nacional paracas, snorkel lobos marinos paracas, snorkel paracas precio, tour snorkel paracas peru">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
-    <link rel="canonical" href="https://solymarparacas.site/snorkel.html">
+<link rel="canonical" href="https://solymarparacas.site/snorkel.html">
+    <link rel="alternate" hreflang="es" href="https://solymarparacas.site/snorkel.html">
+    <link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/snorkel.html">
+    <link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/snorkel.html">
 
     <!-- ===== OPEN GRAPH ===== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solymarparacas.site/snorkel.html">
     <meta property="og:title" content="Snorkel en Paracas con Lobos Marinos | Desde S/150 — SolyMar">
     <meta property="og:description" content="Nada junto a lobos marinos y pingüinos en la Reserva Nacional de Paracas. Equipo completo incluido. Reserva por WhatsApp.">
-    <meta property="og:image" content="https://solymarparacas.site/img/Snorkel.jpg">
+    <meta property="og:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="es_PE">
@@ -28,7 +31,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Snorkel en Paracas con Lobos Marinos | SolyMar">
     <meta name="twitter:description" content="Nada junto a lobos marinos y pingüinos en la Reserva Nacional de Paracas. Desde S/150.">
-    <meta name="twitter:image" content="https://solymarparacas.site/img/Snorkel.jpg">
+    <meta name="twitter:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <!-- ===== FIN SEO ===== -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
@@ -37,6 +40,55 @@
     <link rel="stylesheet" href="css/snorkel.css" />
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/snorkel-tablet.css" />
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/snorkel-mobile.css" />
+    <!-- ===== ESTRUCTURA DE DATOS (JSON-LD) PARA GOOGLE ===== -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Snorkel en Paracas",
+        "description": "Snorkel en la Reserva Nacional de Paracas. Nada junto a lobos marinos, pingüinos y peces tropicales. Equipo incluido, guía certificado. Desde S/150 por persona. Reserva ya.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "SolyMar Paracas",
+          "url": "https://solymarparacas.site/",
+          "telephone": "+51 961 542 547",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Paracas, Ica, Peru",
+            "addressLocality": "Paracas",
+            "addressRegion": "Ica",
+            "addressCountry": "PE"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "150",
+          "priceCurrency": "PEN",
+          "url": "https://solymarparacas.site/snorkel.html"
+        },
+        "image": "https://solymarparacas.site/img/Snorkel.webp"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://solymarparacas.site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Snorkel en Paracas",
+            "item": "https://solymarparacas.site/snorkel.html"
+          }
+        ]
+      }
+    ]
+    </script>
 </head>
 
 <body>
@@ -44,8 +96,8 @@
         <div class="header__container">
             <div class="header__brand">
                 <a href="index.html">
-                    <img alt="SolyMar Paracas Logo" class="header__logo"
-                        src="img/SolyMar-web.png" />
+                    <img class="header__logo"
+                        src="img/SolyMar-web.webp" alt="Logo de SolyMar Paracas" fetchpriority="high" decoding="async" />
                 </a>
             </div>
             <button class="header__menu-toggle" aria-label="Menú">
@@ -77,13 +129,13 @@
     <section class="hero">
         <div class="hero__background">
             <img class="hero__background-image"
-                src="img/Snorkel.jpg" alt="Snorkel en Paracas" />
+                src="img/Snorkel.webp" alt="Tour de Snorkel en Paracas" fetchpriority="high" decoding="async" />
             <div class="hero__background-gradient"></div>
         </div>
         <div class="hero__content">
             <p class="hero__breadcrumb"><a href="index.html">Inicio</a> / Experiencias / Snorkel</p>
-            <h1 class="hero__title">Snorkel en Paracas</h1>
-            <p class="hero__subtitle">Explora las aguas cristalinas de la Reserva Nacional de Paracas y descubre la vida marina del Pacífico.</p>
+            <h1 class="hero__title">Tour de Snorkel en Paracas</h1>
+            <p class="hero__subtitle">Explora las aguas cristalinas de la Reserva Nacional de Paracas y descubre la vida marina del Pacífico con la mejor <strong>seguridad</strong> y al <strong>mejor precio</strong>.</p>
         </div>
     </section>
 
@@ -91,23 +143,23 @@
     <section class="content">
         <div class="content__grid">
             <div class="content__main">
-                <h2>Una Experiencia Inolvidable</h2>
+                <h2>Una Experiencia Inolvidable con Guías Certificados</h2>
                 <p>
                     El <strong>snorkel en Paracas</strong> es una de las actividades más populares para disfrutar de la naturaleza marina del Perú. 
                     La Reserva Nacional de Paracas alberga una biodiversidad marina extraordinaria, con aguas cristalinas que permiten 
-                    observar de cerca <strong>lobos de mar, pingüinos, pelícanos</strong> y una gran variedad de peces tropicales.
+                    observar de cerca <strong>lobos de mar, pingüinos, pelícanos</strong> y una gran variedad de peces tropicales, siempre con la <strong>seguridad</strong> que brindan nuestros expertos.
                 </p>
                 <p>
                     Durante esta experiencia, nuestros <strong>guías certificados</strong> te llevarán a las mejores zonas de snorkel, donde podrás 
                     nadar junto a la fauna marina en su hábitat natural. Las aguas templadas del Pacífico ofrecen condiciones 
-                    ideales para esta actividad durante todo el año.
+                    ideales para esta actividad durante todo el año al <strong>mejor precio</strong> del mercado.
                 </p>
                 <p>
                     No se requiere experiencia previa para realizar esta actividad. Nuestro equipo te proporcionará todo el 
                     <strong>equipamiento de snorkel</strong> necesario y te dará una breve instrucción antes de entrar al agua.
                 </p>
 
-                <h2>¿Qué verás?</h2>
+                <h2>Lo que verás en tu tour de Snorkel en Paracas</h2>
                 <ul>
                     <li>
                         <span class="material-symbols-outlined">water</span>
@@ -180,13 +232,13 @@
             <h2 class="gallery__title">Explora la Experiencia</h2>
             <div class="gallery__grid">
                 <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Snorkel.jpg" alt="Snorkel en Paracas 1" />
+                    <img class="gallery__item-image" src="img/Snorkel.webp" alt="Tour de Snorkel en Paracas" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Snorkel.jpg" alt="Snorkel en Paracas 2" />
+                    <img class="gallery__item-image" src="img/Snorkel.webp" alt="Tour de Snorkel en Paracas" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Snorkel.jpg" alt="Snorkel en Paracas 3" />
+                    <img class="gallery__item-image" src="img/Snorkel.webp" alt="Tour de Snorkel en Paracas" loading="lazy" decoding="async" />
                 </div>
             </div>
         </div>

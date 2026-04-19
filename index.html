@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="img/SolyMar-ico.png" />
+    <link rel="icon" type="image/webp" href="img/SolyMar-ico.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>Tours en Paracas | Buceo, Snorkel, Parapente e Islas Ballestas — SolyMar</title>
@@ -11,14 +11,17 @@
     <meta name="keywords" content="tours paracas, agencia turismo paracas, buceo paracas, snorkel paracas, parapente paracas, islas ballestas, reserva nacional paracas, aventura pisco ica">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
-    <link rel="canonical" href="https://solymarparacas.site/">
+<link rel="canonical" href="https://solymarparacas.site/">
+    <link rel="alternate" hreflang="es" href="https://solymarparacas.site/">
+    <link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/">
+    <link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/">
 
     <!-- ===== OPEN GRAPH (WhatsApp, Facebook, redes sociales) ===== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solymarparacas.site/">
     <meta property="og:title" content="Tours en Paracas | Buceo, Snorkel y Parapente — SolyMar">
     <meta property="og:description" content="Vive experiencias inolvidables en Paracas. Buceo, snorkel, parapente, ATV e Islas Ballestas. Guías certificados. Reserva directa por WhatsApp.">
-    <meta property="og:image" content="https://solymarparacas.site/img/og-solymar-paracas.jpg">
+    <meta property="og:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="es_PE">
@@ -28,7 +31,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tours en Paracas | SolyMar — Buceo, Snorkel y Parapente">
     <meta name="twitter:description" content="Agencia de aventura en Paracas. Buceo, snorkel, parapente, ATV e Islas Ballestas. Reserva online 24h.">
-    <meta name="twitter:image" content="https://solymarparacas.site/img/og-solymar-paracas.jpg">
+    <meta name="twitter:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <!-- ===== FIN SEO ===== -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,19 +49,18 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "TravelAgency",
+      "@type": "LocalBusiness",
       "name": "SolyMar Paracas",
-      "image": "https://solymarparacas.site/img/og-solymar-paracas.jpg",
-      "@id": "https://solymarparacas.site/",
       "url": "https://solymarparacas.site/",
-      "telephone": "+51961542547",
+      "logo": "https://solymarparacas.site/img/SolyMar-web.webp",
+      "image": "https://solymarparacas.site/img/og-solymar-paracas.webp",
+      "telephone": "+51 961 542 547",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "El Chaco, Paracas",
+        "streetAddress": "Paracas, Ica, Peru",
         "addressLocality": "Paracas",
         "addressRegion": "Ica",
-        "postalCode": "11550",
         "addressCountry": "PE"
       },
       "geo": {
@@ -94,8 +96,7 @@
     <nav class="header">
         <div class="header__container">
             <div class="header__brand">
-                <img alt="SolyMar Paracas Logo" class="header__logo" src="img/SolyMar-web.png" fetchpriority="high"
-                    decoding="async" />
+                <img class="header__logo" src="img/SolyMar-web.webp" alt="Logo de SolyMar Paracas" fetchpriority="high" decoding="async" />
             </div>
             <button class="header__menu-toggle" aria-label="Menú">
                 <span class="header__menu-icon"></span>
@@ -127,23 +128,22 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero__background">
-                <img class="hero__background-image" src="img/Reserva nacional de Paracas.jpg" alt="Paisaje de la Reserva Nacional de Paracas" fetchpriority="high"
-                    decoding="async" />
+                <img class="hero__background-image" src="img/Reserva nacional de Paracas.webp" alt="Reserva Nacional de Paracas" fetchpriority="high" decoding="async" />
                 <div class="hero__background-gradient"></div>
             </div>
             <div class="hero__content">
                 <p class="hero__subtitle">BIENVENIDO A SOLYMAR PARACAS</p>
                 <h1 class="hero__title">
-                    Vive Experiencias <span class="hero__title-highlight">Inolvidables</span>
+                    Tours en Paracas: Vive Experiencias <span class="hero__title-highlight">Inolvidables</span>
                 </h1>
                 <p class="hero__description">Descubre la majestuosidad de <strong>Paracas y Pisco</strong> con tours
                     diseñados a tu medida. Conéctate con la naturaleza a través del <strong>Buceo, Snorkel,
-                        Parapente</strong> y aventuras extremas en el desierto.</p>
+                        Parapente</strong> y actividades de aventura extrema en el desierto con la mejor seguridad.</p>
                 <div class="hero__actions">
                     <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+contactar+con+su+agencia+para+un+Tour"
                         class="hero__cta">Comenzar Aventura</a>
                     <a href="#experiencias" class="hero__link">
-                        Explorar Actividades
+                        Explorar Actividades de Aventura
                         <span class="material-symbols-outlined hero__link-icon">arrow_forward</span>
                     </a>
                 </div>
@@ -157,123 +157,119 @@
                     <div class="activities__header-content">
                         <span class="activities__subtitle">NUESTRAS EXPERIENCIAS</span>
                         <h2 class="activities__title">
-                            Aventuras que despiertan <br />tus sentidos
+                            Mejores Actividades de Aventura <br />en Paracas
                         </h2>
                     </div>
                     <p class="activities__description">
                         Seleccionamos las mejores rutas y actividades para garantizarte una <strong>experiencia
-                            auténtica</strong> en el corazón de la Reserva Nacional.
+                            auténtica</strong> en el corazón de la Reserva Nacional de Paracas con guías certificados.
                     </p>
                 </div>
                 <div class="activities__grid">
                     <!-- Snorkel -->
                     <a href="snorkel.html" class="activity-card activity-card--large" id="snorkel">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" loading="lazy" decoding="async" src="img/Snorkel.jpg"
-                                alt="Snorkel en Paracas" />
+                            <img class="activity-card__image" src="img/Snorkel.webp" alt="Tour de Snorkel en Paracas" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">Snorkel de Superficie</h3>
                         <p class="activity-card__description">Explora los <strong>jardines submarinos</strong> y la
-                            vibrante biodiversidad de la bahía.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                            vibrante biodiversidad de la bahía al mejor precio.</p>
+                        <span class="activity-card__link">VER TOUR DE SNORKEL <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
 
                     <!-- Buceo -->
                     <a href="buceo.html" class="activity-card" id="buceo">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" loading="lazy" decoding="async"
-                                src="img/Buceador-Principal.jpg" alt="Buceo en Paracas" />
+                            <img class="activity-card__image"
+                                src="img/Buceador-Principal.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">Buceo</h3>
                         <p class="activity-card__description">Sumérgete en las profundidades del <strong>Océano
-                                Pacífico</strong> con expertos.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                                Pacífico</strong> con expertos y seguridad garantizada.</p>
+                        <span class="activity-card__link">VER TOUR DE BUCEO <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
 
                     <!-- Trekking -->
                     <a href="trekking.html" class="activity-card" id="trekking">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" loading="lazy" decoding="async" src="img/trekking.png"
-                                alt="Trekking en Paracas" />
+                            <img class="activity-card__image" src="img/trekking.webp" alt="Trekking en Paracas" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">Golden Shadows Trek</h3>
                         <p class="activity-card__description">Camina entre <strong>acantilados milenarios</strong> y
-                            paisajes desérticos de ensueño.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                            paisajes desérticos de ensueño en la Reserva Nacional.</p>
+                        <span class="activity-card__link">VER TOUR DE TREKKING <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
 
                     <!-- Parapente -->
                     <a href="parapente.html" class="activity-card" id="parapente">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" loading="lazy" decoding="async" src="img/Parapente.jpg"
-                                alt="Parapente en Paracas" />
+                            <img class="activity-card__image" src="img/Parapente.webp" alt="Parapente en Paracas" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">Vuelo en Parapente</h3>
                         <p class="activity-card__description">Sobrevuela la costa y disfruta de la <strong>libertad
-                                absoluta</strong> desde el aire.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                                absoluta</strong> con un guía certificado.</p>
+                        <span class="activity-card__link">VER VUELO EN PARAPENTE <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
 
                     <!-- Adrenarena -->
                     <a href="adrenarena.html" class="activity-card" id="adrenarena">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" loading="lazy" decoding="async" src="img/adrenarena.jpg"
-                                alt="Adrenarena" />
+                            <img class="activity-card__image" src="img/adrenarena.webp" alt="Parque Adrenarena" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">Adrenarena Park</h3>
                         <p class="activity-card__description">Libera tu adrenalina en el <strong>parque de
-                                aventura</strong> más emocionante.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                                aventura</strong> más emocionante de Paracas.</p>
+                        <span class="activity-card__link">VER ADRENARENA PARK <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
 
                     <!-- ATV y Go Kart -->
                     <a href="atv-gokart.html" class="activity-card" id="atv">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" loading="lazy" decoding="async"
-                                src="img/Atv-GoKart-Paracas.jpg" alt="ATV y Go Kart" />
+                            <img class="activity-card__image"
+                                src="img/Atv-GoKart-Paracas.webp" alt="Tour de ATV y Go Kart" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">ATV & Go Karts</h3>
                         <p class="activity-card__description">Conquista las dunas al mando de potentes <strong>vehículos
-                                todo terreno</strong>.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                                todo terreno</strong> con total seguridad.</p>
+                        <span class="activity-card__link">VER TOUR DE ATV <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
 
                     <!-- Islas Ballestas -->
                     <a href="islas-ballestas.html" class="activity-card" id="ballestas">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" src="img/Ballestas.jpg" alt="Islas Ballestas" />
+                            <img class="activity-card__image" src="img/Ballestas.webp" alt="Islas Ballestas" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">Islas Ballestas</h3>
                         <p class="activity-card__description">Descubre el hogar de <strong>lobos marinos y
-                                pingüinos</strong> en su estado natural.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                                pingüinos</strong> en su estado natural al mejor precio.</p>
+                        <span class="activity-card__link">VER ISLAS BALLESTAS <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
 
                     <!-- Reserva Nacional de Paracas -->
                     <a href="reserva-nacional-paracas.html" class="activity-card" id="reserva">
                         <div class="activity-card__image-container">
-                            <img class="activity-card__image" loading="lazy" decoding="async"
-                                src="img/Reserva nacional de Paracas.jpg" alt="Reserva Nacional de Paracas" />
+                            <img class="activity-card__image"
+                                src="img/Reserva nacional de Paracas.webp" alt="Reserva Nacional de Paracas" loading="lazy" decoding="async" />
                             <div class="activity-card__overlay"></div>
                         </div>
                         <h3 class="activity-card__title">Reserva Nacional</h3>
                         <p class="activity-card__description">El majestuoso encuentro entre el <strong>desierto más
-                                árido</strong> y el océano azul.</p>
-                        <span class="activity-card__link">VER DETALLES <span
+                                árido</strong> y el océano azul en Paracas.</p>
+                        <span class="activity-card__link">VER RESERVA NACIONAL <span
                                 class="material-symbols-outlined">trending_flat</span></span>
                     </a>
                 </div>
@@ -285,14 +281,14 @@
             <div class="about__container">
                 <div class="about__content">
                     <span class="about__subtitle">CONÓCENOS</span>
-                    <h2 class="about__title">Pasión por la Aventura</h2>
+                    <h2 class="about__title">SolyMar Paracas: Tu Agencia de Turismo de Confianza</h2>
                     <p class="about__text">
                         En <strong>SolyMar Paracas</strong>, no solo vendemos tours; creamos memorias. Somos
                         especialistas en <strong>experiencias personalizadas</strong> que te permiten descubrir la magia
                         de Paracas desde una perspectiva única.
                         Desde la serenidad del buceo hasta la emoción del parapente, nuestro compromiso es brindarte
                         <strong>seguridad, calidad y diversión</strong> en cada momento de tu viaje por la costa
-                        peruana.
+                        peruana, siempre acompañados por un guía certificado.
                     </p>
                 </div>
                 <div class="about__features">
@@ -323,7 +319,7 @@
             <div class="faq__container">
                 <div class="faq__header">
                     <span class="faq__subtitle">CENTRO DE AYUDA</span>
-                    <h2 class="faq__title">Resuelve tus dudas</h2>
+                    <h2 class="faq__title">Preguntas Frecuentes sobre nuestros Tours en Paracas</h2>
                 </div>
                 <div class="faq__list">
                     <div class="faq__item">
@@ -363,27 +359,27 @@
             <div class="testimonials__container">
                 <div class="testimonials__header">
                     <span class="testimonials__subtitle">TESTIMONIOS</span>
-                    <h2 class="testimonials__title">Clientes Satisfechos</h2>
+                    <h2 class="testimonials__title">Opiniones sobre nuestros Tours en Paracas</h2>
                 </div>
                 <div class="testimonials__grid">
                     <div class="testimonial-card">
-                        <img loading="lazy" decoding="async" src="img/testominio2.jpg" alt="Fernando"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" />
+                        <img src="img/testominio2.webp"
+                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" alt="Testimonio de cliente" loading="lazy" decoding="async" />
                         <p class="testimonial-card__quote">"¡Qué maravillosa Experiencia! volar parapente, las sombras y
                             el buceo fueron increíblees, la atención de la Gerente fue más que excelente. Gracias..."
                         </p>
                         <p class="testimonial-card__author">Fernando</p>
                     </div>
                     <div class="testimonial-card">
-                        <img loading="lazy" decoding="async" src="img/testimonio1.jpg" alt="Daniela"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" />
+                        <img src="img/testimonio1.webp"
+                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" alt="Testimonio de cliente" loading="lazy" decoding="async" />
                         <p class="testimonial-card__quote">"Cuando los contacté sentí seguridad inmediatamente. Me
                             trataron de lo mejor y las actividades ni que decir fuera de serie, ¡Me encantó!"</p>
                         <p class="testimonial-card__author">Daniela</p>
                     </div>
                     <div class="testimonial-card">
-                        <img loading="lazy" decoding="async" src="img/testimonio3.jpg" alt="Alvaro"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" />
+                        <img src="img/testimonio3.webp"
+                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" alt="Testimonio de cliente" loading="lazy" decoding="async" />
                         <p class="testimonial-card__quote">"Tengo una agencia en Lima y los contacté para una promoción
                             y mis pasajeros me comentaron lo genial que los trataron en las actividades, por eso, SON
                             MIS PREFERIDOS"</p>
@@ -396,8 +392,8 @@
         <!-- Contact CTA -->
         <section class="contact-cta">
             <div class="contact-cta__container">
-                <h2 class="contact-cta__title">¿Listo para vivir la experiencia?</h2>
-                <p class="contact-cta__text">Contáctanos ahora y reserva tu tour personalizado en Paracas.</p>
+                <h2 class="contact-cta__title">Reserva tu próxima aventura en Paracas hoy</h2>
+                <p class="contact-cta__text">Contáctanos ahora y reserva tu tour personalizado en Paracas al mejor precio con seguridad garantizada.</p>
                 <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+contactar+con+su+agencia+para+un+Tour"
                     class="contact-cta__button">Reservar Ahora</a>
             </div>

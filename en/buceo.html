@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="../img/SolyMar-ico.png" />
+    <link rel="icon" type="image/webp" href="../img/SolyMar-ico.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>Diving in Paracas | PADI Discovery from S/280 — SolyMar Paracas</title>
@@ -11,14 +11,17 @@
     <meta name="keywords" content="diving paracas, diving paracas peru, discovery dive paracas, sea lion diving paracas, padi diving course paracas, paracas dive price">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
-    <link rel="canonical" href="https://solymarparacas.site/en/buceo.html">
+<link rel="canonical" href="https://solymarparacas.site/en/buceo.html">
+    <link rel="alternate" hreflang="es" href="https://solymarparacas.site/buceo.html">
+    <link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/buceo.html">
+    <link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/buceo.html">
 
     <!-- ===== OPEN GRAPH ===== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solymarparacas.site/en/buceo.html">
     <meta property="og:title" content="Diving in Paracas | PADI Discovery from S/280 — SolyMar">
     <meta property="og:description" content="Submerge yourself in the Pacific of Paracas. Scuba diving baptism with a certified PADI instructor. No experience necessary. From S/280 per person.">
-    <meta property="og:image" content="https://solymarparacas.site/img/Buceador-Principal.jpg">
+    <meta property="og:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_US">
@@ -30,13 +33,62 @@
     <link rel="stylesheet" href="../css/buceo.css" />
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="../css/buceo-tablet.css" />
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/buceo-mobile.css" />
+    <!-- ===== DATA STRUCTURE (JSON-LD) FOR GOOGLE ===== -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Diving in Paracas",
+        "description": "Diving in the Pacific Ocean of Paracas. Discovery for beginners and certified dives. PADI instructor, full equipment. From S/280. No experience needed. Book via WhatsApp.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "SolyMar Paracas",
+          "url": "https://solymarparacas.site/",
+          "telephone": "+51 961 542 547",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Paracas, Ica, Peru",
+            "addressLocality": "Paracas",
+            "addressRegion": "Ica",
+            "addressCountry": "PE"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "280",
+          "priceCurrency": "PEN",
+          "url": "https://solymarparacas.site/en/buceo.html"
+        },
+        "image": "https://solymarparacas.site/img/Buceador-Principal.webp"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://solymarparacas.site/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Diving in Paracas",
+            "item": "https://solymarparacas.site/en/buceo.html"
+          }
+        ]
+      }
+    ]
+    </script>
 </head>
 
 <body>
     <nav class="header">
         <div class="header__container">
             <div class="header__brand">
-                <a href="index.html"><img alt="SolyMar Paracas Logo" class="header__logo" src="../img/SolyMar-web.png" /></a>
+                <a href="index.html"><img class="header__logo" src="../img/SolyMar-web.webp" alt="SolyMar Paracas Logo" fetchpriority="high" decoding="async" /></a>
             </div>
             <button class="header__menu-toggle" aria-label="Menu">
                 <span class="header__menu-icon"></span>
@@ -66,7 +118,7 @@
     <section class="hero">
         <div class="hero__background">
             <img class="hero__background-image"
-                src="../img/Buceador-Principal.jpg" alt="Diving in Paracas" />
+                src="../img/Buceador-Principal.webp" alt="Diving in Paracas" fetchpriority="high" decoding="async" />
             <div class="hero__background-gradient"></div>
         </div>
         <div class="hero__content">
@@ -149,19 +201,25 @@
 
     <section class="gallery">
         <div class="gallery__container">
-            <h2 class="gallery__title">The Underwater World of Paracas</h2>
+            <h2 class="gallery__title">Gallery of our Diving tour in Paracas</h2>
             <div class="gallery__grid">
-                <div class="gallery__item"><img class="gallery__item-image" src="../img/Buceo.jpg" alt="Diving experience 1" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="../img/Buceo.jpg" alt="Diving experience 2" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="../img/Buceador-Principal.jpg" alt="Diving experience 3" /></div>
+                <div class="gallery__item"><img class="gallery__item-image" src="../img/Buceo.webp" alt="Diving in Paracas" loading="lazy" decoding="async" /></div>
+                <div class="gallery__item"><img class="gallery__item-image" src="../img/Buceo.webp" alt="Diving in Paracas" loading="lazy" decoding="async" /></div>
+                <div class="gallery__item"><img class="gallery__item-image" src="../img/Buceador-Principal.webp" alt="Diving in Paracas" loading="lazy" decoding="async" /></div>
             </div>
         </div>
     </section>
 
     <section class="cta">
-        <h2 class="cta__title">Ready for the adventure?</h2>
-        <p class="cta__text">Book your diving experience in Paracas now.</p>
+        <h2 class="cta__title">Book your Diving adventure in Paracas today</h2>
+        <p class="cta__text">Book your diving experience in Paracas now at the <strong>best price</strong>.</p>
         <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Diving+in+Paracas" class="cta__button">Book Now</a>
+    </section>
+
+    <footer class="footer"></footer>
+    <script src="../js/footer.js"></script>
+</body>
+</html>llo%2C+I+want+to+book+Diving+in+Paracas" class="cta__button">Book Now</a>
     </section>
 
     <footer class="footer"></footer>

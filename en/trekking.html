@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="../img/SolyMar-ico.png" />
+    <link rel="icon" type="image/webp" href="../img/SolyMar-ico.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>Trekking in Paracas | Golden Shadows Trek — SolyMar Paracas</title>
@@ -11,14 +11,17 @@
     <meta name="keywords" content="trekking paracas, hiking paracas, golden shadows trek paracas, hiking paracas national reserve, desert trekking paracas, adventure paracas peru">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
-    <link rel="canonical" href="https://solymarparacas.site/en/trekking.html">
+<link rel="canonical" href="https://solymarparacas.site/en/trekking.html">
+    <link rel="alternate" hreflang="es" href="https://solymarparacas.site/trekking.html">
+    <link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/trekking.html">
+    <link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/trekking.html">
 
     <!-- ===== OPEN GRAPH ===== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solymarparacas.site/en/trekking.html">
     <meta property="og:title" content="Trekking in Paracas | Golden Shadows Trek — SolyMar">
     <meta property="og:description" content="Walk between cliffs and golden dunes in the Paracas National Reserve. Expert guide included. Book via WhatsApp.">
-    <meta property="og:image" content="https://solymarparacas.site/img/trekking.png">
+    <meta property="og:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_US">
@@ -30,13 +33,62 @@
     <link rel="stylesheet" href="../css/trekking.css" />
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="../css/trekking-tablet.css" />
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/trekking-mobile.css" />
+    <!-- ===== DATA STRUCTURE (JSON-LD) FOR GOOGLE ===== -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Golden Shadows Trek",
+        "description": "Golden Shadows Trek in Paracas: hike between ancient cliffs and golden dunes at sunset. Expert guide, equipment included. Book your trekking experience in the National Reserve.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "SolyMar Paracas",
+          "url": "https://solymarparacas.site/",
+          "telephone": "+51 961 542 547",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Paracas, Ica, Peru",
+            "addressLocality": "Paracas",
+            "addressRegion": "Ica",
+            "addressCountry": "PE"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "120",
+          "priceCurrency": "PEN",
+          "url": "https://solymarparacas.site/en/trekking.html"
+        },
+        "image": "https://solymarparacas.site/img/trekking.webp"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://solymarparacas.site/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Trekking in Paracas",
+            "item": "https://solymarparacas.site/en/trekking.html"
+          }
+        ]
+      }
+    ]
+    </script>
 </head>
 
 <body>
     <nav class="header">
         <div class="header__container">
             <div class="header__brand">
-                <a href="index.html"><img alt="SolyMar Paracas Logo" class="header__logo" src="../img/SolyMar-web.png" /></a>
+                <a href="index.html"><img class="header__logo" src="../img/SolyMar-web.webp" alt="SolyMar Paracas Logo" fetchpriority="high" decoding="async" /></a>
             </div>
             <button class="header__menu-toggle" aria-label="Menu">
                 <span class="header__menu-icon"></span>
@@ -65,7 +117,7 @@
 
     <section class="hero">
         <div class="hero__background">
-            <img class="hero__background-image" src="../img/trekking.png" alt="Trekking in Paracas" />
+            <img class="hero__background-image" src="../img/trekking.webp" alt="Trekking in Paracas" fetchpriority="high" decoding="async" />
             <div class="hero__background-gradient"></div>
         </div>
         <div class="hero__content">
@@ -109,9 +161,16 @@
     </section>
 
     <section class="cta">
-        <h2 class="cta__title">Ready for the Walk?</h2>
-        <p class="cta__text">Book your trekking experience in Paracas now.</p>
+        <h2 class="cta__title">Book your Trekking adventure in Paracas today</h2>
+        <p class="cta__text">Book your trekking experience in Paracas now at the <strong>best price</strong>.</p>
         <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Golden+Shadows+Trek" class="cta__button">Book Now</a>
+    </section>
+
+    <footer class="footer"></footer>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>lass="cta__button">Book Now</a>
     </section>
 
     <footer class="footer"></footer>

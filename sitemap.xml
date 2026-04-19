@@ -1,57 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://solymarparacas.site/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/"/>
     <lastmod>2026-04-16</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/snorkel.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/snorkel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/snorkel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/snorkel.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/snorkel.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/snorkel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/snorkel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/snorkel.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/buceo.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/buceo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/buceo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/buceo.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/buceo.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/buceo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/buceo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/buceo.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/trekking.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/trekking.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/trekking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/trekking.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/trekking.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/trekking.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/trekking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/trekking.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/parapente.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/parapente.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/parapente.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/parapente.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/parapente.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/parapente.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/parapente.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/parapente.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/adrenarena.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/adrenarena.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/adrenarena.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/adrenarena.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/adrenarena.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/adrenarena.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/adrenarena.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/adrenarena.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/atv-gokart.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/atv-gokart.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/atv-gokart.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/atv-gokart.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/atv-gokart.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/atv-gokart.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/atv-gokart.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/atv-gokart.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/islas-ballestas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/islas-ballestas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/islas-ballestas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/islas-ballestas.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/islas-ballestas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/islas-ballestas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/islas-ballestas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/islas-ballestas.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/reserva-nacional-paracas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/reserva-nacional-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/reserva-nacional-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/reserva-nacional-paracas.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/reserva-nacional-paracas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/reserva-nacional-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/reserva-nacional-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/reserva-nacional-paracas.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/blog.html"/>
     <lastmod>2026-04-16</lastmod>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/blog.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://solymarparacas.site/blog-lima-a-paracas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/blog-lima-a-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/blog-lima-a-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/blog-lima-a-paracas.html"/>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solymarparacas.site/en/blog-lima-a-paracas.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://solymarparacas.site/blog-lima-a-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/blog-lima-a-paracas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/blog-lima-a-paracas.html"/>
     <lastmod>2026-04-16</lastmod>
     <priority>0.8</priority>
   </url>

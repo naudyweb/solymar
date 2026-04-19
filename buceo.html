@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="img/SolyMar-ico.png" />
+    <link rel="icon" type="image/webp" href="img/SolyMar-ico.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>Buceo en Paracas | Bautismo PADI desde S/280 — SolyMar Paracas</title>
@@ -11,14 +11,17 @@
     <meta name="keywords" content="buceo paracas, buceo paracas peru, bautismo buceo paracas, buceo lobos marinos paracas, curso buceo padi paracas, inmersion paracas precio">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
-    <link rel="canonical" href="https://solymarparacas.site/buceo.html">
+<link rel="canonical" href="https://solymarparacas.site/buceo.html">
+    <link rel="alternate" hreflang="es" href="https://solymarparacas.site/buceo.html">
+    <link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/buceo.html">
+    <link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/buceo.html">
 
     <!-- ===== OPEN GRAPH ===== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solymarparacas.site/buceo.html">
     <meta property="og:title" content="Buceo en Paracas | Bautismo PADI desde S/280 — SolyMar">
     <meta property="og:description" content="Sumérgete en el Pacífico de Paracas. Bautismo de buceo con instructor PADI certificado. Sin experiencia necesaria. Desde S/280 por persona.">
-    <meta property="og:image" content="https://solymarparacas.site/img/Buceador-Principal.jpg">
+    <meta property="og:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="es_PE">
@@ -28,7 +31,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Buceo en Paracas | Bautismo PADI — SolyMar">
     <meta name="twitter:description" content="Buceo en el Pacífico de Paracas. Instructor PADI. Sin experiencia necesaria. Desde S/280.">
-    <meta name="twitter:image" content="https://solymarparacas.site/img/Buceador-Principal.jpg">
+    <meta name="twitter:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
     <!-- ===== FIN SEO ===== -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
@@ -37,6 +40,55 @@
     <link rel="stylesheet" href="css/buceo.css" />
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/buceo-tablet.css" />
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/buceo-mobile.css" />
+    <!-- ===== ESTRUCTURA DE DATOS (JSON-LD) PARA GOOGLE ===== -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Buceo en Paracas",
+        "description": "Buceo en el Océano Pacífico de Paracas. Bautismo para principiantes e inmersiones certificadas. Instructor PADI, equipo completo. Desde S/280. Sin experiencia necesaria. Reserva por WhatsApp.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "SolyMar Paracas",
+          "url": "https://solymarparacas.site/",
+          "telephone": "+51 961 542 547",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Paracas, Ica, Peru",
+            "addressLocality": "Paracas",
+            "addressRegion": "Ica",
+            "addressCountry": "PE"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "280",
+          "priceCurrency": "PEN",
+          "url": "https://solymarparacas.site/buceo.html"
+        },
+        "image": "https://solymarparacas.site/img/Buceador-Principal.webp"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://solymarparacas.site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Buceo en Paracas",
+            "item": "https://solymarparacas.site/buceo.html"
+          }
+        ]
+      }
+    ]
+    </script>
 </head>
 
 <body>
@@ -44,8 +96,8 @@
         <div class="header__container">
             <div class="header__brand">
                 <a href="index.html">
-                    <img alt="SolyMar Paracas Logo" class="header__logo"
-                        src="img/SolyMar-web.png" />
+                    <img class="header__logo"
+                        src="img/SolyMar-web.webp" alt="Logo de SolyMar Paracas" fetchpriority="high" decoding="async" />
                 </a>
             </div>
             <button class="header__menu-toggle" aria-label="Menú">
@@ -76,36 +128,35 @@
     <section class="hero">
         <div class="hero__background">
             <img class="hero__background-image"
-                src="img/Buceador-Principal.jpg" alt="Buceo en Paracas" />
+                src="img/Buceador-Principal.webp" alt="Buceo en Paracas" fetchpriority="high" decoding="async" />
             <div class="hero__background-gradient"></div>
         </div>
         <div class="hero__content">
             <p class="hero__breadcrumb"><a href="index.html">Inicio</a> / Experiencias / Buceo</p>
-            <h1 class="hero__title">Buceo en Paracas</h1>
-            <p class="hero__subtitle">Sumérgete en las profundidades del Pacífico y descubre un mundo subacuático fascinante.</p>
+            <h1 class="hero__title">Tour de Buceo en Paracas</h1>
+            <p class="hero__subtitle">Sumérgete en las profundidades del Pacífico con la mejor seguridad y guías certificados.</p>
         </div>
     </section>
 
     <section class="content">
         <div class="content__grid">
             <div class="content__main">
-                <h2>Explora las Profundidades</h2>
+                <h2>Descubre el mundo submarino en tu tour de buceo</h2>
                 <p>
                     El <strong>buceo en Paracas</strong> es una experiencia única que te permite explorar las aguas profundas del Pacífico 
-                    y descubrir la rica biodiversidad marina de la Reserva Nacional de Paracas. Con temperaturas agradables 
+                    y descubrir la rica biodiversidad marina de la <strong>Reserva Nacional de Paracas</strong> al mejor precio. Con temperaturas agradables 
                     durante todo el año y excelente visibilidad, Paracas es el destino perfecto para buceadores de todos los niveles.
                 </p>
                 <p>
                     Durante tu inmersión, podrás observar <strong>lobos de mar, tortugas marinas, rayas</strong> y una gran 
                     variedad de peces tropicales. Las formaciones rocosas y los naufragios crean un ecosistema perfecto 
-                    para la vida marina.
+                    para la vida marina en esta zona protegida.
                 </p>
                 <p>
-                    No necesitas experiencia previa para el <strong>bautismo de buceo</strong>. Nuestros <strong>instructores certificados</strong> te 
-                    enseñarán todo lo necesario para que disfrutes de manera segura y divertida.
+                    No necesitas experiencia previa para disfrutar de un <strong>bautismo de buceo en Paracas</strong>. Nuestros <strong>instructores certificados</strong> y guías expertos te brindarán una charla técnica detallada y te enseñarán todo lo necesario sobre el equipo y las señales bajo el agua, garantizando tu <strong>seguridad</strong> en todo momento para que disfrutes de esta <strong>actividad de aventura</strong> de manera divertida e inolvidable.
                 </p>
 
-                <h2>Lo que verás bajo el agua</h2>
+                <h2>Especies marinas que verás en tu aventura</h2>
                 <ul>
                     <li>
                         <span class="material-symbols-outlined">water</span>
@@ -174,7 +225,7 @@
 
     <section class="levels">
         <div class="levels__container">
-            <h2 class="levels__title">Niveles de Experiencia</h2>
+            <h2 class="levels__title">Niveles de buceo disponibles para ti</h2>
             <div class="levels__grid">
                 <div class="levels__item">
                     <h4 class="levels__item-title">Bautismo de Buceo</h4>
@@ -194,16 +245,16 @@
 
     <section class="gallery">
         <div class="gallery__container">
-            <h2 class="gallery__title">Explora la Experiencia</h2>
+            <h2 class="gallery__title">Galería de fotos de buceo en Paracas</h2>
             <div class="gallery__grid">
                 <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Buceo.jpg" alt="Buceo en Paracas 1" />
+                    <img class="gallery__item-image" src="img/Buceo.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Buceo.jpg" alt="Buceo en Paracas 2" />
+                    <img class="gallery__item-image" src="img/Buceo.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Buceador-Principal.jpg" alt="Buceo en Paracas 3" />
+                    <img class="gallery__item-image" src="img/Buceador-Principal.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
                 </div>
             </div>
         </div>
@@ -211,7 +262,7 @@
 
     <section class="includes">
         <div class="includes__container">
-            <h2 class="includes__title">¿Qué está incluido?</h2>
+            <h2 class="includes__title">Lo que incluye tu experiencia de buceo</h2>
             <div class="includes__grid">
                 <div class="includes__item">
                     <span class="material-symbols-outlined includes__icon">scuba_diving</span>
@@ -238,8 +289,8 @@
     </section>
 
     <section class="cta">
-        <h2 class="cta__title">¿Listo para sumergirte?</h2>
-        <p class="cta__text">Reserva tu experiencia de buceo en Paracas ahora.</p>
+        <h2 class="cta__title">Reserva tu tour de buceo al mejor precio</h2>
+        <p class="cta__text">Vive la mejor aventura submarina en la Reserva Nacional de Paracas con guías certificados y seguridad garantizada.</p>
         <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Buceo+en+Paracas" class="cta__button">Reservar Ahora</a>
     </section>
 
