@@ -43,35 +43,7 @@
 </head>
 
 <body>
-    <nav class="header">
-        <div class="header__container">
-            <div class="header__brand">
-                <a href="index.html"><img class="header__logo" src="../img/SolyMar-web.webp" alt="SolyMar Paracas Logo" fetchpriority="high" decoding="async" /></a>
-            </div>
-            <button class="header__menu-toggle" aria-label="Menu">
-                <span class="header__menu-icon"></span>
-            </button>
-            <div class="header__nav">
-                <div class="header__nav-item">
-                    <a class="header__nav-link" href="javascript:void(0);">Experiences</a>
-                    <div class="header__dropdown">
-                        <a href="snorkel.html" class="header__dropdown-link">Snorkeling</a>
-                        <a href="buceo.html" class="header__dropdown-link">Diving</a>
-                        <a href="trekking.html" class="header__dropdown-link">Trekking</a>
-                        <a href="parapente.html" class="header__dropdown-link">Paragliding</a>
-                        <a href="adrenarena.html" class="header__dropdown-link">Adrenarena</a>
-                        <a href="atv-gokart.html" class="header__dropdown-link">ATV y Go Kart</a>
-                        <a href="islas-ballestas.html" class="header__dropdown-link">Ballestas Islands</a>
-                        <a href="reserva-nacional-paracas.html" class="header__dropdown-link">National Reserve</a>
-                    </div>
-                </div>
-                <a class="header__nav-link" href="index.html#nosotros">About Us</a>
-                <a class="header__nav-link" href="blog.html">Blog</a>
-                <a class="header__nav-link" href="index.html#faq">FAQ</a>
-            </div>
-            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+read+your+blog+and+want+to+book+a+tour" class="header__cta">Book Now</a>
-        </div>
-    </nav>
+    <nav id="header-placeholder"></nav>
 
     <article class="post">
         <header class="post__header">
@@ -114,7 +86,7 @@
             <div class="post__cta">
                 <h3>Already know how to get here?</h3>
                 <p>We'll take care of the rest! Book your personalized experience with SolyMar Paracas.</p>
-                <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+read+your+blog+post+about+how+to+get+here+and+want+to+book+a+tour" class="header__cta" style="display: inline-block; margin-top: 20px; color: white !important;">Contact by WhatsApp</a>
+                <a href="https://wa.me/51961542547" class="header__cta">BOOK NOW</a>
                 <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px;">
                     <p>You might also be interested in: <a href="islas-ballestas.html" style="color: var(--primary); font-weight: 700;">Book your Ballestas Islands tour</a> or <a href="blog.html" style="color: var(--primary); font-weight: 700;">see more from our Paracas blog</a>.</p>
                 </div>
@@ -123,6 +95,7 @@
     </article>
 
     <footer class="footer"></footer>
+    <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+# ESTRATEGIA DE CONTENIDO Y SEO - SOLYMAR PARACAS
+
+Este documento resume las ideas y recomendaciones generadas para mejorar el posicionamiento organico (SEO) y la conversion del sitio web.
+
+---
+
+## 1. IDEAS PARA ARTICULOS DE BLOG (Long-tail Keywords)
+Contenidos enfocados en resolver dudas de los turistas antes de viajar:
+
+*   "3 formas seguras de llegar a Paracas desde Lima" (Ya iniciado, expandir con precios actualizados).
+*   "¿Cual es la mejor epoca para visitar Paracas?" (Enfocado en clima y avistamiento de fauna).
+*   "Guia de precios de tours en Paracas 2024" (Para capturar busquedas de comparacion).
+*   "¿Es seguro hacer parapente en Paracas?" (Para eliminar miedos y generar confianza).
+*   "Mejor mes para ver pinguinos y lobos marinos en las Islas Ballestas".
+*   "¿Que llevar en tu mochila para un tour de aventura en Paracas?".
+*   "Top 5 actividades imperdibles en la Reserva Nacional de Paracas".
+
+---
+
+## 2. MEJORAS DE SEO TECNICO (Ya implementadas o sugeridas)
+*   [X] Implementacion de Hreflang (Vinculacion ES/EN).
+*   [X] Etiquetas Canonicas para evitar contenido duplicado.
+*   [X] Datos Estructurados JSON-LD (LocalBusiness, Service, Breadcrumb).
+*   [X] Optimizacion de imagenes (Conversion a WebP y Lazy Loading).
+*   [X] Jerarquia de encabezados (H1-H3) optimizada.
+*   [ ] Auditoria de Core Web Vitals (Mejorar LCP y CLS).
+
+---
+
+## 3. PALABRAS CLAVE Y SEMANTICA (LSI)
+Terminos que Google asocia con la relevancia de tu sitio:
+
+*   **Principales:** Tours en Paracas, Buceo Paracas, Snorkel Paracas, Agencia de turismo Paracas.
+*   **Semanticas (Secundarias):** Costa peruana, Biodiversidad marina, Deportes de aventura, Pisco, Ica, Guia certificado, Seguridad garantizada, Mejor precio, Reserva online.
+
+---
+
+## 4. ESTRATEGIA DE CONVERSION (CRO)
+*   **WhatsApp Directo:** Asegurar que los mensajes predefinidos incluyan el nombre del tour seleccionado.
+*   **Acordeones Informativos:** Usar el estilo FAQ para secciones densas como "Niveles de Buceo" o "Rutas de Trekking".
+*   **Prueba Social:** Mantener los testimonios visibles y actualizados.
+
+---
+Documento generado por Gemini CLI - Abril 2026

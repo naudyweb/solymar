@@ -123,15 +123,21 @@ document.addEventListener("DOMContentLoaded", () => {
     langSwitcher.className = "lang-switcher";
     
     // Obtener el nombre del archivo actual (ej: snorkel.html)
-    const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+    let currentPath = window.location.pathname;
+    let currentFile = currentPath.split('/').pop();
     
+    // Manejar el caso de que el path sea la raíz / o /en/
+    if (!currentFile || currentFile === "" || currentFile === "en") {
+        currentFile = "index.html";
+    }
+
     const esLink = isEn ? `../${currentFile}` : currentFile;
     const enLink = isEn ? currentFile : `en/${currentFile}`;
 
     langSwitcher.innerHTML = `
-        <a href="${esLink}" class="lang-link ${!isEn ? 'active' : ''}">🇵🇪 ES</a>
+        <a href="${esLink}" class="lang-link ${!isEn ? 'active' : ''}" title="Español">🇵🇪 ES</a>
         <span class="lang-divider">|</span>
-        <a href="${enLink}" class="lang-link ${isEn ? 'active' : ''}">EN 🇺🇸</a>
+        <a href="${enLink}" class="lang-link ${isEn ? 'active' : ''}" title="English">EN 🇺🇸</a>
     `;
     document.body.appendChild(langSwitcher);
 });
