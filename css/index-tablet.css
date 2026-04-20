@@ -42,3 +42,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media (min-width: 768px) {
+    .blog-section {
+        padding: 6rem 6rem;
+    }
+}

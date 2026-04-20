@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const isEn = window.location.pathname.includes('/en/');
-    const pathPrefix = isEn ? "" : ""; // Las rutas son relativas al archivo actual
-    const rootPath = isEn ? "../" : "";
+    const pathSegments = window.location.pathname.split('/').filter(s => s.length > 0);
+    const isEn = pathSegments.includes('en');
+    const isBlog = pathSegments.includes('blog');
+    const rootPath = isEn ? (isBlog ? "../../" : "../") : (isBlog ? "../" : "");
     
     const translations = {
         es: {
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
                 <a class="header__nav-link" href="${rootPath}index#nosotros">${t.about}</a>
-                <a class="header__nav-link" href="${rootPath}blog">${t.blog}</a>
+                <a class="header__nav-link" href="${rootPath}blog/">${t.blog}</a>
                 <a class="header__nav-link" href="${rootPath}index#faq">${t.faq}</a>
             </div>
             <a href="https://wa.me/51961542547" class="header__cta">${t.book}</a>

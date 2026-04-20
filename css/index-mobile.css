@@ -300,3 +300,18 @@
         align-items: center !important;
     }
 }
+@media (max-width: 767px) {
+    .blog-section {
+        padding: 4rem 1rem !important;
+    }
+    .blog-section__title {
+        font-size: 2rem !important;
+    }
+    .blog-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    .blog-card__image-wrapper {
+        height: 200px !important;
+    }
+}

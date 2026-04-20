@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Detectar idioma basado en la ruta
-    const isEn = window.location.pathname.includes('/en/');
+    // Detectar idioma y contexto basado en la ruta
+    const pathSegments = window.location.pathname.split('/').filter(s => s.length > 0);
+    const isEn = pathSegments.includes('en');
+    const isBlog = pathSegments.includes('blog');
     const lang = isEn ? 'en' : 'es';
 
     // Traducciones del Footer
@@ -12,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             support: "Soporte",
             faq: "Preguntas Frecuentes",
             about: "Nosotros",
+            blog: "Blog",
             rights: "© 2026 SolyMar Paracas. Todos los derechos reservados.",
             waText: "Hola%2C+quiero+más+información+sobre+sus+tours",
             waFloatText: "Hola%2C+vengo+de+la+web+y+quiero+información+sobre+los+tours"
@@ -23,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             support: "Support",
             faq: "FAQ",
             about: "About Us",
+            blog: "Blog",
             rights: "© 2026 SolyMar Paracas. All rights reserved.",
             waText: "Hello%2C+I+would+like+more+information+about+your+tours",
             waFloatText: "Hello%2C+I'm+visiting+the+website+and+want+information+about+tours"
@@ -51,7 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Generar Footer
     const footerContainer = document.querySelector('.footer');
     if (footerContainer) {
-        const pathPrefix = isEn ? "../" : "";
+        const pathPrefix = isEn ? (isBlog ? "../../" : "../") : (isBlog ? "../" : "");
+        
         footerContainer.innerHTML = `
             <div class="footer__main">
                 <div class="footer__brand">
@@ -97,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <ul class="footer__nav-list">
                             <li><a class="footer__nav-link" href="${pathPrefix}index#faq">${t.faq}</a></li>
                             <li><a class="footer__nav-link" href="${pathPrefix}index#nosotros">${t.about}</a></li>
+                            <li><a class="footer__nav-link" href="${pathPrefix}blog/">${t.blog}</a></li>
                             <li><a class="footer__nav-link" href="https://api.whatsapp.com/send?phone=51961542547&text=${t.waText}">${t.contact}</a></li>
                         </ul>
                     </div>
@@ -126,13 +132,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentPath = window.location.pathname;
     let currentFile = currentPath.split('/').pop().replace('.html', '');
     
-    // Manejar el caso de que el path sea la raíz / o /en/
-    if (!currentFile || currentFile === "" || currentFile === "en") {
+    // Manejar el caso de que el path sea la raíz / o /en/ o /blog/
+    if (!currentFile || currentFile === "" || currentFile === "en" || currentFile === "blog") {
         currentFile = "index";
     }
 
-    const esLink = isEn ? `../${currentFile}` : currentFile;
-    const enLink = isEn ? currentFile : `en/${currentFile}`;
+    const esPath = isBlog ? (isEn ? "../../blog/" : "./") : (isEn ? "../" : "./");
+    const enPath = isBlog ? (isEn ? "./" : "../en/blog/") : (isEn ? "./" : "en/");
+
+    const esLink = `${esPath}${currentFile}`;
+    const enLink = `${enPath}${currentFile}`;
 
     langSwitcher.innerHTML = `
         <a href="${esLink}" class="lang-link ${!isEn ? 'active' : ''}" title="Español">🇵🇪 ES</a>
