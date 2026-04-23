@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const t = isEn ? translations.en : translations.es;
-    const langPath = isEn ? "" : ""; 
 
     const headerHTML = `
         <div class="header__container">
@@ -51,10 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img class="header__logo" src="${rootPath}img/SolyMar-web.webp" alt="SolyMar Paracas" fetchpriority="high" decoding="async" />
                 </a>
             </div>
-            <button class="header__menu-toggle" aria-label="Menu">
+            <button class="header__menu-toggle" aria-label="Menu" id="mobile-menu-btn">
                 <span class="header__menu-icon"></span>
             </button>
-            <div class="header__nav">
+            <div class="header__nav" id="mobile-nav">
                 <div class="header__nav-item">
                     <a class="header__nav-link" href="javascript:void(0);">${t.experiences}</a>
                     <div class="header__dropdown">
@@ -79,18 +78,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const placeholder = document.getElementById('header-placeholder');
     if (placeholder) {
         placeholder.innerHTML = headerHTML;
-        placeholder.classList.add('header'); // Asegura que tenga la clase para estilos
+        placeholder.classList.add('header');
 
-        // Re-adjuntar lógica de menú móvil
-        const menuToggle = placeholder.querySelector('.header__menu-toggle');
-        const headerNav = placeholder.querySelector('.header__nav');
+        const menuToggle = document.getElementById('mobile-menu-btn');
+        const headerNav = document.getElementById('mobile-nav');
         
         if (menuToggle && headerNav) {
-            menuToggle.addEventListener('click', () => {
-                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-                menuToggle.setAttribute('aria-expanded', !isExpanded);
+            // Eliminar listeners previos si existieran (limpieza)
+            const newToggle = menuToggle.cloneNode(true);
+            menuToggle.parentNode.replaceChild(newToggle, menuToggle);
+
+            newToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const isExpanded = newToggle.getAttribute('aria-expanded') === 'true';
+                newToggle.setAttribute('aria-expanded', !isExpanded);
                 headerNav.classList.toggle('active');
-                console.log('Mobile menu toggled. Active:', headerNav.classList.contains('active'));
+                
+                // Bloquear scroll del body cuando el menú está abierto
+                if (headerNav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Cerrar menú al hacer clic en un enlace (importante para SPAs o anchors)
+            headerNav.querySelectorAll('.header__nav-link, .header__dropdown-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    newToggle.setAttribute('aria-expanded', 'false');
+                    headerNav.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
             });
         }
     }

@@ -35,23 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const t = translations[lang];
 
-    // Mobile Menu Toggle Logic
-    const menuToggle = document.querySelector('.header__menu-toggle');
-    const headerNav = document.querySelector('.header__nav');
-    const expLink = document.querySelector('.header__nav-link[href*="#experiencias"]');
-
-    if (expLink && window.innerWidth <= 767) {
-        expLink.addEventListener('click', (e) => { e.preventDefault(); });
-    }
-
-    if (menuToggle && headerNav) {
-        menuToggle.addEventListener('click', () => {
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', !isExpanded);
-            headerNav.classList.toggle('active');
-        });
-    }
-
     // Generar Footer
     const footerContainer = document.querySelector('.footer');
     if (footerContainer) {
