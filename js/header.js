@@ -103,9 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
-            // Cerrar menú al hacer clic en un enlace (importante para SPAs o anchors)
+            // Cerrar menú al hacer clic en un enlace real (no en el toggle de experiencias)
             headerNav.querySelectorAll('.header__nav-link, .header__dropdown-link').forEach(link => {
-                link.addEventListener('click', () => {
+                link.addEventListener('click', (e) => {
+                    // Si es el enlace de experiencias (void), no cerrar el menú en móvil
+                    if (link.getAttribute('href') === 'javascript:void(0);') return;
+                    
                     newToggle.setAttribute('aria-expanded', 'false');
                     headerNav.classList.remove('active');
                     document.body.style.overflow = '';
