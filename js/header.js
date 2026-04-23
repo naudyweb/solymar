@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
                 menuToggle.setAttribute('aria-expanded', !isExpanded);
                 headerNav.classList.toggle('active');
+                console.log('Mobile menu toggled. Active:', headerNav.classList.contains('active'));
             });
         }
     }
