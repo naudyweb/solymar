@@ -88,101 +88,176 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image" src="img/Parapente.webp" alt="Parapente en Paracas" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
-        </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Inicio</a> / Experiencias / Parapente</p>
-            <h1 class="hero__title">Parapente en Paracas</h1>
-            <p class="hero__subtitle">Vuela sobre el desierto y el océano en una aventura aérea inolvidable.</p>
-        </div>
-    </section>
-
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>Siente la Libertad de Volar</h2>
-                <p>El <strong>parapente en Paracas</strong> es una experiencia única que te permite contemplar el desierto y el océano desde las alturas. Dependiendo de las condiciones del viento para asegurar las mejores vistas panorámicas de la Reserva Nacional, realizamos nuestros despegues desde dos puntos estratégicos: <strong>Playa Supay</strong> y el imponente <strong>Cerro El Maldito</strong>.</p>
-                <p>Nuestro <strong>vuelo tándem</strong> es perfecto para principiantes. No necesitas experiencia previa - volarás junto a un <strong>instructor certificado</strong> que controlará la vela mientras tú disfrutas de entre <strong>5 a 12 minutos de adrenalina pura</strong>. El despegue y aterrizaje en las zonas de Playa Supay o el Cerro El Maldito son suaves y seguros, garantizando una experiencia profesional de alta calidad.</p>
-                <p>Durante el vuelo podrás observar las <strong>dunas doradas</strong> del desierto, la línea costera de Paracas y la majestuosidad de la Reserva Nacional. Es una perspectiva privilegiada que solo el vuelo libre puede ofrecer.</p>
-                <h2>¿Por qué Paracas?</h2>
-                <ul>
-                    <li><span class="material-symbols-outlined">air</span><div><strong>Condiciones Perfectas</strong><p>Vientos ideales para un vuelo seguro y emocionante.</p></div></li>
-                    <li><span class="material-symbols-outlined">landscape</span><div><strong>Paisaje Único</strong><p>Desierto dorado y océano azul en un espectáculo visual inolvidable.</p></div></li>
-                    <li><span class="material-symbols-outlined">verified</span><div><strong>Profesionalismo</strong><p>Instrucción certificada y equipo de última generación.</p></div></li>
-                    <li><span class="material-symbols-outlined">schedule</span><div><strong>Todo el Año</strong><p>Condiciones de vuelo ideales en cualquier temporada.</p></div></li>
-                </ul>
+    <main>
+        <!-- Hero -->
+        <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+            <div class="absolute inset-0 -z-10 group">
+                <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="img/Parapente.webp" alt="Parapente en Paracas" fetchpriority="high" decoding="async" />
+                <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
             </div>
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Reservar Parapente</h3>
-                    <p class="booking-card__price">S/ 250</p>
-                    <p class="booking-card__price-note">Por persona (Vuelo Tándem)</p>
-                    <ul class="booking-card__features">
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Instructor certificado</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Equipo completo</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>5 a 12 minutos de adrenalina pura</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Transporte incluido</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Sin experiencia necesaria</span></li>
-                    </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Parapente+en+Paracas" class="booking-card__cta">Reservar Ahora</a>
-                    <p class="booking-card__note">* Peso máximo: 100 kg | Edad mínima: 8 años</p>
+            <div class="relative z-10 max-w-[900px] text-white">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Inicio</a> / Experiencias / Parapente</p>
+                <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">Parapente en Paracas</h1>
+                <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">Vuela sobre el desierto y el océano en una aventura aérea inolvidable con guías certificados.</p>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="py-24 px-8 bg-surface">
+            <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+                <div class="flex flex-col gap-12 text-left">
+                    <div>
+                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Siente la Libertad de Volar</h2>
+                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">El <strong>parapente en Paracas</strong> es una experiencia única que te permite contemplar el desierto y el océano desde las alturas. Realizamos nuestros despegues desde <strong>Playa Supay</strong> o el <strong>Cerro El Maldito</strong>.</p>
+                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Nuestro <strong>vuelo tándem</strong> es perfecto para principiantes. Volarás junto a un <strong>instructor certificado</strong> disfrutando de entre <strong>5 a 12 minutos de adrenalina pura</strong>.</p>
+                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Durante el vuelo podrás observar las dunas doradas, la línea costera y la majestuosidad de la Reserva Nacional desde una perspectiva privilegiada.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">¿Por qué Paracas?</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">air</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Condiciones Perfectas</strong>
+                                    <p class="text-on-surface-variant">Vientos ideales para un vuelo seguro y emocionante durante todo el año.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">landscape</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Paisaje Único</strong>
+                                    <p class="text-on-surface-variant">Desierto dorado y océano azul en un espectáculo visual inolvidable.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">verified</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Profesionalismo</strong>
+                                    <p class="text-on-surface-variant">Instrucción certificada y equipo de última generación para tu seguridad.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">schedule</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Disponibilidad</strong>
+                                    <p class="text-on-surface-variant">Vuelos diarios sujetos a condiciones climáticas para la mejor experiencia.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                        <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Reservar Parapente</h3>
+                        <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 250</p>
+                        <p class="text-on-surface-variant mb-8 font-medium">Por persona (Vuelo Tándem)</p>
+                        <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Instructor certificado</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Equipo completo de seguridad</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>5 a 12 minutos de vuelo real</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Transporte incluido</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Sin experiencia necesaria</span>
+                            </li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Parapente+en+Paracas" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Reservar Ahora</a>
+                        <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Peso máximo: 100 kg | Edad mínima: 8 años</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="flights">
-        <div class="flights__container">
-            <h2 class="flights__title">Zonas de Despegue</h2>
-            <div class="flights__grid">
-                <div class="flights__item">
-                    <span class="material-symbols-outlined flights__item-icon">landscape</span>
-                    <h4 class="flights__item-title">Playa Supay</h4>
-                    <p class="flights__item-text">Despegue desde los acantilados con vistas espectaculares al Océano Pacífico y la costa de la Reserva Nacional.</p>
+        <!-- Flights Zones -->
+        <section class="py-24 px-8 bg-surface-container-low text-center md:text-left">
+            <div class="max-w-[1000px] mx-auto">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tight text-center">Zonas de Despegue</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                        <span class="material-symbols-outlined text-4xl text-secondary mb-6">landscape</span>
+                        <h4 class="text-xl font-extrabold text-primary mb-4">Playa Supay</h4>
+                        <p class="text-on-surface-variant leading-relaxed">Despegue desde los acantilados con vistas espectaculares al Océano Pacífico y la costa de la Reserva Nacional.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                        <span class="material-symbols-outlined text-4xl text-secondary mb-6">terrain</span>
+                        <h4 class="text-xl font-extrabold text-primary mb-4">Cerro El Maldito</h4>
+                        <p class="text-on-surface-variant leading-relaxed">Ubicado en el corazón del desierto, ofrece una vista de 360 grados de las dunas y la bahía de Paracas.</p>
+                    </div>
                 </div>
-                <div class="flights__item">
-                    <span class="material-symbols-outlined flights__item-icon">terrain</span>
-                    <h4 class="flights__item-title">Cerro El Maldito</h4>
-                    <p class="flights__item-text">Ubicado en el corazón del desierto, ofrece una vista de 360 grados de las dunas y la bahía de Paracas.</p>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="py-24 px-8 max-w-[1536px] mx-auto">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Galería de fotos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                    <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Parapente.webp" alt="Parapente en Paracas" loading="lazy" decoding="async" />
+                </div>
+                <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                    <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Parapente-310.webp" alt="Parapente en Paracas" loading="lazy" decoding="async" />
+                </div>
+                <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                    <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Parapente.webp" alt="Parapente en Paracas" loading="lazy" decoding="async" />
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="gallery">
-        <div class="gallery__container">
-            <h2 class="gallery__title">Galería de fotos de Parapente en Paracas</h2>
-            <div class="gallery__grid">
-                <div class="gallery__item"><img class="gallery__item-image" src="img/Parapente.webp" alt="Parapente en Paracas" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="img/Parapente-310.webp" alt="Parapente en Paracas" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="img/Parapente.webp" alt="Parapente en Paracas" loading="lazy" decoding="async" /></div>
+        <!-- Includes -->
+        <section class="py-24 px-8 bg-surface-container">
+            <div class="max-w-[1536px] mx-auto">
+                <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Lo que incluye tu vuelo</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Instructor Certificado</h4>
+                        <p class="text-sm text-on-surface-variant">Piloto experimentado con años de trayectoria aérea.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">inventory_2</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Equipo Completo</h4>
+                        <p class="text-sm text-on-surface-variant">Parapente, arnés y casco de última generación.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">directions_car</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Transporte</h4>
+                        <p class="text-sm text-on-surface-variant">Traslado incluido desde tu hotel al despegue.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">photo_camera</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Fotos y Video</h4>
+                        <p class="text-sm text-on-surface-variant">Captura tu experiencia aérea en alta definición.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="includes">
-        <div class="includes__container">
-            <h2 class="includes__title">¿Qué está incluido en tu vuelo?</h2>
-            <div class="includes__grid">
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">person</span><h4 class="includes__item-title">Instructor Certificado</h4><p class="includes__item-text">Piloto experimentado con años de trayectoria</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">inventory_2</span><h4 class="includes__item-title">Equipo Completo</h4><p class="includes__item-text">Parapente, arnés y casco de última generación</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">directions_car</span><h4 class="includes__item-title">Transporte</h4><p class="includes__item-text">Traslado desde tu hotel al punto de despegue</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">photo_camera</span><h4 class="includes__item-title">Fotos y Video</h4><p class="includes__item-text">Captura tu experiencia aérea en video</p></div>
+        <!-- CTA -->
+        <section class="py-24 px-8 bg-primary text-center text-white">
+            <div class="max-w-[800px] mx-auto">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">Reserva tu vuelo al mejor precio</h2>
+                <p class="text-xl text-white/90 mb-12 leading-relaxed">Reserva tu experiencia de parapente en Paracas ahora con total seguridad y adrenalina.</p>
+                <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Parapente+en+Paracas" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Reservar Ahora</a>
             </div>
-        </div>
-    </section>
-
-    <section class="cta">
-        <h2 class="cta__title">Reserva tu vuelo en Parapente al mejor precio</h2>
-        <p class="cta__text">Reserva tu experiencia de parapente en Paracas ahora con total <strong>seguridad</strong>.</p>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Parapente+en+Paracas" class="cta__button">Reservar Ahora</a>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer"></footer>
     <script src="js/header.js"></script>

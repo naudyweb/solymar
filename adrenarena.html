@@ -88,120 +88,187 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image" src="img/adrenarena.webp" alt="Parque Adrenarena" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
+    <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+        <div class="absolute inset-0 -z-10 group">
+            <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="img/adrenarena.webp" alt="Parque Adrenarena" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
         </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Inicio</a> / Experiencias / Adrenarena</p>
-            <h1 class="hero__title">Adrenarena</h1>
-            <p class="hero__subtitle">El parque de aventura definitivo con tirolinas, kayaks y más.</p>
+        <div class="relative z-10 max-w-[900px] text-white">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Inicio</a> / Experiencias / Adrenarena</p>
+            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">Adrenarena Park</h1>
+            <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">El parque de aventura definitivo en Paracas con tirolinas, kayaks y adrenalina sin límites.</p>
         </div>
     </section>
 
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>Aventura Sin Límites</h2>
-                <p><strong>Adrenarena</strong> es el parque de aventura más completo de la región de Ica. Ubicado en un entorno natural privilegiado, ofrece una experiencia llena de adrenalina para toda la familia con actividades que combinan naturaleza, emoción y seguridad.</p>
-                <p>El parque cuenta con más de <strong>20 actividades diferentes</strong>, desde tirolinas de alta velocidad hasta kayaks en lagunas naturales. Es el lugar perfecto para quienes buscan emociones fuertes sin sacrificar la seguridad - todos los equipos son de última generación y hay instructores en cada estación.</p>
-                <p>El concepto de Adrenarena está diseñado para que puedas pasar el día completo explorando todas las actividades. Hay zonas de descanso, restaurantes y áreas de picnic para que la experiencia sea cómoda y divertida.</p>
-                <h2>¿Por qué visitar Adrenarena?</h2>
-                <ul>
-                    <li><span class="material-symbols-outlined">category</span><div><strong>20+ Actividades</strong><p>Variedad infinita para todos los gustos y edades.</p></div></li>
-                    <li><span class="material-symbols-outlined">security</span><div><strong>Seguridad Garantizada</strong><p>Equipos certificados e instructores especializados.</p></div></li>
-                    <li><span class="material-symbols-outlined">nature_people</span><div><strong>Entorno Natural</strong><p>Parque rodeado de naturaleza y paisajes únicos.</p></div></li>
-                    <li><span class="material-symbols-outlined">groups</span><div><strong>Para Toda la Familia</strong><p>Actividades para niños, adultos y grupos.</p></div></li>
-                </ul>
-            </div>
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Reservar Adrenarena</h3>
-                    <p class="booking-card__price">S/ 150</p>
-                    <p class="booking-card__price-note">Por persona (Pase Diario)</p>
-                    <ul class="booking-card__features">
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Acceso a todas las actividades</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Equipo de seguridad</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Instructores certificados</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Duración: Día completo</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Zona de descanso</span></li>
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+            <div class="flex flex-col gap-12 text-left">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Aventura Sin Límites</h2>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed"><strong>Adrenarena</strong> es el parque de aventura más completo de la región de Ica. Ofrece una experiencia llena de adrenalina para toda la familia con actividades que combinan naturaleza y emoción.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">El parque cuenta con más de <strong>20 actividades diferentes</strong>, desde tirolinas de alta velocidad hasta kayaks en lagunas naturales. Un lugar perfecto para emociones fuertes.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Diseñado para pasar el día completo explorando. Contamos con zonas de descanso y restaurantes para tu mayor comodidad y diversión.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">¿Por qué visitar Adrenarena?</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">category</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">20+ Actividades</strong>
+                                <p class="text-on-surface-variant">Variedad infinita de aventuras para todos los gustos y todas las edades.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">security</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Seguridad Total</strong>
+                                <p class="text-on-surface-variant">Equipos certificados de última generación e instructores especializados.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">nature_people</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Entorno Natural</strong>
+                                <p class="text-on-surface-variant">Parque rodeado de la belleza del desierto y paisajes únicos de Paracas.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">groups</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Para Grupos</strong>
+                                <p class="text-on-surface-variant">Actividades diseñadas para disfrutar en familia o con amigos.</p>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Adrenarena+en+Paracas" class="booking-card__cta">Reservar Ahora</a>
-                    <p class="booking-card__note">* Niños menores de 8 años tienen descuento</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Reservar Entrada</h3>
+                    <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 150</p>
+                    <p class="text-on-surface-variant mb-8 font-medium">Por persona (Pase Diario)</p>
+                    <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Acceso a todas las actividades</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Equipo de seguridad incluido</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Instructores en cada estación</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Duración: Día completo</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Zonas de relax y sombra</span>
+                        </li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Adrenarena+en+Paracas" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Reservar Ahora</a>
+                    <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Descuentos especiales para grupos grandes</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="activities">
-        <div class="activities__container">
-            <h2 class="activities__title">Actividades Disponibles</h2>
-            <div class="activities__grid">
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">link</span>
-                    <h4 class="activities__item-title">Tirolinas</h4>
-                    <p class="activities__item-text">Múltiples tirolinas de diferentes velocidades y alturas. La más larga tiene más de 500 metros.</p>
+    <section class="py-24 px-8 bg-surface-container-low">
+        <div class="max-w-[1536px] mx-auto text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tight text-center">Actividades Incluidas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">link</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Tirolinas</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Múltiples tirolinas de diferentes alturas. La más larga tiene más de 500 metros de pura velocidad.</p>
                 </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">kayaking</span>
-                    <h4 class="activities__item-title">Kayak</h4>
-                    <p class="activities__item-text">Explora la laguna en kayak. Disponible para principiantes y expertos.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">kayaking</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Kayak</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Navega por la laguna natural en kayak. Actividad relajante e ideal para toda la familia.</p>
                 </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">sports_martial_arts</span>
-                    <h4 class="activities__item-title">Tirolesa</h4>
-                    <p class="activities__item-text">Recorrido de aventura con diferentes obstáculos y pruebas de equilibrio.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">sports_martial_arts</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Puentes Colgantes</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Recorrido de aventura con obstáculos y pruebas de equilibrio en las alturas.</p>
                 </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">directions_walk</span>
-                    <h4 class="activities__item-title">Senderismo</h4>
-                    <p class="activities__item-text">Senderos naturales con vistas panorámicas del desierto y las montañas.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">directions_walk</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Senderismo</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Senderos naturales con las mejores vistas panorámicas del desierto de Paracas.</p>
                 </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">sports_gymnastics</span>
-                    <h4 class="activities__item-title">Escalada</h4>
-                    <p class="activities__item-text">Paredes de escalada para todos los niveles con arnés y seguridad incluida.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">sports_gymnastics</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Escalada</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Paredes de escalada para todos los niveles con arnés y asistencia técnica.</p>
                 </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">pool</span>
-                    <h4 class="activities__item-title">Piscinas</h4>
-                    <p class="activities__item-text">Zona de piscinas para relajarse después de la aventura.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">pool</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Zonas de Piscina</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Refrescante zona de piscinas para descansar después de un día de pura adrenalina.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="gallery">
-        <div class="gallery__container">
-            <h2 class="gallery__title">Galería de fotos de Adrenarena Park</h2>
-            <div class="gallery__grid">
-                <div class="gallery__item"><img class="gallery__item-image" src="img/adrenarena.webp" alt="Parque Adrenarena" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="img/adrenarena.webp" alt="Parque Adrenarena" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="img/adrenarena.webp" alt="Parque Adrenarena" loading="lazy" decoding="async" /></div>
+    <section class="py-24 px-8 max-w-[1536px] mx-auto">
+        <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Galería Adrenarena</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/adrenarena.webp" alt="Parque Adrenarena" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/adrenarena.webp" alt="Parque Adrenarena" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/adrenarena.webp" alt="Parque Adrenarena" loading="lazy" decoding="async" />
             </div>
         </div>
     </section>
 
-    <section class="includes">
-        <div class="includes__container">
-            <h2 class="includes__title">¿Qué está incluido en tu entrada?</h2>
-            <div class="includes__grid">
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">checklist</span><h4 class="includes__item-title">Acceso Total</h4><p class="includes__item-text">Todas las actividades del parque incluidas</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">shield</span><h4 class="includes__item-title">Equipo de Seguridad</h4><p class="includes__item-text">Casco, arnés y equipo de protección</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">person</span><h4 class="includes__item-title">Instructor Guía</h4><p class="includes__item-text">Personal capacitado en todas las zonas</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">local_parking</span><h4 class="includes__item-title">Estacionamiento</h4><p class="includes__item-text">Estacionamiento gratuito para visitantes</p></div>
+    <section class="py-24 px-8 bg-surface-container">
+        <div class="max-w-[1536px] mx-auto">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Lo que incluye tu entrada</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">checklist</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Acceso Total</h4>
+                    <p class="text-sm text-on-surface-variant">Todas las actividades del parque están incluidas en tu pase.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">shield</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Equipo Completo</h4>
+                    <p class="text-sm text-on-surface-variant">Casco, arnés y todo el equipo de protección necesario.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Instructores</h4>
+                    <p class="text-sm text-on-surface-variant">Personal capacitado supervisando cada una de las actividades.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">local_parking</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Estacionamiento</h4>
+                    <p class="text-sm text-on-surface-variant">Estacionamiento privado y gratuito para todos los visitantes.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
-        <h2 class="cta__title">Reserva tu aventura en Adrenarena al mejor precio</h2>
-        <p class="cta__text">Reserva tu día en Adrenarena ahora con total <strong>seguridad</strong>.</p>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Adrenarena+en+Paracas" class="cta__button">Reservar Ahora</a>
+    <section class="py-24 px-8 bg-primary text-center text-white">
+        <div class="max-w-[800px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">Reserva tu día de aventura</h2>
+            <p class="text-xl text-white/90 mb-12 leading-relaxed">Asegura tu entrada a Adrenarena Park ahora con total seguridad y vive un día inolvidable.</p>
+            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Adrenarena+en+Paracas" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Reservar Ahora</a>
+        </div>
     </section>
 
     <footer class="footer"></footer>

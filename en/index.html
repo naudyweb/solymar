@@ -89,296 +89,177 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface antialiased pt-20">
     <nav id="header-placeholder"></nav>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero__background">
-                <img class="hero__background-image" src="../img/Reserva nacional de Paracas.webp" alt="Paracas National Reserve" fetchpriority="high" decoding="async" />
-                <div class="hero__background-gradient"></div>
+        <section class="relative h-[calc(100vh-5rem)] min-h-[600px] flex items-center justify-center text-center p-8 overflow-hidden md:p-24">
+            <div class="absolute inset-0 -z-10 group">
+                <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="../img/Reserva nacional de Paracas.webp" alt="Paracas National Reserve" fetchpriority="high" decoding="async" />
+                <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
             </div>
-            <div class="hero__content">
-                <p class="hero__subtitle">WELCOME TO SOLYMAR PARACAS</p>
-                <h1 class="hero__title">
-                    Tours in Paracas: Live <span class="hero__title-highlight">Unforgettable</span> Experiences
+            <div class="relative z-10 max-w-[900px] text-white">
+                <p class="text-[0.75rem] md:text-sm font-extrabold tracking-[0.2em] uppercase mb-6 opacity-90">WELCOME TO SOLYMAR PARACAS</p>
+                <h1 class="text-4xl md:text-[4.5rem] font-extrabold tracking-tight leading-none mb-8">
+                    Tours in Paracas: Live <span class="text-[#a6c8ff]">Unforgettable</span> Experiences
                 </h1>
-                <p class="hero__description">Discover the majesty of <strong>Paracas and Pisco</strong> with tours
-                    designed just for you. Connect with nature through <strong>Diving, Snorkeling,
-                        Paragliding</strong> and extreme desert adventures with the <strong>best price</strong> and <strong>safety</strong> guaranteed by our <strong>certified guides</strong>.</p>
-                <div class="hero__actions">
+                <p class="text-lg md:text-xl text-white/90 leading-relaxed mb-12 max-w-[600px] mx-auto">Discover the majesty of <strong>Paracas and Pisco</strong> with tours
+                    designed just for you. Connect with nature through adventure activities with safety guaranteed.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
                     <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+contact+your+agency+for+a+Tour"
-                        class="hero__cta">Start Adventure</a>
-                    <a href="#experiencias" class="hero__link">
+                        class="w-full md:w-auto inline-block bg-primary text-white py-5 px-12 rounded-full text-sm font-extrabold tracking-widest uppercase shadow-2xl transition-all hover:-translate-y-1 hover:bg-primary-container">Start Adventure</a>
+                    <a href="#experiencias" class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-white text-primary py-5 px-12 rounded-full text-sm font-extrabold tracking-widest uppercase shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">
                         Explore Activities
-                        <span class="material-symbols-outlined hero__link-icon">arrow_forward</span>
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- Activities Section -->
-        <section class="activities" id="experiencias">
-            <div class="activities__container">
-                <div class="activities__header">
-                    <div class="activities__header-content">
-                        <span class="activities__subtitle">OUR EXPERIENCES</span>
-                        <h2 class="activities__title">
-                            Best Adventure Activities <br />in Paracas
-                        </h2>
-                    </div>
-                    <p class="activities__description">
-                        We select the best routes and activities to guarantee you an <strong>authentic experience</strong> in the heart of the National Reserve with our <strong>certified guides</strong>.
-                    </p>
+        <section class="py-24 px-8 max-w-[1536px] mx-auto md:px-24" id="experiencias">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-8 text-center md:text-left">
+                <div class="max-w-[600px]">
+                    <span class="text-sm font-bold tracking-widest uppercase text-on-surface-variant block mb-4">OUR EXPERIENCES</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-[1.1] text-primary tracking-tight">
+                        Best Adventure Activities <br class="hidden md:block" />in Paracas
+                    </h2>
                 </div>
-                <div class="activities__grid">
-                    <!-- Snorkel -->
-                    <a href="snorkel.html" class="activity-card activity-card--large" id="snorkel">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image" src="../img/Snorkel.webp" alt="Snorkeling tour in Paracas" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">Surface Snorkeling</h3>
-                        <p class="activity-card__description">Explore <strong>underwater gardens</strong> and the vibrant biodiversity of the bay at the <strong>best price</strong>.</p>
-                        <span class="activity-card__link">VIEW SNORKELING TOUR <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-
-                    <!-- Buceo -->
-                    <a href="buceo.html" class="activity-card" id="buceo">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image"
-                                src="../img/Buceador-Principal.webp" alt="Diving in Paracas" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">Diving</h3>
-                        <p class="activity-card__description">Dive into the depths of the <strong>Pacific Ocean</strong> with experts and total <strong>safety</strong>.</p>
-                        <span class="activity-card__link">VIEW DIVING TOUR <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-
-                    <!-- Trekking -->
-                    <a href="trekking.html" class="activity-card" id="trekking">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image" src="../img/trekking.webp" alt="Trekking in Paracas" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">Golden Shadows Trek</h3>
-                        <p class="activity-card__description">Walk among <strong>ancient cliffs</strong> and dreamlike desert landscapes.</p>
-                        <span class="activity-card__link">VIEW TREKKING TOUR <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-
-                    <!-- Parapente -->
-                    <a href="parapente.html" class="activity-card" id="parapente">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image" src="../img/Parapente.webp" alt="Paragliding in Paracas" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">Paragliding Flight</h3>
-                        <p class="activity-card__description">Fly over the coast and enjoy <strong>absolute freedom</strong> from the air.</p>
-                        <span class="activity-card__link">VIEW PARAGLIDING TOUR <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-
-                    <!-- Adrenarena -->
-                    <a href="adrenarena.html" class="activity-card" id="adrenarena">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image" src="../img/adrenarena.webp" alt="Adrenarena Park" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">Adrenarena Park</h3>
-                        <p class="activity-card__description">Unleash your adrenaline in the most exciting <strong>adventure park</strong>.</p>
-                        <span class="activity-card__link">VIEW ADRENARENA PARK <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-
-                    <!-- ATV y Go Kart -->
-                    <a href="atv-gokart.html" class="activity-card" id="atv">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image"
-                                src="../img/Atv-GoKart-Paracas.webp" alt="ATV and Go Kart tour" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">ATV & Go Karts</h3>
-                        <p class="activity-card__description">Conquer the dunes at the helm of powerful <strong>all-terrain vehicles</strong>.</p>
-                        <span class="activity-card__link">VIEW ATV TOUR <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-
-                    <!-- Islas Ballestas -->
-                    <a href="islas-ballestas.html" class="activity-card" id="ballestas">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image" src="../img/Ballestas.webp" alt="Ballestas Islands" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">Ballestas Islands</h3>
-                        <p class="activity-card__description">Discover the home of <strong>sea lions and penguins</strong> in their natural state.</p>
-                        <span class="activity-card__link">VIEW BALLESTAS TOUR <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-
-                    <!-- Reserva Nacional de Paracas -->
-                    <a href="reserva-nacional-paracas.html" class="activity-card" id="reserva">
-                        <div class="activity-card__image-container">
-                            <img class="activity-card__image"
-                                src="../img/Reserva nacional de Paracas.webp" alt="Paracas National Reserve" loading="lazy" decoding="async" />
-                            <div class="activity-card__overlay"></div>
-                        </div>
-                        <h3 class="activity-card__title">National Reserve</h3>
-                        <p class="activity-card__description">The majestic meeting between the <strong>driest desert</strong> and the blue ocean.</p>
-                        <span class="activity-card__link">VIEW NATIONAL RESERVE TOUR <span
-                                class="material-symbols-outlined">trending_flat</span></span>
-                    </a>
-                </div>
+                <p class="max-w-[300px] text-base text-on-surface-variant md:text-right mx-auto md:mx-0">
+                    We select the best routes to guarantee you an <strong>authentic experience</strong> with certified guides.
+                </p>
             </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section class="blog-section" id="blog">
-            <div class="blog-section__header">
-                <span class="blog-section__subtitle">OUR BLOG</span>
-                <h2 class="blog-section__title">Travel Guides and Tips</h2>
-            </div>
-            <div class="blog-grid">
-                <!-- Post 1 -->
-                <a href="blog/lima-a-paracas" class="blog-card blog-card--large">
-                    <div class="blog-card__image-wrapper">
-                        <img src="../img/Reserva nacional de Paracas.webp" class="blog-card__image" alt="Paracas National Reserve" loading="lazy" decoding="async" />
-                        <div class="blog-card__overlay"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Snorkel -->
+                <a href="snorkel.html" class="relative group h-[400px] md:h-[480px] flex flex-col rounded-[2rem] overflow-hidden bg-surface-container shadow-lg transition-all duration-400 hover:-translate-y-3 hover:shadow-2xl lg:col-span-2">
+                    <div class="absolute inset-0 -z-10">
+                        <img class="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110" src="../img/Snorkel.webp" alt="Snorkeling tour in Paracas" loading="lazy" decoding="async" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001428e6] via-transparent to-transparent"></div>
                     </div>
-                    <div class="blog-card__content">
-                        <span class="blog-card__tag">Transport</span>
-                        <h3 class="blog-card__title">3 safe ways to get to Paracas from Lima</h3>
-                        <p class="blog-card__excerpt">Planning to visit Paracas from Miraflores or Barranco? Discover the safest and most comfortable options.</p>
+                    <div class="absolute bottom-12 left-10 right-10 z-20 transition-transform duration-300 group-hover:-translate-y-10">
+                        <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-0 tracking-tight">Surface Snorkeling</h3>
+                        <p class="mt-4 text-white/80 opacity-0 transform translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm md:text-base">Explore <strong>underwater gardens</strong> and the vibrant biodiversity of the bay.</p>
                     </div>
                 </a>
-            </div>
-            <div class="blog-section__footer">
-                <a href="blog/" class="blog-section__more">See more in the blog</a>
+
+                <!-- Buceo -->
+                <a href="buceo.html" class="relative group h-[400px] md:h-[480px] flex flex-col rounded-[2rem] overflow-hidden bg-surface-container shadow-lg transition-all duration-400 hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="absolute inset-0 -z-10">
+                        <img class="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110" src="../img/Buceador-Principal.webp" alt="Diving in Paracas" loading="lazy" decoding="async" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001428e6] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-12 left-10 right-10 z-20 transition-transform duration-300 group-hover:-translate-y-10">
+                        <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-0 tracking-tight">Scuba Diving</h3>
+                        <p class="mt-4 text-white/80 opacity-0 transform translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm md:text-base">Dive into the depths with <strong>PADI instructors</strong> and total safety.</p>
+                    </div>
+                </a>
+
+                <!-- Trekking -->
+                <a href="trekking.html" class="relative group h-[400px] md:h-[480px] flex flex-col rounded-[2rem] overflow-hidden bg-surface-container shadow-lg transition-all duration-400 hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="absolute inset-0 -z-10">
+                        <img class="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110" src="../img/trekking.webp" alt="Trekking in Paracas" loading="lazy" decoding="async" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001428e6] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-12 left-10 right-10 z-20 transition-transform duration-300 group-hover:-translate-y-10">
+                        <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-0 tracking-tight">Golden Shadows Trek</h3>
+                        <p class="mt-4 text-white/80 opacity-0 transform translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm md:text-base">Walk among <strong>ancient cliffs</strong> and dreamlike desert landscapes.</p>
+                    </div>
+                </a>
+
+                <!-- Parapente -->
+                <a href="parapente.html" class="relative group h-[400px] md:h-[480px] flex flex-col rounded-[2rem] overflow-hidden bg-surface-container shadow-lg transition-all duration-400 hover:-translate-y-3 hover:shadow-2xl lg:col-span-2">
+                    <div class="absolute inset-0 -z-10">
+                        <img class="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110" src="../img/Parapente.webp" alt="Paragliding in Paracas" loading="lazy" decoding="async" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001428e6] via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-12 left-10 right-10 z-20 transition-transform duration-300 group-hover:-translate-y-10">
+                        <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-0 tracking-tight">Paragliding Flight</h3>
+                        <p class="mt-4 text-white/80 opacity-0 transform translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm md:text-base">Fly over the coast and enjoy <strong>absolute freedom</strong> from the air.</p>
+                    </div>
+                </a>
             </div>
         </section>
 
         <!-- About Section -->
-        <section class="about" id="nosotros">
-            <div class="about__container">
-                <div class="about__content">
-                    <span class="about__subtitle">GET TO KNOW US</span>
-                    <h2 class="about__title">SolyMar Paracas: Your Trusted Adventure Agency</h2>
-                    <p class="about__text">
-                        At <strong>SolyMar Paracas</strong>, we don't just sell tours; we create memories. We are
-                        specialists in <strong>personalized experiences</strong> that allow you to discover the magic
-                        of Paracas from a unique perspective.
-                        From the serenity of diving to the thrill of paragliding, our commitment is to provide you with
-                        <strong>safety, quality, and fun</strong> at every moment of your trip through the Peruvian coast.
+        <section class="py-24 bg-white" id="nosotros">
+            <div class="max-w-[1200px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 items-center">
+                <div>
+                    <span class="text-sm font-extrabold tracking-[0.2em] text-secondary uppercase block mb-6">GET TO KNOW US</span>
+                    <h2 class="text-4xl md:text-[3.5rem] font-extrabold leading-[1.1] text-primary mb-10 tracking-tight">SolyMar Paracas: Your Trusted Agency</h2>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        At <strong>SolyMar Paracas</strong>, we don't just sell tours; we create memories. We are specialists in <strong>personalized experiences</strong>.
                     </p>
                 </div>
-                <div class="about__features">
-                    <div class="about__feature">
-                        <span class="material-symbols-outlined about__feature-icon">verified_user</span>
-                        <h4 class="about__feature-title">Total Safety</h4>
-                        <p class="about__feature-text">Modern equipment and <strong>international safety</strong> protocols.</p>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="p-10 bg-surface-container-low rounded-[2rem] transition-all hover:translate-x-3 hover:bg-white hover:shadow-xl border border-transparent hover:border-surface-variant flex gap-6">
+                        <span class="material-symbols-outlined text-5xl text-secondary flex-shrink-0">verified_user</span>
+                        <div>
+                            <h3 class="text-xl font-extrabold text-primary mb-2">Total Safety</h3>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Modern equipment and certified guides for your total peace of mind.</p>
+                        </div>
                     </div>
-                    <div class="about__feature">
-                        <span class="material-symbols-outlined about__feature-icon">schedule</span>
-                        <h4 class="about__feature-title">Personal Attention</h4>
-                        <p class="about__feature-text">We are with you <strong>24/7</strong> to resolve any doubts or needs.</p>
-                    </div>
-                    <div class="about__feature">
-                        <span class="material-symbols-outlined about__feature-icon">explore</span>
-                        <h4 class="about__feature-title">Local Experts</h4>
-                        <p class="about__feature-text">Certified guides passionate about <strong>conservation and tourism</strong>.</p>
+                    <div class="p-10 bg-surface-container-low rounded-[2rem] transition-all hover:translate-x-3 hover:bg-white hover:shadow-xl border border-transparent hover:border-surface-variant flex gap-6">
+                        <span class="material-symbols-outlined text-5xl text-secondary flex-shrink-0">groups</span>
+                        <div>
+                            <h3 class="text-xl font-extrabold text-primary mb-2">Local Experts</h3>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">Personalized attention and passion for conservation and tourism.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq" id="faq">
-            <div class="faq__container">
-                <div class="faq__header">
-                    <span class="faq__subtitle">HELP CENTER</span>
-                    <h2 class="faq__title">Frequently Asked Questions about our Paracas Tours</h2>
+        <section class="py-24 bg-surface px-8" id="faq">
+            <div class="max-w-[800px] mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-sm font-extrabold tracking-[0.2em] text-secondary block mb-6">SUPPORT</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Frequently Asked Questions</h2>
                 </div>
-                <div class="faq__list">
-                    <div class="faq__item">
-                        <h4 class="faq__question">1. How do I make my reservation?</h4>
-                        <p class="faq__answer">
-                            You can start your reservation via <strong>WhatsApp</strong>. As they are personalized experiences, we first coordinate the details with you to ensure an adventure tailored to your needs. Once the plan is defined, the <strong>payment is made online</strong> securely.
-                        </p>
+                <div class="flex flex-col gap-6">
+                    <div class="bg-white p-10 rounded-[1.5rem] shadow-md border border-black/[0.03]">
+                        <h3 class="text-xl font-extrabold text-primary mb-4">How do I make my reservation?</h3>
+                        <p class="text-on-surface-variant leading-relaxed">You can start your reservation via <strong>WhatsApp</strong>. We coordinate the details with you first.</p>
                     </div>
-                    <div class="faq__item">
-                        <h4 class="faq__question">2. What is the cancellation policy?</h4>
-                        <p class="faq__answer">
-                            We understand unforeseen events. Reservations can be canceled or rescheduled with <strong>prior coordination</strong>. By confirming your online payment, you guarantee your spot for the agreed date.
-                        </p>
-                    </div>
-                    <div class="faq__item">
-                        <h4 class="faq__question">3. Is it safe to travel with SolyMar?</h4>
-                        <p class="faq__answer">
-                            Absolutely. <strong>Safety is our priority</strong>. We operate with expert guides and certified equipment, maintaining a record of zero risk in all our activities.
-                        </p>
-                    </div>
-                    <div class="faq__item">
-                        <h4 class="faq__question">4. What should I bring to the tours?</h4>
-                        <p class="faq__answer">
-                            We always recommend <strong>sunscreen, water, and comfortable clothes</strong>. For specific activities like diving or trekking, we will provide you with a detailed list at the time of your reservation.
-                        </p>
+                    <div class="bg-white p-10 rounded-[1.5rem] shadow-md border border-black/[0.03]">
+                        <h3 class="text-xl font-extrabold text-primary mb-4">Is it safe to travel with SolyMar?</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Absolutely. <strong>Safety is our priority</strong>. We operate with expert guides and certified equipment.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonials -->
-        <section class="testimonials">
-            <div class="testimonials__container">
-                <div class="testimonials__header">
-                    <span class="testimonials__subtitle">TESTIMONIALS</span>
-                    <h2 class="testimonials__title">What our travelers say about our Paracas Tours</h2>
-                </div>
-                <div class="testimonials__grid">
-                    <div class="testimonial-card">
-                        <img src="../img/testominio2.webp"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" alt="Client testimonial" loading="lazy" decoding="async" />
-                        <p class="testimonial-card__quote">"What a wonderful Experience! Paragliding, trekking and diving were incredible, the attention from the manager was more than excellent. Thanks..."
-                        </p>
-                        <p class="testimonial-card__author">Fernando</p>
+        <section class="py-24 bg-surface-container-low px-8">
+            <div class="max-w-[1536px] mx-auto text-center">
+                <span class="text-sm font-bold tracking-widest uppercase text-on-surface-variant block mb-4">TESTIMONIALS</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tight">What our adventurers say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    <div class="bg-surface p-10 rounded-[1.5rem] shadow-sm border border-black/5 flex flex-col gap-6">
+                        <p class="text-lg italic text-on-surface-variant leading-relaxed">"Incredible diving experience. The instructors are very professional. Highly recommended!"</p>
+                        <h4 class="font-bold text-primary mt-auto">— Carlos Rodríguez</h4>
                     </div>
-                    <div class="testimonial-card">
-                        <img src="../img/testimonio1.webp"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" alt="Client testimonial" loading="lazy" decoding="async" />
-                        <p class="testimonial-card__quote">"Everything was great, the contact with Solymar was very good, she helped us coordinate everything, we had a lot of fun, highly recommended."
-                        </p>
-                        <p class="testimonial-card__author">Daniela</p>
+                    <div class="bg-surface p-10 rounded-[1.5rem] shadow-sm border border-black/5 flex flex-col gap-6">
+                        <p class="text-lg italic text-on-surface-variant leading-relaxed">"Golden Shadows Trek was the highlight of my trip. The landscape is something I will never forget."</p>
+                        <h4 class="font-bold text-primary mt-auto">— Sarah Johnson</h4>
                     </div>
-                    <div class="testimonial-card">
-                        <img src="../img/testimonio3.webp"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" alt="Client testimonial" loading="lazy" decoding="async" />
-                        <p class="testimonial-card__quote">"The diving experience was unique, my first time and I felt very safe. The instructor was very patient. I will definitely come back."
-                        </p>
-                        <p class="testimonial-card__author">Juan</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <img src="../img/testiomonio4.webp"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem;" alt="Testiomonio4 in Paracas" loading="lazy" decoding="async" />
-                        <p class="testimonial-card__quote">"Paracas is beautiful and SolyMar makes everything easier. They picked us up from the hotel and were very punctual. Top service!"
-                        </p>
-                        <p class="testimonial-card__author">Elena</p>
+                    <div class="bg-surface p-10 rounded-[1.5rem] shadow-sm border border-black/5 flex flex-col gap-6">
+                        <p class="text-lg italic text-on-surface-variant leading-relaxed">"Excellent service from the first contact. Everything was very organized and punctual."</p>
+                        <h4 class="font-bold text-primary mt-auto">— Miguel Ángel</h4>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact CTA -->
-        <section class="contact-cta">
-            <div class="contact-cta__container">
-                <h2 class="contact-cta__title">Book your next adventure in Paracas today</h2>
-                <p class="contact-cta__text">
-                    Contact us today and let's plan your perfect experience in Paracas with the <strong>best price</strong> and <strong>certified guides</strong>.
-                </p>
+        <section class="py-24 px-8 bg-primary text-center text-white">
+            <div class="max-w-[600px] mx-auto">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Book your adventure today</h2>
+                <p class="text-xl text-white/90 mb-12">Contact us now and reserve your personalized tour in Paracas with certified guides.</p>
                 <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+contact+your+agency+for+a+Tour"
-                    class="contact-cta__button">Contact by WhatsApp</a>
+                    class="inline-block bg-white text-primary py-5 px-12 rounded-full text-sm font-extrabold tracking-widest uppercase shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Book Now</a>
             </div>
         </section>
     </main>

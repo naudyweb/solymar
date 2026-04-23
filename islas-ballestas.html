@@ -88,110 +88,177 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image" src="img/Ballestas.webp" alt="Islas Ballestas" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
+    <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+        <div class="absolute inset-0 -z-10 group">
+            <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="img/Ballestas.webp" alt="Islas Ballestas" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
         </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Inicio</a> / Experiencias / Islas Ballestas</p>
-            <h1 class="hero__title">Islas Ballestas</h1>
-            <p class="hero__subtitle">El archipiélago que alberga una biodiversidad marina extraordinaria.</p>
+        <div class="relative z-10 max-w-[900px] text-white">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Inicio</a> / Experiencias / Islas Ballestas</p>
+            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">Islas Ballestas</h1>
+            <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">Descubre el archipiélago que alberga la biodiversidad marina más rica de la costa peruana.</p>
         </div>
     </section>
 
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>La Joya del Pacífico</h2>
-                <p>Las <strong>Islas Ballestas</strong> son un archipiélago ubicado frente a las costas de Paracas, en la región de Ica. Conocidas como las "Galápagos del Perú", estas islas son el hogar de una increíble diversidad de vida marina y aves marinas.</p>
-                <p>El tour a las Islas Ballestas es una experiencia imperdible durante tu visita a Paracas. Durante el recorrido en barco, podrás observar <strong>lobos de mar, pingüinos de Humboldt, pelícanos</strong>, fragatas y una gran variedad de aves marinas. Las formaciones rocosas de las islas crean un paisaje único e impresionante.</p>
-                <p>Las islas también son famosas por el <strong>"Candelabro"</strong>, una enorme figura geoglifo tallada en la ladera de una de las islas, visible solo desde el mar. Este misterio arqueológico añade un elemento de historia y aventura a tu tour.</p>
-                <h2>¿Por qué visitar las Islas Ballestas?</h2>
-                <ul>
-                    <li><span class="material-symbols-outlined">pets</span><div><strong>Fauna Marina</strong><p>Observa lobos de mar, pingüinos y aves en su hábitat natural.</p></div></li>
-                    <li><span class="material-symbols-outlined">history</span><div><strong>El Candelabro</strong><p>El misterioso geoglifo visible solo desde el mar.</p></div></li>
-                    <li><span class="material-symbols-outlined">photo_camera</span><div><strong>Paisajes Únicos</strong><p>Formaciones rocosas impressionantes y aguas cristalinas.</p></div></li>
-                    <li><span class="material-symbols-outlined">wb_sunny</span><div><strong>Tour Completo</strong><p>Incluye visita a la Reserva Nacional de Paracas.</p></div></li>
-                </ul>
-            </div>
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Reservar Tour</h3>
-                    <p class="booking-card__price">S/ 80</p>
-                    <p class="booking-card__price-note">Por persona</p>
-                    <ul class="booking-card__features">
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Barco turístico</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Guía especializado</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Duración: 2 horas</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Visita al Candelabro</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Seguro de viaje</span></li>
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+            <div class="flex flex-col gap-12 text-left">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">La Joya del Pacífico</h2>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Las <strong>Islas Ballestas</strong> son conocidas como las "Galápagos del Perú". Este archipiélago es el hogar de una increíble diversidad de vida marina y aves guaneras.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Durante el recorrido en lancha moderna, podrás observar <strong>lobos de mar, pingüinos de Humboldt</strong> y miles de aves en su hábitat natural protegido.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">El tour incluye la vista al misterioso <strong>"Candelabro"</strong>, un geoglifo gigante grabado en la arena que solo puede apreciarse desde el mar.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">¿Por qué visitar las Ballestas?</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">pets</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Fauna Marina</strong>
+                                <p class="text-on-surface-variant">Observa de cerca a los lobos de mar y pingüinos en total libertad.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">history</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">El Candelabro</strong>
+                                <p class="text-on-surface-variant">Descubre el enigma de este geoglifo milenario frente a la costa.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">photo_camera</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Paisajes Únicos</strong>
+                                <p class="text-on-surface-variant">Formaciones rocosas naturales y cuevas marinas impresionantes.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">wb_sunny</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Tour Familiar</strong>
+                                <p class="text-on-surface-variant">Actividad educativa y emocionante apta para todas las edades.</p>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Tour+a+Islas+Ballestas" class="booking-card__cta">Reservar Ahora</a>
-                    <p class="booking-card__note">* Salidas diarias | Niños menores de 5 años gratis</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Reservar Tour</h3>
+                    <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 80</p>
+                    <p class="text-on-surface-variant mb-8 font-medium">Por persona</p>
+                    <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Lancha turística moderna</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Guía bilingüe certificado</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Duración: 2 horas aprox.</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Visita al Candelabro</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Seguro de pasajeros</span>
+                        </li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Tour+a+Islas+Ballestas" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Reservar Ahora</a>
+                    <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Salidas diarias desde el muelle de Paracas</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="wildlife">
-        <div class="wildlife__container">
-            <h2 class="wildlife__title">Vida Silvestre</h2>
-            <div class="wildlife__grid">
-                <div class="wildlife__item">
-                    <span class="material-symbols-outlined wildlife__item-icon">cruelty_free</span>
-                    <h4 class="wildlife__item-title">Lobos de Mar</h4>
-                    <p class="wildlife__item-text">Miles de lobos de mar habitan las islas. Podrás verlos descansando en las rocas o nadando en el agua.</p>
+    <section class="py-24 px-8 bg-surface-container-low text-center md:text-left">
+        <div class="max-w-[1536px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tight text-center">Vida Silvestre</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">cruelty_free</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Lobos de Mar</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Miles de lobos de mar habitan las islas. Podrás verlos descansando o nadando cerca de la lancha.</p>
                 </div>
-                <div class="wildlife__item">
-                    <span class="material-symbols-outlined wildlife__item-icon">egg</span>
-                    <h4 class="wildlife__item-title">Pingüinos de Humboldt</h4>
-                    <p class="wildlife__item-text">Una pequeña colonia de pingüinos vive en las islas. Es una de las pocas oportunidades de verlos en Perú.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">egg</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Pingüinos</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Hogar de pingüinos de Humboldt. Es una de las pocas oportunidades de verlos en su entorno natural.</p>
                 </div>
-                <div class="wildlife__item">
-                    <span class="material-symbols-outlined wildlife__item-icon">flutter_dash</span>
-                    <h4 class="wildlife__item-title">Aves Marinas</h4>
-                    <p class="wildlife__item-text">Pelícanos, fragatas, gaviotas y albatros son algunos de los cientos de aves que verás.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">flutter_dash</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Aves Marinas</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Pelícanos, fragatas y piqueros cubren los cielos de las islas en un espectáculo visual increíble.</p>
                 </div>
-                <div class="wildlife__item">
-                    <span class="material-symbols-outlined wildlife__item-icon">water</span>
-                    <h4 class="wildlife__item-title">Delfines</h4>
-                    <p class="wildlife__item-text">En temporada, es posible observar delfines nadando cerca de las islas.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">water</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Delfines</h4>
+                    <p class="text-on-surface-variant leading-relaxed">En temporada, es muy frecuente observar delfines juguetones acompañando el recorrido.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="gallery">
-        <div class="gallery__container">
-            <h2 class="gallery__title">Galería de fotos de las Islas Ballestas</h2>
-            <div class="gallery__grid">
-                <div class="gallery__item"><img class="gallery__item-image" src="img/Ballestas.webp" alt="Islas Ballestas" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="img/yate.webp" alt="Yate en Paracas" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="img/Ballestas.webp" alt="Islas Ballestas" loading="lazy" decoding="async" /></div>
+    <section class="py-24 px-8 max-w-[1536px] mx-auto">
+        <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Galería Ballestas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Ballestas.webp" alt="Islas Ballestas" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/yate.webp" alt="Yate en Paracas" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Ballestas.webp" alt="Islas Ballestas" loading="lazy" decoding="async" />
             </div>
         </div>
     </section>
 
-    <section class="includes">
-        <div class="includes__container">
-            <h2 class="includes__title">¿Qué está incluido en tu tour a las Islas Ballestas?</h2>
-            <div class="includes__grid">
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">directions_boat</span><h4 class="includes__item-title">Barco Seguro</h4><p class="includes__item-text">Embarcación con todos los permisos y seguridad</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">person</span><h4 class="includes__item-title">Guía Certificado</h4><p class="includes__item-text">Guía local con conocimiento de la fauna y historia</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">visibility</span><h4 class="includes__item-title">Tour Completo</h4><p class="includes__item-text">Recorrido por todas las islas y el Candelabro</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">health_and_safety</span><h4 class="includes__item-title">Seguro</h4><p class="includes__item-text">Seguro de viaje incluido para tu tranquilidad</p></div>
+    <section class="py-24 px-8 bg-surface-container">
+        <div class="max-w-[1536px] mx-auto">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Lo que incluye tu tour</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">directions_boat</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Lancha Segura</h4>
+                    <p class="text-sm text-on-surface-variant">Embarcación moderna con chalecos y equipo de seguridad.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Guía Experto</h4>
+                    <p class="text-sm text-on-surface-variant">Guía local especializado en fauna y la historia de Paracas.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">visibility</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Tour Completo</h4>
+                    <p class="text-sm text-on-surface-variant">Recorrido panorámico por todas las islas y El Candelabro.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">health_and_safety</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Seguro</h4>
+                    <p class="text-sm text-on-surface-variant">Seguro de accidentes para todos los pasajeros a bordo.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
-        <h2 class="cta__title">Reserva tu tour a las Islas Ballestas al mejor precio</h2>
-        <p class="cta__text">Reserva tu experiencia en las Islas Ballestas ahora con total <strong>seguridad</strong>.</p>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Tour+a+Islas+Ballestas" class="cta__button">Reservar Ahora</a>
+    <section class="py-24 px-8 bg-primary text-center text-white">
+        <div class="max-w-[800px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">Reserva tu tour a las Ballestas</h2>
+            <p class="text-xl text-white/90 mb-12 leading-relaxed">Asegura tu lugar en la excursión más famosa de Paracas con total seguridad y al mejor precio.</p>
+            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Tour+a+Islas+Ballestas" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Reservar Ahora</a>
+        </div>
     </section>
 
     <footer class="footer"></footer>

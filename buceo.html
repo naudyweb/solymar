@@ -89,176 +89,178 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image"
+    <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+        <div class="absolute inset-0 -z-10 group">
+            <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100"
                 src="img/Buceador-Principal.webp" alt="Buceo en Paracas" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
         </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Inicio</a> / Experiencias / Buceo</p>
-            <h1 class="hero__title">Tour de Buceo en Paracas</h1>
-            <p class="hero__subtitle">Sumérgete en las profundidades del Pacífico con la mejor seguridad y guías certificados.</p>
+        <div class="relative z-10 max-w-[900px] text-white">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Inicio</a> / Experiencias / Buceo</p>
+            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">Tour de Buceo en Paracas</h1>
+            <p class="text-xl opacity-90 max-w-[600px] mx-auto">Sumérgete en las profundidades del Pacífico con la mejor seguridad y guías certificados.</p>
         </div>
     </section>
 
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>Descubre el mundo submarino en tu tour de buceo</h2>
-                <p>
-                    El <strong>buceo en Paracas</strong> es una experiencia única que te permite explorar las aguas profundas del Pacífico 
-                    y descubrir la rica biodiversidad marina de la <strong>Reserva Nacional de Paracas</strong> al mejor precio. Con temperaturas agradables 
-                    durante todo el año y excelente visibilidad, Paracas es el destino perfecto para buceadores de todos los niveles.
-                </p>
-                <p>
-                    Durante tu inmersión, podrás observar <strong>lobos de mar, tortugas marinas, rayas</strong> y una gran 
-                    variedad de peces tropicales. Las formaciones rocosas y los naufragios crean un ecosistema perfecto 
-                    para la vida marina en esta zona protegida.
-                </p>
-                <p>
-                    No necesitas experiencia previa para disfrutar de un <strong>bautismo de buceo en Paracas</strong>. Nuestros <strong>instructores certificados</strong> y guías expertos te brindarán una charla técnica detallada y te enseñarán todo lo necesario sobre el equipo y las señales bajo el agua, garantizando tu <strong>seguridad</strong> en todo momento para que disfrutes de esta <strong>actividad de aventura</strong> de manera divertida e inolvidable.
-                </p>
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+            <div class="flex flex-col gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Descubre el mundo submarino</h2>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        El <strong>buceo en Paracas</strong> es una experiencia única que te permite explorar las aguas profundas del Pacífico 
+                        y descubrir la rica biodiversidad marina de la <strong>Reserva Nacional de Paracas</strong> al mejor precio.
+                    </p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Durante tu inmersión, podrás observar <strong>lobos de mar, tortugas marinas, rayas</strong> y una gran 
+                        variedad de peces tropicales. Las formaciones rocosas crean un ecosistema perfecto.
+                    </p>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        No necesitas experiencia previa para disfrutar de un <strong>bautismo de buceo</strong>. Nuestros <strong>instructores certificados</strong> te enseñarán todo lo necesario.
+                    </p>
+                </div>
 
-                <h2>Especies marinas que verás en tu aventura</h2>
-                <ul>
-                    <li>
-                        <span class="material-symbols-outlined">water</span>
-                        <div>
-                            <strong>Lobos Marinos</strong>
-                            <p>Interactúa con los curiosos lobos de mar que habitan en las aguas de Paracas.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined">set_meal</span>
-                        <div>
-                            <strong>Tortugas Marinas</strong>
-                            <p>Observa a las tortugas marinas nadando gracefulmente entre los corales.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined">cruelty_free</span>
-                        <div>
-                            <strong>Diversos Peces</strong>
-                            <p>Descubre cardúmenes de peces tropicales y especies únicas del Pacífico.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined">water</span>
-                        <div>
-                            <strong>Formaciones Rocosas</strong>
-                            <p>Explora cuevas y formaciones rocosas que albergan vida marina.</p>
-                        </div>
-                    </li>
-                </ul>
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Especies marinas que verás</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">water</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Lobos Marinos</strong>
+                                <p class="text-on-surface-variant">Interactúa con los curiosos lobos de mar que habitan en las aguas de Paracas.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">set_meal</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Tortugas Marinas</strong>
+                                <p class="text-on-surface-variant">Observa a las tortugas marinas nadando entre los arrecifes rocosos.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">cruelty_free</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Diversos Peces</strong>
+                                <p class="text-on-surface-variant">Descubre cardúmenes de peces tropicales y especies únicas del Pacífico.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">water</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Formaciones Rocosas</strong>
+                                <p class="text-on-surface-variant">Explora cuevas y formaciones rocosas que albergan vida marina.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Reservar Buceo</h3>
-                    <p class="booking-card__price">S/ 280</p>
-                    <p class="booking-card__price-note">Por persona (Bautismo)</p>
-                    <ul class="booking-card__features">
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
+            <div>
+                <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Reservar Buceo</h3>
+                    <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 280</p>
+                    <p class="text-on-surface-variant mb-8 font-medium">Por persona (Bautismo)</p>
+                    <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
                             <span>Equipo de buceo completo</span>
                         </li>
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
                             <span>Instructor PADI certificado</span>
                         </li>
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
                             <span>Traje de neopreno</span>
                         </li>
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
                             <span>2 inmersiones</span>
                         </li>
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
                             <span>Duración: 4-5 horas</span>
                         </li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Buceo+en+Paracas" class="booking-card__cta">Reservar Ahora</a>
-                    <p class="booking-card__note">* Mínimo 2 personas | Sin experiencia necesaria</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Buceo+en+Paracas" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Reservar Ahora</a>
+                    <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Mínimo 2 personas | Sin experiencia necesaria</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="levels">
-        <div class="faq__container">
-            <h2 class="faq__title">Niveles de buceo disponibles para ti</h2>
-            <div class="faq__list">
-                <div class="faq__item">
-                    <h4 class="faq__question">Bautismo de Buceo (Discover Scuba Diving)</h4>
-                    <p class="faq__answer">Perfecto para principiantes. Una inmersión superficial con instructor privado. No se requiere experiencia previa.</p>
+    <section class="py-24 px-8 bg-surface-container-low">
+        <div class="max-w-[800px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary text-center mb-16 tracking-tight">Niveles de buceo</h2>
+            <div class="flex flex-col gap-6">
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Bautismo de Buceo (Discover Scuba)</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Perfecto para principiantes. Una inmersión superficial con instructor privado. No se requiere experiencia previa.</p>
                 </div>
-                <div class="faq__item">
-                    <h4 class="faq__question">Inmersiones para Certificados</h4>
-                    <p class="faq__answer">Para buceadores con certificación. Dos inmersiones en los mejores puntos de Paracas.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Inmersiones para Certificados</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Para buceadores con certificación. Dos inmersiones en los mejores puntos de Paracas.</p>
                 </div>
-                <div class="faq__item">
-                    <h4 class="faq__question">Curso de Certificación PADI</h4>
-                    <p class="faq__answer">Obtén tu certificación PADI Open Water. 3-4 días de teoría y prácticas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="gallery">
-        <div class="gallery__container">
-            <h2 class="gallery__title">Galería de fotos de buceo en Paracas</h2>
-            <div class="gallery__grid">
-                <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Buceo.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
-                </div>
-                <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Buceo.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
-                </div>
-                <div class="gallery__item">
-                    <img class="gallery__item-image" src="img/Buceador-Principal.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Curso de Certificación PADI</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Obtén tu certificación PADI Open Water. 3-4 días de teoría y prácticas intensivas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="includes">
-        <div class="includes__container">
-            <h2 class="includes__title">Lo que incluye tu experiencia de buceo</h2>
-            <div class="includes__grid">
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">scuba_diving</span>
-                    <h4 class="includes__item-title">Equipo Completo</h4>
-                    <p class="includes__item-text">Traje, regulador, chaleco, máscara y aletas</p>
+    <section class="py-24 px-8 max-w-[1536px] mx-auto">
+        <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Galería de fotos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Buceo.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Buceo.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="img/Buceador-Principal.webp" alt="Buceo en Paracas" loading="lazy" decoding="async" />
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-8 bg-surface-container">
+        <div class="max-w-[1536px] mx-auto">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Lo que incluye tu experiencia</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-10 rounded-2xl shadow-sm text-center border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">scuba_diving</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Equipo Completo</h4>
+                    <p class="text-sm text-on-surface-variant">Traje, regulador, chaleco, máscara y aletas</p>
                 </div>
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">person</span>
-                    <h4 class="includes__item-title">Instructor Certificado</h4>
-                    <p class="includes__item-text">Instructor PADI con años de experiencia</p>
+                <div class="bg-white p-10 rounded-2xl shadow-sm text-center border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Instructor Certificado</h4>
+                    <p class="text-sm text-on-surface-variant">Instructor PADI con años de experiencia</p>
                 </div>
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">directions_boat</span>
-                    <h4 class="includes__item-title">Bote de Apoyo</h4>
-                    <p class="includes__item-text">Bote de seguridad durante toda la inmersión</p>
+                <div class="bg-white p-10 rounded-2xl shadow-sm text-center border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">directions_boat</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Bote de Apoyo</h4>
+                    <p class="text-sm text-on-surface-variant">Bote de seguridad durante toda la inmersión</p>
                 </div>
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">restaurant</span>
-                    <h4 class="includes__item-title">Refrigerio</h4>
-                    <p class="includes__item-text">Snack y bebida después de la inmersión</p>
+                <div class="bg-white p-10 rounded-2xl shadow-sm text-center border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">restaurant</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Refrigerio</h4>
+                    <p class="text-sm text-on-surface-variant">Snack y bebida después de la inmersión</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
-        <h2 class="cta__title">Reserva tu tour de buceo al mejor precio</h2>
-        <p class="cta__text">Vive la mejor aventura submarina en la Reserva Nacional de Paracas con guías certificados y seguridad garantizada.</p>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Buceo+en+Paracas" class="cta__button">Reservar Ahora</a>
+    <section class="py-24 px-8 bg-primary text-center text-white">
+        <div class="max-w-[800px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">Reserva tu tour de buceo al mejor precio</h2>
+            <p class="text-xl text-white/90 mb-12 leading-relaxed">Vive la mejor aventura submarina en la Reserva Nacional de Paracas con guías certificados y seguridad garantizada.</p>
+            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%2C+quiero+reservar+Buceo+en+Paracas" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Reservar Ahora</a>
+        </div>
     </section>
 
     <footer class="footer"></footer>

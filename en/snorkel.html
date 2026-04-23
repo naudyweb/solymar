@@ -82,139 +82,166 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image"
-                src="../img/Snorkel.webp" alt="Snorkeling tour in Paracas" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
-        </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Home</a> / Experiences / Snorkeling</p>
-            <h1 class="hero__title">Snorkeling Tour in Paracas</h1>
-            <p class="hero__subtitle">Explore the crystal-clear waters of the Paracas National Reserve and discover the marine life of the Pacific with the <strong>best price</strong> and <strong>safety</strong> guaranteed.</p>
-        </div>
-    </section>
-
-    <!-- Content -->
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>An Unforgettable Experience with Certified Guides</h2>
-                <p>
-                    <strong>Snorkeling in Paracas</strong> is one of the most popular activities to enjoy Peru's marine nature. 
-                    The Paracas National Reserve is home to extraordinary marine biodiversity, with crystal-clear waters that allow 
-                    you to observe <strong>sea lions, penguins, pelicans</strong>, and a wide variety of tropical fish up close with the <strong>safety</strong> of our <strong>certified guides</strong>.
-                </p>
-                <p>
-                    During this experience, our <strong>certified guides</strong> will take you to the best snorkeling spots, where you can 
-                    swim alongside marine fauna in their natural habitat. The mild Pacific waters offer ideal conditions 
-                    for this activity all year round at the <strong>best price</strong>.
-                </p>
-                <p>
-                    No prior experience is required for this activity. Our team will provide you with all the 
-                    necessary <strong>snorkeling equipment</strong> and give you a brief instruction before entering the water.
-                </p>
-
-                <h2>What you will see on your Snorkeling tour in Paracas</h2>
-                <ul>
-                    <li>
-                        <span class="material-symbols-outlined">water</span>
-                        <div>
-                            <strong>Sea Lions</strong>
-                            <p>Observe the friendly sea lions resting on the rocks or swimming alongside you.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined">set_meal</span>
-                        <div>
-                            <strong>Various Fish Species</strong>
-                            <p>Discover schools of tropical fish and other marine species.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined">park</span>
-                        <div>
-                            <strong>Marine Flora</strong>
-                            <p>Admire the algae and aquatic plants that make up the marine ecosystem of Paracas.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined">visibility</span>
-                        <div>
-                            <strong>Crystal Clear Waters</strong>
-                            <p>Enjoy exceptional underwater visibility.</p>
-                        </div>
-                    </li>
-                </ul>
+    <main>
+        <!-- Hero -->
+        <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+            <div class="absolute inset-0 -z-10 group">
+                <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="../img/Snorkel.webp" alt="Snorkeling tour in Paracas"
+                    fetchpriority="high" decoding="async" />
+                <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
             </div>
-
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Book Snorkeling</h3>
-                    <p class="booking-card__price">S/ 150</p>
-                    <p class="booking-card__price-note">Per person</p>
-                    <ul class="booking-card__features">
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
-                            <span>Full snorkeling equipment</span>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
-                            <span>Certified guide</span>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
-                            <span>Boat transport</span>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">check_circle</span>
-                            <span>Travel insurance</span>
-                        </li>
-                    </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Snorkeling+in+Paracas" class="booking-card__cta">Book Now</a>
-                    <p class="booking-card__note">* Daily departures available.</p>
-                </div>
+            <div class="relative z-10 max-w-[900px] text-white">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Home</a> / Experiences / Snorkeling</p>
+                <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">Snorkeling in Paracas</h1>
+                <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">Explore the crystal-clear waters of the National Reserve and discover marine life with total safety.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="includes">
-        <div class="includes__container">
-            <h2 class="includes__title">What's included?</h2>
-            <div class="includes__grid">
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">scuba_diving</span>
-                    <h4 class="includes__item-title">Equipment</h4>
-                    <p class="includes__item-text">Mask, snorkel, fins, and wetsuit</p>
+        <!-- Content -->
+        <section class="py-24 px-8 bg-surface">
+            <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+                <div class="flex flex-col gap-12 text-left">
+                    <div>
+                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">An Unforgettable Experience</h2>
+                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                            <strong>Snorkeling in Paracas</strong> is one of the best ways to experience Peru's marine nature. The National Reserve is home to extraordinary biodiversity.
+                        </p>
+                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                            Our <strong>certified guides</strong> will take you to the best spots, where you can swim alongside sea lions and penguins in their natural habitat.
+                        </p>
+                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                            No prior experience is required. Our team will provide all the necessary <strong>equipment</strong> and training.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">What you will discover</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">water</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Sea Lions</strong>
+                                    <p class="text-on-surface-variant">Observe friendly sea lions resting on the rocks or swimming near you.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">set_meal</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Fish Species</strong>
+                                    <p class="text-on-surface-variant">Discover schools of tropical fish and other marine species of the Pacific.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">park</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Marine Flora</strong>
+                                    <p class="text-on-surface-variant">Admire the unique algae and plants that make up the Paracas ecosystem.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">visibility</span>
+                                <div>
+                                    <strong class="block text-xl text-on-surface mb-2 font-extrabold">Crystal Waters</strong>
+                                    <p class="text-on-surface-variant">Enjoy exceptional underwater visibility in the National Reserve.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">person</span>
-                    <h4 class="includes__item-title">Guide</h4>
-                    <p class="includes__item-text">Bilingual instructor and guide</p>
-                </div>
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">directions_boat</span>
-                    <h4 class="includes__item-title">Transport</h4>
-                    <p class="includes__item-text">Boat trip to the reserve</p>
-                </div>
-                <div class="includes__item">
-                    <span class="material-symbols-outlined includes__icon">health_and_safety</span>
-                    <h4 class="includes__item-title">Safety</h4>
-                    <p class="includes__item-text">Insurance and emergency equipment</p>
+
+                <div>
+                    <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                        <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Book Snorkeling</h3>
+                        <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 150</p>
+                        <p class="text-on-surface-variant mb-8 font-medium">Per person</p>
+                        <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Full snorkeling equipment</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Certified local guide</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Wetsuit included</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Boat transport</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                                <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                                <span>Duration: 2-3 hours</span>
+                            </li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Snorkeling+in+Paracas"
+                            class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Book Now</a>
+                        <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Book at least 24h in advance</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta">
-        <h2 class="cta__title">Ready to dive in?</h2>
-        <p class="cta__text">Book your snorkeling experience in Paracas now.</p>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Snorkeling+in+Paracas" class="cta__button">Book Now</a>
-    </section>
+        <!-- Gallery -->
+        <section class="py-24 px-8 max-w-[1536px] mx-auto text-center">
+            <h2 class="text-4xl font-extrabold text-primary mb-16 tracking-tight">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                    <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/Snorkel.webp" alt="Snorkeling tour in Paracas" loading="lazy" decoding="async" />
+                </div>
+                <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                    <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/Snorkel.webp" alt="Snorkeling tour in Paracas" loading="lazy" decoding="async" />
+                </div>
+                <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                    <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/Snorkel.webp" alt="Snorkeling tour in Paracas" loading="lazy" decoding="async" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Includes -->
+        <section class="py-24 px-8 bg-surface-container">
+            <div class="max-w-[1536px] mx-auto">
+                <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">What's included in your tour</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">mask</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Equipment</h4>
+                        <p class="text-sm text-on-surface-variant">High-quality mask, snorkel, and fins.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Expert Guide</h4>
+                        <p class="text-sm text-on-surface-variant">Professional instructor with years of experience.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">directions_boat</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Boat Trip</h4>
+                        <p class="text-sm text-on-surface-variant">Round trip boat transport to the Reserve.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                        <span class="material-symbols-outlined text-6xl text-primary mb-6">waves</span>
+                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Wetsuit</h4>
+                        <p class="text-sm text-on-surface-variant">Full wetsuit for thermal protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 px-8 bg-primary text-center text-white">
+            <div class="max-w-[800px] mx-auto">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">Ready for adventure?</h2>
+                <p class="text-xl text-white/90 mb-12 leading-relaxed">Book your snorkeling experience in Paracas today with certified local guides.</p>
+                <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Snorkeling+in+Paracas"
+                    class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Book Now</a>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer"></footer>
     <script src="../js/header.js"></script>

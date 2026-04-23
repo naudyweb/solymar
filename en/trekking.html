@@ -82,77 +82,165 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image" src="../img/trekking.webp" alt="Trekking in Paracas" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
+    <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+        <div class="absolute inset-0 -z-10 group">
+            <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="../img/trekking.webp" alt="Trekking in Paracas" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
         </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Home</a> / Experiences / Trekking</p>
-            <h1 class="hero__title">Golden Shadows Trek</h1>
-            <p class="hero__subtitle">Walk through ancient cliffs and golden dunes at sunset.</p>
+        <div class="relative z-10 max-w-[900px] text-white">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Home</a> / Experiences / Trekking</p>
+            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">Trekking in Paracas</h1>
+            <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">Explore desert trails and discover the natural beauty of the National Reserve.</p>
         </div>
     </section>
 
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>A Walk Between Two Worlds</h2>
-                <p>The <strong>Golden Shadows Trek</strong> is one of the most magical experiences in the Paracas National Reserve. This hike takes you through millennial desert landscapes, following trails that wind between huge cliffs and the Pacific Ocean.</p>
-                <p>The best time for this trekking is in the afternoon, when the sun begins to set and the light turns the dunes a vibrant golden color, creating the famous "golden shadows." It is a unique opportunity for nature and photography lovers.</p>
-                <p>Our <strong>expert guides</strong> will share stories about the geology and history of the region while leading you safely through the most impressive viewpoints of the reserve.</p>
-                <h2>What will you experience?</h2>
-                <ul>
-                    <li><span class="material-symbols-outlined">wb_twilight</span><div><strong>Golden Sunset</strong><p>Witness one of the most beautiful sunsets on the Peruvian coast.</p></div></li>
-                    <li><span class="material-symbols-outlined">terrain</span><div><strong>Millennial Cliffs</strong><p>Walk alongside impressive geological formations and cliffs.</p></div></li>
-                    <li><span class="material-symbols-outlined">camera_enhance</span><div><strong>Dreamlike Landscapes</strong><p>A perfect setting for spectacular photographs.</p></div></li>
-                    <li><span class="material-symbols-outlined">nature</span><div><strong>Pure Nature</strong><p>Connect with the silence and majesty of the desert.</p></div></li>
-                </ul>
-            </div>
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Book Trekking</h3>
-                    <p class="booking-card__price">Consult</p>
-                    <p class="booking-card__price-note">Per person</p>
-                    <ul class="booking-card__features">
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Certified guide</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Private transport</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Entrance to the reserve</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Safety equipment</span></li>
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+            <div class="flex flex-col gap-12 text-left">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">A Desert Adventure</h2>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Trekking in Paracas is a unique experience that allows you to explore impressive natural landscapes. From golden sand dunes to ancient rock formations.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">The region is known for its "colored mountains." The <strong>Golden Shadows Trek</strong> is one of the most popular routes, especially at sunset.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">No prior experience is required. Our routes are designed for different levels, always with <strong>certified guides</strong>.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">What you will discover</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">terrain</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Colored Mountains</strong>
+                                <p class="text-on-surface-variant">Unique geological formations with golden, red, and ocher tones.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">wb_sunny</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Unique Sunsets</strong>
+                                <p class="text-on-surface-variant">The desert is dyed in intense colors during sunset.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">local_florist</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Desert Flora</strong>
+                                <p class="text-on-surface-variant">Plants adapted to this extreme and fascinating ecosystem.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">photo_camera</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Dreamy Landscapes</strong>
+                                <p class="text-on-surface-variant">Perfect scenes for nature and adventure photography.</p>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Golden+Shadows+Trek" class="booking-card__cta">Book Now</a>
-                    <p class="booking-card__note">* Recommended: Wear comfortable shoes and sunscreen.</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Book Trekking</h3>
+                    <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 120</p>
+                    <p class="text-on-surface-variant mb-8 font-medium">Per person</p>
+                    <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Certified local guide</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Transport from your hotel</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Water and snacks</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Duration: 3-4 hours</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Difficulty: Medium</span>
+                        </li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Trekking+in+Paracas" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Book Now</a>
+                    <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Wear comfortable shoes and sunscreen</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="routes">
-        <div class="faq__container">
-            <h2 class="faq__title">Available Trekking Route</h2>
-            <div class="faq__list">
-                <div class="faq__item">
-                    <h4 class="faq__question">Golden Shadows Trek + Pink Lagoon (No extra charge)</h4>
-                    <p class="faq__answer">
-                        Our most complete route through ancient cliffs and golden dunes at sunset. We include the Pink Lagoon visit as a special benefit at no extra cost for our clients.
-                    </p>
+    <section class="py-24 px-8 bg-surface-container-low text-center md:text-left">
+        <div class="max-w-[800px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tight text-center">Available Routes</h2>
+            <div class="flex flex-col gap-6">
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Golden Shadows Trek + Pink Lagoon</h4>
+                    <p class="text-on-surface-variant leading-relaxed">Our most complete route that covers ancient cliffs and golden dunes at sunset. We include the visit to the Pink Lagoon as a special benefit.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
-        <h2 class="cta__title">Book your Trekking adventure in Paracas today</h2>
-        <p class="cta__text">Book your trekking experience in Paracas now at the <strong>best price</strong>.</p>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Golden+Shadows+Trek" class="cta__button">Book Now</a>
+    <section class="py-24 px-8 max-w-[1536px] mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/trekking.webp" alt="Trekking in Paracas" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/trekking.webp" alt="Trekking in Paracas" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/trekking.webp" alt="Trekking in Paracas" loading="lazy" decoding="async" />
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-8 bg-surface-container">
+        <div class="max-w-[1536px] mx-auto">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">What's included in your tour</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Certified Guide</h4>
+                    <p class="text-sm text-on-surface-variant">Local guide with extensive knowledge of the area.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">directions_car</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Transport</h4>
+                    <p class="text-sm text-on-surface-variant">Included transfer from your hotel in Paracas.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">local_drink</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Refreshments</h4>
+                    <p class="text-sm text-on-surface-variant">Water and snacks provided during the hike.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">photo_camera</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Photos</h4>
+                    <p class="text-sm text-on-surface-variant">Professional photos of your experience included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-8 bg-primary text-center text-white">
+        <div class="max-w-[800px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">Reserve your Trekking adventure</h2>
+            <p class="text-xl text-white/90 mb-12 leading-relaxed">Book your Paracas trekking experience now with total safety and expert guides.</p>
+            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Trekking+in+Paracas" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Book Now</a>
+        </div>
     </section>
 
     <footer class="footer"></footer>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
 </body>
-
 </html>

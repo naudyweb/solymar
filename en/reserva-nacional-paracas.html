@@ -88,69 +88,119 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image" src="../img/Reserva nacional de Paracas.webp" alt="Paracas National Reserve" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
+    <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+        <div class="absolute inset-0 -z-10 group">
+            <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="../img/Reserva nacional de Paracas.webp" alt="Paracas National Reserve" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
         </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Home</a> / Experiences / National Reserve</p>
-            <h1 class="hero__title">Paracas National Reserve Tour: Where Desert Meets Ocean</h1>
-            <p class="hero__subtitle">Explore the majestic contrast where the world's driest desert meets the Pacific Ocean with total safety.</p>
+        <div class="relative z-10 max-w-[900px] text-white">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Home</a> / Experiences / National Reserve</p>
+            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">National Reserve</h1>
+            <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">Explore the majestic contrast where the driest desert meets the blue Pacific Ocean.</p>
         </div>
     </section>
 
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>What you will see on your Paracas National Reserve adventure</h2>
-                <p>The <strong>Paracas National Reserve</strong> is the largest natural sanctuary on the Peruvian coast and an essential destination for nature lovers. On this land tour, we will explore breathtaking landscapes where the desert and the ocean unite in a unique harmony, guaranteeing an experience full of wonder and tranquility.</p>
-
-                <p>Accompanied by a <strong>certified guide</strong>, you will discover the fascinating geology of the area and the rich biodiversity that inhabits this protected ecosystem. Our commitment is to offer you the <strong>best price</strong> on the market without sacrificing quality or <strong>safety</strong> at every stage of the journey.</p>
-                
-                <h2>Detailed Tour Itinerary</h2>
-                <p>Our tour begins promptly at <strong>10:30 AM</strong>, departing from our office or picking you up from your hotel, and lasts approximately 3 hours of pure exploration:</p>
-                <ul>
-                    <li><span class="material-symbols-outlined">info</span><div><strong>Interpretation Center</strong><p>Visit the RNP information center to understand the local ecosystem.</p></div></li>
-                    <li><span class="material-symbols-outlined">landscape</span><div><strong>The Cathedral (La Catedral)</strong><p>Visit this famous natural rock formation, an icon of Paracas.</p></div></li>
-                    <li><span class="material-symbols-outlined">beach_access</span><div><strong>Iconic Beaches</strong><p>Panoramic tour of Red Beach (Playa Roja) and Yumaque Beach.</p></div></li>
-                    <li><span class="material-symbols-outlined">visibility</span><div><strong>Hike & Observation</strong><p>Visit the Flamingo viewpoint and observe marine fossils.</p></div></li>
-                    <li><span class="material-symbols-outlined">restaurant</span><div><strong>Lagunillas Beach</strong><p>Time for lunch and enjoying the ocean (optional).</p></div></li>
-                </ul>
-                <div style="margin-top: 30px;">
-                    <p>If you want to complement your trip, <a href="islas-ballestas.html" style="color: var(--primary); font-weight: 700;">see more Paracas tours like the Ballestas Islands</a>.</p>
-                    <p>Planning your trip from the capital? <a href="blog/lima-a-paracas" style="color: var(--primary); font-weight: 700;">Read our blog on how to get here from Lima safely</a>.</p>
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+            <div class="flex flex-col gap-12 text-left">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">A Natural Sanctuary</h2>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">The <strong>Paracas National Reserve</strong> is the largest natural sanctuary on the Peruvian coast. On this tour, we will explore breathtaking landscapes where the desert and the ocean unite in a unique harmony.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Accompanied by a <strong>certified guide</strong>, you will discover the fascinating geology of the area and the rich biodiversity that inhabits this protected ecosystem.</p>
                 </div>
-            </div>
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Book Tour</h3>
-                    <p class="booking-card__price">Consult</p>
-                    <p class="booking-card__price-note">Rate per person</p>
-                    <ul class="booking-card__features">
-                        <li><span class="material-symbols-outlined">check_circle</span><span>English/Spanish guide</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Round-trip transfer (In/Out)</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Transportation</span></li>
-                        <li><span class="material-symbols-outlined">error</span><span>Entrance fee not included (S/ 11.00)</span></li>
+
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Highlights of the Tour</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">info</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Interpretation</strong>
+                                <p class="text-on-surface-variant">Visit the visitor center to understand this unique coastal ecosystem.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">landscape</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">The Cathedral</strong>
+                                <p class="text-on-surface-variant">See the famous natural rock formation, a geological icon of Paracas.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">beach_access</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Emblematic Beaches</strong>
+                                <p class="text-on-surface-variant">Visit the Red Beach (Playa Roja) and other stunning coastal spots.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">visibility</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Observation</strong>
+                                <p class="text-on-surface-variant">Breathtaking viewpoints and observation of local flora and fauna.</p>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+Paracas+National+Reserve+Tour" class="booking-card__cta">Book Now</a>
-                    <p class="booking-card__note">* Daily departures at 10:30 AM.</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Book Tour</h3>
+                    <p class="text-5xl font-extrabold text-on-surface tracking-tight">Consult</p>
+                    <p class="text-on-surface-variant mb-8 font-medium">Rate per person</p>
+                    <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Bilingual certified guide</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Safe tourist transport</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Hotel pickup included</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-red-500 font-medium opacity-80">
+                            <span class="material-symbols-outlined font-bold">error</span>
+                            <span>Entrance fee not included (S/ 11)</span>
+                        </li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+National+Reserve+Tour" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Book Now</a>
+                    <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Daily departures at 10:30 AM</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="includes">
-        <div class="includes__container">
-            <h2 class="includes__title">What's included?</h2>
-            <div class="includes__grid">
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">directions_bus</span><h4 class="includes__item-title">Transportation</h4><p class="includes__item-text">Safe and shared mobility</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">person</span><h4 class="includes__item-title">Official Guide</h4><p class="includes__item-text">Expert information about the reserve</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">map</span><h4 class="includes__item-title">Full Route</h4><p class="includes__item-text">Visit to all key landmarks</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">close</span><h4 class="includes__item-title">Not Included</h4><p class="includes__item-text">Entrance fees (S/ 11) or Lunch</p></div>
+    <section class="py-24 px-8 bg-surface-container text-center">
+        <div class="max-w-[1536px] mx-auto">
+            <h2 class="text-4xl font-extrabold text-primary mb-16 tracking-tight">What's included in your tour</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">directions_bus</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Safe Transport</h4>
+                    <p class="text-sm text-on-surface-variant">Modern vehicle with all safety permits.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Official Guide</h4>
+                    <p class="text-sm text-on-surface-variant">Expert information about the history and nature.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">map</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Full Route</h4>
+                    <p class="text-sm text-on-surface-variant">Visit all key highlights of the Reserve.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2 opacity-60">
+                    <span class="material-symbols-outlined text-6xl text-on-surface-variant mb-6">close</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Not Included</h4>
+                    <p class="text-sm text-on-surface-variant">Entrance fees (S/ 11) or lunch at the beach.</p>
+                </div>
             </div>
         </div>
     </section>

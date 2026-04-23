@@ -28,81 +28,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/style.css" />
-    
-    <style>
-        .blog-hero { padding: 160px 20px 80px; background: var(--primary); color: white; text-align: center; }
-        .blog-section { padding: 80px 20px; max-width: 1400px; margin: 0 auto; }
-        .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem; }
-        
-        .blog-card {
-            position: relative;
-            border-radius: 2rem;
-            overflow: hidden;
-            text-decoration: none;
-            color: #ffffff;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            height: 480px;
-            background-color: var(--surface-container);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Paracas Travel Blog | Guides and Tips",
+      "description": "Discover the best tips for your trip to Paracas. How to get there, what to do, transport safety, and detailed guides for your adventure in southern Peru.",
+      "author": {
+        "@type": "Organization",
+        "name": "SolyMar Paracas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "SolyMar Paracas",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://solymarparacas.site/img/SolyMar-web.webp"
         }
-
-        .blog-card:hover { transform: translateY(-12px); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); }
-        .blog-card--large { grid-column: span 2; }
-
-        .blog-card__image-wrapper {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;
-        }
-
-        .blog-card__image {
-            width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .blog-card:hover .blog-card__image { transform: scale(1.1); }
-        .blog-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 20, 40, 0.9) 0%, rgba(0, 0, 0, 0) 60%); z-index: 1; }
-        .blog-card__content { position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem; z-index: 2; transition: all 0.3s ease; }
-        .blog-card__tag { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #a6c8ff; display: block; margin-bottom: 0.5rem; }
-        .blog-card__title { font-size: 2.25rem; font-weight: 800; margin: 0; letter-spacing: -0.02em; line-height: 1.2; color: #ffffff; }
-        .blog-card__excerpt { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); margin: 1rem 0 0 0; opacity: 0; max-height: 0; overflow: hidden; transform: translateY(10px); transition: all 0.3s ease; }
-        .blog-card:hover .blog-card__excerpt { opacity: 1; max-height: 100px; transform: translateY(0); }
-        .blog-card:hover .blog-card__content { transform: translateY(-1.5rem); }
-
-        @media (max-width: 1024px) {
-            .blog-grid { grid-template-columns: repeat(2, 1fr); }
-            .blog-card--large { grid-column: span 2; }
-        }
-
-        @media (max-width: 767px) {
-            .blog-grid { grid-template-columns: 1fr; }
-            .blog-card--large { grid-column: span 1; }
-            .blog-card { height: 400px; }
-            .blog-card__title { font-size: 1.75rem; }
-            .blog-card__excerpt { display: none; }
-        }
-    </style>
+      },
+      "image": "https://solymarparacas.site/img/og-solymar-paracas.webp"
+    }
+    </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface antialiased pt-20">
     <nav id="header-placeholder"></nav>
 
-    <header class="blog-hero">
-        <h1 style="font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; letter-spacing: -0.03em;">SolyMar Paracas Blog</h1>
-        <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto; opacity: 0.9;">Your ultimate guide to exploring Paracas, finding the best price on activities, and living unforgettable experiences.</p>
+    <header class="bg-primary text-white text-center px-8 py-32 md:py-48">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-8">SolyMar Paracas Blog</h1>
+        <p class="text-lg md:text-xl max-w-[700px] mx-auto opacity-90 leading-relaxed">Your ultimate guide to exploring Paracas, finding the best price on activities, and living unforgettable experiences.</p>
     </header>
 
-    <main class="blog-section">
-        <div class="blog-grid">
+    <main class="py-24 px-8 max-w-[1400px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Post 1 -->
-            <a href="lima-a-paracas" class="blog-card blog-card--large">
-                <div class="blog-card__image-wrapper">
-                    <img src="../../img/Reserva nacional de Paracas.webp" class="blog-card__image" alt="Paracas National Reserve" loading="lazy" decoding="async" />
-                    <div class="blog-card__overlay"></div>
+            <a href="lima-a-paracas" class="relative group h-[480px] flex flex-col rounded-[2rem] overflow-hidden bg-surface-container shadow-lg transition-all duration-400 hover:-translate-y-3 hover:shadow-2xl md:col-span-2">
+                <div class="absolute inset-0 -z-10">
+                    <img src="../../img/Reserva nacional de Paracas.webp" class="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110" alt="Paracas National Reserve" loading="lazy" decoding="async" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#001428e6] via-transparent to-transparent"></div>
                 </div>
-                <div class="blog-card__content">
-                    <span class="blog-card__tag">Transport</span>
-                    <h3 class="blog-card__title">3 safe ways to get to Paracas from Lima</h3>
-                    <p class="blog-card__excerpt">Planning to visit Paracas from Miraflores or Barranco? Discover the safest and most comfortable options for your trip.</p>
+                <div class="absolute bottom-12 left-10 right-10 z-20 transition-transform duration-300 group-hover:-translate-y-8">
+                    <span class="text-sm font-bold uppercase tracking-widest text-[#a6c8ff] mb-2 block">Transport</span>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-0 tracking-tight">3 safe ways to get to Paracas from Lima</h3>
+                    <p class="mt-4 text-white/80 opacity-0 transform translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-base">Planning to visit Paracas from Miraflores or Barranco? Discover the safest and most comfortable options for your trip.</p>
                 </div>
             </a>
         </div>

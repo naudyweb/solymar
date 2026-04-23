@@ -82,114 +82,176 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
     <nav id="header-placeholder"></nav>
 
-    <section class="hero">
-        <div class="hero__background">
-            <img class="hero__background-image" src="../img/Atv-GoKart-Paracas.webp" alt="ATV and Go Kart tour" fetchpriority="high" decoding="async" />
-            <div class="hero__background-gradient"></div>
+    <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
+        <div class="absolute inset-0 -z-10 group">
+            <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="../img/Atv-GoKart-Paracas.webp" alt="ATV and Go Kart tour" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
         </div>
-        <div class="hero__content">
-            <p class="hero__breadcrumb"><a href="index.html">Home</a> / Experiences / ATV & Go Kart</p>
-            <h1 class="hero__title">ATV and Go Kart Tour in Paracas</h1>
-            <p class="hero__subtitle">Conquer the desert dunes at full speed with the <strong>best price</strong> and total <strong>safety</strong>.</p>
+        <div class="relative z-10 max-w-[900px] text-white">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="index.html" class="hover:underline">Home</a> / Experiences / ATV & Go Kart</p>
+            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">ATV and Go Kart</h1>
+            <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">Extreme desert adventure in Paracas with powerful all-terrain vehicles and professional karting.</p>
         </div>
     </section>
 
-    <section class="content">
-        <div class="content__grid">
-            <div class="content__main">
-                <h2>What you will see on your ATV and Go Kart tour in Paracas</h2>
-                <p>The <strong>ATV (quad bike) and Go Kart experience in Paracas</strong> is perfect for speed and adventure lovers. You will drive all-terrain vehicles through the golden dunes of the desert with total <strong>safety</strong>, feeling the thrill of dominating the sand while enjoying unique landscapes at the <strong>best price</strong>.</p>
-                <p>Our <strong>Go Kart</strong> circuit offers a professional karting experience with high-speed karts. The track is designed to provide maximum excitement, with challenging curves and straights where you can demonstrate your speed.</p>
-                <p>No prior experience is necessary. Before starting, you will receive <strong>complete training</strong> on how to handle the vehicles. Our team of <strong>certified guides</strong> and instructors will accompany you throughout the experience to ensure your safety and fun.</p>
-                <h2>Why choose our tour?</h2>
-                <ul>
-                    <li><span class="material-symbols-outlined">directions_car</span><div><strong>Modern Vehicles</strong><p>Latest model ATVs and Go Karts in perfect condition.</p></div></li>
-                    <li><span class="material-symbols-outlined">explore</span><div><strong>Guided Route</strong><p>Tours through golden dunes and colorful mountains.</p></div></li>
-                    <li><span class="material-symbols-outlined">security</span><div><strong>Total Safety</strong><p>Protective equipment and certified instructors.</p></div></li>
-                    <li><span class="material-symbols-outlined">groups</span><div><strong>Family Activity</strong><p>Options for individuals, couples, and groups.</p></div></li>
-                </ul>
-            </div>
-            <div class="content__sidebar">
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Book your ATV and Go Kart adventure in Paracas today</h3>
-                    <p class="booking-card__price">Consult</p>
-                    <p class="booking-card__price-note">Rate per vehicle</p>
-                    <ul class="booking-card__features">
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Training included</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Safety helmet</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Certified guide</span></li>
-                        <li><span class="material-symbols-outlined">check_circle</span><span>Desert route</span></li>
+    <section class="py-24 px-8 bg-surface">
+        <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
+            <div class="flex flex-col gap-12 text-left">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Adrenaline in the Desert</h2>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">The <strong>ATV and Go Kart experience in Paracas</strong> is perfect for speed lovers. You will drive through golden dunes, feeling the thrill of dominating the sand.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Our <strong>Go Kart circuit</strong> offers a professional experience with high-speed vehicles. The track is designed with challenging curves and exciting straights.</p>
+                    <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">No prior experience is necessary. You will receive <strong>complete training</strong> and have certified guides throughout the journey for your total safety.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Why this adventure?</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">speed</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Powerful Vehicles</strong>
+                                <p class="text-on-surface-variant">200cc ATVs and high-end karts for an exciting response on the sand.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">landscape</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Unique Landscapes</strong>
+                                <p class="text-on-surface-variant">Drive among golden dunes and geological formations of the National Reserve.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">security</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Total Safety</strong>
+                                <p class="text-on-surface-variant">Full protective equipment and certified instructors at all times.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-6">
+                            <span class="material-symbols-outlined text-4xl text-primary">groups</span>
+                            <div>
+                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Group Fun</strong>
+                                <p class="text-on-surface-variant">Ideal experience to share with friends, partner, or the whole family.</p>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+ATV+and+Go+Kart+in+Paracas" class="booking-card__cta">Book Now</a>
-                    <p class="booking-card__note">* Valid driving license not required (training provided)</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
+                    <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Book Tour</h3>
+                    <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 180</p>
+                    <p class="text-on-surface-variant mb-8 font-medium">Per person (Combo Package)</p>
+                    <ul class="flex flex-col gap-4 mb-10 list-none p-0">
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>ATV 200cc (45 min)</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Go Kart (15 min)</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Protective equipment</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Certified instructor</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
+                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
+                            <span>Transport included</span>
+                        </li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+ATV+and+Go+Kart+in+Paracas" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Book Now</a>
+                    <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Minimum recommended age: 12 years</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="activities">
-        <div class="activities__container">
-            <h2 class="activities__title">Experience Options</h2>
-            <div class="activities__grid">
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">two_wheeler</span>
-                    <h4 class="activities__item-title">ATV Only</h4>
-                    <p class="activities__item-text">45 minutes of adventure in ATV by the dunes of the desert. Ideal for those seeking only this experience.</p>
+    <section class="py-24 px-8 bg-surface-container-low">
+        <div class="max-w-[1536px] mx-auto text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tight text-center">Experience Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">two_wheeler</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">ATV Only</h4>
+                    <p class="text-on-surface-variant leading-relaxed">45 minutes of pure adventure in ATV through the dunes. Ideal for exploring the desert at your pace.</p>
                 </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">sports_score</span>
-                    <h4 class="activities__item-title">Go Kart Only</h4>
-                    <p class="activities__item-text">15 minutes of professional karting on our high-speed track. Competition guaranteed.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">sports_score</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Go Kart Only</h4>
+                    <p class="text-on-surface-variant leading-relaxed">15 minutes of professional karting on our track. Feel the speed and competition.</p>
                 </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">celebration</span>
-                    <h4 class="activities__item-title">Combo Package</h4>
-                    <p class="activities__item-text">The best experience: ATV + Go Kart. Enjoy both activities in a single package.</p>
-                </div>
-                <div class="activities__item">
-                    <span class="material-symbols-outlined activities__item-icon">groups</span>
-                    <h4 class="activities__item-title">Group Experience</h4>
-                    <p class="activities__item-text">Special packages for groups and companies. Competitions and team dynamics.</p>
+                <div class="bg-white p-10 rounded-[1.5rem] shadow-sm border border-black/5">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-6">celebration</span>
+                    <h4 class="text-xl font-extrabold text-primary mb-4">Combo Package</h4>
+                    <p class="text-on-surface-variant leading-relaxed">The ultimate experience: ATV + Go Kart. Enjoy both activities with a special price.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="gallery">
-        <div class="gallery__container">
-            <h2 class="gallery__title">Gallery of our ATV and Go Kart tour in Paracas</h2>
-            <div class="gallery__grid">
-                <div class="gallery__item"><img class="gallery__item-image" src="../img/Cuatrimotos.webp" alt="ATV and Go Kart tour" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="../img/gokarts.webp" alt="ATV and Go Kart tour" loading="lazy" decoding="async" /></div>
-                <div class="gallery__item"><img class="gallery__item-image" src="../img/cuatromotos.webp" alt="ATV in Paracas" loading="lazy" decoding="async" /></div>
+    <section class="py-24 px-8 max-w-[1536px] mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-primary mb-16 tracking-tight">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/Cuatrimotos.webp" alt="ATV and Go Kart tour" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/gokarts.webp" alt="ATV and Go Kart tour" loading="lazy" decoding="async" />
+            </div>
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
+                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="../img/cuatromotos.webp" alt="Quad bike in Paracas" loading="lazy" decoding="async" />
             </div>
         </div>
     </section>
 
-    <section class="includes">
-        <div class="includes__container">
-            <h2 class="includes__title">What is included in your adventure?</h2>
-            <div class="includes__grid">
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">two_wheeler</span><h4 class="includes__item-title">High-End Vehicle</h4><p class="includes__item-text">Latest generation ATVs and karts</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">shield</span><h4 class="includes__item-title">Protective Equipment</h4><p class="includes__item-text">Helmet, gloves, and protective vest</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">school</span><h4 class="includes__item-title">Training</h4><p class="includes__item-text">Instruction before starting</p></div>
-                <div class="includes__item"><span class="material-symbols-outlined includes__icon">directions_car</span><h4 class="includes__item-title">Transport</h4><p class="includes__item-text">Transfer from your hotel</p></div>
+    <section class="py-24 px-8 bg-surface-container text-center">
+        <div class="max-w-[1536px] mx-auto">
+            <h2 class="text-4xl font-extrabold text-primary mb-16 tracking-tight">What's included in your adventure</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">two_wheeler</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Vehicles</h4>
+                    <p class="text-sm text-on-surface-variant">Latest generation ATVs and karts in perfect condition.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">shield</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Protection</h4>
+                    <p class="text-sm text-on-surface-variant">Certified helmet, gloves and chest protector.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">school</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Training</h4>
+                    <p class="text-sm text-on-surface-variant">Detailed instruction before starting the activity.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-6">directions_car</span>
+                    <h4 class="text-xl font-extrabold text-on-surface mb-3">Transport</h4>
+                    <p class="text-sm text-on-surface-variant">Included transfer from your hotel in Paracas.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
-        <h2 class="cta__title">Book your ATV and Go Kart adventure in Paracas today</h2>
-        <p class="cta__text">Book your experience of ATV and Go Kart in Paracas now at the <strong>best price</strong>.</p>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+ATV+and+Go+Kart+in+Paracas" class="cta__button">Book Now</a>
+    <section class="py-24 px-8 bg-primary text-center text-white">
+        <div class="max-w-[800px] mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">Ready for the dunes?</h2>
+            <p class="text-xl text-white/90 mb-12 leading-relaxed">Book your ATV and Go Kart tour now with SolyMar Paracas and experience the speed.</p>
+            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hello%2C+I+want+to+book+ATV+and+Go+Kart+in+Paracas" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Book Now</a>
+        </div>
     </section>
 
     <footer class="footer"></footer>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
 </body>
-
 </html>
