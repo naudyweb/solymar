@@ -34,11 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const t = translations[lang];
+    const langPath = isEn ? "en/" : "";
 
     // Generar Footer
     const footerContainer = document.querySelector('.footer');
     if (footerContainer) {
         const pathPrefix = isEn ? (isBlog ? "../../" : "../") : (isBlog ? "../" : "");
+        const baseNavPath = `${pathPrefix}${langPath}`;
         
         footerContainer.className = "bg-surface-container pt-24 px-8 md:px-12 text-on-surface";
         footerContainer.innerHTML = `
@@ -72,21 +74,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div>
                         <h5 class="text-sm font-extrabold uppercase text-primary mb-6 tracking-wider">${t.experiences}</h5>
                         <ul class="flex flex-col gap-4 list-none p-0">
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}snorkel">Snorkel</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}buceo">Buceo</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}trekking">Trekking</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}parapente">Parapente</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}adrenarena">Adrenarena</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}atv-gokart">ATV & Go Kart</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}islas-ballestas">Islas Ballestas</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}snorkel">Snorkel</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}buceo">Buceo</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}trekking">Trekking</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}parapente">Parapente</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}adrenarena">Adrenarena</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}atv-gokart">ATV & Go Kart</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}islas-ballestas">Islas Ballestas</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="text-sm font-extrabold uppercase text-primary mb-6 tracking-wider">${t.support}</h5>
                         <ul class="flex flex-col gap-4 list-none p-0">
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}index#faq">${t.faq}</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}index#nosotros">${t.about}</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${pathPrefix}blog/">${t.blog}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}index#faq">${t.faq}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}index#nosotros">${t.about}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}blog/">${t.blog}</a></li>
                             <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="https://api.whatsapp.com/send?phone=51961542547&text=${t.waText}">${t.contact}</a></li>
                         </ul>
                     </div>
