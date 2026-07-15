@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Traducciones del Footer
     const translations = {
         es: {
-            description: "Tu agencia de tours personalizados en Paracas. Disfruta de Buceo, Snorkel, ATV, Go Kart, Parapente y Trekking.",
+            description: "Tu agencia de tours personalizados en Paracas: Islas Ballestas, Reserva Nacional, buggies en Huacachina, buceo, snorkel, parapente y traslados privados.",
             contact: "Contacto",
             experiences: "Experiencias",
             support: "Soporte",
@@ -17,10 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
             blog: "Blog",
             rights: "© 2026 SolyMar Paracas. Todos los derechos reservados.",
             waText: "Hola%2C+quiero+más+información+sobre+sus+tours",
-            waFloatText: "Hola%2C+vengo+de+la+web+y+quiero+información+sobre+los+tours"
+            waFloatText: "Hola%2C+vengo+de+la+web+y+quiero+información+sobre+los+tours",
+            tours: {
+                ballestas: "Islas Ballestas",
+                reserva: "Reserva Nacional",
+                combo: "Combo Full Day",
+                huacachina: "Buggies Huacachina",
+                parapente: "Parapente",
+                buceo: "Buceo",
+                traslados: "Traslados Privados",
+                all: "Ver Todos los Tours →"
+            }
         },
         en: {
-            description: "Your personalized tour agency in Paracas. Enjoy Diving, Snorkeling, ATV, Go Kart, Paragliding, and Trekking.",
+            description: "Your personalized tour agency in Paracas: Ballestas Islands, National Reserve, Huacachina dune buggies, diving, snorkeling, paragliding, and private transfers.",
             contact: "Contact",
             experiences: "Experiences",
             support: "Support",
@@ -29,7 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
             blog: "Blog",
             rights: "© 2026 SolyMar Paracas. All rights reserved.",
             waText: "Hello%2C+I+would+like+more+information+about+your+tours",
-            waFloatText: "Hello%2C+I'm+visiting+the+website+and+want+information+about+tours"
+            waFloatText: "Hello%2C+I'm+visiting+the+website+and+want+information+about+tours",
+            tours: {
+                ballestas: "Ballestas Islands",
+                reserva: "National Reserve",
+                combo: "Combo Full Day",
+                huacachina: "Huacachina Buggies",
+                parapente: "Paragliding",
+                buceo: "Scuba Diving",
+                traslados: "Private Transfers",
+                all: "View All Tours →"
+            }
         }
     };
 
@@ -47,8 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="max-w-[1536px] mx-auto flex flex-col gap-16 md:flex-row md:justify-between md:items-start mb-20">
                 <div class="max-w-[400px] flex flex-col gap-8">
                     <div class="flex flex-col gap-8">
-                        <img alt="SolyMar Paracas" class="h-14 w-auto self-start" loading="lazy" decoding="async"
-                            src="${pathPrefix}img/SolyMar-web.png" />
+                        <a href="${baseNavPath}index.html" class="inline-block self-start transition-opacity hover:opacity-90">
+                            <img alt="SolyMar Paracas" class="h-14 w-auto self-start" loading="lazy" decoding="async"
+                                src="${pathPrefix}img/SolyMar-web.png" />
+                        </a>
                     </div>
                     <p class="text-on-surface-variant text-base leading-relaxed">${t.description}</p>
                     <div class="flex flex-col gap-4">
@@ -74,21 +96,22 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div>
                         <h5 class="text-sm font-extrabold uppercase text-primary mb-6 tracking-wider">${t.experiences}</h5>
                         <ul class="flex flex-col gap-4 list-none p-0">
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}snorkel">Snorkel</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}buceo">Buceo</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}trekking">Trekking</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}parapente">Parapente</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}adrenarena">Adrenarena</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}atv-gokart">ATV & Go Kart</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}islas-ballestas">Islas Ballestas</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}islas-ballestas.html">${t.tours.ballestas}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}reserva-nacional-paracas.html">${t.tours.reserva}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}ballestas-y-reserva-full-day.html">${t.tours.combo}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}buggies-sandboard-huacachina.html">${t.tours.huacachina}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}parapente.html">${t.tours.parapente}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}buceo.html">${t.tours.buceo}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}transporte-personalizado.html">${t.tours.traslados}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary font-bold text-primary" href="${baseNavPath}tours.html">${t.tours.all}</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5 class="text-sm font-extrabold uppercase text-primary mb-6 tracking-wider">${t.support}</h5>
                         <ul class="flex flex-col gap-4 list-none p-0">
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}index#faq">${t.faq}</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}index#nosotros">${t.about}</a></li>
-                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}blog/">${t.blog}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}index.html#faq">${t.faq}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}index.html#nosotros">${t.about}</a></li>
+                            <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="${baseNavPath}blog/index.html">${t.blog}</a></li>
                             <li><a class="text-on-surface-variant no-underline transition-colors hover:text-primary" href="https://api.whatsapp.com/send?phone=51961542547&text=${t.waText}">${t.contact}</a></li>
                         </ul>
                     </div>
@@ -119,8 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentFile = currentPath.split('/').pop().replace('.html', '');
     
     // Manejar el caso de que el path sea la raíz / o /en/ o /blog/
-    if (!currentFile || currentFile === "" || currentFile === "en" || currentFile === "blog") {
-        currentFile = "index";
+    if (!currentFile || currentFile === "" || currentFile === "en" || currentFile === "blog" || currentFile === "index") {
+        currentFile = "index.html";
+    } else {
+        currentFile = currentFile + ".html";
     }
 
     const esPath = isBlog ? (isEn ? "../../blog/" : "./") : (isEn ? "../" : "./");

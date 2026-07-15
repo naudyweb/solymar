@@ -1,2 +1,6 @@
 .gemini/
 gha-creds-*.json
+upload.sh
+upload.py
+node_modules/
+scratch/
