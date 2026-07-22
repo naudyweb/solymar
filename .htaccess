@@ -1,19 +1,32 @@
 # SolyMar Paracas - Configuración Optimizada .htaccess
 
-# 1. FORZAR HTTPS
 RewriteEngine On
+
+# 1. FORZAR HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# 2. EVITAR LISTADO DE DIRECTORIOS
+# 2. REDIRIGIR dominio antiguo (.site), www y cualquier alias → solymarparacas.com (dominio canónico)
+RewriteCond %{HTTP_HOST} !^solymarparacas\.com$ [NC]
+RewriteRule ^(.*)$ https://solymarparacas.com/$1 [R=301,L]
+
+# 3. REDIRIGIR .html → URL limpia (evitar contenido duplicado)
+RewriteCond %{THE_REQUEST} \.html[\s?/]
+RewriteRule ^(.+?)\.html$ /$1 [R=301,L]
+
+# Redirecciones de Tours Estandarizados (301)
+RewriteRule ^atv-gokart(\.html)?$ /mini-buggies-paracas [R=301,L,NC]
+RewriteRule ^en/atv-gokart(\.html)?$ /en/mini-buggies-paracas [R=301,L,NC]
+
+# 4. EVITAR LISTADO DE DIRECTORIOS
 Options -Indexes
 
-# 3. COMPRESIÓN GZIP (Acelera la carga)
+# 5. COMPRESIÓN GZIP (Acelera la carga)
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml
 </IfModule>
 
-# 4. CACHÉ DEL NAVEGADOR (Mejora velocidad en visitas recurrentes)
+# 6. CACHÉ DEL NAVEGADOR (Mejora velocidad en visitas recurrentes)
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
@@ -28,13 +41,17 @@ Options -Indexes
   ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>
 
-# 5. REMOVER EXTENSIÓN .HTML DE LAS URLS (SEO Friendly)
-# Esto permite entrar a /snorkel en lugar de /snorkel.html
+# 7. HSTS (forzar HTTPS en navegador por 1 año)
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# 8. REMOVER EXTENSIÓN .HTML DE LAS URLS (SEO Friendly)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-# 6. SEGURIDAD: Bloquear acceso a archivos sensibles
+# 9. SEGURIDAD: Bloquear acceso a archivos sensibles
 <FilesMatch "^\.">
     Order allow,deny
     Deny from all

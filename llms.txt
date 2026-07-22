@@ -5,19 +5,28 @@ SolyMar Paracas es una agencia de turismo líder ubicada en Paracas, Pisco (Per�
 ## Información de Contacto
 - **Teléfono/WhatsApp:** [+51 961 542 547](https://api.whatsapp.com/send?phone=+51961542547)
 - **Ubicación:** El Chaco, Paracas, Ica, Perú
-- **Sitio Web:** https://solymarparacas.site/
+- **Sitio Web:** https://solymarparacas.com/
 - **Redes Sociales:** Facebook, Instagram y Twitter (@solymarparacas)
 
 ## Experiencias y Tours Principales
 
-- **[Snorkel en Paracas](https://solymarparacas.site/snorkel.html)**: Observación de lobos marinos, pingüinos y biodiversidad marina en aguas cristalinas. Equipo incluido.
-- **[Buceo (Bautismo PADI)](https://solymarparacas.site/buceo.html)**: Inmersiones para principiantes y certificados en el Océano Pacífico. Instructores certificados.
-- **[Parapente](https://solymarparacas.site/parapente.html)**: Vuelos tándem de 5-12 minutos de adrenalina pura sobre Playa Supay y el Cerro El Maldito.
-- **[Trekking (Golden Shadows)](https://solymarparacas.site/trekking.html)**: Caminatas por acantilados milenarios y paisajes desérticos al atardecer.
-- **[Islas Ballestas](https://solymarparacas.site/islas-ballestas.html)**: Tour en lancha para ver lobos marinos, pingüinos de Humboldt y el geoglifo "El Candelabro".
-- **[Reserva Nacional de Paracas](https://solymarparacas.site/reserva-nacional-paracas.html)**: Tour terrestre por playas emblemáticas (Playa Roja, Yumaque) y miradores naturales.
-- **[ATV y Go Karts](https://solymarparacas.site/atv-gokart.html)**: Recorridos en cuatrimotos y karts por las dunas del desierto.
-- **[Adrenarena Park](https://solymarparacas.site/adrenarena.html)**: Parque de aventura extrema con múltiples actividades de adrenalina.
+- **[Islas Ballestas](https://solymarparacas.com/islas-ballestas)**: Tour en lancha para ver lobos marinos, pingüinos de Humboldt y el geoglifo "El Candelabro". Las "Galápagos del Perú".
+- **[Reserva Nacional de Paracas](https://solymarparacas.com/reserva-nacional-paracas)**: Tour terrestre por playas emblemáticas (Playa Roja, Yumaque) y miradores naturales.
+- **[Combo Full Day: Ballestas + Reserva](https://solymarparacas.com/ballestas-y-reserva-full-day)**: Día completo combinando las Islas Ballestas y la Reserva Nacional.
+- **[Buggies y Sandboard en Huacachina](https://solymarparacas.com/buggies-sandboard-huacachina)**: Aventura en las dunas del desierto de Ica.
+- **[Full Day Paracas + Huacachina](https://solymarparacas.com/paracas-huacachina-full-day)**: Combinación de Ballestas, Reserva y Huacachina en un día.
+- **[Parapente](https://solymarparacas.com/parapente)**: Vuelos tándem de 5-12 minutos sobre Playa Supay y el Cerro El Maldito.
+- **[Buceo (Bautismo PADI)](https://solymarparacas.com/buceo)**: Inmersiones para principiantes y certificados en el Océano Pacífico. Instructores certificados.
+- **[Snorkel en Paracas](https://solymarparacas.com/snorkel)**: Observación de lobos marinos, pingüinos y biodiversidad marina. Equipo incluido.
+- **[Kayak y Paddle en Paracas](https://solymarparacas.com/kayak-paddle-paracas)**: Recorridos en kayak por la bahía de Paracas.
+- **[Mini Buggies Paracas](https://solymarparacas.com/mini-buggies-paracas)**: Recorridos en mini buggies y go karts por las dunas.
+- **[Trekking (Golden Shadows)](https://solymarparacas.com/trekking)**: Caminatas por acantilados milenarios y paisajes desérticos al atardecer.
+- **[Sobrevuelo Líneas de Nazca](https://solymarparacas.com/sobrevuelo-lineas-de-nazca)**: Vuelo panorámico sobre las misteriosas Líneas de Nazca.
+- **[Ruta del Pisco - Bodegas de Ica](https://solymarparacas.com/ruta-del-pisco-bodegas-ica)**: Visita a bodegas históricas y degustación de pisco y vino.
+- **[Tambo Colorado](https://solymarparacas.com/tambo-colorado)**: Tour arqueológico al sitio inca mejor conservado de la costa peruana.
+- **[YakuPark Paracas](https://solymarparacas.com/yakupark-paracas)**: Parque acuático y de aventura en Paracas.
+- **[Adrenarena Park](https://solymarparacas.com/adrenarena)**: Parque de aventura extrema con múltiples actividades de adrenalina.
+- **[Transporte Personalizado](https://solymarparacas.com/transporte-personalizado)**: Traslados privados desde y hacia Lima, Ica, Huacachina o Nazca, con tours y paradas en ruta que se adaptan a tu itinerario.
 
 ## Valores Diferenciales
 - Seguridad total con equipos modernos y guías certificados.

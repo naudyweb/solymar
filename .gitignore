@@ -3,3 +3,4 @@ gha-creds-*.json
 node_modules/
 upload.py
 upload.sh
+scratch/

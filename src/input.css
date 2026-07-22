@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #002d5a;
+  --color-primary-container: #004a8f;
+  --color-secondary: #0060a7;
+  --color-tertiary: #8b3c00;
+  --color-on-tertiary: #ffffff;
+  --color-surface: #faf9f6;
+  --color-surface-container: #f1ede8;
+  --color-surface-container-low: #f7f3ef;
+  --color-on-surface: #1a1c1e;
+  --color-on-surface-variant: #44474e;
+  --font-manrope: "Manrope", sans-serif;
+}
+@source "../**/*.html";
+@source "../js/**/*.js";

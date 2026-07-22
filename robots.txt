@@ -3,4 +3,4 @@ Allow: /
 Disallow: /css/
 Disallow: /js/
 
-Sitemap: https://solymarparacas.site/sitemap.xml
+Sitemap: https://solymarparacas.com/sitemap.xml
