@@ -541,134 +541,90 @@ tours = {
     "buceo": {
         "filename": "buceo.html",
         "image": "img/buceo.jpg",
-        "price": "S/ 280",
-        "price_val": "280",
+        "price": "S/ 400",
+        "price_val": "400",
         "price_cur": "PEN",
         "category": "mar",
         "es": {
             "title": "Buceo en Paracas 2026: Bautizo de Mar con Instructor | SolyMar Paracas",
-            "desc": "Bautizo de buceo para principiantes y salidas para buzos certificados en Paracas. Instructor, equipo completo y fotos bajo el agua incluidos. Reserva por WhatsApp.",
+            "desc": "Bautizo de buceo y salidas guiadas en Bahía de Paracas ($120 USD / S/ 400) e Islas Blanca ($220 USD / S/ 745). Instructor, equipo completo y fotos bajo el agua. Reserva por WhatsApp.",
             "h1": "Buceo en Paracas",
-            "keywords": "buceo paracas, buceo paracas precio, buceo en ica, bautizo de buceo peru, donde bucear en peru, discover scuba diving peru, buceo con lobos marinos",
+            "keywords": "buceo paracas, buceo paracas precio, buceo islas blanca, bautizo de buceo peru, donde bucear en peru, discover scuba diving peru, buceo con lobos marinos",
             "subtitle": "Sumérgete en los ecosistemas de la corriente de Humboldt: bosques de algas, estrellas de mar y lobos marinos curiosos.",
             "intro": "El <strong>buceo en Paracas</strong> te abre las puertas a uno de los mares más productivos del planeta: las aguas frías y ricas en nutrientes de la corriente de Humboldt concentran una vida marina que sorprende incluso a buzos experimentados.",
-            "intro_p2": "Ofrecemos el <strong>Bautizo de Buceo (Discover Scuba Diving)</strong> para principiantes sin licencia, con teoría en tierra y práctica en aguas poco profundas, e <strong>inmersiones guiadas para buzos certificados</strong> en puntos como Isla Blanca o San Gallán.",
+            "intro_p2": "Ofrecemos el <strong>Bautizo de Buceo (Discover Scuba Diving)</strong> para principiantes sin licencia y <strong>salidas guiadas para buzos certificados y aficionados</strong> en dos puntos principales: la <strong>Bahía de Paracas</strong> ($120 USD / S/ 400 soles) e <strong>Islas Blanca</strong> ($220 USD / S/ 745 soles).",
             "intro_p3": "Todas las salidas van acompañadas de instructores certificados que controlan tu flotabilidad y te guían paso a paso, con fotos y videos subacuáticos incluidos para que te lleves el recuerdo.",
-            "why_title": "Opciones y detalles de inmersión",
+            "why_title": "Opciones y puntos de inmersión",
             "why_items": [
-                {"icon": "water_drop", "title": "Bautizo de Buceo", "desc": "Para principiantes. Incluye clase teórica en tierra, práctica en aguas poco profundas e inmersión de hasta 10 metros de profundidad."},
-                {"icon": "verified", "title": "Salidas Certificadas", "desc": "Inmersiones en botes para buzos PADI/Open Water en puntos destacados como la Isla Blanca o San Gallán."},
+                {"icon": "water_drop", "title": "Bahía de Paracas ($120 USD / S/ 400)", "desc": "Inmersión en la Bahía de Paracas. Ideal para principiantes y bautizos de buceo en aguas tranquilas con variada fauna marina."},
+                {"icon": "landscape", "title": "Islas Blanca ($220 USD / S/ 745)", "desc": "Navegación a Islas Blanca para sumergirte en aguas cristalinas con paisajes rocosos y abundantes especies marinas."},
                 {"icon": "photo_camera", "title": "Fotos Subacuáticas", "desc": "Te tomamos fotos y videos bajo el agua con cámaras especiales para que compartas tu experiencia."},
-                {"icon": "shield", "title": "Equipamiento Completo", "desc": "Traje de neopreno de 5mm, tanque, regulador, chaleco compensador (BCD), máscara y aletas incluidos."}
+                {"icon": "shield", "title": "Equipamiento Completo", "desc": "Traje de neopreno de 5mm, tanque, regulador, chaleco compensador (BCD), máscara, aletas y plomos incluidos."}
             ],
-            "included": ["Clase instructiva teórica y práctica", "Una inmersión guiada por instructor de buceo", "Equipo completo de buceo (traje, tanque, regulador, plomos)", "Fotos y videos digitales bajo el agua", "Navegación en bote al punto de inmersión"],
-            "excluded": ["Entrada SERNANP de la Reserva Nacional (S/ 11.00)"],
+            "custom_price_html": """<div class="flex flex-col gap-3 mb-2">
+    <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
+        <span class="text-base font-bold text-primary">Bahía de Paracas:</span>
+        <span class="text-2xl font-extrabold text-on-surface">$120 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 400)</span></span>
+    </div>
+    <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
+        <span class="text-base font-bold text-primary">Islas Blanca:</span>
+        <span class="text-2xl font-extrabold text-on-surface">$220 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 745)</span></span>
+    </div>
+</div>""",
+            "price_sub_label": "Precio por persona según punto de inmersión",
+            "included": ["Clase instructiva teórica y práctica", "Una inmersión guiada por instructor de buceo", "Equipo completo de buceo (traje, tanque, regulador, BCD, plomos)", "Fotos y videos digitales bajo el agua", "Navegación en bote al punto de inmersión"],
+            "excluded": ["Entrada a la Reserva Nacional SERNANP (S/ 16.00 soles no incluidos)"],
             "schedule_label": "* Salidas diarias a las 8:30 AM. Duración total de la actividad: 3.5 horas aprox.",
             "faq_title": "Preguntas Frecuentes",
             "faqs": [
-                {"q": "¿Cuánto cuesta el buceo en Paracas?", "a": "El Bautizo de Buceo cuesta S/ 280 por persona e incluye clase teórica, inmersión guiada por instructor, equipo completo (traje de neopreno 5mm, tanque, regulador, plomos), fotos bajo el agua y navegación al punto de buceo. Solo se paga aparte la entrada a la Reserva (S/ 11)."},
+                {"q": "¿Cuánto cuesta el buceo en Paracas?", "a": "El precio del buceo en Paracas varía según el punto de inmersión seleccionado:<br>• <strong>Bahía de Paracas:</strong> $120 USD ó S/ 400 soles por persona.<br>• <strong>Islas Blanca:</strong> $220 USD ó S/ 745 soles por persona.<br><br>Ambas opciones incluyen clase teórica y práctica, inmersión guiada con instructor certificado, equipo completo de buceo (traje de neopreno 5mm, tanque, regulador, BCD, plomos), fotos y videos digitales bajo el agua y navegación al punto de buceo. Solo se paga aparte la entrada a la Reserva Nacional SERNANP (S/ 16.00 soles por persona)."},
                 {"q": "¿Necesito saber nadar para el Bautizo?", "a": "Es recomendable sentirse cómodo en el agua, pero no necesitas ser un nadador experto. El instructor te sostiene y controla tu flotabilidad durante toda la inmersión."},
                 {"q": "¿A qué profundidad descendemos?", "a": "Para el bautizo de buceo descendemos a una profundidad máxima de entre 5 y 10 metros, ideal para observar la fauna marina con luz natural y total seguridad."},
                 {"q": "¿Qué fauna se puede ver bajo el agua?", "a": "El fondo marino de Paracas alberga erizos, estrellas de mar rojas, pulpos, cangrejos, lenguados, caballitos de mar en temporada, bosques de algas y, con frecuencia, lobos marinos juveniles curiosos que se acercan a los buzos."},
                 {"q": "¿El agua no es muy fría?", "a": "El mar de Paracas está entre 14°C y 17°C, por eso todos los buzos usan traje de neopreno de 5mm de cuerpo completo que mantiene el calor corporal. La sensación es fresca al inicio y cómoda durante toda la inmersión."},
                 {"q": "¿Desde qué edad se puede bucear?", "a": "El bautizo de buceo se puede realizar desde los 10 años acompañado de un padre o tutor. No hay edad máxima: solo se requiere salud general estable y no tener afecciones cardíacas o respiratorias graves."},
-                {"q": "¿Ya soy buzo certificado, tienen salidas para mí?", "a": "Sí, organizamos inmersiones guiadas para buzos con credencial PADI/SSI (Open Water en adelante) en puntos como Isla Blanca o San Gallán, con profundidades y perfiles adaptados a tu nivel."}
+                {"q": "¿Ya soy buzo certificado, tienen salidas para mí?", "a": "Sí, organizamos inmersiones guiadas para buzos con credencial PADI/SSI (Open Water en adelante) en puntos como Islas Blanca o Bahía de Paracas, con profundidades y perfiles adaptados a tu nivel."}
             ]
         },
         "en": {
             "title": "Scuba Diving in Paracas 2026: Discover Dive & Fun Dives | SolyMar",
-            "desc": "Discover Scuba dives for beginners and guided trips for certified divers in Paracas. Instructor, full gear and underwater photos included. Book via WhatsApp.",
+            "desc": "Discover Scuba dives and guided trips in Paracas Bay ($120 USD / S/ 400) and Islas Blanca ($220 USD / S/ 745). Instructor, full gear, and underwater photos included. Book via WhatsApp.",
             "h1": "Scuba Diving in Paracas",
-            "keywords": "scuba diving paracas, scuba diving paracas price, diving in ica, discovery dive peru, where to dive in peru, diving with sea lions peru",
+            "keywords": "scuba diving paracas, scuba diving paracas price, diving islas blanca, discovery dive peru, where to dive in peru, diving with sea lions peru",
             "subtitle": "Dive into the Humboldt Current ecosystems: kelp forests, red starfish, and curious sea lions.",
             "intro": "<strong>Scuba diving in Paracas</strong> opens the door to one of the most productive seas on Earth: the cold, nutrient-rich waters of the Humboldt Current concentrate marine life that surprises even experienced divers.",
-            "intro_p2": "We offer the <strong>Discover Scuba Diving</strong> experience for unlicensed beginners — with onshore theory and shallow-water practice — and <strong>guided dives for certified divers</strong> at sites like Isla Blanca and San Gallán.",
+            "intro_p2": "We offer the <strong>Discover Scuba Diving</strong> experience for beginners without certification, as well as <strong>guided dives for certified divers</strong> in two main locations: <strong>Paracas Bay</strong> ($120 USD / S/ 400 soles) and <strong>Islas Blanca</strong> ($220 USD / S/ 745 soles).",
             "intro_p3": "Every trip is led by certified instructors who manage your buoyancy and guide you step by step, with underwater photos and videos included so you take the memory home.",
-            "why_title": "Diving Options",
+            "why_title": "Diving Options & Dive Spots",
             "why_items": [
-                {"icon": "water_drop", "title": "Discover Scuba", "desc": "Perfect for beginners. Includes a theory briefing, shallow water practice, and a guided dive down to 10 meters (30 feet)."},
-                {"icon": "verified", "title": "Certified Dives", "desc": "Boat trips to reefs and walls for licensed Open Water / Advanced divers around Isla Blanca or San Gallán."},
-                {"icon": "photo_camera", "title": "GoPro Photos", "desc": "We capture underwater photos and videos of your dive using waterproof action cameras."},
-                {"icon": "shield", "title": "Complete Equipment", "desc": "5mm wetsuit, tanks, regulator, BCD jacket, weights, mask, and fins are fully provided."}
+                {"icon": "water_drop", "title": "Paracas Bay ($120 USD / S/ 400)", "desc": "Diving experience in Paracas Bay. Perfect for beginners and discovery dives in calm, protected waters rich in marine life."},
+                {"icon": "landscape", "title": "Islas Blanca ($220 USD / S/ 745)", "desc": "Boat trip to Islas Blanca to dive in clear island waters with underwater rock structures and diverse wildlife."},
+                {"icon": "photo_camera", "title": "GoPro Photos & Videos", "desc": "We capture underwater HD photos and videos of your dive so you can remember and share your adventure."},
+                {"icon": "shield", "title": "Complete Equipment", "desc": "5mm wetsuit, tanks, regulator, BCD jacket, mask, fins, and weights are fully provided."}
             ],
-            "included": ["Theoretical briefing and shallow water practice", "One guided dive with a certified instructor", "Full set of scuba gear rental", "Digital underwater photos and videos", "Boat transport to the dive site"],
-            "excluded": ["SERNANP Paracas Reserve entrance fee (S/ 11.00)"],
+            "custom_price_html": """<div class="flex flex-col gap-3 mb-2">
+    <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
+        <span class="text-base font-bold text-primary">Paracas Bay:</span>
+        <span class="text-2xl font-extrabold text-on-surface">$120 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 400)</span></span>
+    </div>
+    <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
+        <span class="text-base font-bold text-primary">Islas Blanca:</span>
+        <span class="text-2xl font-extrabold text-on-surface">$220 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 745)</span></span>
+    </div>
+</div>""",
+            "price_sub_label": "Price per person based on selected dive spot",
+            "included": ["Theoretical briefing and shallow water practice", "One guided dive with a certified instructor", "Full set of scuba gear rental (wetsuit, tank, regulator, BCD, weights)", "Digital underwater photos and videos", "Boat transport to the dive site"],
+            "excluded": ["SERNANP Paracas Reserve entrance fee (S/ 16.00 soles not included)"],
             "schedule_label": "* Daily departures at 8:30 AM. Total activity duration: approx. 3.5 hours.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does scuba diving in Paracas cost?", "a": "The Discover Scuba Dive costs S/ 280 per person and includes the theory lesson, an instructor-guided dive, full equipment (5mm wetsuit, tank, regulator, weights), underwater photos, and the boat ride to the dive site. Only the Reserve entrance fee (S/ 11) is extra."},
+                {"q": "How much does scuba diving in Paracas cost?", "a": "The price for scuba diving in Paracas depends on the selected dive spot:<br>• <strong>Paracas Bay:</strong> $120 USD or S/ 400 soles per person.<br>• <strong>Islas Blanca:</strong> $220 USD or S/ 745 soles per person.<br><br>Both options include theoretical and practical instruction, a guided dive with a certified instructor, full dive gear (5mm wetsuit, tank, regulator, BCD, weights), digital underwater photos/videos, and boat transport. The SERNANP Paracas Reserve entrance fee (S/ 16.00 soles per person) is paid separately."},
                 {"q": "Do I need to know how to swim for the Discovery Dive?", "a": "Basic water comfort is recommended, but you don't need to be an expert swimmer. Your instructor holds you and manages your buoyancy throughout the dive."},
                 {"q": "How deep do we go?", "a": "For first-time divers, the maximum depth is restricted to 5–10 meters (15–30 feet), which is optimal for natural light, wildlife viewing, and safety."},
                 {"q": "What marine life will we see?", "a": "The cold waters host red starfish, sea urchins, octopuses, crabs, flounders, seasonal seahorses, kelp forests, and frequently curious juvenile sea lions that approach divers."},
                 {"q": "Isn't the water too cold?", "a": "The Paracas sea runs between 14°C and 17°C (57–62°F), which is why all divers wear a full-length 5mm wetsuit that retains body heat. It feels brisk at first and comfortable for the whole dive."},
                 {"q": "What is the minimum age to dive?", "a": "The Discover Scuba Dive is available from age 10 accompanied by a parent or guardian. There is no maximum age: only stable general health and no serious heart or respiratory conditions are required."},
-                {"q": "I am a certified diver — do you run trips for me?", "a": "Yes, we organize guided dives for credentialed divers (PADI/SSI Open Water and above) at sites like Isla Blanca and San Gallán, with depth profiles adapted to your level."}
-            ]
-        }
-    },
-    "smoke-snorkel": { # We use 'snorkel' as key
-        "filename": "snorkel.html",
-        "image": "img/snorkel.jpg",
-        "price": "S/ 150",
-        "price_val": "150",
-        "price_cur": "PEN",
-        "category": "mar",
-        "es": {
-            "title": "Snorkel en Paracas 2026: Tour con Equipo y Guía Incluidos | SolyMar",
-            "desc": "Tour de snorkel en playas autorizadas de la Reserva de Paracas: traje de neopreno, máscara, aletas y guía en el agua incluidos. Ideal para familias. Reserva por WhatsApp.",
-            "h1": "Tour de snorkel en Paracas",
-            "keywords": "snorkel paracas, snorkel paracas precio, snorkel ica, nadar en paracas, actividades acuaticas paracas, snorkel reserva nacional paracas, que hacer en paracas",
-            "subtitle": "Nada entre estrellas de mar, peces de roca y bosques de algas en caletas protegidas de la Reserva Nacional.",
-            "intro": "El <strong>snorkel en Paracas</strong> es la forma más sencilla e interactiva de conectar con el mar de la Reserva: solo necesitas máscara, tubo y aletas — nosotros ponemos todo el equipo, incluido el traje de neopreno.",
-            "intro_p2": "Viajamos en bote a <strong>bahías y caletas de aguas calmadas</strong> de la península, donde te sumerges acompañado en el agua por un guía local que te muestra la fauna: estrellas de mar de colores, cangrejos, peces de roca y praderas de algas.",
-            "intro_p3": "<strong>Aclaración importante:</strong> en las Islas Ballestas está estrictamente prohibido nadar por regulación ambiental. Nuestro tour se realiza en zonas de la Reserva especialmente autorizadas para el snorkel: desconfía de quien te ofrezca lo contrario.",
-            "why_title": "¿Cómo es la experiencia?",
-            "why_items": [
-                {"icon": "pool", "title": "Aguas Calmas y Seguras", "desc": "Seleccionamos zonas protegidas del viento con oleaje mínimo para una remada segura y relajada."},
-                {"icon": "waves", "title": "Fauna Marina Costera", "desc": "Observa estrellas de mar de colores, cangrejos, peces de roca, erizos y algas flotantes."},
-                {"icon": "family_history", "title": "Ideal para Familias", "desc": "Apto para niños desde los 8 años. Usamos chalecos flotadores de snorkel para quienes no dominan el nado."},
-                {"icon": "directions_boat", "title": "Paseo en Bote", "desc": "El tour incluye la navegación costera por la península hasta la zona de inmersión."}
-            ],
-            "included": ["Navegación en embarcación rápida hasta la zona de snorkel", "Guía local de snorkel que te acompaña en el agua", "Equipo completo: máscara, snorkel (tubo), aletas y traje de neopreno", "Chaleco salvavidas obligatorio"],
-            "excluded": ["Tasa de ingreso SERNANP de la Reserva Nacional (S/ 11.00)"],
-            "schedule_label": "* Salida diaria a las 11:30 AM desde el muelle de Paracas. Duración: 2.5 horas aprox.",
-            "faq_title": "Preguntas Frecuentes",
-            "faqs": [
-                {"q": "¿Cuánto cuesta el tour de snorkel en Paracas?", "a": "El tour cuesta S/ 150 por persona e incluye la navegación en bote, guía que te acompaña dentro del agua, traje de neopreno, máscara, tubo, aletas y chaleco. Solo se paga aparte la entrada SERNANP a la Reserva (S/ 11)."},
-                {"q": "¿Se puede hacer snorkel en las Islas Ballestas?", "a": "No, en las Islas Ballestas está prohibido nadar o hacer snorkel por ser zona de reproducción y protección de lobos marinos y pingüinos. Nuestro tour se realiza en playas autorizadas de la península de Paracas."},
-                {"q": "¿Es necesario saber nadar?", "a": "Se requieren conocimientos muy básicos de flotación. Proveemos chalecos salvavidas y trajes de neopreno que garantizan una excelente flotabilidad natural, además de ir acompañado por el guía con una boya de seguridad."},
-                {"q": "¿El agua es fría?", "a": "El mar de Paracas es de temperatura templada a fría (14°C - 17°C). Por ello te proporcionamos traje de neopreno de cuerpo completo que te mantiene abrigado y flotando con facilidad."},
-                {"q": "¿Desde qué edad pueden participar los niños?", "a": "Desde los 8 años, siempre acompañados de un adulto. Usamos chalecos flotadores de snorkel especiales para quienes no dominan el nado, y el guía permanece cerca del grupo en todo momento."},
-                {"q": "¿Qué debo llevar al tour?", "a": "Ropa de baño puesta, toalla, muda de ropa seca, bloqueador biodegradable y agua para hidratarte. El resto del equipo (neopreno, máscara, aletas, chaleco) te lo damos nosotros."}
-            ]
-        },
-        "en": {
-            "title": "Snorkeling in Paracas 2026: Guided Tour, Full Gear Included | SolyMar",
-            "desc": "Snorkeling tour at authorized beaches of the Paracas Reserve: wetsuit, mask, fins and in-water guide included. Family-friendly. Book via WhatsApp.",
-            "h1": "Snorkeling Tour in Paracas",
-            "keywords": "snorkeling paracas, snorkeling paracas price, snorkel ica, swim in paracas, water sports paracas, snorkeling paracas national reserve, things to do in paracas",
-            "subtitle": "Swim among starfish, rock fish, and kelp beds in protected coves of the National Reserve.",
-            "intro": "<strong>Snorkeling in Paracas</strong> is the easiest, most interactive way to connect with the Reserve's sea: all you need is a mask, snorkel, and fins — and we provide all the gear, wetsuit included.",
-            "intro_p2": "We sail to <strong>calm, wind-protected coves</strong> along the peninsula, where you snorkel accompanied in the water by a local guide who points out the wildlife: colorful starfish, crabs, rock fish, and kelp meadows.",
-            "intro_p3": "<strong>Important note:</strong> swimming is strictly forbidden at the Ballestas Islands under environmental law. Our tour takes place in areas of the Reserve specifically authorized for snorkeling — be wary of anyone offering otherwise.",
-            "why_title": "Snorkeling Highlights",
-            "why_items": [
-                {"icon": "pool", "title": "Calm Protected Bays", "desc": "We select safe coves with low currents and crystal-clear water sections for relaxed snorkeling."},
-                {"icon": "waves", "title": "Coastal Marine Life", "desc": "Spot colorful red and yellow sea stars, rock fish, crabs, and underwater kelp fields."},
-                {"icon": "family_history", "title": "Great for Families", "desc": "Suitable for children aged 8 and up. We use snorkeling life vests for those who want extra flotation."},
-                {"icon": "directions_boat", "title": "Coastal Boat Ride", "desc": "Includes a scenic boat ride along the cliffs of the Paracas peninsula to the snorkeling spot."}
-            ],
-            "included": ["Boat ride to the designated snorkeling beach", "Bilingual local guide in the water with you", "Snorkel gear: mask, snorkel tube, fins, and wetsuit", "Life jacket/snorkeling vest"],
-            "excluded": ["SERNANP Paracas Reserve entry ticket (S/ 11.00)"],
-            "schedule_label": "* Daily departure at 11:30 AM from Paracas pier. Duration: approx. 2.5 hours.",
-            "faq_title": "Frequently Asked Questions",
-            "faqs": [
-                {"q": "How much does the snorkeling tour in Paracas cost?", "a": "The tour costs S/ 150 per person and includes the boat ride, an in-water guide, wetsuit, mask, snorkel, fins, and flotation vest. Only the SERNANP Reserve entrance fee (S/ 11) is paid separately."},
-                {"q": "Can we snorkel at the Ballestas Islands?", "a": "No, swimming or snorkeling is strictly banned at the Ballestas Islands by environmental law to protect the sea lion and penguin colonies. Our tour operates in authorized coves of the Paracas Peninsula."},
-                {"q": "Do I need to know how to swim?", "a": "Basic comfort in the water is required. We supply full wetsuits and flotation vests that let you float effortlessly, and our guide stays close with a safety buoy."},
-                {"q": "Is the water cold?", "a": "The Pacific waters here are cool (14°C - 17°C / 57°F - 62°F). We provide full-length neoprene wetsuits to keep you warm and comfortable throughout the swim."},
-                {"q": "From what age can children join?", "a": "From age 8, always accompanied by an adult. We use special snorkeling flotation vests for those who are not confident swimmers, and the guide stays near the group at all times."},
-                {"q": "What should I bring?", "a": "Your swimsuit already on, a towel, a change of dry clothes, reef-safe sunscreen, and water. All the gear (wetsuit, mask, fins, vest) is provided by us."}
+                {"q": "I am a certified diver — do you run trips for me?", "a": "Yes, we organize guided dives for credentialed divers (PADI/SSI Open Water and above) at sites like Islas Blanca or Paracas Bay, with depth profiles adapted to your level."}
             ]
         }
     },
@@ -1127,13 +1083,7 @@ tours = {
     }
 }
 
-# Add correct keys for loop
-tours_formatted = {}
-for k, v in tours.items():
-    key = k
-    if k == "smoke-snorkel":
-        key = "snorkel"
-    tours_formatted[key] = v
+tours_formatted = tours
 
 # HTML Template for Tour Pages
 template = """<!DOCTYPE html>
@@ -1276,7 +1226,7 @@ template = """<!DOCTYPE html>
                 <div>
                     <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
                         <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">{book_card_title}</h3>
-                        <p class="text-5xl font-extrabold text-on-surface tracking-tight">{price}</p>
+                        {price_block}
                         <p class="text-on-surface-variant mb-8 font-medium">{price_sub_label}</p>
                         
                         <ul class="flex flex-col gap-4 mb-10 list-none p-0">
@@ -1486,10 +1436,17 @@ for tour_key, tour_info in tours_formatted.items():
         if tour_info.get("quote_only"):
             price_display = "Cotizar" if lang == "es" else "Get a Quote"
             price_sub = "Tarifa por vehículo, según ruta" if lang == "es" else "Per vehicle, based on route"
+            price_block = f'<p class="text-5xl font-extrabold text-on-surface tracking-tight">{price_display}</p>'
             offers_json = ""
+        elif "custom_price_html" in content:
+            price_display = tour_info["price"]
+            price_sub = content.get("price_sub_label", comm["price_sub_label"])
+            price_block = content["custom_price_html"]
+            offers_json = '"offers": {\n          "@type": "Offer",\n          "price": "' + tour_info["price_val"] + '",\n          "priceCurrency": "' + tour_info["price_cur"] + '",\n          "url": "' + canonical + '"\n        },\n        '
         else:
             price_display = tour_info["price"]
-            price_sub = comm["price_sub_label"]
+            price_sub = content.get("price_sub_label", comm["price_sub_label"])
+            price_block = f'<p class="text-5xl font-extrabold text-on-surface tracking-tight">{price_display}</p>'
             offers_json = '"offers": {\n          "@type": "Offer",\n          "price": "' + tour_info["price_val"] + '",\n          "priceCurrency": "' + tour_info["price_cur"] + '",\n          "url": "' + canonical + '"\n        },\n        '
 
         # Render page HTML
@@ -1520,7 +1477,7 @@ for tour_key, tour_info in tours_formatted.items():
             why_items_html=why_items_html,
             faq_section_html=faq_section_html,
             book_card_title=comm["book_card_title"],
-            price=price_display,
+            price_block=price_block,
             price_sub_label=price_sub,
             offers_json=offers_json,
             included_html=included_html,

@@ -1,3 +1,16 @@
+(function () {
+    const gtagScript = document.createElement('script');
+    gtagScript.async = true;
+    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-M8XTGFB65Y";
+    document.head.appendChild(gtagScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-M8XTGFB65Y');
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
     // Detectar idioma y contexto basado en la ruta
     const pathSegments = window.location.pathname.split('/').filter(s => s.length > 0);
@@ -8,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Traducciones del Footer
     const translations = {
         es: {
-            description: "Tu agencia de tours personalizados en Paracas: Islas Ballestas, Reserva Nacional, buggies en Huacachina, buceo, snorkel, parapente y traslados privados.",
+            description: "Tu agencia de tours personalizados en Paracas: Islas Ballestas, Reserva Nacional, buggies en Huacachina, buceo, parapente y traslados privados.",
             contact: "Contacto",
             experiences: "Experiencias",
             support: "Soporte",
@@ -30,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         },
         en: {
-            description: "Your personalized tour agency in Paracas: Ballestas Islands, National Reserve, Huacachina dune buggies, diving, snorkeling, paragliding, and private transfers.",
+            description: "Your personalized tour agency in Paracas: Ballestas Islands, National Reserve, Huacachina dune buggies, diving, paragliding, and private transfers.",
             contact: "Contact",
             experiences: "Experiences",
             support: "Support",

@@ -12,7 +12,6 @@ tours_keys = [
     "sobrevuelo-lineas-de-nazca",
     "parapente",
     "buceo",
-    "snorkel",
     "kayak-paddle-paracas",
     "mini-buggies-paracas",
     "tambo-colorado",

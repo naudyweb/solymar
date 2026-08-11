@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 huacachina: "Buggies Huacachina",
                 parapente: "Parapente",
                 buceo: "Buceo",
-                snorkel: "Snorkel",
                 nazca: "Sobrevuelo Nazca",
                 traslados: "Traslados Privados",
                 all: "Ver Todos →"
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 huacachina: "Huacachina Buggies",
                 parapente: "Paragliding",
                 buceo: "Diving",
-                snorkel: "Snorkeling",
                 nazca: "Nazca Lines Flight",
                 traslados: "Private Transfers",
                 all: "View All →"
@@ -73,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="${baseNavPath}buggies-sandboard-huacachina.html" class="block py-3 text-sm text-on-surface-variant hover:bg-surface-container hover:text-primary md:px-8">${t.tours.huacachina}</a>
                         <a href="${baseNavPath}parapente.html" class="block py-3 text-sm text-on-surface-variant hover:bg-surface-container hover:text-primary md:px-8">${t.tours.parapente}</a>
                         <a href="${baseNavPath}buceo.html" class="block py-3 text-sm text-on-surface-variant hover:bg-surface-container hover:text-primary md:px-8">${t.tours.buceo}</a>
-                        <a href="${baseNavPath}snorkel.html" class="block py-3 text-sm text-on-surface-variant hover:bg-surface-container hover:text-primary md:px-8">${t.tours.snorkel}</a>
                         <a href="${baseNavPath}sobrevuelo-lineas-de-nazca.html" class="block py-3 text-sm text-on-surface-variant hover:bg-surface-container hover:text-primary md:px-8">${t.tours.nazca}</a>
                         <a href="${baseNavPath}transporte-personalizado.html" class="block py-3 text-sm text-on-surface-variant hover:bg-surface-container hover:text-primary md:px-8">${t.tours.traslados}</a>
                         <a href="${baseNavPath}tours.html" class="block py-3 text-sm font-bold text-primary hover:bg-surface-container md:px-8 border-t border-black/5 mt-1">${t.tours.all}</a>
