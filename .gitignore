@@ -3,4 +3,12 @@ gha-creds-*.json
 node_modules/
 upload.py
 upload.sh
+upload_reservas.sh
+upload_reservas.py
 scratch/
+__pycache__/
+
+# Herramienta interna de reservas: clave y base de datos con datos de clientes
+reservas/config.php
+reservas/data/*
+!reservas/data/.htaccess

@@ -1,0 +1,14 @@
+/* Ajustes puntuales no cubiertos por las utilidades de Tailwind (style.css). */
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    body {
+        background: #fff !important;
+    }
+    #voucher {
+        box-shadow: none !important;
+        border: none !important;
+    }
+}

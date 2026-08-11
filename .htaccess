@@ -7,8 +7,18 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # 2. REDIRIGIR dominio antiguo (.site), www y cualquier alias → solymarparacas.com (dominio canónico)
+# (excluye el subdominio interno de reservas, que vive dentro de public_html/reservas
+# y por eso hereda este .htaccess aunque tiene su propio host)
 RewriteCond %{HTTP_HOST} !^solymarparacas\.com$ [NC]
+RewriteCond %{HTTP_HOST} !^reservas\.solymarparacas\.com$ [NC]
 RewriteRule ^(.*)$ https://solymarparacas.com/$1 [R=301,L]
+
+# 2b. Como reservas/ vive dentro de public_html, tambien es alcanzable en
+# solymarparacas.com/reservas/ — se bloquea esa ruta cuando se accede por el
+# dominio principal; solo debe responder en reservas.solymarparacas.com.
+RewriteCond %{HTTP_HOST} ^solymarparacas\.com$ [NC]
+RewriteCond %{REQUEST_URI} ^/reservas(/|$)
+RewriteRule ^ - [F,L]
 
 # 3. REDIRIGIR .html → URL limpia (evitar contenido duplicado)
 RewriteCond %{THE_REQUEST} \.html[\s?/]

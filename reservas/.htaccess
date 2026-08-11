@@ -1,0 +1,21 @@
+# reservas.solymarparacas.com
+
+DirectoryIndex index.php
+
+Options -Indexes
+
+# Bloquear acceso directo a los archivos de configuracion y datos sensibles
+<FilesMatch "^(config\.php|config\.sample\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.sqlite$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
