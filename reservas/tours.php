@@ -2,6 +2,26 @@
 // Catalogo de tours, leido desde tours.json (generado por ../export_tours_json.py
 // a partir de generate_pages.py, la fuente de verdad del sitio publico).
 
+// Slug del pseudo-tour "Traslado VIP": no viene del catalogo publico (no es un tour
+// vendido en el sitio), se maneja aparte porque su precio y ruta se llenan a mano.
+const RESERVAS_TRASLADO_VIP_SLUG = 'traslado_vip';
+
+// Destinos frecuentes en Peru para el traslado VIP. "otro" habilita un campo de texto libre.
+function reservas_traslado_destinos(): array
+{
+    return [
+        ['value' => 'lima_aeropuerto', 'label_es' => 'Lima - Aeropuerto Jorge Chavez', 'label_en' => 'Lima - Jorge Chavez Airport'],
+        ['value' => 'lima_miraflores', 'label_es' => 'Lima - Miraflores / Hoteles', 'label_en' => 'Lima - Miraflores / Hotels'],
+        ['value' => 'pisco_aeropuerto', 'label_es' => 'Pisco - Aeropuerto', 'label_en' => 'Pisco - Airport'],
+        ['value' => 'paracas', 'label_es' => 'Paracas', 'label_en' => 'Paracas'],
+        ['value' => 'ica', 'label_es' => 'Ica', 'label_en' => 'Ica'],
+        ['value' => 'huacachina', 'label_es' => 'Huacachina', 'label_en' => 'Huacachina'],
+        ['value' => 'nazca', 'label_es' => 'Nazca', 'label_en' => 'Nazca'],
+        ['value' => 'cusco', 'label_es' => 'Cusco', 'label_en' => 'Cusco'],
+        ['value' => 'otro', 'label_es' => 'Otro (especificar)', 'label_en' => 'Other (specify)'],
+    ];
+}
+
 function reservas_tours(): array
 {
     static $tours = null;

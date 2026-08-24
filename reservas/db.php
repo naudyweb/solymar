@@ -40,14 +40,36 @@ function reservas_db(): PDO
             currency TEXT NOT NULL DEFAULT 'PEN',
             payment_status TEXT NOT NULL DEFAULT 'pendiente',
             notes TEXT NOT NULL DEFAULT '',
-            last_lang TEXT NOT NULL DEFAULT 'es'
+            last_lang TEXT NOT NULL DEFAULT 'es',
+            traslado_origen TEXT NOT NULL DEFAULT '',
+            traslado_destino TEXT NOT NULL DEFAULT ''
         )
     SQL);
 
     $pdo->exec('CREATE INDEX IF NOT EXISTS idx_reservations_date ON reservations(tour_date)');
     $pdo->exec('CREATE INDEX IF NOT EXISTS idx_reservations_slug ON reservations(tour_slug)');
 
+    reservas_migrate($pdo);
+
     return $pdo;
+}
+
+// Migraciones no destructivas: agrega columnas nuevas a bases de datos ya existentes
+// (produccion ya tiene reservas guardadas, nunca se recrea la tabla).
+function reservas_migrate(PDO $pdo): void
+{
+    $columns = array_column($pdo->query('PRAGMA table_info(reservations)')->fetchAll(PDO::FETCH_ASSOC), 'name');
+
+    $newColumns = [
+        'traslado_origen' => "ALTER TABLE reservations ADD COLUMN traslado_origen TEXT NOT NULL DEFAULT ''",
+        'traslado_destino' => "ALTER TABLE reservations ADD COLUMN traslado_destino TEXT NOT NULL DEFAULT ''",
+    ];
+
+    foreach ($newColumns as $column => $sql) {
+        if (!in_array($column, $columns, true)) {
+            $pdo->exec($sql);
+        }
+    }
 }
 
 // Genera el siguiente codigo de voucher del anio en curso: SM-2026-0001, SM-2026-0002, ...

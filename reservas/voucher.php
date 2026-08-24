@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/tours.php';
 require_once __DIR__ . '/strings.php';
 require_once __DIR__ . '/layout.php';
 
@@ -55,6 +56,13 @@ reservas_render_flash();
         </div>
 
         <h2 class="text-xl font-bold mb-4"><?= htmlspecialchars($tourTitle, ENT_QUOTES) ?></h2>
+
+        <?php if ($r['tour_slug'] === RESERVAS_TRASLADO_VIP_SLUG): ?>
+        <div class="mb-4 text-sm">
+            <span class="text-on-surface-variant"><?= t('route', $lang) ?>:</span>
+            <span class="font-medium"><?= htmlspecialchars($r['traslado_origen'], ENT_QUOTES) ?> &rarr; <?= htmlspecialchars($r['traslado_destino'], ENT_QUOTES) ?></span>
+        </div>
+        <?php endif; ?>
 
         <dl class="grid sm:grid-cols-2 gap-x-6 gap-y-4 text-sm">
             <div>

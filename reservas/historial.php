@@ -61,6 +61,7 @@ reservas_render_flash();
             <label class="block text-xs font-medium mb-1 text-on-surface-variant">Tour</label>
             <select name="tour" class="w-full border border-surface-container rounded-lg px-3 py-2 text-sm">
                 <option value="">Todos</option>
+                <option value="<?= htmlspecialchars(RESERVAS_TRASLADO_VIP_SLUG, ENT_QUOTES) ?>" <?= $tourFilter === RESERVAS_TRASLADO_VIP_SLUG ? 'selected' : '' ?>>Traslado VIP</option>
                 <?php foreach (reservas_tours() as $tour): ?>
                     <option value="<?= htmlspecialchars($tour['slug'], ENT_QUOTES) ?>" <?= $tourFilter === $tour['slug'] ? 'selected' : '' ?>>
                         <?= htmlspecialchars($tour['title_es'], ENT_QUOTES) ?>

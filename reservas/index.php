@@ -20,6 +20,26 @@ if (isset($_GET['id'])) {
 
 $tours = reservas_tours();
 $toursByCategory = reservas_tours_by_category();
+$destinos = reservas_traslado_destinos();
+
+// Al editar una reserva de Traslado VIP, intenta ubicar el value del select
+// a partir de la etiqueta guardada; si no calza con ninguno, cae en "otro".
+function reservas_traslado_field_state(array $destinos, string $storedLabel): array
+{
+    if ($storedLabel === '') {
+        return ['value' => '', 'otro' => ''];
+    }
+    foreach ($destinos as $d) {
+        if ($d['label_es'] === $storedLabel) {
+            return ['value' => $d['value'], 'otro' => ''];
+        }
+    }
+    return ['value' => 'otro', 'otro' => $storedLabel];
+}
+
+$isTrasladoVip = $editing && $editing['tour_slug'] === RESERVAS_TRASLADO_VIP_SLUG;
+$origenState = reservas_traslado_field_state($destinos, $editing['traslado_origen'] ?? '');
+$destinoState = reservas_traslado_field_state($destinos, $editing['traslado_destino'] ?? '');
 
 reservas_page_start($editing ? 'Editar reserva' : 'Nueva reserva');
 reservas_render_flash();
@@ -41,6 +61,10 @@ reservas_render_flash();
             <select id="tour_slug" name="tour_slug" required
                     class="w-full border border-surface-container rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
                 <option value="">Selecciona un tour...</option>
+                <option value="<?= htmlspecialchars(RESERVAS_TRASLADO_VIP_SLUG, ENT_QUOTES) ?>"
+                    <?= $isTrasladoVip ? 'selected' : '' ?>>
+                    Traslado VIP
+                </option>
                 <?php foreach ($toursByCategory as $cat): ?>
                     <optgroup label="<?= htmlspecialchars($cat['label_es'], ENT_QUOTES) ?>">
                         <?php foreach ($cat['tours'] as $tour): ?>
@@ -53,6 +77,41 @@ reservas_render_flash();
                     </optgroup>
                 <?php endforeach; ?>
             </select>
+        </div>
+
+        <div id="traslado-vip-fields" class="grid sm:grid-cols-2 gap-4<?= $isTrasladoVip ? '' : ' hidden' ?>">
+            <div>
+                <label for="traslado_origen" class="block text-sm font-medium mb-1">Origen *</label>
+                <select id="traslado_origen" name="traslado_origen"
+                        class="w-full border border-surface-container rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <option value="">Selecciona origen...</option>
+                    <?php foreach ($destinos as $d): ?>
+                        <option value="<?= htmlspecialchars($d['value'], ENT_QUOTES) ?>"
+                            <?= $origenState['value'] === $d['value'] ? 'selected' : '' ?>>
+                            <?= htmlspecialchars($d['label_es'], ENT_QUOTES) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+                <input type="text" id="traslado_origen_otro" name="traslado_origen_otro" placeholder="Especifica el origen"
+                       value="<?= htmlspecialchars($origenState['otro'], ENT_QUOTES) ?>"
+                       class="mt-2 w-full border border-surface-container rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary <?= $origenState['value'] === 'otro' ? '' : 'hidden' ?>">
+            </div>
+            <div>
+                <label for="traslado_destino" class="block text-sm font-medium mb-1">Destino *</label>
+                <select id="traslado_destino" name="traslado_destino"
+                        class="w-full border border-surface-container rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <option value="">Selecciona destino...</option>
+                    <?php foreach ($destinos as $d): ?>
+                        <option value="<?= htmlspecialchars($d['value'], ENT_QUOTES) ?>"
+                            <?= $destinoState['value'] === $d['value'] ? 'selected' : '' ?>>
+                            <?= htmlspecialchars($d['label_es'], ENT_QUOTES) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+                <input type="text" id="traslado_destino_otro" name="traslado_destino_otro" placeholder="Especifica el destino"
+                       value="<?= htmlspecialchars($destinoState['otro'], ENT_QUOTES) ?>"
+                       class="mt-2 w-full border border-surface-container rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary <?= $destinoState['value'] === 'otro' ? '' : 'hidden' ?>">
+            </div>
         </div>
 
         <div class="grid sm:grid-cols-2 gap-4">
@@ -169,9 +228,49 @@ reservas_render_flash();
 <script>
 const TOURS = <?= json_encode($tours, JSON_UNESCAPED_UNICODE) ?>;
 const isEditing = <?= $editing ? 'true' : 'false' ?>;
+const TRASLADO_VIP_SLUG = <?= json_encode(RESERVAS_TRASLADO_VIP_SLUG) ?>;
+
+const trasladoFields = document.getElementById('traslado-vip-fields');
+const trasladoOrigen = document.getElementById('traslado_origen');
+const trasladoDestino = document.getElementById('traslado_destino');
+const trasladoOrigenOtro = document.getElementById('traslado_origen_otro');
+const trasladoDestinoOtro = document.getElementById('traslado_destino_otro');
+
+function toggleTrasladoOtro(select, input) {
+    const showOtro = select.value === 'otro';
+    input.classList.toggle('hidden', !showOtro);
+    input.required = showOtro;
+}
+
+function updateTrasladoVisibility() {
+    const isVip = document.getElementById('tour_slug').value === TRASLADO_VIP_SLUG;
+    trasladoFields.classList.toggle('hidden', !isVip);
+    trasladoOrigen.required = isVip;
+    trasladoDestino.required = isVip;
+    if (!isVip) {
+        trasladoOrigenOtro.required = false;
+        trasladoDestinoOtro.required = false;
+    } else {
+        toggleTrasladoOtro(trasladoOrigen, trasladoOrigenOtro);
+        toggleTrasladoOtro(trasladoDestino, trasladoDestinoOtro);
+    }
+}
+
+trasladoOrigen.addEventListener('change', () => toggleTrasladoOtro(trasladoOrigen, trasladoOrigenOtro));
+trasladoDestino.addEventListener('change', () => toggleTrasladoOtro(trasladoDestino, trasladoDestinoOtro));
+updateTrasladoVisibility();
 
 document.getElementById('tour_slug').addEventListener('change', function () {
+    updateTrasladoVisibility();
     if (isEditing) return; // no pisar datos ya guardados al editar
+
+    if (this.value === TRASLADO_VIP_SLUG) {
+        document.getElementById('meeting_point_es').value = '';
+        document.getElementById('meeting_point_en').value = '';
+        document.getElementById('price_total').value = '';
+        return;
+    }
+
     const tour = TOURS.find(t => t.slug === this.value);
     if (!tour) return;
 

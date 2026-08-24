@@ -13,6 +13,7 @@ const RESERVAS_STRINGS = [
     'hotel'            => ['es' => 'Hotel', 'en' => 'Hotel'],
     'pickup_time'      => ['es' => 'Hora de recojo', 'en' => 'Pick-up time'],
     'num_people'       => ['es' => 'N° de personas', 'en' => 'Number of people'],
+    'route'            => ['es' => 'Ruta', 'en' => 'Route'],
     'price_total'      => ['es' => 'Precio total', 'en' => 'Total price'],
     'payment_status'   => ['es' => 'Estado de pago', 'en' => 'Payment status'],
     'notes'            => ['es' => 'Notas', 'en' => 'Notes'],
