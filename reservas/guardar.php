@@ -2,6 +2,7 @@
 require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/tours.php';
+require_once __DIR__ . '/strings.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: index.php');
@@ -66,7 +67,7 @@ $data = [
     'hotel' => trim((string) ($_POST['hotel'] ?? '')),
     'pickup_time' => trim((string) ($_POST['pickup_time'] ?? '')),
     'num_people' => $numPeople,
-    'price_total' => trim((string) ($_POST['price_total'] ?? '')),
+    'price_total' => reservas_normalize_price(trim((string) ($_POST['price_total'] ?? '')), $currency),
     'currency' => $currency,
     'payment_status' => $paymentStatus,
     'notes' => trim((string) ($_POST['notes'] ?? '')),

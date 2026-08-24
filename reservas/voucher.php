@@ -27,7 +27,6 @@ if ($lang === null) {
 
 $tourTitle = $lang === 'en' ? $r['tour_title_en'] : $r['tour_title_es'];
 $meetingPoint = $lang === 'en' ? $r['meeting_point_en'] : $r['meeting_point_es'];
-$currencySymbol = $r['currency'] === 'USD' ? '$' : 'S/';
 
 reservas_page_start('Voucher ' . $r['code']);
 reservas_render_flash();
@@ -95,7 +94,7 @@ reservas_render_flash();
             </div>
             <div>
                 <dt class="text-on-surface-variant"><?= t('price_total', $lang) ?></dt>
-                <dd class="font-medium"><?= $r['price_total'] !== '' ? htmlspecialchars($r['price_total'], ENT_QUOTES) : htmlspecialchars($currencySymbol, ENT_QUOTES) . ' —' ?></dd>
+                <dd class="font-medium"><?= htmlspecialchars(reservas_format_price($r['price_total'], $r['currency']), ENT_QUOTES) ?></dd>
             </div>
             <div>
                 <dt class="text-on-surface-variant"><?= t('payment_status', $lang) ?></dt>

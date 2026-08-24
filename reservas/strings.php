@@ -39,6 +39,36 @@ function payment_status_label(string $status, string $lang): string
     return t('payment_' . $status, $lang);
 }
 
+// Antepone el simbolo de moneda a un precio tipeado a mano si no lo trae ya
+// (price_total es texto libre: los tours con calculo automatico ya incluyen
+// el simbolo, pero uno escrito a mano -como en Traslado VIP- puede no traerlo).
+// Se usa al guardar, para que el dato en la BD quede completo desde el origen.
+function reservas_normalize_price(string $priceTotal, string $currency): string
+{
+    if ($priceTotal === '') {
+        return '';
+    }
+    if (str_starts_with($priceTotal, 'S/') || str_starts_with($priceTotal, '$')) {
+        return $priceTotal;
+    }
+
+    $symbol = $currency === 'USD' ? '$' : 'S/';
+    return $symbol . ' ' . $priceTotal;
+}
+
+// Formatea el precio para mostrar (voucher/historial), cubriendo tambien
+// reservas guardadas antes de que reservas_normalize_price existiera.
+function reservas_format_price(string $priceTotal, string $currency): string
+{
+    $priceTotal = reservas_normalize_price(trim($priceTotal), $currency);
+    if ($priceTotal === '') {
+        $symbol = $currency === 'USD' ? '$' : 'S/';
+        return $symbol . ' —';
+    }
+
+    return $priceTotal;
+}
+
 const RESERVAS_MONTHS = [
     'es' => ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'],
     'en' => ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],

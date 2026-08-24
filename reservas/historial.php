@@ -113,7 +113,7 @@ reservas_render_flash();
                     <td class="px-4 py-3"><?= htmlspecialchars($r['tour_title_es'], ENT_QUOTES) ?></td>
                     <td class="px-4 py-3"><?= htmlspecialchars($r['tour_date'], ENT_QUOTES) ?></td>
                     <td class="px-4 py-3"><?= (int) $r['num_people'] ?></td>
-                    <td class="px-4 py-3"><?= htmlspecialchars($r['price_total'], ENT_QUOTES) ?></td>
+                    <td class="px-4 py-3"><?= htmlspecialchars(reservas_format_price($r['price_total'], $r['currency']), ENT_QUOTES) ?></td>
                     <td class="px-4 py-3">
                         <span class="px-2 py-0.5 rounded-full text-xs font-medium
                             <?= $r['payment_status'] === 'pagado' ? 'bg-green-50 text-green-700' : ($r['payment_status'] === 'parcial' ? 'bg-amber-50 text-amber-700' : 'bg-red-50 text-red-700') ?>">
