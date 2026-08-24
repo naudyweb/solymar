@@ -39,21 +39,32 @@ function payment_status_label(string $status, string $lang): string
     return t('payment_' . $status, $lang);
 }
 
-// Antepone el simbolo de moneda a un precio tipeado a mano si no lo trae ya
-// (price_total es texto libre: los tours con calculo automatico ya incluyen
-// el simbolo, pero uno escrito a mano -como en Traslado VIP- puede no traerlo).
+// Completa un precio tipeado a mano con el simbolo de moneda y dos decimales
+// (price_total es texto libre: los tours con calculo automatico ya llegan
+// como "S/ 160.00", pero uno escrito a mano -como en Traslado VIP- puede
+// llegar como "280", sin simbolo ni decimales). Si no es un monto simple
+// (texto libre, un rango, etc.) se deja tal cual.
 // Se usa al guardar, para que el dato en la BD quede completo desde el origen.
 function reservas_normalize_price(string $priceTotal, string $currency): string
 {
+    $priceTotal = trim($priceTotal);
     if ($priceTotal === '') {
         return '';
     }
-    if (str_starts_with($priceTotal, 'S/') || str_starts_with($priceTotal, '$')) {
+
+    $amount = $priceTotal;
+    if (str_starts_with($amount, 'S/')) {
+        $amount = trim(substr($amount, 2));
+    } elseif (str_starts_with($amount, '$')) {
+        $amount = trim(substr($amount, 1));
+    }
+
+    if (!is_numeric($amount)) {
         return $priceTotal;
     }
 
     $symbol = $currency === 'USD' ? '$' : 'S/';
-    return $symbol . ' ' . $priceTotal;
+    return $symbol . ' ' . number_format((float) $amount, 2, '.', '');
 }
 
 // Formatea el precio para mostrar (voucher/historial), cubriendo tambien
