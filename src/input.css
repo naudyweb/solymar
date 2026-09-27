@@ -1,16 +1,88 @@
 @import "tailwindcss";
+
+/* Identidad "desierto + Humboldt": el desierto de Paracas cae directo al mar frío.
+   Neutros fríos (garúa) para la página; la duna (surface-container) es un acento
+   de sección usado con moderación; el flamenco (tertiary) es el único acento de UI
+   y solo marca precios y botones de reserva. */
 @theme {
-  --color-primary: #002d5a;
-  --color-primary-container: #004a8f;
-  --color-secondary: #0060a7;
-  --color-tertiary: #8b3c00;
+  --color-primary: #0a3d52;
+  --color-primary-container: #12607a;
+  --color-secondary: #1f6a80;
+  --color-tertiary: #b4435a;
+  --color-tertiary-container: #9c3549;
   --color-on-tertiary: #ffffff;
-  --color-surface: #faf9f6;
-  --color-surface-container: #f1ede8;
-  --color-surface-container-low: #f7f3ef;
-  --color-on-surface: #1a1c1e;
-  --color-on-surface-variant: #44474e;
-  --font-manrope: "Manrope", sans-serif;
+  --color-surface: #eef1ef;
+  --color-surface-container: #e4dccb;
+  --color-surface-container-low: #f6f8f7;
+  --color-on-surface: #14232b;
+  --color-on-surface-variant: #4a5a62;
+  --color-sand: #d8b98a;
+
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 @source "../**/*.html";
 @source "../js/**/*.js";
+@source "../generate_pages.py";
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 3px;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+  font-stretch: 125%;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Candelabro de Paracas: se dibuja una sola vez al cargar. */
+@utility candelabro-draw {
+  & path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    & path {
+      stroke-dashoffset: 1;
+      animation: candelabro-draw 2.4s var(--ease-out-soft) 0.3s forwards;
+    }
+  }
+}
+
+@utility rise-in {
+  @media (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    animation: rise-in 0.9s var(--ease-out-soft) forwards;
+    animation-delay: calc(var(--i, 0) * 120ms);
+  }
+}
+
+@keyframes candelabro-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

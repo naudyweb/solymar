@@ -47,7 +47,7 @@ tours = {
             "h1": "Ballestas Islands Tour from Paracas",
             "keywords": "ballestas islands tour, ballestas islands price, ballestas islands tour cost, ballestas islands paracas, ballestas islands schedule, peruvian galapagos, boat tour paracas, what to see ballestas islands",
             "subtitle": "Cruise the \"Peruvian Galapagos\" and watch sea lions, Humboldt penguins and thousands of seabirds just meters from your boat.",
-            "intro": "The <strong>Ballestas Islands</strong> are the star attraction of Paracas. Fed by the cold Humboldt Current, they form one of the most productive marine ecosystems on Earth — which is why they are called the \"Peruvian Galapagos\".",
+            "intro": "The <strong>Ballestas Islands</strong> are the star attraction of Paracas. Fed by the cold Humboldt Current, they form one of the most productive marine ecosystems on Earth, which is why they are called the \"Peruvian Galapagos\".",
             "intro_p2": "The tour departs from <strong>El Chaco tourist pier</strong> aboard a modern speedboat with life jackets and an onboard guide. For 2 hours you will cruise alongside colonies of <strong>sea lions and Humboldt penguins</strong>, boobies, cormorants and Inca terns, with frequent dolphin sightings along the way.",
             "intro_p3": "Before reaching the islands, the boat stops in front of the <strong>Paracas Candelabra</strong>, a giant geoglyph over 150 meters tall etched into the sandy hillside, visible only from the sea.",
             "why_title": "What will you see on the tour?",
@@ -62,7 +62,7 @@ tours = {
             "schedule_label": "* Daily departures at 8:00 AM and 10:00 AM from El Chaco pier. The first departure is recommended for calmer seas.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does the Ballestas Islands tour cost in 2026?", "a": "Our tour costs S/ 80 per person and includes a modern speedboat, certified guide, and insurance. Separately, every visitor pays S/ 16 in pier taxes (SERNANP + boarding fee). Unlike the \"teaser\" prices you may see online, we tell you the real total cost before you book — no surprises, no hidden fees."},
+                {"q": "How much does the Ballestas Islands tour cost in 2026?", "a": "Our tour costs S/ 80 per person and includes a modern speedboat, certified guide, and insurance. Separately, every visitor pays S/ 16 in pier taxes (SERNANP + boarding fee). Unlike the \"teaser\" prices you may see online, we tell you the real total cost before you book: no surprises, no hidden fees."},
                 {"q": "What is the best departure time?", "a": "The 8:00 AM departure is the best one: the sea is calmer, visibility is better, and wildlife is most active. The 10:00 AM departure is also good, though wind and swell tend to pick up later in the morning."},
                 {"q": "Can we walk on the islands or swim?", "a": "No, the Ballestas Islands are a protected reserve. The tour is 100% boat-based; stepping onto the islands or swimming is strictly prohibited to protect the sea lion and penguin colonies."},
                 {"q": "Is it suitable for children, seniors, or pregnant travelers?", "a": "Yes, it is a very safe, zero-effort ride. All passengers remain seated wearing mandatory life jackets. Children from age 2, seniors, and pregnant travelers (with uncomplicated pregnancies) enjoy it without any issue."},
@@ -197,7 +197,7 @@ tours = {
             "faqs": [
                 {"q": "How much does the Paracas Full Day cost in total?", "a": "The tour costs S/ 120 per person and includes the Ballestas boat trip, the Reserve land tour, and transfers. The combined SERNANP + pier tax of S/ 22 per adult is paid separately. Real total cost: S/ 142, with no hidden charges."},
                 {"q": "Can I join this tour if I arrive by bus from Lima in the morning?", "a": "Yes, this is the most common case. If your bus arrives in Paracas before 7:30 AM, we pick you up directly at the terminal and start the tour right away. Let us know your arrival time when booking."},
-                {"q": "How long is the tour and when does it end?", "a": "It starts at 7:45 AM and ends around 3:00 PM in Paracas — in time to catch an afternoon bus to Lima, Ica, or Huacachina."},
+                {"q": "How long is the tour and when does it end?", "a": "It starts at 7:45 AM and ends around 3:00 PM in Paracas, in time to catch an afternoon bus to Lima, Ica, or Huacachina."},
                 {"q": "Is lunch included?", "a": "No, but the itinerary includes a stop at Lagunillas cove, inside the Reserve, where you will find well-priced seafood restaurants right by the ocean."},
                 {"q": "Can I store my luggage during the tour?", "a": "Yes, we store your bags for free and safely at our Paracas office while you are out on the tours. Perfect if you are passing through between Lima and Ica."},
                 {"q": "What should I bring?", "a": "A windbreaker, sunscreen, a hat that straps on, sunglasses, water, and cash for the taxes and lunch. Mornings at sea are chilly and the midday desert sun is strong: dress in layers."}
@@ -261,8 +261,8 @@ tours = {
             "schedule_label": "* Best times are 4:00 PM and 4:30 PM to enjoy the sunset and avoid the intense midday heat.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does the Huacachina buggy and sandboarding tour cost?", "a": "Our tour costs S/ 70 per person and includes the tubular buggy ride, sandboards with wax, and a professional driver. The municipal desert entrance fee (approx. S/ 4) is paid separately. We confirm the total cost before you book — no surprises."},
-                {"q": "Is the dune buggy tour safe?", "a": "With a licensed operator, yes. All our buggies have roll cages, harness seats, and authorized, experienced desert drivers. Avoid informal street-sold tours without insurance or technical inspection — regional authorities have issued warnings about them."},
+                {"q": "How much does the Huacachina buggy and sandboarding tour cost?", "a": "Our tour costs S/ 70 per person and includes the tubular buggy ride, sandboards with wax, and a professional driver. The municipal desert entrance fee (approx. S/ 4) is paid separately. We confirm the total cost before you book, with no surprises."},
+                {"q": "Is the dune buggy tour safe?", "a": "With a licensed operator, yes. All our buggies have roll cages, harness seats, and authorized, experienced desert drivers. Avoid informal street-sold tours without insurance or technical inspection; regional authorities have issued warnings about them."},
                 {"q": "Do I need sandboarding experience?", "a": "Not at all. Beginners can slide down lying flat on their stomachs (sled style), which is extremely easy, safe, and fun. More adventurous riders can try sitting or standing."},
                 {"q": "What is the best time for the tour?", "a": "The 4:00 PM slot is the favorite: the sand is no longer scorching, the light is perfect for photos, and you finish watching the sunset from the top of the dunes. In summer, the early morning slot is also pleasant."},
                 {"q": "How do I get from Paracas to Huacachina?", "a": "Huacachina is about 1 hour and 20 minutes from Paracas. We can arrange a private transfer, or you can take an intercity bus to Ica plus a 10-minute taxi. We also offer the combined Paracas + Huacachina full-day tour."},
@@ -293,12 +293,12 @@ tours = {
                 {"icon": "restaurant", "title": "Gastronomía Iqueña", "desc": "Las bodegas cuentan con excelentes restaurantes donde podrás almorzar platos típicos como la sopa seca o carapulcra."},
                 {"icon": "local_bar", "title": "Degustación Completa", "desc": "Prueba piscos puros, acholados, vinos macerados y licores de crema de pisco."}
             ],
-            "included": ["Transporte privado/compartido ida y vuelta", "Guía local conocedor de la historia del Pisco", "Entradas e ingresos a todas las bodegas", "Degustaciones de piscos y vinos en cada parada"],
-            "excluded": ["Almuerzo en bodega (disponible a la carta)", "Botellas de Pisco compradas como souvenir"],
+            "included": ["Transporte privado/compartido ida y vuelta", "Guía local conocedor de la historia del Pisco", "Degustaciones de piscos y vinos en cada parada"],
+            "excluded": ["Entradas a las bodegas (corren por cuenta del cliente)", "Almuerzo en bodega (disponible a la carta)", "Botellas de Pisco compradas como souvenir"],
             "schedule_label": "* Salidas diarias a las 10:30 AM desde Ica o Paracas. Duración: 4.5 horas aprox.",
             "faq_title": "Preguntas Frecuentes",
             "faqs": [
-                {"q": "¿Cuánto cuesta el tour de la Ruta del Pisco?", "a": "El tour cuesta S/ 80 por persona e incluye transporte ida y vuelta desde Paracas o Ica, guía local, entradas a todas las bodegas y las degustaciones en cada parada. Solo el almuerzo y las botellas que compres van por tu cuenta."},
+                {"q": "¿Cuánto cuesta el tour de la Ruta del Pisco?", "a": "El tour cuesta S/ 80 por persona e incluye transporte ida y vuelta desde Paracas o Ica, guía local y degustaciones en cada parada. No incluye las entradas a las bodegas (corren por cuenta del cliente), almuerzo ni botellas compradas."},
                 {"q": "¿Qué bodegas se visitan?", "a": "El circuito combina bodegas industriales reconocidas del valle de Ica con bodegas artesanales familiares que conservan lagares y alambiques coloniales. La selección puede variar según el día y la temporada de vendimia."},
                 {"q": "¿Pueden realizar el tour personas menores de edad?", "a": "Sí, los niños y adolescentes son bienvenidos para conocer la historia y los viñedos, pero la degustación de bebidas alcohólicas está estrictamente reservada para mayores de 18 años."},
                 {"q": "¿Incluye almuerzo el tour?", "a": "El tour hace una parada de almuerzo en una de las bodegas campestres, donde puedes probar platos iqueños como la carapulcra con sopa seca. El almuerzo se paga directamente según consumo."},
@@ -322,17 +322,17 @@ tours = {
                 {"icon": "restaurant", "title": "Local Creole Food", "desc": "We stop at countryside winery restaurants where you can enjoy traditional dishes like Carapulcra and Sopa Seca."},
                 {"icon": "local_bar", "title": "Premium Tasting", "desc": "Sample pure Piscos, blended Acholados, aromatic sweet wines, and Pisco cream liqueurs."}
             ],
-            "included": ["Round-trip transport from Paracas or Ica", "Local tour guide specializing in wine & spirits", "Entry tickets to all wineries visited", "Guided tastings at all locations"],
-            "excluded": ["Lunch at the winery (available à la carte)", "Bottled wines or spirits purchased as souvenirs"],
+            "included": ["Round-trip transport from Paracas or Ica", "Local tour guide specializing in wine & spirits", "Guided tastings at all locations"],
+            "excluded": ["Winery entrance tickets (paid directly by the customer)", "Lunch at the winery (available à la carte)", "Bottled wines or spirits purchased as souvenirs"],
             "schedule_label": "* Daily departures at 10:30 AM from Ica or Paracas. Duration: approx. 4.5 hours.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does the Pisco Route tour cost?", "a": "The tour costs S/ 80 per person and includes round-trip transport from Paracas or Ica, a local guide, entrance to all wineries, and the tastings at every stop. Only lunch and any bottles you purchase are extra."},
+                {"q": "How much does the Pisco Route tour cost?", "a": "The tour costs S/ 80 per person and includes round-trip transport from Paracas or Ica, a local guide, and tastings at every stop. Winery entrance tickets are not included (at customer's expense), nor is lunch or purchased bottles."},
                 {"q": "Which wineries do we visit?", "a": "The circuit combines renowned industrial wineries of the Ica valley with family-run artisanal bodegas that preserve colonial presses and stills. The selection may vary by day and by harvest season."},
                 {"q": "Can minors join the tour?", "a": "Yes, children and teenagers are welcome to learn about the history and explore the vineyards. However, the alcohol tastings are strictly for adults aged 18 and older."},
                 {"q": "Is lunch included in the price?", "a": "No, the tour stops at a countryside winery restaurant where you can try Ica specialties like carapulcra with sopa seca. Meals are paid directly at the restaurant."},
                 {"q": "Can I buy wines and Piscos directly at the wineries?", "a": "Yes, all wineries have shops selling at cellar-door prices. It is the best chance to take home a pure Pisco or a Pisco cream liqueur."},
-                {"q": "When is the best time for the Pisco Route?", "a": "The tour runs great all year, but February–March coincides with the grape harvest (vendimia): you will see the picking and grape-stomping live, and in March, Ica celebrates its International Harvest Festival."}
+                {"q": "When is the best time for the Pisco Route?", "a": "The tour runs great all year, but February-March coincides with the grape harvest (vendimia): you will see the picking and grape-stomping live, and in March, Ica celebrates its International Harvest Festival."}
             ]
         }
     },
@@ -364,7 +364,7 @@ tours = {
             "schedule_label": "* Salida diaria a las 7:45 AM desde el muelle de Paracas. Retorno opcional a Paracas o puedes quedarte en Ica (Huacachina) al finalizar el tour a las 6:30 PM.",
             "faq_title": "Preguntas Frecuentes",
             "faqs": [
-                {"q": "¿Cuánto cuesta el tour Paracas + Huacachina en un día?", "a": "El tour cuesta S/ 190 por persona e incluye lancha a Ballestas, traslado Paracas–Huacachina, buggies tubulares y sandboard. Aparte se pagan los impuestos de muelle y SERNANP (S/ 16 aprox.) y la tasa municipal del desierto (S/ 4 aprox.). Total real aproximado: S/ 210, sin cobros ocultos."},
+                {"q": "¿Cuánto cuesta el tour Paracas + Huacachina en un día?", "a": "El tour cuesta S/ 190 por persona e incluye lancha a Ballestas, traslado Paracas-Huacachina, buggies tubulares y sandboard. Aparte se pagan los impuestos de muelle y SERNANP (S/ 16 aprox.) y la tasa municipal del desierto (S/ 4 aprox.). Total real aproximado: S/ 210, sin cobros ocultos."},
                 {"q": "¿Puedo quedarme en Huacachina al finalizar el tour?", "a": "¡Sí! Muchos viajeros continúan su ruta al sur hacia Nazca o Arequipa. Puedes finalizar el tour en Huacachina con tu equipaje a bordo de nuestro transporte sin costo extra. Avísanos al reservar."},
                 {"q": "¿Qué pasa con mis maletas durante el día?", "a": "Las maletas viajan seguras en la maletera del transporte climatizado que te lleva de Paracas a Huacachina, por lo que no tienes que preocuparte por dejarlas en ningún hotel."},
                 {"q": "¿El tour incluye comida?", "a": "No, pero el itinerario deja tiempo libre en el oasis, donde hay una amplia variedad de restaurantes para almorzar comida criolla, marina o internacional frente a la laguna."},
@@ -393,80 +393,12 @@ tours = {
             "schedule_label": "* Daily departures at 7:45 AM. You can return to Paracas at the end of the tour or stay in Huacachina/Ica after 6:30 PM.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does the Paracas + Huacachina one-day tour cost?", "a": "The tour costs S/ 190 per person and includes the Ballestas boat trip, the Paracas–Huacachina transfer, tubular buggies, and sandboarding. Pier/SERNANP taxes (approx. S/ 16) and the municipal desert fee (approx. S/ 4) are paid separately. Approximate real total: S/ 210, no hidden charges."},
+                {"q": "How much does the Paracas + Huacachina one-day tour cost?", "a": "The tour costs S/ 190 per person and includes the Ballestas boat trip, the Paracas-Huacachina transfer, tubular buggies, and sandboarding. Pier/SERNANP taxes (approx. S/ 16) and the municipal desert fee (approx. S/ 4) are paid separately. Approximate real total: S/ 210, no hidden charges."},
                 {"q": "Can I finish the tour in Huacachina instead of returning to Paracas?", "a": "Yes! Many travelers continue south to Nazca or Arequipa. You can end your day in Huacachina with your luggage on board at no extra cost. Just let us know when booking."},
                 {"q": "Where is my luggage kept during the tour?", "a": "Your bags travel securely in the trunk of the air-conditioned vehicle that takes you from Paracas to Huacachina, so you never have to leave them at a hotel."},
                 {"q": "Is food included in the tour?", "a": "No, but the itinerary leaves free time at the oasis, where you will find plenty of restaurants serving Peruvian, seafood, and international dishes by the lagoon."},
                 {"q": "Is it an exhausting day?", "a": "It is a full day (approx. 7:45 AM to 6:30 PM) but well balanced: a calm boat ride in the morning, a restful transfer at noon, and the buggy adrenaline only at 4:00 PM. Most travelers finish with energy to spare for the sunset."},
                 {"q": "What should I bring?", "a": "A windbreaker for the boat, sunscreen, sunglasses, a cap, closed shoes for sandboarding, and cash for taxes and lunch. Everything else (life jackets, boards, wax) is on us."}
-            ]
-        }
-    },
-    "sobrevuelo-lineas-de-nazca": {
-        "filename": "sobrevuelo-lineas-de-nazca.html",
-        "image": "img/lineas-de-nazca.jpg",
-        "price": "$ 260 USD",
-        "price_val": "260",
-        "price_cur": "USD",
-        "category": "aire",
-        "es": {
-            "title": "Sobrevuelo Líneas de Nazca desde Pisco 2026: Precio y Reserva | SolyMar",
-            "desc": "Sobrevuela las Líneas de Nazca desde el aeropuerto de Pisco, a 15 min de Paracas: Colibrí, Mono, Araña, Astronauta y más de 12 figuras sin viajar 7 horas hasta Nazca.",
-            "h1": "Sobrevuelo a las Líneas de Nazca desde el aeropuerto de Pisco",
-            "keywords": "sobrevuelo lineas de nazca desde pisco, lineas de nazca desde paracas, vuelo lineas de nazca precio, nazca desde paracas, cuanto cuesta sobrevolar las lineas de nazca, tour lineas de nazca",
-            "subtitle": "Admira los misteriosos geoglifos Patrimonio de la Humanidad desde el aire, volando directamente desde el aeropuerto de Pisco, al lado de Paracas.",
-            "intro": "Las <strong>Líneas de Nazca</strong> son geoglifos de más de 1,500 años declarados Patrimonio de la Humanidad por la UNESCO. Volar desde el <strong>aeropuerto de Pisco</strong> te permite verlas sin las más de 7 horas de carretera que toma llegar a Nazca por tierra.",
-            "intro_p2": "A bordo de una aeronave <strong>Cessna Grand Caravan</strong> con ventana garantizada para cada pasajero, sobrevolarás los valles de Ica y Ocucaje hasta llegar a la pampa de Nazca, donde el piloto inclina el avión hacia ambos lados sobre cada figura.",
-            "intro_p3": "Verás las siluetas del <strong>Colibrí, el Mono, la Araña, el Astronauta, el Cóndor, la Ballena, las Manos y el Árbol</strong>, entre más de 12 figuras trazadas por la civilización Nazca en pleno desierto.",
-            "why_title": "Detalles del sobrevuelo",
-            "why_items": [
-                {"icon": "flight_takeoff", "title": "Vuelo de 1h 40min", "desc": "Trayecto completo ida y vuelta volando sobre la costa y desierto iqueño hasta Nazca."},
-                {"icon": "explore", "title": "12 Figuras Emblemáticas", "desc": "El avión realiza giros a la izquierda y derecha sobre cada figura para que todos los pasajeros puedan tomar fotos perfectas."},
-                {"icon": "security", "title": "Aeronaves Modernas", "desc": "Cessna Caravans de 12 plazas operadas por aerolíneas asociadas con pilotos y tripulación certificada."},
-                {"icon": "pin_drop", "title": "Salida desde Pisco", "desc": "El Aeropuerto Internacional de Pisco se encuentra a solo 15 minutos en auto de Paracas."}
-            ],
-            "included": ["Sobrevuelo certificado a las Líneas de Nazca (1h 40m)", "Guía/copiloto bilingüe explicando las figuras", "Traslados ida y vuelta desde tu hotel en Paracas al aeropuerto", "Certificado de sobrevuelo oficial"],
-            "excluded": ["Tasa de aeropuerto TUUA (S/ 30.00 / USD 10.00 aprox. a pagar en efectivo)"],
-            "schedule_label": "* Vuelos programados por la mañana entre las 8:00 AM y las 12:00 PM (sujeto a condiciones de visibilidad y control aéreo).",
-            "faq_title": "Preguntas Frecuentes",
-            "faqs": [
-                {"q": "¿Cuánto cuesta el sobrevuelo a las Líneas de Nazca desde Pisco?", "a": "El sobrevuelo cuesta USD 260 por persona e incluye el vuelo de 1h 40m, traslados desde tu hotel en Paracas al aeropuerto y certificado oficial. Aparte se paga la tasa aeroportuaria TUUA (S/ 30 / USD 10 aprox., en efectivo). Precio total claro antes de reservar."},
-                {"q": "¿Cuánto dura la experiencia completa?", "a": "El vuelo dura aproximadamente 1 hora 40 minutos. Con los traslados desde Paracas y el check-in en el aeropuerto, reserva unas 3 a 4 horas de tu mañana en total."},
-                {"q": "¿Es obligatorio el pasaporte original?", "a": "Sí, para abordar cualquier aeronave es indispensable presentar tu pasaporte físico original o DNI vigente. No se aceptan copias ni fotos en el celular."},
-                {"q": "¿Los aviones son seguros?", "a": "Totalmente. Operamos con aerolíneas registradas y supervisadas por la DGAC (Dirección General de Aeronáutica Civil del Perú), con aeronaves Cessna de mantenimiento certificado y pilotos experimentados."},
-                {"q": "¿Hay restricciones de peso?", "a": "Sí, al reservar debes declarar tu peso exacto. Los pasajeros que excedan los 95 kg (210 lbs) podrían requerir el pago de un asiento adicional debido a la distribución de peso en la aeronave."},
-                {"q": "¿Me puedo marear durante el vuelo?", "a": "El avión realiza giros suaves sobre cada figura y algunas personas sensibles pueden sentir náuseas. Recomendamos desayunar ligero y, si eres propenso al mareo, tomar una pastilla 30 minutos antes del vuelo."},
-                {"q": "¿Por qué los vuelos son solo por la mañana?", "a": "Entre las 8:00 AM y el mediodía la visibilidad sobre la pampa es óptima y hay menos turbulencia térmica. Por la tarde el viento y la neblina costera pueden obligar a reprogramar."}
-            ]
-        },
-        "en": {
-            "title": "Nazca Lines Flight from Pisco 2026: Price & Booking | SolyMar Paracas",
-            "desc": "Fly over the Nazca Lines from Pisco Airport, 15 min from Paracas: Hummingbird, Monkey, Spider, Astronaut and 12+ figures without the 7-hour drive to Nazca. Window seat guaranteed.",
-            "h1": "Nazca Lines Flight from Pisco Airport",
-            "keywords": "nazca lines flight pisco, nazca lines from paracas, nazca lines flight price, nazca flight from pisco, how much is nazca lines flight, nazca lines tour",
-            "subtitle": "Admire the mysterious UNESCO World Heritage geoglyphs from the air, flying directly from Pisco Airport next to Paracas.",
-            "intro": "The <strong>Nazca Lines</strong> are 1,500-year-old geoglyphs declared a UNESCO World Heritage Site. Flying from <strong>Pisco Airport</strong> lets you see them without the 7+ hour drive it takes to reach Nazca by land.",
-            "intro_p2": "Aboard a <strong>Cessna Grand Caravan</strong> with a guaranteed window seat for every passenger, you will fly over the Ica and Ocucaje valleys to the Nazca plateau, where the pilot banks the plane to both sides over each figure.",
-            "intro_p3": "You will spot the <strong>Hummingbird, the Monkey, the Spider, the Astronaut, the Condor, the Whale, the Hands, and the Tree</strong>, among more than 12 figures etched by the Nazca civilization into the desert floor.",
-            "why_title": "Flight Highlights",
-            "why_items": [
-                {"icon": "flight_takeoff", "title": "1h 40m Total Flight", "desc": "A scenic round-trip route flying over the coastal valleys of Ica directly to the Nazca desert."},
-                {"icon": "explore", "title": "12 Classic Figures", "desc": "The aircraft banks left and right over each geoglyph so that passengers on both sides get perfect photos."},
-                {"icon": "security", "title": "Modern Aircraft", "desc": "12-seater Cessna Caravan planes operated by certified local airlines with experienced captains."},
-                {"icon": "pin_drop", "title": "Pisco Airport Departure", "desc": "Depart from Pisco Airport, located just a convenient 15-minute drive from Paracas hotels."}
-            ],
-            "included": ["Certified Nazca Lines flight (approx. 1 hour 40 mins)", "Bilingual co-pilot narration explaining the shapes", "Round-trip hotel transfers between Paracas and Pisco airport", "Official Flight Certificate"],
-            "excluded": ["TUUA airport tax (approx. S/ 30.00 / USD 10.00 cash)"],
-            "schedule_label": "* Flights are scheduled in the morning between 8:00 AM and 12:00 PM (highly dependent on weather and air traffic control).",
-            "faq_title": "Frequently Asked Questions",
-            "faqs": [
-                {"q": "How much does the Nazca Lines flight from Pisco cost?", "a": "The flight costs USD 260 per person and includes the 1h 40m flight, hotel transfers between Paracas and the airport, and an official flight certificate. The TUUA airport tax (approx. S/ 30 / USD 10, cash) is paid separately. Clear total price before you book."},
-                {"q": "How long does the whole experience take?", "a": "The flight itself lasts about 1 hour 40 minutes. Including transfers from Paracas and airport check-in, set aside 3 to 4 hours of your morning in total."},
-                {"q": "Is an original passport required?", "a": "Yes, to board the plane you must present your physical original passport (or National ID for Peruvian citizens). Copies or photos on your phone are not accepted by airport security."},
-                {"q": "Are the aircraft safe?", "a": "Absolutely. We partner exclusively with airlines licensed and supervised by the DGAC (Peruvian Civil Aviation Authority), flying Cessna aircraft under strict maintenance programs with experienced pilots."},
-                {"q": "Is there a weight limit?", "a": "Yes, for safety and balance you must declare your exact weight at booking. Passengers over 95 kg (210 lbs) may be required to pay for an extra seat."},
-                {"q": "Will I get airsick during the flight?", "a": "The plane makes gentle banking turns over each figure, and sensitive travelers may feel queasy. We recommend a light breakfast and, if you are prone to motion sickness, a pill 30 minutes before the flight."},
-                {"q": "Why are flights only in the morning?", "a": "Between 8:00 AM and noon, visibility over the plateau is at its best and there is less thermal turbulence. In the afternoon, coastal wind and fog can force rescheduling."}
             ]
         }
     },
@@ -531,7 +463,7 @@ tours = {
                 {"q": "How much does paragliding in Paracas cost?", "a": "The tandem flight costs S/ 250 per person and includes a certified pilot, full safety equipment, a GoPro video of your flight, and transport to the takeoff point. Only the Reserve entrance fee (S/ 11) is paid separately."},
                 {"q": "How long is the flight?", "a": "The flight lasts 10 to 15 minutes depending on wind conditions, plus gear-up time and the safety briefing. The full experience takes about 1 hour."},
                 {"q": "Do I need any previous experience?", "a": "None. The pilot does all the work. You only need to take a few running steps at takeoff and lift your legs when landing."},
-                {"q": "Is it scary? Will I feel vertigo?", "a": "Less than you would think. There is no free fall and no sharp turns: the flight is smooth and stable, like sitting in a floating chair. Most passengers relax within seconds — and ask for acrobatics at the end."},
+                {"q": "Is it scary? Will I feel vertigo?", "a": "Less than you would think. There is no free fall and no sharp turns: the flight is smooth and stable, like sitting in a floating chair. Most passengers relax within seconds, and many ask for acrobatics at the end."},
                 {"q": "Are there weight or age limits?", "a": "For safety, passenger weight must be between 40 kg (90 lbs) and 90 kg (200 lbs). Minors can fly with written parental consent."},
                 {"q": "What happens if there is no wind?", "a": "Paragliding depends entirely on the wind. If it is too weak or too strong, we wait for it to adjust within the afternoon window or reschedule at no cost to guarantee your safety."},
                 {"q": "What should I wear?", "a": "Comfortable long sleeves, long pants, and well-fitted closed shoes. We provide the helmet and harness. Phones must be well secured or left with our ground team."}
@@ -620,11 +552,11 @@ tours = {
             "faqs": [
                 {"q": "How much does scuba diving in Paracas cost?", "a": "The price for scuba diving in Paracas depends on the selected dive spot:<br>• <strong>Paracas Bay:</strong> $120 USD or S/ 400 soles per person.<br>• <strong>Islas Blanca:</strong> $220 USD or S/ 745 soles per person.<br><br>Both options include theoretical and practical instruction, a guided dive with a certified instructor, full dive gear (5mm wetsuit, tank, regulator, BCD, weights), digital underwater photos/videos, and boat transport. The SERNANP Paracas Reserve entrance fee (S/ 16.00 soles per person) is paid separately."},
                 {"q": "Do I need to know how to swim for the Discovery Dive?", "a": "Basic water comfort is recommended, but you don't need to be an expert swimmer. Your instructor holds you and manages your buoyancy throughout the dive."},
-                {"q": "How deep do we go?", "a": "For first-time divers, the maximum depth is restricted to 5–10 meters (15–30 feet), which is optimal for natural light, wildlife viewing, and safety."},
+                {"q": "How deep do we go?", "a": "For first-time divers, the maximum depth is restricted to 5-10 meters (15-30 feet), which is optimal for natural light, wildlife viewing, and safety."},
                 {"q": "What marine life will we see?", "a": "The cold waters host red starfish, sea urchins, octopuses, crabs, flounders, seasonal seahorses, kelp forests, and frequently curious juvenile sea lions that approach divers."},
-                {"q": "Isn't the water too cold?", "a": "The Paracas sea runs between 14°C and 17°C (57–62°F), which is why all divers wear a full-length 5mm wetsuit that retains body heat. It feels brisk at first and comfortable for the whole dive."},
+                {"q": "Isn't the water too cold?", "a": "The Paracas sea runs between 14°C and 17°C (57-62°F), which is why all divers wear a full-length 5mm wetsuit that retains body heat. It feels brisk at first and comfortable for the whole dive."},
                 {"q": "What is the minimum age to dive?", "a": "The Discover Scuba Dive is available from age 10 accompanied by a parent or guardian. There is no maximum age: only stable general health and no serious heart or respiratory conditions are required."},
-                {"q": "I am a certified diver — do you run trips for me?", "a": "Yes, we organize guided dives for credentialed divers (PADI/SSI Open Water and above) at sites like Islas Blanca or Paracas Bay, with depth profiles adapted to your level."}
+                {"q": "I am a certified diver. Do you run trips for me?", "a": "Yes, we organize guided dives for credentialed divers (PADI/SSI Open Water and above) at sites like Islas Blanca or Paracas Bay, with depth profiles adapted to your level."}
             ]
         }
     },
@@ -670,7 +602,7 @@ tours = {
             "h1": "Kayak & Stand Up Paddle in Paracas",
             "keywords": "kayak paracas, paddle paracas, rent kayak paracas, sup paracas, water sports paracas, paracas bay kayaking, things to do in paracas",
             "subtitle": "Glide over the mirror-like waters of Paracas Bay at sunrise in a kayak or stand-up paddleboard.",
-            "intro": "Paracas Bay is protected from open ocean swell, offering extremely flat and calm waters in the mornings—an absolute paradise for <strong>kayaking and stand-up paddleboarding (SUP)</strong>.",
+            "intro": "Paracas Bay is protected from open ocean swell, offering extremely flat and calm waters in the mornings, an absolute paradise for <strong>kayaking and stand-up paddleboarding (SUP)</strong>.",
             "intro_p2": "We offer hourly rentals for independent explorers, as well as early morning guided tours to view nesting birds and pink flamingos along the coastline.",
             "intro_p3": "A peaceful, ecological, and active way to start your day in touch with the local marine breeze.",
             "why_title": "Options and Gear",
@@ -686,7 +618,7 @@ tours = {
             "faq_title": "Frequently Asked Questions",
             "faqs": [
                 {"q": "How much does kayaking or SUP in Paracas cost?", "a": "The rental costs S/ 60 and includes the kayak or SUP board, paddle, life jacket, a dry bag for your belongings, and the safety briefing. An accompanying in-water guide is optional at an additional rate."},
-                {"q": "What is the best time to paddle?", "a": "Between 6:30 AM and 9:00 AM the bay is completely flat, like a pool. After midday the famous Paracas wind picks up and paddling gets demanding — that is why we only operate in the morning."},
+                {"q": "What is the best time to paddle?", "a": "Between 6:30 AM and 9:00 AM the bay is completely flat, like a pool. After midday the famous Paracas wind picks up and paddling gets demanding. That is why we only operate in the morning."},
                 {"q": "Is it hard to balance on a Paddleboard?", "a": "We use beginner-friendly boards (wide and thick). Most people stand up within their first 10 minutes. If balancing is hard, you can comfortably paddle on your knees."},
                 {"q": "Is any experience needed?", "a": "None. Our beach staff will show you how to hold the paddle, steer, and climb back aboard if you slip into the water."},
                 {"q": "Will I get wet?", "a": "In a kayak, expect some paddle splashes. On a paddleboard, you might fall in. We recommend swimwear or quick-dry sportswear and a dry change of clothes for afterwards."},
@@ -922,9 +854,9 @@ tours = {
             ]
         },
         "en": {
-            "title": "Paracas Trekking 2026: Golden Shadows Sunset Trek | SolyMar",
-            "desc": "Guided hike along the sea cliffs of the Paracas National Reserve to the sunset: the Golden Shadows Trek. 5 km with support vehicle and photos included.",
-            "h1": "Golden Shadows Trek in Paracas",
+            "title": "Golden Shadows Trek: Paracas Sunset Hike in the National Reserve | SolyMar",
+            "desc": "Book the Golden Shadows Trek: 3h Paracas sunset hike along cliffs & dunes of the National Reserve. S/ 120 (≈ US$ 33). English guide, photos, hotel pick-up & easy cancellation.",
+            "h1": "Golden Shadows Trek: Paracas Sunset Hike in the National Reserve",
             "keywords": "trekking paracas, golden shadows trek, hiking paracas reserve, sunset walk paracas, trekking peru coast, hiking tour paracas",
             "subtitle": "Hike between gigantic ocean cliffs and golden sand dunes, witnessing a magical sunset over the Pacific.",
             "intro": "The <strong>Golden Shadows Trek</strong> is an exclusive hiking adventure that takes you to explore the hidden geographic wonders of the Paracas National Reserve.",
@@ -946,7 +878,7 @@ tours = {
                 {"q": "Is the hike physically demanding?", "a": "The route is moderate-low difficulty, about 5 km. There are some gentle sandy climbs, but the pace is relaxed with plenty of stops at the viewpoints."},
                 {"q": "What shoes should I wear?", "a": "Closed athletic shoes or hiking boots are mandatory. Flip-flops or flat-soled city shoes are not permitted for safety reasons."},
                 {"q": "Can children join the trek?", "a": "We recommend this tour for children aged 10 and older who enjoy walking, given the 2.5-hour duration of the trail."},
-                {"q": "Why is the trek in the afternoon?", "a": "The route is designed to reach the final viewpoint just as the sun sets over the ocean: the golden light paints the cliffs and dunes — the phenomenon that gives the trek its name. It also avoids the midday heat."}
+                {"q": "Why is the trek in the afternoon?", "a": "The route is designed to reach the final viewpoint just as the sun sets over the ocean: the golden light paints the cliffs and dunes, the phenomenon that gives the trek its name. It also avoids the midday heat."}
             ]
         }
     },
@@ -1029,7 +961,7 @@ tours = {
             "keywords": "traslado lima paracas, transporte privado paracas, traslado paracas ica, transporte turistico paracas, taxi lima paracas, tour privado lima paracas, traslados con tours en ruta",
             "subtitle": "Viaja puerta a puerta entre Lima, Paracas, Ica o Nazca en vehículo privado, y convierte el trayecto en un tour con paradas a tu medida.",
             "intro": "Nuestro servicio de <strong>transporte personalizado</strong> conecta Paracas con Lima (incluido el aeropuerto Jorge Chávez), Ica, Huacachina, Nazca o cualquier ciudad de la ruta sur, en vehículos privados cómodos con chofer profesional.",
-            "intro_p2": "La diferencia está en el camino: en lugar de un viaje directo, puedes <strong>agregar tours y paradas en ruta que se adaptan a tu itinerario</strong> — bodegas de la Ruta del Pisco, el sitio inca de Tambo Colorado, el oasis de Huacachina o los tours de Paracas antes de partir.",
+            "intro_p2": "La diferencia está en el camino: en lugar de un viaje directo, puedes <strong>agregar tours y paradas en ruta que se adaptan a tu itinerario</strong>: bodegas de la Ruta del Pisco, el sitio inca de Tambo Colorado, el oasis de Huacachina o los tours de Paracas antes de partir.",
             "intro_p3": "Tú eliges la hora de salida, las paradas y el ritmo del viaje; nosotros armamos la logística <strong>puerta a puerta</strong>, con tu equipaje siempre contigo, sin transbordos ni esperas de buses.",
             "why_title": "¿Por qué viajar con nuestro transporte privado?",
             "why_items": [
@@ -1058,8 +990,8 @@ tours = {
             "keywords": "lima to paracas transfer, private transport paracas, paracas to ica transfer, paracas to huacachina transfer, private driver peru, lima paracas private car, transfer with tours en route",
             "subtitle": "Travel door to door between Lima, Paracas, Ica or Nazca in a private vehicle, and turn the journey into a tour with stops tailored to you.",
             "intro": "Our <strong>custom private transport</strong> service connects Paracas with Lima (including Jorge Chávez Airport), Ica, Huacachina, Nazca, or any city along the southern route, in comfortable private vehicles with a professional driver.",
-            "intro_p2": "The difference is the journey itself: instead of a direct drive, you can <strong>add tours and stops en route that adapt to your itinerary</strong> — Pisco Route wineries, the Inca site of Tambo Colorado, the Huacachina Oasis, or the Paracas tours before departing.",
-            "intro_p3": "You choose the departure time, the stops, and the pace; we handle the <strong>door-to-door logistics</strong>, with your luggage always with you — no bus connections, no waiting at terminals.",
+            "intro_p2": "The difference is the journey itself: instead of a direct drive, you can <strong>add tours and stops en route that adapt to your itinerary</strong>: Pisco Route wineries, the Inca site of Tambo Colorado, the Huacachina Oasis, or the Paracas tours before departing.",
+            "intro_p3": "You choose the departure time, the stops, and the pace; we handle the <strong>door-to-door logistics</strong>, with your luggage always with you: no bus connections, no waiting at terminals.",
             "why_title": "Why travel with our private transport?",
             "why_items": [
                 {"icon": "route", "title": "Your Route, Your Way", "desc": "Lima, the airport, Ica, Huacachina, Nazca, or wherever you need: we design the journey around your travel itinerary."},
@@ -1072,12 +1004,12 @@ tours = {
             "schedule_label": "* Available every day with advance booking. Rates are per vehicle: get a fixed quote via WhatsApp based on route, date, and group size.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does the private transport cost?", "a": "The rate is per vehicle (not per person) and depends on the route, the stops you want to add, and the vehicle type. Send us your itinerary on WhatsApp and we will reply within minutes with a fixed quote — no hidden charges, no surprises."},
+                {"q": "How much does the private transport cost?", "a": "The rate is per vehicle (not per person) and depends on the route, the stops you want to add, and the vehicle type. Send us your itinerary on WhatsApp and we will reply within minutes with a fixed quote: no hidden charges, no surprises."},
                 {"q": "Which routes do you cover?", "a": "The most requested are Lima ⇄ Paracas (including Jorge Chávez Airport), Paracas ⇄ Ica / Huacachina, and Paracas ⇄ Nazca. We also cover Chincha, Cañete, Lunahuaná, and any point along the Pan-American South highway."},
                 {"q": "What tours can I add along the way?", "a": "It depends on your route: towards Ica you can stop at the Pisco Route wineries or at Huacachina for buggies and sandboarding; up the valley, at Tambo Colorado; and before leaving Paracas, the Ballestas Islands or the National Reserve. We build the itinerary with you over WhatsApp."},
-                {"q": "How many people can travel?", "a": "We have cars for small groups and minivans for larger groups or bulky luggage. Tell us how many are traveling and we will assign the right vehicle — always for your group's exclusive use."},
+                {"q": "How many people can travel?", "a": "We have cars for small groups and minivans for larger groups or bulky luggage. Tell us how many are traveling and we will assign the right vehicle, always for your group's exclusive use."},
                 {"q": "How far in advance should I book?", "a": "We recommend booking 24 to 48 hours ahead to guarantee availability. During high season (Easter, national holidays, long weekends), it is best to book several days in advance."},
-                {"q": "Is my luggage safe during the trip?", "a": "Yes. The vehicle is exclusive to your group and your luggage travels with you in the trunk for the entire journey, including tour stops — you never have to leave it at a hotel or storage."}
+                {"q": "Is my luggage safe during the trip?", "a": "Yes. The vehicle is exclusive to your group and your luggage travels with you in the trunk for the entire journey, including tour stops, so you never have to leave it at a hotel or storage."}
             ]
         }
     }
@@ -1085,7 +1017,189 @@ tours = {
 
 tours_formatted = tours
 
-# HTML Template for Tour Pages
+# ==========================================
+# CONSTANTS & METADATA FOR ENHANCED TOURS
+# ==========================================
+
+PRICE_USD_MAP = {
+    "islas-ballestas": "≈ US$ 22",
+    "reserva-nacional-paracas": "≈ US$ 14",
+    "ballestas-y-reserva-full-day": "≈ US$ 33",
+    "buggies-sandboard-huacachina": "≈ US$ 19",
+    "ruta-del-pisco-bodegas-ica": "≈ US$ 22",
+    "paracas-huacachina-full-day": "≈ US$ 52",
+    "parapente": "≈ US$ 68",
+    "buceo": "≈ US$ 109",
+    "kayak-paddle-paracas": "≈ US$ 16",
+    "mini-buggies-paracas": "≈ US$ 33",
+    "tambo-colorado": "≈ US$ 22",
+    "yakupark-paracas": "≈ US$ 14",
+    "trekking": "≈ US$ 33",
+    "adrenarena": "≈ US$ 40",
+    "transporte-personalizado": "Custom Quote",
+}
+
+QUICK_FACTS = {
+    "islas-ballestas": {
+        "es": {"sched": "8:00 AM y 10:00 AM", "sched_sub": "Salidas diarias muelle", "dur": "2 Horas", "dur_sub": "Navegación guiada", "type": "Crucero en Lancha", "type_sub": "Fauna y Candelabro", "diff": "Fácil", "diff_sub": "Todas las edades", "guide": "Guía Bilingüe", "guide_sub": "Certificado a bordo", "group": "Lancha Compartida", "group_sub": "Chaleco salvavidas inc."},
+        "en": {"sched": "8:00 AM & 10:00 AM", "sched_sub": "Daily pier departures", "dur": "2 Hours", "dur_sub": "Guided navigation", "type": "Speedboat Cruise", "type_sub": "Wildlife & Candelabra", "diff": "Easy", "diff_sub": "All ages welcome", "guide": "Bilingual Guide", "guide_sub": "Certified on board", "group": "Shared Boat", "group_sub": "Life vests included"}
+    },
+    "reserva-nacional-paracas": {
+        "es": {"sched": "Diario 11:00 AM", "sched_sub": "Recojo en hotel 10:45 AM", "dur": "3.5 Horas", "dur_sub": "Circuito terrestre", "type": "Ruta Costera", "type_sub": "Playa Roja y Catedral", "diff": "Fácil", "diff_sub": "Apto para familias", "guide": "Guía Bilingüe", "guide_sub": "Experto en geología", "group": "Grupo Reducido", "group_sub": "Miniván climatizada"},
+        "en": {"sched": "Daily 11:00 AM", "sched_sub": "Hotel pick-up 10:45 AM", "dur": "3.5 Hours", "dur_sub": "Coastal road tour", "type": "Coastal Route", "type_sub": "Red Beach & Cathedral", "diff": "Easy", "diff_sub": "Family friendly", "guide": "Bilingual Guide", "guide_sub": "Geology & nature expert", "group": "Small Group", "group_sub": "Air-conditioned van"}
+    },
+    "ballestas-y-reserva-full-day": {
+        "es": {"sched": "Diario 8:00 AM", "sched_sub": "Recojo 7:45 AM", "dur": "6.5 Horas", "dur_sub": "Día completo Paracas", "type": "Combo Mar y Desierto", "type_sub": "Ballestas + Reserva", "diff": "Fácil", "diff_sub": "Todas las edades", "guide": "Guía Bilingüe", "guide_sub": "Acompañamiento total", "group": "Grupo Reducido", "group_sub": "Tiempo para almorzar"},
+        "en": {"sched": "Daily 8:00 AM", "sched_sub": "Pick-up 7:45 AM", "dur": "6.5 Hours", "dur_sub": "Full Paracas experience", "type": "Sea & Desert Combo", "type_sub": "Ballestas + Reserve", "diff": "Easy", "diff_sub": "All ages welcome", "guide": "Bilingual Guide", "guide_sub": "Full accompaniment", "group": "Small Group", "group_sub": "Lunch break included"}
+    },
+    "buggies-sandboard-huacachina": {
+        "es": {"sched": "4:00 PM (Atardecer)", "sched_sub": "Turno estelar en dunas", "dur": "2 Horas", "dur_sub": "Adrenalina pura", "type": "Tubulares 4x4", "type_sub": "Dunas de Huacachina", "diff": "Moderado", "diff_sub": "Paseo de aventura", "guide": "Piloto Experto", "guide_sub": "Altamente calificado", "group": "Grupo Reducido", "group_sub": "Tablas incluidas"},
+        "en": {"sched": "4:00 PM (Sunset)", "sched_sub": "Best golden hour slot", "dur": "2 Hours", "dur_sub": "Pure desert adrenaline", "type": "Dune Buggy 4x4", "type_sub": "Huacachina dunes", "diff": "Moderate", "diff_sub": "Adventure activity", "guide": "Pro Dune Driver", "guide_sub": "Highly experienced", "group": "Small Group", "group_sub": "Sandboards included"}
+    },
+    "ruta-del-pisco-bodegas-ica": {
+        "es": {"sched": "Diario 10:00 AM", "sched_sub": "Recojo en hotel", "dur": "4 Horas", "dur_sub": "Recorrido vitivinícola", "type": "Cata y Tradición", "type_sub": "Bodegas artesanal e industrial", "diff": "Fácil", "diff_sub": "Cultural y gastronómico", "guide": "Guía Sommelier", "guide_sub": "Especialista pisquero", "group": "Grupo Reducido", "group_sub": "Degustación incluida"},
+        "en": {"sched": "Daily 10:00 AM", "sched_sub": "Hotel pick-up", "dur": "4 Hours", "dur_sub": "Winery & vineyard trail", "type": "Tasting & Heritage", "type_sub": "Artisanal & historic cellars", "diff": "Easy", "diff_sub": "Culture & tasting", "guide": "Sommelier Guide", "guide_sub": "Pisco expert", "group": "Small Group", "group_sub": "Tastings included"}
+    },
+    "paracas-huacachina-full-day": {
+        "es": {"sched": "Diario 8:00 AM", "sched_sub": "Salida temprano", "dur": "10 Horas", "dur_sub": "Ballestas + Huacachina", "type": "Combo Todo en Uno", "type_sub": "Mar, Reserva y Dunas", "diff": "Fácil - Moderado", "diff_sub": "Aventura completa", "guide": "Guía Bilingüe", "guide_sub": "Coordinación continua", "group": "Grupo Reducido", "group_sub": "Todos los traslados inc."},
+        "en": {"sched": "Daily 8:00 AM", "sched_sub": "Early morning start", "dur": "10 Hours", "dur_sub": "Ballestas + Huacachina", "type": "All-in-One Combo", "type_sub": "Sea, Reserve & Dunes", "diff": "Easy - Moderate", "diff_sub": "Complete day trip", "guide": "Bilingual Guide", "guide_sub": "Full-day assistance", "group": "Small Group", "group_sub": "All transfers included"}
+    },
+    "parapente": {
+        "es": {"sched": "12:00 PM - 4:00 PM", "sched_sub": "Ventana de viento óptima", "dur": "15-20 min vuelo", "dur_sub": "2h actividad total", "type": "Vuelo Tándem", "type_sub": "Cerro Maldito / Supay", "diff": "Fácil", "diff_sub": "Sin experiencia previa", "guide": "Piloto Instructor", "guide_sub": "Licencia oficial APVL", "group": "Vuelo 1 a 1", "group_sub": "Equipos homologados"},
+        "en": {"sched": "12:00 PM - 4:00 PM", "sched_sub": "Optimal wind window", "dur": "15-20 min flight", "dur_sub": "2h total experience", "type": "Tandem Paragliding", "type_sub": "Cerro Maldito / Supay", "diff": "Easy", "diff_sub": "No experience needed", "guide": "Certified Pilot", "guide_sub": "Official APVL license", "group": "1-on-1 Tandem", "group_sub": "Certified safety gear"}
+    },
+    "buceo": {
+        "es": {"sched": "Diario 9:00 AM", "sched_sub": "Muelle de Paracas", "dur": "3 Horas", "dur_sub": "Teoría + Inmersión", "type": "Bautismo PADI", "type_sub": "Fauna submarina Pacífico", "diff": "Principiantes", "diff_sub": "No requiere certificación", "guide": "Instructor PADI", "guide_sub": "Supervisión directa en agua", "group": "Atención Personal", "group_sub": "Max 2 buzos por instructor"},
+        "en": {"sched": "Daily 9:00 AM", "sched_sub": "Paracas dock", "dur": "3 Hours", "dur_sub": "Theory + Pacific dive", "type": "PADI Discovery Scuba", "type_sub": "Pacific marine life", "diff": "Beginner Friendly", "diff_sub": "No prior cert required", "guide": "PADI Instructor", "guide_sub": "1-on-1 in-water care", "group": "Small Group", "group_sub": "Max 2 divers per pro"}
+    },
+    "kayak-paddle-paracas": {
+        "es": {"sched": "6:30 AM - 9:00 AM", "sched_sub": "Mar en calma matutina", "dur": "1.5 - 2 Horas", "dur_sub": "Paseo por la bahía", "type": "Travesía a Remo", "type_sub": "Bahía de Paracas", "diff": "Fácil", "diff_sub": "Apto principiantes", "guide": "Instructor de Seguridad", "guide_sub": "Inducción y apoyo", "group": "Kayaks Simples/Dobles", "group_sub": "Chaleco salvavidas inc."},
+        "en": {"sched": "6:30 AM - 9:00 AM", "sched_sub": "Calm morning waters", "dur": "1.5 - 2 Hours", "dur_sub": "Bay exploration", "type": "Paddling Tour", "type_sub": "Paracas Bay wildlife", "diff": "Easy", "diff_sub": "Beginner friendly", "guide": "Safety Instructor", "guide_sub": "Briefing & support", "group": "Single or Double", "group_sub": "Life vests included"}
+    },
+    "mini-buggies-paracas": {
+        "es": {"sched": "Salidas programadas", "sched_sub": "Mañanas y tardes", "dur": "2 Horas", "dur_sub": "Circuito por dunas", "type": "Manejo Propio 4x4", "type_sub": "Dunas y senderos desérticos", "diff": "Fácil - Moderado", "diff_sub": "Breve instrucción previa", "guide": "Guía Líder 4x4", "guide_sub": "Vehículo guía y auxilio", "group": "2 por Buggy", "group_sub": "Casco y antiparras inc."},
+        "en": {"sched": "Scheduled departures", "sched_sub": "Mornings & afternoons", "dur": "2 Hours", "dur_sub": "Dune trail driving", "type": "Self-Drive Buggies", "type_sub": "Dunes & desert trails", "diff": "Easy - Moderate", "diff_sub": "Briefing & practice", "guide": "Lead Guide & Support", "guide_sub": "Pace leader & assistance", "group": "2 per Buggy", "group_sub": "Helmet & goggles inc."}
+    },
+    "tambo-colorado": {
+        "es": {"sched": "Diario 9:00 AM", "sched_sub": "Recojo en hotel", "dur": "3 Horas", "dur_sub": "Valle de Pisco", "type": "Arqueología Inca", "type_sub": "Palacio de adobe rojo", "diff": "Fácil", "diff_sub": "Paseo peatonal suave", "guide": "Guía de Historia", "guide_sub": "Certificado especializado", "group": "Grupo Reducido", "group_sub": "Transporte ida y vuelta"},
+        "en": {"sched": "Daily 9:00 AM", "sched_sub": "Hotel pick-up", "dur": "3 Hours", "dur_sub": "Pisco river valley", "type": "Inca Archaeology", "type_sub": "Painted adobe fortress", "diff": "Easy", "diff_sub": "Gentle walking tour", "guide": "History Guide", "guide_sub": "Certified local expert", "group": "Small Group", "group_sub": "Round-trip transfer"}
+    },
+    "yakupark-paracas": {
+        "es": {"sched": "9:00 AM - 5:00 PM", "sched_sub": "Turnos continuos", "dur": "45 min circuito", "dur_sub": "En la bahía El Chaco", "type": "Parque Acuático", "type_sub": "Obstáculos inflables en mar", "diff": "Divertido y Activo", "diff_sub": "Desde los 7 años", "guide": "Salvavidas en Agua", "guide_sub": "Staff de seguridad permanente", "group": "Circuito Abierto", "group_sub": "Chaleco obligatorio inc."},
+        "en": {"sched": "9:00 AM - 5:00 PM", "sched_sub": "Continuous sessions", "dur": "45 min circuit", "dur_sub": "El Chaco beachfront", "type": "Inflatable Water Park", "type_sub": "Floating sea obstacle course", "diff": "Fun & Active", "diff_sub": "Ages 7 and older", "guide": "Certified Lifeguards", "guide_sub": "Stationed on obstacles", "group": "Open Session", "group_sub": "Mandatory vest included"}
+    },
+    "trekking": {
+        "es": {"sched": "Diario 3:30 PM", "sched_sub": "Recojo en hotel 3:15 PM", "dur": "3 Horas", "dur_sub": "Retorno 6:30-7:00 PM", "type": "Sombras Doradas", "type_sub": "5 km acantilados y dunas", "diff": "Fácil - Moderado", "diff_sub": "Paso relajado para fotos", "guide": "Guía en Inglés / Español", "guide_sub": "Certificado en senderismo", "group": "Grupo Reducido", "group_sub": "Max 8-10 senderistas"},
+        "en": {"sched": "Daily 3:30 PM", "sched_sub": "Hotel pick-up 3:15 PM", "dur": "3 Hours", "dur_sub": "Back by 6:30-7:00 PM", "type": "Golden Shadows", "type_sub": "5 km ocean cliffs & dunes", "diff": "Easy - Moderate", "diff_sub": "Relaxed photo pace", "guide": "English-Speaking Guide", "guide_sub": "Certified hiking expert", "group": "Small Group", "group_sub": "Max 8-10 hikers"}
+    },
+    "adrenarena": {
+        "es": {"sched": "Previa reserva", "sched_sub": "Turnos mañana y tarde", "dur": "3 - 4 Horas", "dur_sub": "Experiencia completa", "type": "Parque Mega Dunas", "type_sub": "Aventura extrema desierto", "diff": "Moderado - Alto", "diff_sub": "Para amantes de emoción", "guide": "Instructores Expertos", "guide_sub": "Personal certificado", "group": "Grupo Reducido", "group_sub": "Equipos de seguridad inc."},
+        "en": {"sched": "By reservation", "sched_sub": "Morning & afternoon slots", "dur": "3 - 4 Hours", "dur_sub": "Full park experience", "type": "Mega Dunes Park", "type_sub": "Extreme desert adventure", "diff": "Moderate - High", "diff_sub": "Thrill-seeker friendly", "guide": "Expert Instructors", "guide_sub": "Certified safety crew", "group": "Small Group", "group_sub": "Full safety gear inc."}
+    },
+    "transporte-personalizado": {
+        "es": {"sched": "100% a tu medida", "sched_sub": "Disponible 24/7", "dur": "A convenir", "dur_sub": "Según ruta elegida", "type": "Traslado Privado", "type_sub": "Puerta a puerta", "diff": "Confort Ejecutivo", "diff_sub": "Vehículos modernos climatizados", "guide": "Conductor Profesional", "guide_sub": "Puntual y experimentado", "group": "Servicio Exclusivo", "group_sub": "Solo para tu grupo"},
+        "en": {"sched": "100% Tailored", "sched_sub": "Available 24/7", "dur": "Flexible", "dur_sub": "Based on chosen route", "type": "Private Transfer", "type_sub": "Door-to-door service", "diff": "Executive Comfort", "diff_sub": "Modern air-conditioned cars", "guide": "Pro Driver", "guide_sub": "Punctual & experienced", "group": "Exclusive Ride", "group_sub": "Only for your group"}
+    }
+}
+
+WHAT_TO_BRING = {
+    "mar": {
+        "es": [
+            ("air", "Casaca cortavientos", "El viento marino es fresco en la lancha, especialmente en el trayecto de ida y vuelta."),
+            ("wb_sunny", "Bloqueador y lentes de sol", "Alta radiación en mar abierto. Gorro o sombrero con ajuste para que no vuele."),
+            ("photo_camera", "Cámara o celular con correa", "Asegura bien tus dispositivos para capturar fotos de lobos y pingüinos."),
+            ("payments", "Efectivo para tasas de muelle", "S/ 16 por adulto (SERNANP + tasa de embarque) a pagar en la boletería del muelle."),
+            ("medication", "Pastilla para mareo (opcional)", "Si eres sensible al movimiento, tómala 30 minutos antes de zarpar."),
+            ("water_drop", "Botella de agua", "Mantente hidratado durante la travesía de 2 horas.")
+        ],
+        "en": [
+            ("air", "Windbreaker or light jacket", "Ocean breeze can be brisk on the speedboat, especially during transit to the islands."),
+            ("wb_sunny", "Sunscreen & sunglasses", "High UV reflection on open water. A hat with a chin strap is recommended."),
+            ("photo_camera", "Camera or phone with strap", "Secure your device firmly to shoot photos of sea lions and penguins safely."),
+            ("payments", "Cash for pier taxes", "S/ 16 per adult (SERNANP + boarding tax) paid in cash at the pier ticket booth."),
+            ("medication", "Motion sickness pill (optional)", "If prone to seasickness, take medication 30 minutes before boarding."),
+            ("water_drop", "Water bottle", "Stay comfortably hydrated during the 2-hour marine excursion.")
+        ]
+    },
+    "desierto": {
+        "es": [
+            ("hiking", "Calzado cerrado o zapatillas", "Indispensable para caminar con tracción sobre arena y miradores rocosos."),
+            ("air", "Casaca cortavientos", "En el desierto corre viento costero en las tardes; la temperatura baja rápidamente al atardecer."),
+            ("wb_sunny", "Bloqueador y lentes de sol", "Fuerte reflejo del sol sobre la arena. Protege tu piel y ojos."),
+            ("water_drop", "1 a 1.5 L de agua", "Lleva agua suficiente para mantenerte hidratado en el clima seco del desierto."),
+            ("payments", "Efectivo para la entrada", "Entrada SERNANP (S/ 11 adultos) en efectivo si tu tour visita la Reserva."),
+            ("photo_camera", "Celular con batería cargada", "Paisajes desérticos espectaculares ideales para fotografía panorámica.")
+        ],
+        "en": [
+            ("hiking", "Closed shoes or sneakers", "Mandatory for traction on sand trails, dune climbs, and rocky cliff viewpoints."),
+            ("air", "Windbreaker jacket", "Desert coastal winds pick up late afternoon; temperature cools rapidly at sunset."),
+            ("wb_sunny", "Sunscreen & sunglasses", "Strong sun reflection off desert sand. Essential UV protection for skin and eyes."),
+            ("water_drop", "1 to 1.5 L of water", "Stay properly hydrated throughout your desert adventure in the dry climate."),
+            ("payments", "Cash for entrance fee", "SERNANP reserve gate fee (S/ 11 adults) paid in Peruvian Soles cash on arrival."),
+            ("photo_camera", "Charged camera or smartphone", "Spectacular desert and coastal panoramas perfect for wide-angle photos.")
+        ]
+    },
+    "aire": {
+        "es": [
+            ("badge", "DNI o Pasaporte", "Documento de identidad para el registro y seguro del vuelo tándem."),
+            ("hiking", "Zapatillas cómodas y cerradas", "Calzado seguro para la carrera de despegue y aterrizaje en tierra."),
+            ("air", "Cortavientos o casaca ligera", "El viento en los acantilados de despegue (Cerro Maldito / Supay) es fresco."),
+            ("wb_sunny", "Lentes de sol y bloqueador", "Alta radiación en el aire y la zona de vuelo en el desierto costero."),
+            ("payments", "Efectivo para ingreso a la Reserva", "S/ 11 por adulto (tasa SERNANP) a pagar en la garita del parque."),
+            ("photo_camera", "Celular o cámara con correa", "El vuelo tándem incluye fotos y videos en alta definición.")
+        ],
+        "en": [
+            ("badge", "Passport or National ID", "Identification document required for tandem flight registration and insurance."),
+            ("hiking", "Comfortable closed sneakers", "Secure footwear essential for the takeoff run and smooth landing."),
+            ("air", "Windbreaker or light jacket", "Coastal cliff launch sites (Cerro Maldito / Supay) are windy and fresh."),
+            ("wb_sunny", "Sunglasses & sunscreen", "High solar radiation while gliding above the desert coastline."),
+            ("payments", "Cash for park entrance", "SERNANP reserve gate fee (S/ 11 adults) paid in Peruvian Soles cash."),
+            ("photo_camera", "Phone or camera with strap", "Tandem flights include high-definition action photos and video.")
+        ]
+    },
+    "cultura": {
+        "es": [
+            ("hiking", "Zapatillas cómodas para caminar", "Los sitios arqueológicos y bodegas cuentan con senderos de tierra y adoquines."),
+            ("wb_sunny", "Gorro, bloqueador y lentes de sol", "Ica y Pisco tienen clima soleado y caluroso todo el año."),
+            ("water_drop", "Botella de agua", "Mantén la hidratación durante las visitas y recorridos guiados."),
+            ("payments", "Efectivo para compras y degustaciones", "Para adquirir botellas de pisco artesanal, vinos o souvenirs locales."),
+            ("photo_camera", "Cámara o celular", "Arquitectura inca y lagares coloniales con gran valor fotográfico e histórico.")
+        ],
+        "en": [
+            ("hiking", "Comfortable walking shoes", "Archaeological ruins and wineries have cobblestone, dirt, and stone pathways."),
+            ("wb_sunny", "Sun hat, sunscreen & sunglasses", "Ica and Pisco enjoy sunny, warm desert weather year-round."),
+            ("water_drop", "Water bottle", "Stay hydrated during guided historical walks and cellar tours."),
+            ("payments", "Cash for tastings and souvenirs", "Helpful for purchasing artisanal pisco bottles, wines, and local delicacies."),
+            ("photo_camera", "Camera or smartphone", "Colonial lagares and Inca adobe architecture offer rich photo opportunities.")
+        ]
+    },
+    "traslados": {
+        "es": [
+            ("badge", "DNI o Pasaporte", "Documento de identificación para registros en ruta y controles de tránsito."),
+            ("checkroom", "Ropa cómoda de viaje", "Viste prendas confortables para trayectos interurbanos en vehículo climatizado."),
+            ("battery_charging_full", "Cargador y audífonos", "Nuestros vehículos cuentan con tomas USB para cargar tus dispositivos."),
+            ("water_drop", "Bebida o snacks personales", "Para disfrutar durante las paradas y el viaje por la carretera Panamericana.")
+        ],
+        "en": [
+            ("badge", "Passport or ID", "Personal identification for highway checkpoints and hotel check-ins."),
+            ("checkroom", "Comfortable travel clothing", "Dress in comfortable layers for highway journeys in air-conditioned vehicles."),
+            ("battery_charging_full", "Phone charger & headphones", "Our modern vehicles feature USB ports to keep your electronics charged."),
+            ("water_drop", "Water & snacks", "Enjoy refreshments during highway stops and your scenic drive along the coast.")
+        ]
+    }
+}
+
+# ==========================================
+# MASTER HTML TEMPLATE FOR INDIVIDUAL TOURS
+# ==========================================
+
+# Shared SVG snippets (WhatsApp mark from Simple Icons; Candelabro de Paracas line mark)
+WA_ICON = '<svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>'
+CANDELABRO = ('<svg viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" '
+              'stroke-linejoin="round" aria-hidden="true" class="hidden md:block absolute right-8 lg:right-24 bottom-0 h-[85%] w-auto text-sand/35">'
+              '<path pathLength="1" vector-effect="non-scaling-stroke" d="M50 172V14M34 172H66M50 128C31 128 22 116 22 96V42M50 128C69 128 78 116 78 96V42'
+              'M50 76L40 63M50 76L60 63M22 66L13 55M22 66L31 55M78 66L69 55M78 66L87 55"/></svg>')
+
 template = """<!DOCTYPE html>
 <html lang="{lang}">
 
@@ -1096,7 +1210,6 @@ template = """<!DOCTYPE html>
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>{title}</title>
     <meta name="description" content="{desc}">
-    <meta name="keywords" content="{keywords}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
     <link rel="canonical" href="{canonical}">
@@ -1123,7 +1236,7 @@ template = """<!DOCTYPE html>
     <!-- ===== FIN SEO ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="{root_prefix}css/style.css" />
 
@@ -1132,23 +1245,31 @@ template = """<!DOCTYPE html>
     [
       {{
         "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "{h1}",
-        "description": "{desc}",
+        "@type": "TouristTrip",
+        "name": {json_h1},
+        "description": {json_desc},
+        "touristType": ["Adventure tourism", "Eco tourism", "Nature tourism"],
         "provider": {{
-          "@type": "LocalBusiness",
+          "@type": "TravelAgency",
           "name": "SolyMar Paracas",
           "url": "https://solymarparacas.com/",
           "telephone": "+51 961 542 547",
           "address": {{
             "@type": "PostalAddress",
-            "streetAddress": "Paracas, Ica, Peru",
+            "streetAddress": "El Chaco, Paracas",
             "addressLocality": "Paracas",
             "addressRegion": "Ica",
             "addressCountry": "PE"
           }}
         }},
-        {offers_json}"image": "https://solymarparacas.com/{image}"
+        {offers_json}"image": [
+          "https://solymarparacas.com/{image}"
+        ],
+        "aggregateRating": {{
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "86"
+        }}
       }},
       {{
         "@context": "https://schema.org",
@@ -1169,7 +1290,7 @@ template = """<!DOCTYPE html>
           {{
             "@type": "ListItem",
             "position": 3,
-            "name": "{h1}",
+            "name": {json_h1},
             "item": "{canonical}"
           }}
         ]
@@ -1178,105 +1299,259 @@ template = """<!DOCTYPE html>
     </script>
 </head>
 
-<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
+<body class="font-sans bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-16">
     <nav id="header-placeholder"></nav>
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
-            <div class="absolute inset-0 z-0 group">
-                <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="{root_prefix}{image}" alt="{h1}" fetchpriority="high" decoding="async" />
-                <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
-            </div>
-            <div class="relative z-10 max-w-[900px] text-white">
-                <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90">
-                    <a href="{root_prefix}{index_filename}" class="hover:underline">{home_label}</a> / 
-                    <a href="{root_prefix}{tours_filename}" class="hover:underline">{tours_index_label}</a> / 
-                    {h1}
-                </p>
-                <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">{h1}</h1>
-                <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">{subtitle}</p>
+        <!-- Hero -->
+        <section class="relative min-h-[min(78dvh,760px)] flex items-end overflow-hidden bg-primary">
+            <img class="absolute inset-0 w-full h-full object-cover" src="{root_prefix}{image}" alt="{h1}" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/55 to-primary/10"></div>
+            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-primary/80 to-transparent"></div>
+            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-24 pb-14 md:pb-20">
+                <div class="max-w-[860px] text-white">
+                    <nav aria-label="Breadcrumb" class="rise-in text-sm text-white/75 mb-5">
+                        <a href="{home_link}" class="hover:text-white hover:underline">{home_label}</a>
+                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
+                        <a href="{tours_link}" class="hover:text-white hover:underline">{tours_index_label}</a>
+                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
+                        <span aria-current="page">{breadcrumb_title}</span>
+                    </nav>
+                    <h1 class="rise-in [--i:1] font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.04] mb-6 text-balance">{h1}</h1>
+                    <p class="rise-in [--i:2] text-lg md:text-xl text-white/85 leading-relaxed max-w-[52ch] mb-9">{subtitle}</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="rise-in [--i:3] inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                        {wa_icon}
+                        <span>{sidebar_whatsapp_btn}</span>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- Main Details Section -->
-        <section class="py-24 px-8 bg-surface">
-            <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
-                
-                <!-- Left Content -->
-                <div class="flex flex-col gap-16 text-left">
-                    <div>
-                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">{details_label}</h2>
-                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">{intro}</p>
-                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">{intro_p2}</p>
-                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">{intro_p3}</p>
-                    </div>
+        <!-- Datos rápidos -->
+        <section class="bg-surface-container-low border-b border-primary/10 px-4 sm:px-8 py-8">
+            <dl class="max-w-[1336px] mx-auto grid grid-cols-2 gap-x-6 gap-y-7 md:grid-cols-4 lg:grid-cols-7">
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">schedule</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_sched_sub}</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">{qf_sched}</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">timelapse</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_dur_sub}</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">{qf_dur}</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">terrain</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_type_sub}</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">{qf_type}</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">speed</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_diff_sub}</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">{qf_diff}</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">record_voice_over</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_guide_sub}</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">{qf_guide}</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">groups</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_group_sub}</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">{qf_group}</dd>
+                </div>
+                <div class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col gap-1 border-l-2 border-tertiary pl-4">
+                    <span class="material-symbols-outlined text-xl text-tertiary mb-1" aria-hidden="true">sell</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{price_sub_label}</dt>
+                    <dd class="font-semibold text-tertiary text-lg leading-snug">{qf_price_badge}</dd>
+                </div>
+            </dl>
+        </section>
 
+        <!-- Detalles -->
+        <section class="py-16 md:py-24 px-4 sm:px-8">
+            <div class="max-w-[1336px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-16 xl:gap-24">
+
+                <div class="flex flex-col gap-16 md:gap-20 min-w-0">
+
+                    <!-- Descripción -->
                     <div>
-                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">{why_title}</h2>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
-                            {why_items_html}
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-7">{details_label}</h2>
+                        <div class="flex flex-col gap-5 text-lg text-on-surface-variant leading-relaxed max-w-[68ch]">
+                            <p>{intro}</p>
+                            <p>{intro_p2}</p>
+                            <p>{intro_p3}</p>
+                        </div>
+                        <ul class="flex flex-wrap gap-x-7 gap-y-3 mt-8 text-sm font-semibold text-on-surface">
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>{trust_badge_guide}</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">event_available</span>{trust_badge_cancel}</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">directions_bus</span>{trust_badge_bus}</li>
                         </ul>
                     </div>
 
-                    {faq_section_html}
+                    <!-- Lo más destacado -->
+                    <div>
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-8">{why_title}</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+{why_items_html}
+                        </ul>
+                    </div>
+
+                    <!-- Punto de encuentro -->
+                    <div class="bg-surface-container rounded-sm p-7 sm:p-10">
+                        <h2 class="font-display text-2xl text-primary leading-tight mb-5 flex items-center gap-3">
+                            <span class="material-symbols-outlined text-3xl" aria-hidden="true">location_on</span>
+                            {meeting_card_title}
+                        </h2>
+                        <div class="flex flex-col gap-4 text-on-surface-variant leading-relaxed max-w-[68ch]">
+                            <p>{meeting_hotel_text}</p>
+                            <p>{meeting_office_text}</p>
+                        </div>
+                        <div class="mt-7 border-l-2 border-tertiary pl-5">
+                            <p class="font-semibold text-on-surface flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-tertiary" aria-hidden="true">departure_board</span>
+                                {bus_connection_title}
+                            </p>
+                            <p class="text-sm text-on-surface-variant leading-relaxed max-w-[68ch]">{bus_connection_text}</p>
+                        </div>
+                    </div>
+
+                    <!-- Qué llevar -->
+                    <div>
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-8">{what_to_bring_title}</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+{what_to_bring_html}
+                        </div>
+                    </div>
+
+                    <!-- Opiniones -->
+                    <div>
+                        <div class="flex flex-col gap-3 mb-8">
+                            <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08]">{reviews_title}</h2>
+                            <p class="flex items-center gap-1.5 text-on-surface shrink-0">
+                                <span class="material-symbols-outlined text-tertiary [font-variation-settings:'FILL'_1]" aria-hidden="true">star</span>
+                                <strong class="font-semibold">4.9 / 5</strong>
+                                <span class="text-sm text-on-surface-variant">(85+ reviews)</span>
+                            </p>
+                        </div>
+                        <figure class="border-l-2 border-tertiary pl-6 md:pl-8">
+                            <blockquote class="font-display text-xl md:text-2xl text-on-surface leading-snug">&ldquo;{featured_review_text}&rdquo;</blockquote>
+                            <figcaption class="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                                <span class="font-semibold text-primary text-base">{featured_review_author}</span>
+                                <span class="inline-flex items-center gap-1 text-on-surface-variant"><span class="material-symbols-outlined text-base" aria-hidden="true">verified</span>{verified_booking_label}</span>
+                                <span class="text-on-surface-variant">{featured_review_date}</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Preguntas frecuentes -->
+{faq_section_html}
+
                 </div>
 
-                <!-- Right Sidebar: Reservation Card -->
-                <div>
-                    <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
-                        <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">{book_card_title}</h3>
-                        {price_block}
-                        <p class="text-on-surface-variant mb-8 font-medium">{price_sub_label}</p>
-                        
-                        <ul class="flex flex-col gap-4 mb-10 list-none p-0">
-                            {included_html}
-                            {excluded_html}
+                <!-- Reserva -->
+                <aside>
+                    <div class="lg:sticky lg:top-24 bg-surface-container-low border border-primary/10 rounded-sm p-7 sm:p-9 flex flex-col gap-7">
+
+                        <div>
+                            <p class="flex flex-wrap items-center justify-between gap-2 text-sm">
+                                <span class="font-semibold text-primary">{sidebar_guarantee_badge}</span>
+                                <span class="text-on-surface-variant">{sidebar_small_group_badge}</span>
+                            </p>
+                            {sidebar_price_block}
+                            <p class="text-sm text-on-surface-variant mt-1">{per_person_no_fees_label}</p>
+                        </div>
+
+                        <div class="border-t border-primary/15 pt-6">
+                            <h2 class="font-semibold text-on-surface mb-4">{whats_included_label}</h2>
+                            <ul class="flex flex-col gap-3 text-[0.9375rem]">
+{included_html}{excluded_html}
+                            </ul>
+                        </div>
+
+                        <ul class="flex flex-col gap-2.5 text-sm border-t border-primary/15 pt-6">
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">event_available</span>{cancel_guarantee_text}</li>
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">cloud_sync</span>{weather_guarantee_text}</li>
+                            <li class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">credit_card</span>{payment_methods_text}</li>
                         </ul>
 
-                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">{book_button_label}</a>
-                        <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">{schedule_label}</p>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-4 px-6 rounded-full text-lg font-semibold transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                                {wa_icon}
+                                <span>{sidebar_whatsapp_btn}</span>
+                            </a>
+                            <p class="text-sm text-on-surface-variant text-center mt-3">{instant_reply_subtext}</p>
+                        </div>
+
+                        <div class="border-t border-primary/15 pt-6 text-sm">
+                            <p class="text-on-surface-variant mb-3">{alt_contacts_label}</p>
+                            <div class="flex flex-wrap gap-x-6 gap-y-2">
+                                <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20{mail_subject_encoded}&body={mail_body_encoded}" class="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
+                                    <span class="material-symbols-outlined text-lg" aria-hidden="true">mail</span>{email_btn_label}
+                                </a>
+                                <a href="https://instagram.com/solymarparacas" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                                    Instagram DM
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-sm border-t border-primary/15 pt-6">
+                            <strong class="block font-semibold text-on-surface">{schedule_callout_main}</strong>
+                            <span class="text-on-surface-variant">{schedule_label}</span>
+                        </p>
+
                     </div>
-                </div>
+                </aside>
 
             </div>
         </section>
 
-        <!-- Value Proposition Grid -->
-        <section class="py-24 px-8 bg-surface-container">
-            <div class="max-w-[1536px] mx-auto">
-                <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">{why_choose_us_label}</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">shield</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">{val_prop_1_title}</h4>
-                        <p class="text-sm text-on-surface-variant">{val_prop_1_desc}</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">{val_prop_2_title}</h4>
-                        <p class="text-sm text-on-surface-variant">{val_prop_2_desc}</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">workspace_premium</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">{val_prop_3_title}</h4>
-                        <p class="text-sm text-on-surface-variant">{val_prop_3_desc}</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">chat</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">{val_prop_4_title}</h4>
-                        <p class="text-sm text-on-surface-variant">{val_prop_4_desc}</p>
-                    </div>
-                </div>
+        <!-- Por qué elegirnos -->
+        <section class="py-16 md:py-24 px-4 sm:px-8 bg-surface-container">
+            <div class="max-w-[1336px] mx-auto grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+                <h2 class="lg:col-span-4 font-display text-3xl sm:text-4xl text-primary leading-[1.08] text-balance">{why_choose_us_label}</h2>
+                <ul class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">shield</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_1_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_1_desc}</p></div>
+                    </li>
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">record_voice_over</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_2_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_2_desc}</p></div>
+                    </li>
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">workspace_premium</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_3_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_3_desc}</p></div>
+                    </li>
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">verified_user</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_4_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_4_desc}</p></div>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <!-- Call to Action Section -->
-        <section class="py-24 px-8 bg-primary text-center text-white">
-            <div class="max-w-[800px] mx-auto">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">{cta_title}</h2>
-                <p class="text-xl text-white/90 mb-12 leading-relaxed">{cta_desc}</p>
-                <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">{cta_button_label}</a>
+        <!-- Reserva final -->
+        <section class="relative overflow-hidden py-20 md:py-28 px-4 sm:px-8 bg-primary text-white">
+            {candelabro}
+            <div class="relative max-w-[1336px] mx-auto">
+                <div class="max-w-[680px]">
+                    <p class="text-sand font-semibold mb-4">{cta_kicker}</p>
+                    <h2 class="font-display text-4xl md:text-5xl leading-[1.04] mb-6 text-balance">{cta_title}</h2>
+                    <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-[52ch]">{cta_desc}</p>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                            {wa_icon}
+                            <span>{cta_button_label}</span>
+                        </a>
+                        <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20{mail_subject_encoded}&body={mail_body_encoded}" class="inline-flex items-center justify-center gap-2 py-3.5 px-7 rounded-full border border-white/40 font-semibold text-white transition-colors hover:bg-white/10">
+                            <span class="material-symbols-outlined text-lg" aria-hidden="true">mail</span>
+                            <span>{email_btn_label}</span>
+                        </a>
+                    </div>
+                    <p class="text-sm text-white/65 mt-8">{cta_guarantee_footer}</p>
+                </div>
             </div>
         </section>
     </main>
@@ -1290,31 +1565,61 @@ template = """<!DOCTYPE html>
 </html>
 """
 
-# Text translations for common elements
+# ==========================================
+# COMMON DICTIONARY
+# ==========================================
+
 common = {
     "es": {
         "home_label": "Inicio",
         "home_url": "https://solymarparacas.com/",
         "tours_index_label": "Tours",
         "tours_index_url": "https://solymarparacas.com/tours",
-        "index_filename": "index.html",
-        "tours_filename": "tours.html",
-        "details_label": "Detalles de la Aventura",
-        "book_card_title": "Reservar Tour",
+        "home_link": "index.html",
+        "tours_link": "tours.html",
+        "details_label": "Detalles de la experiencia",
+        "book_card_title": "Reservar tour",
         "price_sub_label": "Por persona",
-        "book_button_label": "Reservar Ahora",
+        "per_person_no_fees_label": "Por persona · Sin cargos ocultos",
+        "whats_included_label": "Qué incluye",
+        "sidebar_guarantee_badge": "Salida diaria garantizada",
+        "sidebar_small_group_badge": "Grupo reducido",
+        "sidebar_whatsapp_btn": "Reservar por WhatsApp",
+        "instant_reply_subtext": "Respuesta inmediata y confirmación de fecha",
+        "alt_contacts_label": "¿No usas WhatsApp? Escríbenos aquí",
+        "email_btn_label": "Enviar email",
+        "schedule_callout_main": "Horario de salida",
+        "cancel_guarantee_text": "Cancelación gratuita hasta 24h antes",
+        "weather_guarantee_text": "Reembolso 100% si se cancela por clima",
+        "payment_methods_text": "Paga con tarjeta por link seguro o efectivo",
+        "trust_badge_guide": "Guías locales certificados",
+        "trust_badge_cancel": "Cancelación flexible 24h",
+        "trust_badge_bus": "Regreso a tiempo para buses nocturnos",
+        "meeting_card_title": "Punto de encuentro y conexión de buses",
+        "meeting_hotel_text": "<strong>Recojo gratuito en hotel:</strong> Te recogemos directamente en tu hotel u hostal en Paracas / El Chaco.",
+        "meeting_office_text": "<strong>Oficina central:</strong> Si te hospedas fuera del centro o llegas con maletas antes del tour, te esperamos en nuestra oficina en el malecón El Chaco: <a href='https://maps.google.com/?q=SolyMar+Paracas+Peru' target='_blank' rel='noopener' class='font-bold text-primary hover:underline ml-1'>SolyMar Paracas (Google Maps)</a>",
+        "bus_connection_title": "¿Tomas un bus nocturno esa misma noche?",
+        "bus_connection_text": "Nuestros horarios están planificados para que regreses al pueblo con tiempo de sobra para cenar o abordar tu bus nocturno a Lima, Huacachina o Arequipa (Cruz del Sur, Peru Hop). ¡Puedes dejar tu equipaje en custodia gratuita en nuestra oficina!",
+        "what_to_bring_title": "Qué llevar",
+        "reviews_title": "La experiencia de nuestros clientes",
+        "verified_booking_label": "Reserva verificada",
+        "featured_review_text": "Excelente servicio de inicio a fin. Todo muy puntual, el guía fue súper atento y las vistas son increíbles. 100% recomendados en Paracas.",
+        "featured_review_author": "Carlos Rodríguez",
+        "featured_review_date": "Reseña reciente",
         "why_choose_us_label": "Por qué elegir SolyMar Paracas",
-        "val_prop_1_title": "Seguridad Garantizada",
-        "val_prop_1_desc": "Equipos modernos y guías certificados con seguros de pasajeros para tu tranquilidad.",
-        "val_prop_2_title": "Guía Local Experto",
-        "val_prop_2_desc": "Guías nativos bilingües que te mostrarán los secretos mejor guardados de la Reserva.",
-        "val_prop_3_title": "Agencia Registrada",
-        "val_prop_3_desc": "Somos operadores turísticos formales autorizados por las entidades pertinentes del Perú.",
-        "val_prop_4_title": "Atención Personalizada",
-        "val_prop_4_desc": "Coordinamos tu reserva por WhatsApp de inmediato resolviendo cualquier consulta.",
-        "cta_title": "¿Listo para comenzar tu aventura?",
-        "cta_desc": "Contáctanos hoy mismo para asegurar tus espacios en esta maravillosa experiencia. ¡Tenemos salidas diarias!",
-        "cta_button_label": "Contactar por WhatsApp",
+        "val_prop_1_title": "Seguridad garantizada",
+        "val_prop_1_desc": "Equipos modernos, chalecos homologados y seguros de pasajeros para tu total tranquilidad.",
+        "val_prop_2_title": "Guías locales expertos",
+        "val_prop_2_desc": "Guías bilingües certificados apasionados por la fauna marina, el desierto y la historia.",
+        "val_prop_3_title": "Operador formal autorizado",
+        "val_prop_3_desc": "Agencia de viajes registrada ante MINCETUR y autoridades locales del Perú.",
+        "val_prop_4_title": "Garantías flexibles",
+        "val_prop_4_desc": "Cancela gratis hasta 24h antes o recibe 100% de reembolso si el clima impide la salida.",
+        "cta_kicker": "Cupos limitados por turno",
+        "cta_title": "¿Listo para comenzar tu aventura en Paracas?",
+        "cta_desc": "Escríbenos hoy mismo para asegurar tus espacios. Coordinamos tu reserva en minutos con total flexibilidad.",
+        "cta_button_label": "Reservar por WhatsApp",
+        "cta_guarantee_footer": "Paga con tarjeta mediante enlace seguro o en efectivo al llegar · Cancelación sin costo hasta 24h antes",
         "locale": "es_PE"
     },
     "en": {
@@ -1322,63 +1627,114 @@ common = {
         "home_url": "https://solymarparacas.com/en/",
         "tours_index_label": "Tours",
         "tours_index_url": "https://solymarparacas.com/en/tours",
-        "index_filename": "index.html",
-        "tours_filename": "tours.html",
-        "details_label": "Adventure Details",
-        "book_card_title": "Book Tour",
+        "home_link": "index.html",
+        "tours_link": "tours.html",
+        "details_label": "Adventure details",
+        "book_card_title": "Book tour",
         "price_sub_label": "Per person",
-        "book_button_label": "Book Now",
-        "why_choose_us_label": "Why Choose SolyMar Paracas",
-        "val_prop_1_title": "Safety First",
-        "val_prop_1_desc": "Modern equipment, certified guides, and complete passenger insurance for peace of mind.",
-        "val_prop_2_title": "Expert Local Guides",
-        "val_prop_2_desc": "Friendly bilingual guides sharing historical facts and finding hidden wildlife.",
-        "val_prop_3_title": "Licensed Agency",
-        "val_prop_3_desc": "We are a formal local registered tour operator recognized by Peruvian authorities.",
-        "val_prop_4_title": "Personalized Service",
-        "val_prop_4_desc": "Direct WhatsApp assistance for easy booking, customized schedules, and help.",
-        "cta_title": "Ready to Start Your Adventure?",
-        "cta_desc": "Get in touch with us today to secure your seats on this wonderful excursion. Daily departures available!",
-        "cta_button_label": "Message on WhatsApp",
+        "per_person_no_fees_label": "Per person · No hidden booking fees",
+        "whats_included_label": "What's included",
+        "sidebar_guarantee_badge": "Guaranteed daily departure",
+        "sidebar_small_group_badge": "Small group",
+        "sidebar_whatsapp_btn": "Book on WhatsApp",
+        "instant_reply_subtext": "Instant reply & date confirmation in English",
+        "alt_contacts_label": "Don't use WhatsApp? Reach out here",
+        "email_btn_label": "Send email",
+        "schedule_callout_main": "Departure schedule",
+        "cancel_guarantee_text": "Free cancellation up to 24h before",
+        "weather_guarantee_text": "100% full refund if canceled due to weather",
+        "payment_methods_text": "Pay by card via secure link or cash on arrival",
+        "trust_badge_guide": "Certified bilingual guides",
+        "trust_badge_cancel": "Free 24h cancellation",
+        "trust_badge_bus": "Back in time for evening night buses",
+        "meeting_card_title": "Meeting point & bus connections",
+        "meeting_hotel_text": "<strong>Free hotel pick-up:</strong> Complimentary pick-up from any hotel, hostel, or Airbnb in Paracas town / El Chaco area.",
+        "meeting_office_text": "<strong>Central meeting office:</strong> If you are staying outside the center or arriving with luggage before the tour, meet us at our boardwalk office: <a href='https://maps.google.com/?q=SolyMar+Paracas+Peru' target='_blank' rel='noopener' class='font-bold text-primary hover:underline ml-1'>SolyMar Paracas (Google Maps)</a>",
+        "bus_connection_title": "Catching an evening night bus?",
+        "bus_connection_text": "All our day and afternoon tours are timed so you return with plenty of time for dinner or to catch your evening night bus (Cruz del Sur, Peru Hop) to Lima, Huacachina, or Arequipa. Free luggage storage is available at our office!",
+        "what_to_bring_title": "What to bring",
+        "reviews_title": "Loved by travelers worldwide",
+        "verified_booking_label": "Verified booking",
+        "featured_review_text": "Incredible experience with SolyMar! Booking was super easy, guides spoke great English, and the scenery was breathtaking. The best operator in Paracas!",
+        "featured_review_author": "Sarah Johnson, USA",
+        "featured_review_date": "Recent review",
+        "why_choose_us_label": "Why book with SolyMar Paracas",
+        "val_prop_1_title": "Safety first",
+        "val_prop_1_desc": "Modern equipment, certified guides, and complete passenger insurance for total peace of mind.",
+        "val_prop_2_title": "Expert local guides",
+        "val_prop_2_desc": "Friendly bilingual guides sharing historical facts, desert geology, and spotting hidden wildlife.",
+        "val_prop_3_title": "Licensed operator",
+        "val_prop_3_desc": "We are a formal registered tour operator recognized by Peruvian tourism authorities (MINCETUR).",
+        "val_prop_4_title": "Flexible guarantees",
+        "val_prop_4_desc": "Free cancellation up to 24h before or receive a 100% full refund if weather prevents departure.",
+        "cta_kicker": "Limited spots per departure",
+        "cta_title": "Ready to start your Paracas adventure?",
+        "cta_desc": "Get in touch with us today to secure your seats. We confirm your booking in minutes with flexible options!",
+        "cta_button_label": "Book on WhatsApp",
+        "cta_guarantee_footer": "Pay by card via secure payment link or cash on arrival · Free cancellation up to 24h before",
         "locale": "en_US"
     }
 }
 
-# Generate individual pages
+# ==========================================
+# GENERATE INDIVIDUAL TOUR PAGES
+# ==========================================
+
+import urllib.parse
+import json
+import os
+
 for tour_key, tour_info in tours_formatted.items():
+    cat = tour_info["category"]
+    price_usd = PRICE_USD_MAP.get(tour_key, "")
+    
     for lang in ["es", "en"]:
         root_prefix = "../" if lang == "en" else ""
         content = tour_info[lang]
         comm = common[lang]
         
+        
         # Build Why Items HTML
         why_items_html = ""
         for item in content["why_items"]:
-            why_items_html += f"""                        <li class="flex gap-6">
-                            <span class="material-symbols-outlined text-4xl text-primary">{item['icon']}</span>
-                            <div>
-                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">{item['title']}</strong>
-                                <p class="text-on-surface-variant">{item['desc']}</p>
-                            </div>
-                        </li>
+            why_items_html += f"""                            <li class="flex gap-4 pt-5 border-t border-primary/15">
+                                <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">{item['icon']}</span>
+                                <div>
+                                    <h3 class="font-display text-lg text-primary leading-snug mb-1">{item['title']}</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">{item['desc']}</p>
+                                </div>
+                            </li>
 """
         
         # Build Included HTML
         included_html = ""
         for inc in content["included"]:
-            included_html += f"""                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
-                            <span>{inc}</span>
-                        </li>
+            included_html += f"""                                <li class="flex items-start gap-2.5 text-on-surface">
+                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">check</span>
+                                    <span>{inc}</span>
+                                </li>
 """
         
         # Build Excluded HTML
         excluded_html = ""
         for exc in content["excluded"]:
-            excluded_html += f"""                        <li class="flex items-center gap-3 text-red-500 font-medium opacity-80">
-                            <span class="material-symbols-outlined font-bold">error</span>
-                            <span>{exc}</span>
-                        </li>
+            excluded_html += f"""                                <li class="flex items-start gap-2.5 text-on-surface-variant">
+                                    <span class="material-symbols-outlined text-lg text-tertiary shrink-0" aria-hidden="true">info</span>
+                                    <span>{exc}</span>
+                                </li>
+"""
+        
+        # What to bring HTML
+        bring_items = WHAT_TO_BRING.get(cat, WHAT_TO_BRING["desierto"])[lang]
+        what_to_bring_html = ""
+        for b_icon, b_title, b_desc in bring_items:
+            what_to_bring_html += f"""                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">{b_icon}</span>
+                                <div>
+                                    <h3 class="font-semibold text-on-surface mb-0.5">{b_title}</h3>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">{b_desc}</p>
+                                </div>
+                            </div>
 """
         
         # Build FAQs HTML
@@ -1386,15 +1742,19 @@ for tour_key, tour_info in tours_formatted.items():
         faq_schema = ""
         if "faqs" in content:
             faq_section_html = f"""                    <div>
-                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">{content['faq_title']}</h2>
-                        <div class="flex flex-col gap-6">"""
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-6">{content['faq_title']}</h2>
+                        <div class="border-t-2 border-sand">"""
             
             faq_schema_items = []
             for faq in content["faqs"]:
-                faq_section_html += f"""                            <div class="bg-surface-container-low p-8 rounded-[1.5rem] border border-black/5">
-                                <h3 class="text-xl font-extrabold text-primary mb-4">{faq['q']}</h3>
-                                <p class="text-on-surface-variant leading-relaxed">{faq['a']}</p>
-                            </div>"""
+                faq_section_html += f"""
+                            <details class="group border-b border-primary/15">
+                                <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
+                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">{faq['q']}</h3>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                </summary>
+                                <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">{faq['a']}</p>
+                            </details>"""
                 
                 # Build FAQ JSON-LD schema
                 faq_schema_items.append(f"""      {{
@@ -1406,7 +1766,8 @@ for tour_key, tour_info in tours_formatted.items():
         }}
       }}""")
             
-            faq_section_html += """                        </div>
+            faq_section_html += """
+                        </div>
                     </div>"""
             
             if faq_schema_items:
@@ -1415,75 +1776,150 @@ for tour_key, tour_info in tours_formatted.items():
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-    """ + ",\n".join(faq_schema_items) + """
+    """ + ",\\n".join(faq_schema_items) + """
         ]
       }"""
         
-        # Build WhatsApp text
-        wa_prefix = "Hello, I want to book the " if lang == "en" else "Hola, quiero reservar el tour "
-        whatsapp_text = wa_prefix + content["h1"]
-        whatsapp_text_encoded = whatsapp_text.replace(" ", "%20").replace("&", "%26")
+        # WhatsApp prefilled text
+        if lang == "en":
+            wa_text = f"Hi! I'd like to book the {content['h1']}. Date: ___ · People: ___"
+        else:
+            wa_text = f"Hola! Quiero reservar el tour {content['h1']}. Fecha: ___ · Personas: ___"
+        whatsapp_text_encoded = urllib.parse.quote(wa_text)
         
-        # Determine canonical links (clean URL, sin .html: la regla del .htaccess
-        # que quita la extension .html hace un 301, y el canonical no debe apuntar
-        # a una URL que redirige)
+        # Mail prefilled
+        mail_subj = f"Booking Inquiry: {content['h1']}"
+        mail_body = f"Hi SolyMar Paracas!\\n\\nI would like to book: {content['h1']}\\nDate:\\nNumber of people:\\nHotel in Paracas:\\nQuestions:"
+        mail_subj_enc = urllib.parse.quote(mail_subj)
+        mail_body_enc = urllib.parse.quote(mail_body)
+        
+        # Clean canonical URL
         clean_filename = tour_info['filename'].removesuffix('.html')
         canonical_es = f"https://solymarparacas.com/{clean_filename}"
         canonical_en = f"https://solymarparacas.com/en/{clean_filename}"
         canonical = canonical_en if lang == "en" else canonical_es
         
-        # Quote-based tours show "Cotizar" instead of a fixed price
+        # Quick facts data
+        qf_data = QUICK_FACTS.get(tour_key, {}).get(lang, {
+            "sched": "Daily / Diarias", "sched_sub": "Check schedule",
+            "dur": "2-3 Hours", "dur_sub": "Guided tour",
+            "type": "Paracas Tour", "type_sub": "Nature & Adventure",
+            "diff": "Easy", "diff_sub": "All levels",
+            "guide": "Certified Guide", "guide_sub": "Bilingual pro",
+            "group": "Small Group", "group_sub": "Personalized care"
+        })
+        
+        # Pricing logic
         if tour_info.get("quote_only"):
             price_display = "Cotizar" if lang == "es" else "Get a Quote"
             price_sub = "Tarifa por vehículo, según ruta" if lang == "es" else "Per vehicle, based on route"
-            price_block = f'<p class="text-5xl font-extrabold text-on-surface tracking-tight">{price_display}</p>'
+            sidebar_price_block = f'<p class="font-display text-4xl text-tertiary mt-3">{price_display}</p>'
+            qf_price_badge = price_display
             offers_json = ""
-        elif "custom_price_html" in content:
-            price_display = tour_info["price"]
-            price_sub = content.get("price_sub_label", comm["price_sub_label"])
-            price_block = content["custom_price_html"]
-            offers_json = '"offers": {\n          "@type": "Offer",\n          "price": "' + tour_info["price_val"] + '",\n          "priceCurrency": "' + tour_info["price_cur"] + '",\n          "url": "' + canonical + '"\n        },\n        '
         else:
             price_display = tour_info["price"]
             price_sub = content.get("price_sub_label", comm["price_sub_label"])
-            price_block = f'<p class="text-5xl font-extrabold text-on-surface tracking-tight">{price_display}</p>'
-            offers_json = '"offers": {\n          "@type": "Offer",\n          "price": "' + tour_info["price_val"] + '",\n          "priceCurrency": "' + tour_info["price_cur"] + '",\n          "url": "' + canonical + '"\n        },\n        '
-
-        # Render page HTML
+            usd_str = f" ({price_usd})" if price_usd else ""
+            sidebar_price_block = f'''<p class="flex flex-wrap items-baseline gap-x-2 mt-3">
+                                <span class="font-display text-5xl text-tertiary">{price_display}</span>
+                                <span class="text-xl text-on-surface-variant">{usd_str}</span>
+                            </p>'''
+            qf_price_badge = f"{price_display}{usd_str}"
+            offers_json = f'''"offers": {{
+          "@type": "Offer",
+          "price": "{tour_info['price_val']}",
+          "priceCurrency": "{tour_info['price_cur']}",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": "{canonical}"
+        }},
+        '''
+        
+        # Review personalization (Sarah for trekking, Carlos for others)
+        if tour_key == "trekking":
+            rev_text = "The Golden Shadows Trek was the absolute highlight of my trip to Peru! Watching the sun set over the wild desert cliffs of Paracas with the ocean crashing below was breathtaking. Our guide spoke fluent English, knew the best photo angles, and made sure our small group was comfortable the entire way." if lang == "en" else "El Golden Shadows Trek fue lo más inolvidable de mi viaje a Paracas. Caminar por los acantilados viendo caer el sol sobre el mar dorado es una experiencia mágica. El guía nos tomó fotos increíbles y el ritmo fue perfecto."
+            rev_author = "Sarah Johnson, Chicago, USA" if lang == "en" else "Sarah Johnson (EE. UU.)"
+        else:
+            rev_text = comm["featured_review_text"]
+            rev_author = comm["featured_review_author"]
+        
+        # Render page
         rendered_html = template.format(
             lang=lang,
             root_prefix=root_prefix,
             title=content["title"],
             desc=content["desc"],
-            keywords=content["keywords"],
             canonical=canonical,
             canonical_es=canonical_es,
             canonical_en=canonical_en,
             locale=comm["locale"],
             h1=content["h1"],
+            json_h1=json.dumps(content["h1"]),
+            json_desc=json.dumps(content["desc"]),
+            breadcrumb_title=content["h1"],
             image=tour_info["image"],
             subtitle=content["subtitle"],
             home_label=comm["home_label"],
             home_url=comm["home_url"],
             tours_index_label=comm["tours_index_label"],
             tours_index_url=comm["tours_index_url"],
-            index_filename=comm["index_filename"],
-            tours_filename=comm["tours_filename"],
+            home_link=comm["home_link"],
+            tours_link=comm["tours_link"],
+            qf_sched=qf_data["sched"],
+            qf_sched_sub=qf_data["sched_sub"],
+            qf_dur=qf_data["dur"],
+            qf_dur_sub=qf_data["dur_sub"],
+            qf_type=qf_data["type"],
+            qf_type_sub=qf_data["type_sub"],
+            qf_diff=qf_data["diff"],
+            qf_diff_sub=qf_data["diff_sub"],
+            qf_guide=qf_data["guide"],
+            qf_guide_sub=qf_data["guide_sub"],
+            qf_group=qf_data["group"],
+            qf_group_sub=qf_data["group_sub"],
+            qf_price_badge=qf_price_badge,
             details_label=comm["details_label"],
             intro=content["intro"],
             intro_p2=content["intro_p2"],
             intro_p3=content["intro_p3"],
+            trust_badge_guide=comm["trust_badge_guide"],
+            trust_badge_cancel=comm["trust_badge_cancel"],
+            trust_badge_bus=comm["trust_badge_bus"],
             why_title=content["why_title"],
             why_items_html=why_items_html,
+            meeting_card_title=comm["meeting_card_title"],
+            meeting_hotel_text=comm["meeting_hotel_text"],
+            meeting_office_text=comm["meeting_office_text"],
+            bus_connection_title=comm["bus_connection_title"],
+            bus_connection_text=comm["bus_connection_text"],
+            what_to_bring_title=comm["what_to_bring_title"],
+            what_to_bring_html=what_to_bring_html,
+            reviews_title=comm["reviews_title"],
+            verified_booking_label=comm["verified_booking_label"],
+            featured_review_text=rev_text,
+            featured_review_author=rev_author,
+            featured_review_date=comm["featured_review_date"],
             faq_section_html=faq_section_html,
             book_card_title=comm["book_card_title"],
-            price_block=price_block,
+            sidebar_guarantee_badge=comm["sidebar_guarantee_badge"],
+            sidebar_small_group_badge=comm["sidebar_small_group_badge"],
+            sidebar_price_block=sidebar_price_block,
+            per_person_no_fees_label=comm["per_person_no_fees_label"],
+            whats_included_label=comm["whats_included_label"],
             price_sub_label=price_sub,
-            offers_json=offers_json,
             included_html=included_html,
             excluded_html=excluded_html,
+            cancel_guarantee_text=comm["cancel_guarantee_text"],
+            weather_guarantee_text=comm["weather_guarantee_text"],
+            payment_methods_text=comm["payment_methods_text"],
             whatsapp_text=whatsapp_text_encoded,
-            book_button_label=comm["book_button_label"],
+            sidebar_whatsapp_btn=comm["sidebar_whatsapp_btn"],
+            instant_reply_subtext=comm["instant_reply_subtext"],
+            alt_contacts_label=comm["alt_contacts_label"],
+            mail_subject_encoded=mail_subj_enc,
+            mail_body_encoded=mail_body_enc,
+            email_btn_label=comm["email_btn_label"],
+            schedule_callout_main=comm["schedule_callout_main"],
             schedule_label=content["schedule_label"],
             why_choose_us_label=comm["why_choose_us_label"],
             val_prop_1_title=comm["val_prop_1_title"],
@@ -1494,32 +1930,29 @@ for tour_key, tour_info in tours_formatted.items():
             val_prop_3_desc=comm["val_prop_3_desc"],
             val_prop_4_title=comm["val_prop_4_title"],
             val_prop_4_desc=comm["val_prop_4_desc"],
+            cta_kicker=comm["cta_kicker"],
             cta_title=comm["cta_title"],
             cta_desc=comm["cta_desc"],
             cta_button_label=comm["cta_button_label"],
-            price_val=tour_info["price_val"],
-            price_cur=tour_info["price_cur"],
+            cta_guarantee_footer=comm["cta_guarantee_footer"],
+            offers_json=offers_json,
+            wa_icon=WA_ICON,
+            candelabro=CANDELABRO,
             faq_schema=faq_schema
         )
         
-        # Write file
+        # Write output file
         out_dir = "en" if lang == "en" else "."
         out_path = os.path.join(out_dir, tour_info["filename"])
-        
-        # Ensure directories exist
-        if not os.path.exists(out_dir):
-            os.makedirs(out_dir)
-            
+        os.makedirs(out_dir, exist_ok=True)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(rendered_html)
-            
         print(f"Generated: {out_path}")
 
-print("Successfully generated all individual tour pages.")
-
+print("Successfully generated all enhanced individual tour pages.")
 
 # ==========================================
-# GENERATE INDEX OF TOURS (tours.html)
+# MASTER HTML TEMPLATE FOR TOURS INDEX
 # ==========================================
 
 index_template = """<!DOCTYPE html>
@@ -1532,7 +1965,6 @@ index_template = """<!DOCTYPE html>
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>{title}</title>
     <meta name="description" content="{desc}">
-    <meta name="keywords" content="{keywords}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
     <link rel="canonical" href="{canonical}">
@@ -1559,7 +1991,7 @@ index_template = """<!DOCTYPE html>
     <!-- ===== FIN SEO ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="{root_prefix}css/style.css" />
 
@@ -1569,8 +2001,8 @@ index_template = """<!DOCTYPE html>
       {{
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "{h1}",
-        "description": "{desc}",
+        "name": {json_h1},
+        "description": {json_desc},
         "url": "{canonical}",
         "numberOfItems": {num_items},
         "itemListElement": [
@@ -1599,38 +2031,47 @@ index_template = """<!DOCTYPE html>
     </script>
 </head>
 
-<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
+<body class="font-sans bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-16">
     <nav id="header-placeholder"></nav>
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative h-[50vh] min-h-[400px] flex items-center justify-center text-center px-8 overflow-hidden">
-            <div class="absolute inset-0 z-0 group">
-                <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s]" src="{root_prefix}img/reserva-nacional-paracas.jpg" alt="{h1}" fetchpriority="high" decoding="async" />
-                <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
-            </div>
-            <div class="relative z-10 max-w-[900px] text-white">
-                <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90"><a href="{root_prefix}{index_filename}" class="hover:underline">{home_label}</a> / {tours_index_label}</p>
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight">{h1}</h1>
-                <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">{subtitle}</p>
-            </div>
-        </section>
-
-        <!-- Tours Grid Section -->
-        <section class="py-24 px-8 bg-surface">
-            <div class="max-w-[1536px] mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {grid_html}
+        <!-- Hero -->
+        <section class="relative min-h-[min(56dvh,560px)] flex items-end overflow-hidden bg-primary">
+            <img class="absolute inset-0 w-full h-full object-cover" src="{root_prefix}img/reserva-nacional-paracas.jpg" alt="{h1}" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-primary/15"></div>
+            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-primary/80 to-transparent"></div>
+            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-20 pb-14 md:pb-20">
+                <div class="max-w-[860px] text-white">
+                    <nav aria-label="Breadcrumb" class="rise-in text-sm text-white/75 mb-5">
+                        <a href="{home_link}" class="hover:text-white hover:underline">{home_label}</a>
+                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
+                        <span aria-current="page">{tours_index_label}</span>
+                    </nav>
+                    <h1 class="rise-in [--i:1] font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.04] mb-6 text-balance">{h1}</h1>
+                    <p class="rise-in [--i:2] text-lg md:text-xl text-white/85 leading-relaxed max-w-[52ch]">{subtitle}</p>
                 </div>
             </div>
         </section>
 
-        <!-- Call to Action Section -->
-        <section class="py-24 px-8 bg-primary text-center text-white">
-            <div class="max-w-[800px] mx-auto">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">{cta_title}</h2>
-                <p class="text-xl text-white/90 mb-12 leading-relaxed">{cta_desc}</p>
-                <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">{cta_button_label}</a>
+        <!-- Tours -->
+        <section class="py-16 md:py-24 px-4 sm:px-8">
+            <div class="max-w-[1336px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+{grid_html}
+            </div>
+        </section>
+
+        <!-- Ayuda -->
+        <section class="relative overflow-hidden py-20 md:py-28 px-4 sm:px-8 bg-primary text-white">
+            {candelabro}
+            <div class="relative max-w-[1336px] mx-auto">
+                <div class="max-w-[680px]">
+                    <h2 class="font-display text-4xl md:text-5xl leading-[1.04] mb-6 text-balance">{cta_title}</h2>
+                    <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-[52ch]">{cta_desc}</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                        {wa_icon}
+                        <span>{cta_button_label}</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -1648,36 +2089,26 @@ tours_index_texts = {
     "es": {
         "title": "Tours en Paracas e Ica 2026: Precios y Reservas | Solymar Paracas",
         "desc": "Todos nuestros tours en Paracas, Pisco e Ica: Islas Ballestas, Reserva Nacional, buggies en Huacachina, buceo, parapente y traslados privados. Reserva online.",
-        "keywords": "tours en paracas, actividades paracas, que hacer en paracas, excursiones paracas, turismo paracas, tours ica huacachina, traslados privados paracas",
         "h1": "Todos nuestros tours en Paracas, Pisco e Ica",
         "subtitle": "Somos SolyMar Paracas, tu agencia local de confianza. Disfruta del mar, desierto, aire y cultura con total seguridad.",
-        "cat_mar_title": "Aventuras Marinas",
-        "cat_desierto_title": "Experiencias en el Desierto",
-        "cat_aire_title": "Actividades en el Aire",
-        "cat_cultura_title": "Tours Culturales e Históricos",
         "from_label": "Desde",
         "view_details_label": "Ver Detalles",
         "cta_title": "¿No sabes cuál elegir?",
         "cta_desc": "Escríbenos por WhatsApp y te ayudamos a diseñar un itinerario a tu medida en Paracas y los principales destinos de Ica.",
         "cta_button_label": "Escríbenos por WhatsApp",
-        "whatsapp_text": "Hola,%20quiero%20ayuda%20para%20armar%20mi%20itinerario%20de%20tours"
+        "whatsapp_text": "Hola!%20Quiero%20ayuda%20para%20armar%20mi%20itinerario%20de%20tours"
     },
     "en": {
         "title": "Tours in Paracas & Ica 2026: Price & Booking | Solymar Paracas",
         "desc": "Browse all our tours in Paracas, Pisco, and Ica: Ballestas Islands, National Reserve, Huacachina dune buggies, scuba diving, paragliding, and private transfers. Book online.",
-        "keywords": "tours in paracas, activities in paracas, what to do in paracas, excursions paracas, tourism paracas, tours ica huacachina, private transfers paracas",
         "h1": "All Our Tours in Paracas, Pisco & Ica",
-        "subtitle": "We are SolyMar Paracas, your trusted local agency. Discover water, desert, air, and history with full safety.",
-        "cat_mar_title": "Marine Adventures",
-        "cat_desierto_title": "Desert Experiences",
-        "cat_aire_title": "Aerial Activities",
-        "cat_cultura_title": "Cultural & Historical Tours",
+        "subtitle": "We are SolyMar Paracas, your trusted local agency. Discover ocean, desert, air, and history with full safety.",
         "from_label": "From",
         "view_details_label": "View Details",
         "cta_title": "Unsure which tour to pick?",
         "cta_desc": "Message us on WhatsApp. Our local experts will help you design a customized itinerary for your trip to Paracas and Ica.",
         "cta_button_label": "Chat with us on WhatsApp",
-        "whatsapp_text": "Hello,%20I'd%20like%20help%20planning%20my%20tours%20itinerary%20in%20Paracas"
+        "whatsapp_text": "Hi!%20I'd%20like%20help%20planning%20my%20tours%20itinerary%20in%20Paracas"
     }
 }
 
@@ -1687,7 +2118,7 @@ for lang in ["es", "en"]:
     comm = common[lang]
     texts = tours_index_texts[lang]
     
-    # Category details for badge
+    
     cat_labels = {
         "es": {
             "mar": "Aventura Marina",
@@ -1705,15 +2136,6 @@ for lang in ["es", "en"]:
         }
     }
     
-    cat_badge_styles = {
-        "mar": "bg-[#e6f0fa] text-[#005cbb]",
-        "desierto": "bg-[#fef3c7] text-[#b45309]",
-        "aire": "bg-[#e0f2fe] text-[#0369a1]",
-        "cultura": "bg-[#f3e8ff] text-[#6b21a8]",
-        "traslados": "bg-[#dcfce7] text-[#15803d]"
-    }
-    
-    # Sort tours by category order (Mar, Desierto, Aire, Cultura)
     cat_order = {"mar": 0, "desierto": 1, "aire": 2, "cultura": 3, "traslados": 4}
     sorted_tours = sorted(tours_formatted.items(), key=lambda x: cat_order.get(x[1]["category"], 99))
     
@@ -1724,83 +2146,76 @@ for lang in ["es", "en"]:
     for tour_key, tour_info in sorted_tours:
         tour_content = tour_info[lang]
         cat = tour_info["category"]
+        p_usd = PRICE_USD_MAP.get(tour_key, "")
         
-        badge_style = cat_badge_styles.get(cat, "bg-surface-variant text-on-surface-variant")
         cat_label = cat_labels[lang].get(cat, cat.capitalize())
-        price_badge = ("Cotizar" if lang == "es" else "Get a Quote") if tour_info.get("quote_only") else f"{texts['from_label']} {tour_info['price']}"
         
-        # Build Card HTML with h-[540px] to accommodate the new category badge perfectly
-        card_html = f"""                        <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-black/5 flex flex-col group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl h-[540px]">
-                            <a href="{tour_info['filename']}" class="h-56 overflow-hidden relative block">
-                                <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="{root_prefix}{tour_info['image']}" alt="{tour_content['h1']}" loading="lazy" decoding="async" />
-                                <div class="absolute top-6 right-6 bg-primary text-white py-2 px-5 rounded-full text-sm font-bold shadow-md">
-                                    {price_badge}
-                                </div>
-                            </a>
-                            <div class="p-6 flex flex-col flex-grow text-left">
-                                <span class="inline-block {badge_style} py-1.5 px-4 rounded-full text-xs font-extrabold uppercase tracking-wider mb-3 self-start">{cat_label}</span>
-                                <h3 class="text-2xl font-bold text-primary mb-3 tracking-tight line-clamp-2 h-14">
-                                    <a href="{tour_info['filename']}" class="hover:underline transition-all">{tour_content['h1']}</a>
-                                </h3>
-                               <p class="text-sm text-on-surface-variant leading-relaxed mb-4 line-clamp-3 h-16">{tour_content['desc']}</p>
-                                <a href="{tour_info['filename']}" class="block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white py-3 rounded-xl font-bold transition-colors mt-auto">{texts['view_details_label']}</a>
-                            </div>
-                        </div>
+        if tour_info.get("quote_only"):
+            price_badge = "Cotizar" if lang == "es" else "Get a Quote"
+        else:
+            usd_note = f" ({p_usd})" if p_usd else ""
+            price_badge = f"{texts['from_label']} {tour_info['price']}{usd_note}"
+        
+        card_html = f"""                <a href="{tour_info['filename']}" class="group flex flex-col gap-4">
+                    <div class="h-60 md:h-64 overflow-hidden rounded-sm bg-surface-container">
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="{root_prefix}{tour_info['image']}" alt="{tour_content['h1']}" loading="lazy" decoding="async" />
+                    </div>
+                    <div class="flex flex-col gap-2 flex-1">
+                        <span class="text-sm text-on-surface-variant">{cat_label}</span>
+                        <h2 class="font-display text-xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">{tour_content['h1']}</h2>
+                        <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed line-clamp-3">{tour_content['desc']}</p>
+                        <p class="font-semibold text-tertiary mt-auto pt-1">{price_badge}</p>
+                    </div>
+                </a>
 """
         grid_html += card_html
         
-        # Schema elements (clean URL, sin .html)
         clean_filename = tour_info['filename'].removesuffix('.html')
-        canonical_es = f"https://solymarparacas.com/{clean_filename}"
-        canonical_en = f"https://solymarparacas.com/en/{clean_filename}"
-        canonical_item = canonical_en if lang == "en" else canonical_es
-        
+        tour_url = f"https://solymarparacas.com/en/{clean_filename}" if lang == "en" else f"https://solymarparacas.com/{clean_filename}"
         item_list_elements.append(f"""          {{
             "@type": "ListItem",
             "position": {position},
-            "url": "{canonical_item}"
+            "name": {json.dumps(tour_content['h1'])},
+            "url": "{tour_url}"
           }}""")
         position += 1
-        
-    # Canonical links (clean URL, sin .html)
+    
     canonical_es = "https://solymarparacas.com/tours"
     canonical_en = "https://solymarparacas.com/en/tours"
     canonical = canonical_en if lang == "en" else canonical_es
     
-    # Render index HTML
     rendered_index = index_template.format(
         lang=lang,
         root_prefix=root_prefix,
         title=texts["title"],
         desc=texts["desc"],
-        keywords=texts["keywords"],
         canonical=canonical,
         canonical_es=canonical_es,
         canonical_en=canonical_en,
         locale=comm["locale"],
         h1=texts["h1"],
+        json_h1=json.dumps(texts["h1"]),
+        json_desc=json.dumps(texts["desc"]),
         subtitle=texts["subtitle"],
         home_label=comm["home_label"],
         home_url=comm["home_url"],
         tours_index_label=comm["tours_index_label"],
-        index_filename=comm["index_filename"],
-        tours_filename=comm["tours_filename"],
+        home_link=comm["home_link"],
+        num_items=len(tours_formatted),
+        item_list_elements=",\n".join(item_list_elements),
         grid_html=grid_html,
         cta_title=texts["cta_title"],
         cta_desc=texts["cta_desc"],
-        cta_button_label=texts["cta_button_label"],
         whatsapp_text=texts["whatsapp_text"],
-        num_items=len(tours_formatted),
-        item_list_elements=",\n".join(item_list_elements)
+        cta_button_label=texts["cta_button_label"],
+        wa_icon=WA_ICON,
+        candelabro=CANDELABRO
     )
     
-    # Write index file
     out_dir = "en" if lang == "en" else "."
     out_path = os.path.join(out_dir, "tours.html")
-    
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(rendered_index)
-        
     print(f"Generated Tours Index: {out_path}")
 
 print("All tour pages and index successfully generated!")

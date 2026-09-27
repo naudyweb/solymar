@@ -9,7 +9,6 @@ tours_keys = [
     "buggies-sandboard-huacachina",
     "ruta-del-pisco-bodegas-ica",
     "paracas-huacachina-full-day",
-    "sobrevuelo-lineas-de-nazca",
     "parapente",
     "buceo",
     "kayak-paddle-paracas",
@@ -23,9 +22,10 @@ tours_keys = [
 
 other_pages = [
     {"es": "", "en": "en/", "priority": "1.0"},
-    {"es": "tours", "en": "en/tours", "priority": "0.8"},
+    {"es": "tours", "en": "en/tours", "priority": "0.9"},
     {"es": "blog/", "en": "en/blog/", "priority": "0.8"},
-    {"es": "blog/lima-a-paracas", "en": "en/blog/lima-a-paracas", "priority": "0.8"}
+    {"es": "blog/lima-a-paracas", "en": "en/blog/lima-a-paracas", "priority": "0.8"},
+    {"es": "blog/circuito-reserva-nacional-paracas", "en": "en/blog/circuito-reserva-nacional-paracas", "priority": "0.8"}
 ]
 
 # Generate XML entries

@@ -176,7 +176,7 @@
     "category_label_es": "Desierto",
     "category_label_en": "Desert",
     "title_es": "Trekking Sombras Doradas en Paracas",
-    "title_en": "Golden Shadows Trek in Paracas",
+    "title_en": "Golden Shadows Trek: Paracas Sunset Hike in the National Reserve",
     "price": "S/ 120",
     "price_val": "120",
     "price_cur": "PEN",
@@ -185,23 +185,6 @@
     "schedule_en": "* Daily departures in the afternoon at 3:30 PM. Duration: approx. 3 hours.",
     "url_es": "https://solymarparacas.com/trekking",
     "url_en": "https://solymarparacas.com/en/trekking"
-  },
-  {
-    "slug": "sobrevuelo-lineas-de-nazca",
-    "category": "aire",
-    "category_order": 2,
-    "category_label_es": "Actividad Aerea",
-    "category_label_en": "Aerial Activity",
-    "title_es": "Sobrevuelo a las Líneas de Nazca desde el aeropuerto de Pisco",
-    "title_en": "Nazca Lines Flight from Pisco Airport",
-    "price": "$ 260 USD",
-    "price_val": "260",
-    "price_cur": "USD",
-    "quote_only": false,
-    "schedule_es": "* Vuelos programados por la mañana entre las 8:00 AM y las 12:00 PM (sujeto a condiciones de visibilidad y control aéreo).",
-    "schedule_en": "* Flights are scheduled in the morning between 8:00 AM and 12:00 PM (highly dependent on weather and air traffic control).",
-    "url_es": "https://solymarparacas.com/sobrevuelo-lineas-de-nazca",
-    "url_en": "https://solymarparacas.com/en/sobrevuelo-lineas-de-nazca"
   },
   {
     "slug": "parapente",

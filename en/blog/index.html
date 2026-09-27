@@ -25,7 +25,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="SolyMar Paracas">
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/style.css" />
     <script type="application/ld+json">
@@ -51,39 +51,36 @@
     </script>
 </head>
 
-<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
+<body class="font-sans bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-16">
     <nav id="header-placeholder"></nav>
 
-    <header class="bg-primary text-white text-center px-8 py-32 md:py-48">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-8">SolyMar Paracas Blog</h1>
-        <p class="text-lg md:text-xl max-w-[700px] mx-auto opacity-90 leading-relaxed">Your ultimate guide to exploring Paracas, finding the best price on activities, and living unforgettable experiences.</p>
+    <header class="bg-surface-container px-4 sm:px-8 pt-16 pb-14 md:pt-24 md:pb-20">
+        <div class="max-w-[1336px] mx-auto">
+            <h1 class="font-display text-4xl md:text-6xl text-primary leading-[1.04] mb-6 text-balance">SolyMar Paracas Blog</h1>
+            <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-[56ch]">Your ultimate guide to exploring Paracas, finding the best price on activities, and living unforgettable experiences.</p>
+        </div>
     </header>
 
-    <main class="py-24 px-8 max-w-[1400px] mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Post 1 -->
-            <a href="/en/blog/lima-a-paracas.html" class="relative group h-[480px] flex flex-col rounded-[2rem] overflow-hidden bg-surface-container shadow-lg transition-all duration-400 hover:-translate-y-3 hover:shadow-2xl md:col-span-2">
-                <div class="absolute inset-0 z-0">
-                    <img src="../../img/Reserva nacional de Paracas.webp" class="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110" alt="Paracas National Reserve" loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#001428e6] via-transparent to-transparent"></div>
+    <main class="py-16 md:py-24 px-4 sm:px-8">
+        <div class="max-w-[1336px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
+            <a href="/en/blog/lima-a-paracas.html" class="group flex flex-col gap-5">
+                <div class="h-64 md:h-80 overflow-hidden rounded-sm bg-surface-container">
+                    <img src="../../img/reserva-nacional-paracas.jpg" class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" alt="Paracas National Reserve" loading="eager" decoding="async" />
                 </div>
-                <div class="absolute bottom-12 left-10 right-10 z-20 transition-transform duration-300 group-hover:-translate-y-8">
-                    <span class="text-sm font-bold uppercase tracking-widest text-[#a6c8ff] mb-2 block">Transport</span>
-                    <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-0 tracking-tight">3 safe ways to get to Paracas from Lima</h3>
-                    <p class="mt-4 text-white/80 opacity-0 transform translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-base">Planning to visit Paracas from Miraflores or Barranco? Discover the safest and most comfortable options for your trip.</p>
+                <div class="flex flex-col gap-2">
+                    <span class="text-sm text-on-surface-variant">Transport</span>
+                    <h2 class="font-display text-2xl md:text-3xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">3 safe ways to get to Paracas from Lima</h2>
+                    <p class="text-on-surface-variant leading-relaxed max-w-[60ch]">Planning to visit Paracas from Miraflores or Barranco? Discover the safest and most comfortable options for your trip.</p>
                 </div>
             </a>
-
-            <!-- Post 2 -->
-            <a href="/en/blog/circuito-reserva-nacional-paracas.html" class="relative group h-[480px] flex flex-col rounded-[2rem] overflow-hidden bg-surface-container shadow-lg transition-all duration-400 hover:-translate-y-3 hover:shadow-2xl">
-                <div class="absolute inset-0 z-0">
-                    <img src="../../img/scooter-reserva-paracas.png" class="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110" alt="Paracas National Reserve Circuit" loading="lazy" decoding="async" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#001428e6] via-transparent to-transparent"></div>
+            <a href="/en/blog/circuito-reserva-nacional-paracas.html" class="group flex flex-col gap-5">
+                <div class="h-64 md:h-80 overflow-hidden rounded-sm bg-surface-container">
+                    <img src="../../img/scooter-reserva-paracas.png" class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" alt="Paracas National Reserve Circuit" loading="lazy" decoding="async" />
                 </div>
-                <div class="absolute bottom-12 left-10 right-10 z-20 transition-transform duration-300 group-hover:-translate-y-8">
-                    <span class="text-sm font-bold uppercase tracking-widest text-[#a6c8ff] mb-2 block">Guide & Map</span>
-                    <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-0 tracking-tight">Paracas National Reserve Circuit: by scooter, bike or on foot</h3>
-                    <p class="mt-4 text-white/80 opacity-0 transform translate-y-2.5 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 text-base">Interactive map and stop-by-stop guide to explore the reserve on your own.</p>
+                <div class="flex flex-col gap-2">
+                    <span class="text-sm text-on-surface-variant">Guide & Map</span>
+                    <h2 class="font-display text-2xl md:text-3xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">Paracas National Reserve Circuit: by scooter, bike or on foot</h2>
+                    <p class="text-on-surface-variant leading-relaxed max-w-[60ch]">Interactive map and stop-by-stop guide to explore the reserve on your own.</p>
                 </div>
             </a>
         </div>

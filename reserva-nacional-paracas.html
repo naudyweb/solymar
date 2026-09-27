@@ -8,7 +8,6 @@
     <!-- ===== SEO: META TITLE & DESCRIPTION ===== -->
     <title>Tour Reserva Nacional de Paracas 2026: Playa Roja y La Catedral | SolyMar</title>
     <meta name="description" content="Tour guiado por la Reserva Nacional de Paracas: Playa Roja, mirador La Catedral, caleta Lagunillas y desierto junto al mar. Salida 11 am con recojo en tu hotel. Agencia local.">
-    <meta name="keywords" content="reserva nacional de paracas tour, reserva nacional de paracas precio, playa roja paracas, la catedral paracas, entrada reserva paracas, que ver en la reserva de paracas, que llevar a la reserva de paracas, playa lagunillas">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
     <link rel="canonical" href="https://solymarparacas.com/reserva-nacional-paracas">
@@ -35,7 +34,7 @@
     <!-- ===== FIN SEO ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -44,17 +43,18 @@
     [
       {
         "@context": "https://schema.org",
-        "@type": "Service",
+        "@type": "TouristTrip",
         "name": "Tour por la Reserva Nacional de Paracas",
         "description": "Tour guiado por la Reserva Nacional de Paracas: Playa Roja, mirador La Catedral, caleta Lagunillas y desierto junto al mar. Salida 11 am con recojo en tu hotel. Agencia local.",
+        "touristType": ["Adventure tourism", "Eco tourism", "Nature tourism"],
         "provider": {
-          "@type": "LocalBusiness",
+          "@type": "TravelAgency",
           "name": "SolyMar Paracas",
           "url": "https://solymarparacas.com/",
           "telephone": "+51 961 542 547",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Paracas, Ica, Peru",
+            "streetAddress": "El Chaco, Paracas",
             "addressLocality": "Paracas",
             "addressRegion": "Ica",
             "addressCountry": "PE"
@@ -64,9 +64,18 @@
           "@type": "Offer",
           "price": "50",
           "priceCurrency": "PEN",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
           "url": "https://solymarparacas.com/reserva-nacional-paracas"
         },
-        "image": "https://solymarparacas.com/img/reserva-nacional-paracas.jpg"
+        "image": [
+          "https://solymarparacas.com/img/reserva-nacional-paracas.jpg"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "86"
+        }
       },
       {
         "@context": "https://schema.org",
@@ -103,40 +112,35 @@
           "@type": "Answer",
           "text": "Nuestro tour guiado cuesta S/ 50 por persona e incluye transporte, gu\u00eda profesional y recojo en tu hotel de Paracas. Aparte se paga la entrada SERNANP: S/ 11 adultos y S/ 5 ni\u00f1os. Costo total real para un adulto: S/ 61, sin cobros adicionales."
         }
-      },
-      {
+      },\n      {
         "@type": "Question",
         "name": "\u00bfQu\u00e9 se ve en el tour por la Reserva?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "El circuito cl\u00e1sico incluye la Playa Roja (famosa por su arena granate), el mirador de La Catedral, los miradores del desierto costero y la caleta Lagunillas, donde puedes almorzar pescados y mariscos frente al mar."
         }
-      },
-      {
+      },\n      {
         "@type": "Question",
         "name": "\u00bfSe puede nadar en las playas de la Reserva?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "En la mayor\u00eda de las playas del circuito el ba\u00f1o est\u00e1 prohibido por fuertes corrientes o para proteger la fauna. No obstante, en Playa La Mina o Rasp\u00f3n s\u00ed est\u00e1 permitido en tours espec\u00edficos de temporada."
         }
-      },
-      {
+      },\n      {
         "@type": "Question",
         "name": "\u00bfCu\u00e1l es la tarifa de ingreso SERNANP?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "La entrada general cuesta S/ 11 para adultos y S/ 5 para ni\u00f1os. Si tambi\u00e9n visitas las Islas Ballestas, te conviene el boleto combinado por S/ 22, v\u00e1lido por dos d\u00edas."
         }
-      },
-      {
+      },\n      {
         "@type": "Question",
         "name": "\u00bfQu\u00e9 debo llevar a la Reserva?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Bloqueador solar, sombrero o gorra con ajuste, lentes de sol, casaca cortavientos, agua y algo de efectivo para la entrada, artesan\u00edas o el almuerzo en Lagunillas. El clima es soleado y ventoso casi todo el a\u00f1o."
         }
-      },
-      {
+      },\n      {
         "@type": "Question",
         "name": "\u00bfConviene ir en tour o por mi cuenta en bicicleta?",
         "acceptedAnswer": {
@@ -150,178 +154,402 @@
     </script>
 </head>
 
-<body class="font-manrope bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-20">
+<body class="font-sans bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-16">
     <nav id="header-placeholder"></nav>
 
     <main>
-        <!-- Hero Section -->
-        <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center px-8 overflow-hidden">
-            <div class="absolute inset-0 z-0 group">
-                <img class="w-full h-full object-cover scale-105 transition-transform duration-[10s] group-hover:scale-100" src="img/reserva-nacional-paracas.jpg" alt="Tour por la Reserva Nacional de Paracas" fetchpriority="high" decoding="async" />
-                <div class="absolute inset-0 bg-gradient-to-b from-primary/40 to-black/80"></div>
-            </div>
-            <div class="relative z-10 max-w-[900px] text-white">
-                <p class="text-sm font-bold uppercase tracking-[0.2em] mb-6 opacity-90">
-                    <a href="index.html" class="hover:underline">Inicio</a> / 
-                    <a href="tours.html" class="hover:underline">Tours</a> / 
-                    Tour por la Reserva Nacional de Paracas
-                </p>
-                <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight">Tour por la Reserva Nacional de Paracas</h1>
-                <p class="text-xl opacity-90 max-w-[600px] mx-auto text-white/90">Explora el único lugar del Perú donde el desierto cae en acantilados de colores directamente sobre el Océano Pacífico.</p>
+        <!-- Hero -->
+        <section class="relative min-h-[min(78dvh,760px)] flex items-end overflow-hidden bg-primary">
+            <img class="absolute inset-0 w-full h-full object-cover" src="img/reserva-nacional-paracas.jpg" alt="Tour por la Reserva Nacional de Paracas" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/55 to-primary/10"></div>
+            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-primary/80 to-transparent"></div>
+            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-24 pb-14 md:pb-20">
+                <div class="max-w-[860px] text-white">
+                    <nav aria-label="Breadcrumb" class="rise-in text-sm text-white/75 mb-5">
+                        <a href="index.html" class="hover:text-white hover:underline">Inicio</a>
+                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
+                        <a href="tours.html" class="hover:text-white hover:underline">Tours</a>
+                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
+                        <span aria-current="page">Tour por la Reserva Nacional de Paracas</span>
+                    </nav>
+                    <h1 class="rise-in [--i:1] font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.04] mb-6 text-balance">Tour por la Reserva Nacional de Paracas</h1>
+                    <p class="rise-in [--i:2] text-lg md:text-xl text-white/85 leading-relaxed max-w-[52ch] mb-9">Explora el único lugar del Perú donde el desierto cae en acantilados de colores directamente sobre el Océano Pacífico.</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%21%20Quiero%20reservar%20el%20tour%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas.%20Fecha%3A%20___%20%C2%B7%20Personas%3A%20___" target="_blank" rel="noopener" class="rise-in [--i:3] inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                        <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        <span>Reservar por WhatsApp</span>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- Main Details Section -->
-        <section class="py-24 px-8 bg-surface">
-            <div class="max-w-[1536px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-24">
-                
-                <!-- Left Content -->
-                <div class="flex flex-col gap-16 text-left">
+        <!-- Datos rápidos -->
+        <section class="bg-surface-container-low border-b border-primary/10 px-4 sm:px-8 py-8">
+            <dl class="max-w-[1336px] mx-auto grid grid-cols-2 gap-x-6 gap-y-7 md:grid-cols-4 lg:grid-cols-7">
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">schedule</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">Recojo en hotel 10:45 AM</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">Diario 11:00 AM</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">timelapse</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">Circuito terrestre</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">3.5 Horas</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">terrain</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">Playa Roja y Catedral</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">Ruta Costera</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">speed</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">Apto para familias</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">Fácil</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">record_voice_over</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">Experto en geología</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">Guía Bilingüe</dd>
+                </div>
+                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">groups</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">Miniván climatizada</dt>
+                    <dd class="font-semibold text-on-surface leading-snug">Grupo Reducido</dd>
+                </div>
+                <div class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col gap-1 border-l-2 border-tertiary pl-4">
+                    <span class="material-symbols-outlined text-xl text-tertiary mb-1" aria-hidden="true">sell</span>
+                    <dt class="order-last text-sm text-on-surface-variant leading-snug">Por persona</dt>
+                    <dd class="font-semibold text-tertiary text-lg leading-snug">S/ 50 (≈ US$ 14)</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Detalles -->
+        <section class="py-16 md:py-24 px-4 sm:px-8">
+            <div class="max-w-[1336px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-16 xl:gap-24">
+
+                <div class="flex flex-col gap-16 md:gap-20 min-w-0">
+
+                    <!-- Descripción -->
                     <div>
-                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Detalles de la Aventura</h2>
-                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">La <strong>Reserva Nacional de Paracas</strong> es la única área protegida marino-costera de su tipo en el Perú: más de 335 mil hectáreas donde el desierto, los acantilados y el mar frío de la corriente de Humboldt se combinan en paisajes que no verás en ningún otro lugar.</p>
-                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">En este recorrido terrestre de 3.5 horas visitarás la famosa <strong>Playa Roja</strong>, el mirador de <strong>La Catedral</strong>, los miradores de la península y la caleta de pescadores de <strong>Lagunillas</strong>, con paradas fotográficas guiadas en cada punto.</p>
-                        <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">Es el complemento perfecto del tour a las Islas Ballestas: en un solo día conoces el lado marino y el lado desértico de Paracas, con recojo y retorno a tu hotel incluidos.</p>
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-7">Detalles de la experiencia</h2>
+                        <div class="flex flex-col gap-5 text-lg text-on-surface-variant leading-relaxed max-w-[68ch]">
+                            <p>La <strong>Reserva Nacional de Paracas</strong> es la única área protegida marino-costera de su tipo en el Perú: más de 335 mil hectáreas donde el desierto, los acantilados y el mar frío de la corriente de Humboldt se combinan en paisajes que no verás en ningún otro lugar.</p>
+                            <p>En este recorrido terrestre de 3.5 horas visitarás la famosa <strong>Playa Roja</strong>, el mirador de <strong>La Catedral</strong>, los miradores de la península y la caleta de pescadores de <strong>Lagunillas</strong>, con paradas fotográficas guiadas en cada punto.</p>
+                            <p>Es el complemento perfecto del tour a las Islas Ballestas: en un solo día conoces el lado marino y el lado desértico de Paracas, con recojo y retorno a tu hotel incluidos.</p>
+                        </div>
+                        <ul class="flex flex-wrap gap-x-7 gap-y-3 mt-8 text-sm font-semibold text-on-surface">
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>Guías locales certificados</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">event_available</span>Cancelación flexible 24h</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">directions_bus</span>Regreso a tiempo para buses nocturnos</li>
+                        </ul>
                     </div>
 
+                    <!-- Lo más destacado -->
                     <div>
-                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Atractivos destacados del recorrido</h2>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 list-none p-0 mt-8">
-                                                    <li class="flex gap-6">
-                            <span class="material-symbols-outlined text-4xl text-primary">landscape</span>
-                            <div>
-                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Playa Roja</strong>
-                                <p class="text-on-surface-variant">Su coloración rojiza única proviene de la erosión de cerros de granito rosado cercanos.</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-6">
-                            <span class="material-symbols-outlined text-4xl text-primary">auto_awesome</span>
-                            <div>
-                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">La Catedral</strong>
-                                <p class="text-on-surface-variant">Mirador hacia la emblemática formación rocosa esculpida por el viento y el mar.</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-6">
-                            <span class="material-symbols-outlined text-4xl text-primary">restaurant</span>
-                            <div>
-                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Playa Lagunillas</strong>
-                                <p class="text-on-surface-variant">Caleta de pescadores donde realizamos una parada para disfrutar de gastronomía local de pescados y mariscos.</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-6">
-                            <span class="material-symbols-outlined text-4xl text-primary">visibility</span>
-                            <div>
-                                <strong class="block text-xl text-on-surface mb-2 font-extrabold">Mirador de la Península</strong>
-                                <p class="text-on-surface-variant">Una vista panorámica inigualable del contraste entre el desierto y el Océano Pacífico.</p>
-                            </div>
-                        </li>
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-8">Atractivos destacados del recorrido</h2>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+                            <li class="flex gap-4 pt-5 border-t border-primary/15">
+                                <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">landscape</span>
+                                <div>
+                                    <h3 class="font-display text-lg text-primary leading-snug mb-1">Playa Roja</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Su coloración rojiza única proviene de la erosión de cerros de granito rosado cercanos.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 pt-5 border-t border-primary/15">
+                                <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">auto_awesome</span>
+                                <div>
+                                    <h3 class="font-display text-lg text-primary leading-snug mb-1">La Catedral</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Mirador hacia la emblemática formación rocosa esculpida por el viento y el mar.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 pt-5 border-t border-primary/15">
+                                <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">restaurant</span>
+                                <div>
+                                    <h3 class="font-display text-lg text-primary leading-snug mb-1">Playa Lagunillas</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Caleta de pescadores donde realizamos una parada para disfrutar de gastronomía local de pescados y mariscos.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 pt-5 border-t border-primary/15">
+                                <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">visibility</span>
+                                <div>
+                                    <h3 class="font-display text-lg text-primary leading-snug mb-1">Mirador de la Península</h3>
+                                    <p class="text-on-surface-variant leading-relaxed">Una vista panorámica inigualable del contraste entre el desierto y el Océano Pacífico.</p>
+                                </div>
+                            </li>
 
                         </ul>
                     </div>
 
-                                        <div>
-                        <h2 class="text-4xl font-bold text-primary mb-8 tracking-tight">Preguntas Frecuentes</h2>
-                        <div class="flex flex-col gap-6">                            <div class="bg-surface-container-low p-8 rounded-[1.5rem] border border-black/5">
-                                <h3 class="text-xl font-extrabold text-primary mb-4">¿Cuánto cuesta el tour a la Reserva Nacional de Paracas?</h3>
-                                <p class="text-on-surface-variant leading-relaxed">Nuestro tour guiado cuesta S/ 50 por persona e incluye transporte, guía profesional y recojo en tu hotel de Paracas. Aparte se paga la entrada SERNANP: S/ 11 adultos y S/ 5 niños. Costo total real para un adulto: S/ 61, sin cobros adicionales.</p>
-                            </div>                            <div class="bg-surface-container-low p-8 rounded-[1.5rem] border border-black/5">
-                                <h3 class="text-xl font-extrabold text-primary mb-4">¿Qué se ve en el tour por la Reserva?</h3>
-                                <p class="text-on-surface-variant leading-relaxed">El circuito clásico incluye la Playa Roja (famosa por su arena granate), el mirador de La Catedral, los miradores del desierto costero y la caleta Lagunillas, donde puedes almorzar pescados y mariscos frente al mar.</p>
-                            </div>                            <div class="bg-surface-container-low p-8 rounded-[1.5rem] border border-black/5">
-                                <h3 class="text-xl font-extrabold text-primary mb-4">¿Se puede nadar en las playas de la Reserva?</h3>
-                                <p class="text-on-surface-variant leading-relaxed">En la mayoría de las playas del circuito el baño está prohibido por fuertes corrientes o para proteger la fauna. No obstante, en Playa La Mina o Raspón sí está permitido en tours específicos de temporada.</p>
-                            </div>                            <div class="bg-surface-container-low p-8 rounded-[1.5rem] border border-black/5">
-                                <h3 class="text-xl font-extrabold text-primary mb-4">¿Cuál es la tarifa de ingreso SERNANP?</h3>
-                                <p class="text-on-surface-variant leading-relaxed">La entrada general cuesta S/ 11 para adultos y S/ 5 para niños. Si también visitas las Islas Ballestas, te conviene el boleto combinado por S/ 22, válido por dos días.</p>
-                            </div>                            <div class="bg-surface-container-low p-8 rounded-[1.5rem] border border-black/5">
-                                <h3 class="text-xl font-extrabold text-primary mb-4">¿Qué debo llevar a la Reserva?</h3>
-                                <p class="text-on-surface-variant leading-relaxed">Bloqueador solar, sombrero o gorra con ajuste, lentes de sol, casaca cortavientos, agua y algo de efectivo para la entrada, artesanías o el almuerzo en Lagunillas. El clima es soleado y ventoso casi todo el año.</p>
-                            </div>                            <div class="bg-surface-container-low p-8 rounded-[1.5rem] border border-black/5">
-                                <h3 class="text-xl font-extrabold text-primary mb-4">¿Conviene ir en tour o por mi cuenta en bicicleta?</h3>
-                                <p class="text-on-surface-variant leading-relaxed">La bicicleta es una opción bonita pero exigente: son más de 30 km de recorrido con sol y viento fuerte. El tour guiado te lleva cómodo a todos los miradores, con explicación de la geología y la fauna, y con tiempo para fotos en cada parada.</p>
-                            </div>                        </div>
+                    <!-- Punto de encuentro -->
+                    <div class="bg-surface-container rounded-sm p-7 sm:p-10">
+                        <h2 class="font-display text-2xl text-primary leading-tight mb-5 flex items-center gap-3">
+                            <span class="material-symbols-outlined text-3xl" aria-hidden="true">location_on</span>
+                            Punto de encuentro y conexión de buses
+                        </h2>
+                        <div class="flex flex-col gap-4 text-on-surface-variant leading-relaxed max-w-[68ch]">
+                            <p><strong>Recojo gratuito en hotel:</strong> Te recogemos directamente en tu hotel u hostal en Paracas / El Chaco.</p>
+                            <p><strong>Oficina central:</strong> Si te hospedas fuera del centro o llegas con maletas antes del tour, te esperamos en nuestra oficina en el malecón El Chaco: <a href='https://maps.google.com/?q=SolyMar+Paracas+Peru' target='_blank' rel='noopener' class='font-bold text-primary hover:underline ml-1'>SolyMar Paracas (Google Maps)</a></p>
+                        </div>
+                        <div class="mt-7 border-l-2 border-tertiary pl-5">
+                            <p class="font-semibold text-on-surface flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-tertiary" aria-hidden="true">departure_board</span>
+                                ¿Tomas un bus nocturno esa misma noche?
+                            </p>
+                            <p class="text-sm text-on-surface-variant leading-relaxed max-w-[68ch]">Nuestros horarios están planificados para que regreses al pueblo con tiempo de sobra para cenar o abordar tu bus nocturno a Lima, Huacachina o Arequipa (Cruz del Sur, Peru Hop). ¡Puedes dejar tu equipaje en custodia gratuita en nuestra oficina!</p>
+                        </div>
                     </div>
+
+                    <!-- Qué llevar -->
+                    <div>
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-8">Qué llevar</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">hiking</span>
+                                <div>
+                                    <h3 class="font-semibold text-on-surface mb-0.5">Calzado cerrado o zapatillas</h3>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">Indispensable para caminar con tracción sobre arena y miradores rocosos.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">air</span>
+                                <div>
+                                    <h3 class="font-semibold text-on-surface mb-0.5">Casaca cortavientos</h3>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">En el desierto corre viento costero en las tardes; la temperatura baja rápidamente al atardecer.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">wb_sunny</span>
+                                <div>
+                                    <h3 class="font-semibold text-on-surface mb-0.5">Bloqueador y lentes de sol</h3>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">Fuerte reflejo del sol sobre la arena. Protege tu piel y ojos.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">water_drop</span>
+                                <div>
+                                    <h3 class="font-semibold text-on-surface mb-0.5">1 a 1.5 L de agua</h3>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">Lleva agua suficiente para mantenerte hidratado en el clima seco del desierto.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">payments</span>
+                                <div>
+                                    <h3 class="font-semibold text-on-surface mb-0.5">Efectivo para la entrada</h3>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">Entrada SERNANP (S/ 11 adultos) en efectivo si tu tour visita la Reserva.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">photo_camera</span>
+                                <div>
+                                    <h3 class="font-semibold text-on-surface mb-0.5">Celular con batería cargada</h3>
+                                    <p class="text-sm text-on-surface-variant leading-relaxed">Paisajes desérticos espectaculares ideales para fotografía panorámica.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Opiniones -->
+                    <div>
+                        <div class="flex flex-col gap-3 mb-8">
+                            <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08]">La experiencia de nuestros clientes</h2>
+                            <p class="flex items-center gap-1.5 text-on-surface shrink-0">
+                                <span class="material-symbols-outlined text-tertiary [font-variation-settings:'FILL'_1]" aria-hidden="true">star</span>
+                                <strong class="font-semibold">4.9 / 5</strong>
+                                <span class="text-sm text-on-surface-variant">(85+ reviews)</span>
+                            </p>
+                        </div>
+                        <figure class="border-l-2 border-tertiary pl-6 md:pl-8">
+                            <blockquote class="font-display text-xl md:text-2xl text-on-surface leading-snug">&ldquo;Excelente servicio de inicio a fin. Todo muy puntual, el guía fue súper atento y las vistas son increíbles. 100% recomendados en Paracas.&rdquo;</blockquote>
+                            <figcaption class="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                                <span class="font-semibold text-primary text-base">Carlos Rodríguez</span>
+                                <span class="inline-flex items-center gap-1 text-on-surface-variant"><span class="material-symbols-outlined text-base" aria-hidden="true">verified</span>Reserva verificada</span>
+                                <span class="text-on-surface-variant">Reseña reciente</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Preguntas frecuentes -->
+                    <div>
+                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-6">Preguntas Frecuentes</h2>
+                        <div class="border-t-2 border-sand">
+                            <details class="group border-b border-primary/15">
+                                <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
+                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">¿Cuánto cuesta el tour a la Reserva Nacional de Paracas?</h3>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                </summary>
+                                <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">Nuestro tour guiado cuesta S/ 50 por persona e incluye transporte, guía profesional y recojo en tu hotel de Paracas. Aparte se paga la entrada SERNANP: S/ 11 adultos y S/ 5 niños. Costo total real para un adulto: S/ 61, sin cobros adicionales.</p>
+                            </details>
+                            <details class="group border-b border-primary/15">
+                                <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
+                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">¿Qué se ve en el tour por la Reserva?</h3>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                </summary>
+                                <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">El circuito clásico incluye la Playa Roja (famosa por su arena granate), el mirador de La Catedral, los miradores del desierto costero y la caleta Lagunillas, donde puedes almorzar pescados y mariscos frente al mar.</p>
+                            </details>
+                            <details class="group border-b border-primary/15">
+                                <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
+                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">¿Se puede nadar en las playas de la Reserva?</h3>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                </summary>
+                                <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">En la mayoría de las playas del circuito el baño está prohibido por fuertes corrientes o para proteger la fauna. No obstante, en Playa La Mina o Raspón sí está permitido en tours específicos de temporada.</p>
+                            </details>
+                            <details class="group border-b border-primary/15">
+                                <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
+                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">¿Cuál es la tarifa de ingreso SERNANP?</h3>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                </summary>
+                                <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">La entrada general cuesta S/ 11 para adultos y S/ 5 para niños. Si también visitas las Islas Ballestas, te conviene el boleto combinado por S/ 22, válido por dos días.</p>
+                            </details>
+                            <details class="group border-b border-primary/15">
+                                <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
+                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">¿Qué debo llevar a la Reserva?</h3>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                </summary>
+                                <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">Bloqueador solar, sombrero o gorra con ajuste, lentes de sol, casaca cortavientos, agua y algo de efectivo para la entrada, artesanías o el almuerzo en Lagunillas. El clima es soleado y ventoso casi todo el año.</p>
+                            </details>
+                            <details class="group border-b border-primary/15">
+                                <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
+                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">¿Conviene ir en tour o por mi cuenta en bicicleta?</h3>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                </summary>
+                                <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">La bicicleta es una opción bonita pero exigente: son más de 30 km de recorrido con sol y viento fuerte. El tour guiado te lleva cómodo a todos los miradores, con explicación de la geología y la fauna, y con tiempo para fotos en cada parada.</p>
+                            </details>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Right Sidebar: Reservation Card -->
-                <div>
-                    <div class="sticky top-32 bg-white p-12 rounded-[2rem] shadow-xl border border-black/5 flex flex-col gap-4">
-                        <h3 class="text-2xl font-bold text-primary mb-2 tracking-tight">Reservar Tour</h3>
-                        <p class="text-5xl font-extrabold text-on-surface tracking-tight">S/ 50</p>
-                        <p class="text-on-surface-variant mb-8 font-medium">Por persona</p>
-                        
-                        <ul class="flex flex-col gap-4 mb-10 list-none p-0">
-                                                    <li class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
-                            <span>Transporte turístico con aire acondicionado</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
-                            <span>Guía profesional certificado en español</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
-                            <span>Traslado ida y vuelta desde tu hotel</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-on-surface-variant font-medium">
-                            <span class="material-symbols-outlined text-[#25d366] font-bold">check_circle</span>
-                            <span>Seguro de viaje de pasajeros</span>
-                        </li>
+                <!-- Reserva -->
+                <aside>
+                    <div class="lg:sticky lg:top-24 bg-surface-container-low border border-primary/10 rounded-sm p-7 sm:p-9 flex flex-col gap-7">
 
-                                                    <li class="flex items-center gap-3 text-red-500 font-medium opacity-80">
-                            <span class="material-symbols-outlined font-bold">error</span>
-                            <span>Boleto de ingreso SERNANP (S/ 11 adultos, S/ 5 niños)</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-red-500 font-medium opacity-80">
-                            <span class="material-symbols-outlined font-bold">error</span>
-                            <span>Almuerzo en caleta Lagunillas</span>
-                        </li>
+                        <div>
+                            <p class="flex flex-wrap items-center justify-between gap-2 text-sm">
+                                <span class="font-semibold text-primary">Salida diaria garantizada</span>
+                                <span class="text-on-surface-variant">Grupo reducido</span>
+                            </p>
+                            <p class="flex flex-wrap items-baseline gap-x-2 mt-3">
+                                <span class="font-display text-5xl text-tertiary">S/ 50</span>
+                                <span class="text-xl text-on-surface-variant"> (≈ US$ 14)</span>
+                            </p>
+                            <p class="text-sm text-on-surface-variant mt-1">Por persona · Sin cargos ocultos</p>
+                        </div>
 
+                        <div class="border-t border-primary/15 pt-6">
+                            <h2 class="font-semibold text-on-surface mb-4">Qué incluye</h2>
+                            <ul class="flex flex-col gap-3 text-[0.9375rem]">
+                                <li class="flex items-start gap-2.5 text-on-surface">
+                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">check</span>
+                                    <span>Transporte turístico con aire acondicionado</span>
+                                </li>
+                                <li class="flex items-start gap-2.5 text-on-surface">
+                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">check</span>
+                                    <span>Guía profesional certificado en español</span>
+                                </li>
+                                <li class="flex items-start gap-2.5 text-on-surface">
+                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">check</span>
+                                    <span>Traslado ida y vuelta desde tu hotel</span>
+                                </li>
+                                <li class="flex items-start gap-2.5 text-on-surface">
+                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">check</span>
+                                    <span>Seguro de viaje de pasajeros</span>
+                                </li>
+                                <li class="flex items-start gap-2.5 text-on-surface-variant">
+                                    <span class="material-symbols-outlined text-lg text-tertiary shrink-0" aria-hidden="true">info</span>
+                                    <span>Boleto de ingreso SERNANP (S/ 11 adultos, S/ 5 niños)</span>
+                                </li>
+                                <li class="flex items-start gap-2.5 text-on-surface-variant">
+                                    <span class="material-symbols-outlined text-lg text-tertiary shrink-0" aria-hidden="true">info</span>
+                                    <span>Almuerzo en caleta Lagunillas</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <ul class="flex flex-col gap-2.5 text-sm border-t border-primary/15 pt-6">
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">event_available</span>Cancelación gratuita hasta 24h antes</li>
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">cloud_sync</span>Reembolso 100% si se cancela por clima</li>
+                            <li class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">credit_card</span>Paga con tarjeta por link seguro o efectivo</li>
                         </ul>
 
-                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola,%20quiero%20reservar%20el%20tour%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas" class="block w-full bg-primary text-white py-5 rounded-2xl text-center text-lg font-bold shadow-lg transition-transform hover:-translate-y-1">Reservar Ahora</a>
-                        <p class="text-xs text-on-surface-variant text-center mt-4 font-medium">* Salida diaria a las 11:00 AM desde nuestra oficina o recojo en hotel. Duración: 3.5 horas aprox.</p>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%21%20Quiero%20reservar%20el%20tour%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas.%20Fecha%3A%20___%20%C2%B7%20Personas%3A%20___" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-4 px-6 rounded-full text-lg font-semibold transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                                <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                <span>Reservar por WhatsApp</span>
+                            </a>
+                            <p class="text-sm text-on-surface-variant text-center mt-3">Respuesta inmediata y confirmación de fecha</p>
+                        </div>
+
+                        <div class="border-t border-primary/15 pt-6 text-sm">
+                            <p class="text-on-surface-variant mb-3">¿No usas WhatsApp? Escríbenos aquí</p>
+                            <div class="flex flex-wrap gap-x-6 gap-y-2">
+                                <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20Booking%20Inquiry%3A%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas&body=Hi%20SolyMar%20Paracas%21%5Cn%5CnI%20would%20like%20to%20book%3A%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas%5CnDate%3A%5CnNumber%20of%20people%3A%5CnHotel%20in%20Paracas%3A%5CnQuestions%3A" class="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
+                                    <span class="material-symbols-outlined text-lg" aria-hidden="true">mail</span>Enviar email
+                                </a>
+                                <a href="https://instagram.com/solymarparacas" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                                    Instagram DM
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-sm border-t border-primary/15 pt-6">
+                            <strong class="block font-semibold text-on-surface">Horario de salida</strong>
+                            <span class="text-on-surface-variant">* Salida diaria a las 11:00 AM desde nuestra oficina o recojo en hotel. Duración: 3.5 horas aprox.</span>
+                        </p>
+
                     </div>
-                </div>
+                </aside>
 
             </div>
         </section>
 
-        <!-- Value Proposition Grid -->
-        <section class="py-24 px-8 bg-surface-container">
-            <div class="max-w-[1536px] mx-auto">
-                <h2 class="text-4xl font-extrabold text-primary text-center mb-16 tracking-tight">Por qué elegir SolyMar Paracas</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">shield</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Seguridad Garantizada</h4>
-                        <p class="text-sm text-on-surface-variant">Equipos modernos y guías certificados con seguros de pasajeros para tu tranquilidad.</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">person</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Guía Local Experto</h4>
-                        <p class="text-sm text-on-surface-variant">Guías nativos bilingües que te mostrarán los secretos mejor guardados de la Reserva.</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">workspace_premium</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Agencia Registrada</h4>
-                        <p class="text-sm text-on-surface-variant">Somos operadores turísticos formales autorizados por las entidades pertinentes del Perú.</p>
-                    </div>
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-black/5 transition-transform hover:-translate-y-2">
-                        <span class="material-symbols-outlined text-6xl text-primary mb-6">chat</span>
-                        <h4 class="text-xl font-extrabold text-on-surface mb-3">Atención Personalizada</h4>
-                        <p class="text-sm text-on-surface-variant">Coordinamos tu reserva por WhatsApp de inmediato resolviendo cualquier consulta.</p>
-                    </div>
-                </div>
+        <!-- Por qué elegirnos -->
+        <section class="py-16 md:py-24 px-4 sm:px-8 bg-surface-container">
+            <div class="max-w-[1336px] mx-auto grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+                <h2 class="lg:col-span-4 font-display text-3xl sm:text-4xl text-primary leading-[1.08] text-balance">Por qué elegir SolyMar Paracas</h2>
+                <ul class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">shield</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">Seguridad garantizada</h3><p class="text-on-surface-variant leading-relaxed">Equipos modernos, chalecos homologados y seguros de pasajeros para tu total tranquilidad.</p></div>
+                    </li>
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">record_voice_over</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">Guías locales expertos</h3><p class="text-on-surface-variant leading-relaxed">Guías bilingües certificados apasionados por la fauna marina, el desierto y la historia.</p></div>
+                    </li>
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">workspace_premium</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">Operador formal autorizado</h3><p class="text-on-surface-variant leading-relaxed">Agencia de viajes registrada ante MINCETUR y autoridades locales del Perú.</p></div>
+                    </li>
+                    <li class="flex gap-4 pt-5 border-t border-primary/20">
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">verified_user</span>
+                        <div><h3 class="font-display text-lg text-primary mb-1">Garantías flexibles</h3><p class="text-on-surface-variant leading-relaxed">Cancela gratis hasta 24h antes o recibe 100% de reembolso si el clima impide la salida.</p></div>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <!-- Call to Action Section -->
-        <section class="py-24 px-8 bg-primary text-center text-white">
-            <div class="max-w-[800px] mx-auto">
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight">¿Listo para comenzar tu aventura?</h2>
-                <p class="text-xl text-white/90 mb-12 leading-relaxed">Contáctanos hoy mismo para asegurar tus espacios en esta maravillosa experiencia. ¡Tenemos salidas diarias!</p>
-                <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola,%20quiero%20reservar%20el%20tour%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas" class="inline-block bg-white text-primary py-5 px-12 rounded-full text-lg font-bold shadow-2xl transition-all hover:-translate-y-1 hover:bg-gray-50">Contactar por WhatsApp</a>
+        <!-- Reserva final -->
+        <section class="relative overflow-hidden py-20 md:py-28 px-4 sm:px-8 bg-primary text-white">
+            <svg viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden md:block absolute right-8 lg:right-24 bottom-0 h-[85%] w-auto text-sand/35"><path pathLength="1" vector-effect="non-scaling-stroke" d="M50 172V14M34 172H66M50 128C31 128 22 116 22 96V42M50 128C69 128 78 116 78 96V42M50 76L40 63M50 76L60 63M22 66L13 55M22 66L31 55M78 66L69 55M78 66L87 55"/></svg>
+            <div class="relative max-w-[1336px] mx-auto">
+                <div class="max-w-[680px]">
+                    <p class="text-sand font-semibold mb-4">Cupos limitados por turno</p>
+                    <h2 class="font-display text-4xl md:text-5xl leading-[1.04] mb-6 text-balance">¿Listo para comenzar tu aventura en Paracas?</h2>
+                    <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-[52ch]">Escríbenos hoy mismo para asegurar tus espacios. Coordinamos tu reserva en minutos con total flexibilidad.</p>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text=Hola%21%20Quiero%20reservar%20el%20tour%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas.%20Fecha%3A%20___%20%C2%B7%20Personas%3A%20___" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            <span>Reservar por WhatsApp</span>
+                        </a>
+                        <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20Booking%20Inquiry%3A%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas&body=Hi%20SolyMar%20Paracas%21%5Cn%5CnI%20would%20like%20to%20book%3A%20Tour%20por%20la%20Reserva%20Nacional%20de%20Paracas%5CnDate%3A%5CnNumber%20of%20people%3A%5CnHotel%20in%20Paracas%3A%5CnQuestions%3A" class="inline-flex items-center justify-center gap-2 py-3.5 px-7 rounded-full border border-white/40 font-semibold text-white transition-colors hover:bg-white/10">
+                            <span class="material-symbols-outlined text-lg" aria-hidden="true">mail</span>
+                            <span>Enviar email</span>
+                        </a>
+                    </div>
+                    <p class="text-sm text-white/65 mt-8">Paga con tarjeta mediante enlace seguro o en efectivo al llegar · Cancelación sin costo hasta 24h antes</p>
+                </div>
             </div>
         </section>
     </main>

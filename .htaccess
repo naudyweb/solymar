@@ -24,9 +24,11 @@ RewriteRule ^ - [F,L]
 RewriteCond %{THE_REQUEST} \.html[\s?/]
 RewriteRule ^(.+?)\.html$ /$1 [R=301,L]
 
-# Redirecciones de Tours Estandarizados (301)
+# Redirecciones de Tours Estandarizados y Desactivados (301)
 RewriteRule ^atv-gokart(\.html)?$ /mini-buggies-paracas [R=301,L,NC]
 RewriteRule ^en/atv-gokart(\.html)?$ /en/mini-buggies-paracas [R=301,L,NC]
+RewriteRule ^sobrevuelo-lineas-de-nazca(\.html)?$ /tours [R=301,L,NC]
+RewriteRule ^en/sobrevuelo-lineas-de-nazca(\.html)?$ /en/tours [R=301,L,NC]
 
 # 4. EVITAR LISTADO DE DIRECTORIOS
 Options -Indexes
