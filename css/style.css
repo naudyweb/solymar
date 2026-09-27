@@ -1600,6 +1600,9 @@
   .text-\[0\.9375rem\] {
     font-size: 0.9375rem;
   }
+  .text-\[1\.375rem\] {
+    font-size: 1.375rem;
+  }
   .text-\[2\.625rem\] {
     font-size: 2.625rem;
   }
@@ -2334,6 +2337,16 @@
         background-color: color-mix(in srgb, #0a3d52 5%, transparent);
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-primary) 5%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-primary\/10 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #0a3d52 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
         }
       }
     }
@@ -3120,11 +3133,6 @@
       display: none;
     }
   }
-  .lg\:inline {
-    @media (width >= 64rem) {
-      display: inline;
-    }
-  }
   .lg\:h-\[640px\] {
     @media (width >= 64rem) {
       height: 640px;
@@ -3357,28 +3365,73 @@
     }
   }
   .dark\:box-content {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme="dark"], [data-theme="dark"] *) {
       box-sizing: content-box;
+    }
+    @media (prefers-color-scheme: dark) {
+      &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+        box-sizing: content-box;
+      }
+    }
+  }
+  .dark\:flex {
+    &:where([data-theme="dark"], [data-theme="dark"] *) {
+      display: flex;
+    }
+    @media (prefers-color-scheme: dark) {
+      &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+        display: flex;
+      }
+    }
+  }
+  .dark\:hidden {
+    &:where([data-theme="dark"], [data-theme="dark"] *) {
+      display: none;
+    }
+    @media (prefers-color-scheme: dark) {
+      &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+        display: none;
+      }
     }
   }
   .dark\:rounded-full {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme="dark"], [data-theme="dark"] *) {
       border-radius: calc(infinity * 1px);
+    }
+    @media (prefers-color-scheme: dark) {
+      &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+        border-radius: calc(infinity * 1px);
+      }
     }
   }
   .dark\:bg-\[\#eef1ef\] {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme="dark"], [data-theme="dark"] *) {
       background-color: #eef1ef;
+    }
+    @media (prefers-color-scheme: dark) {
+      &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+        background-color: #eef1ef;
+      }
     }
   }
   .dark\:px-3 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme="dark"], [data-theme="dark"] *) {
       padding-inline: calc(var(--spacing) * 3);
+    }
+    @media (prefers-color-scheme: dark) {
+      &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+        padding-inline: calc(var(--spacing) * 3);
+      }
     }
   }
   .dark\:py-1 {
-    @media (prefers-color-scheme: dark) {
+    &:where([data-theme="dark"], [data-theme="dark"] *) {
       padding-block: calc(var(--spacing) * 1);
+    }
+    @media (prefers-color-scheme: dark) {
+      &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+        padding-block: calc(var(--spacing) * 1);
+      }
     }
   }
   .\[\&_summary\:\:-webkit-details-marker\]\:hidden {
@@ -3388,7 +3441,7 @@
   }
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     color-scheme: dark;
     --color-primary: #8fcbe0;
     --color-primary-container: #b5dfee;
@@ -3405,15 +3458,26 @@
     --color-deep: #06202b;
   }
 }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-primary: #8fcbe0;
+  --color-primary-container: #b5dfee;
+  --color-secondary: #7cc0d2;
+  --color-tertiary: #e8899b;
+  --color-tertiary-container: #f0a3b2;
+  --color-on-tertiary: #2a0d14;
+  --color-surface: #0e171c;
+  --color-surface-container: #1f1b16;
+  --color-surface-container-low: #131e24;
+  --color-on-surface: #e6ecee;
+  --color-on-surface-variant: #a9b8bf;
+  --color-sand: #c9a878;
+  --color-deep: #06202b;
+}
 @layer base {
   html {
     scroll-padding-top: 5rem;
     color-scheme: light;
-  }
-  @media (prefers-color-scheme: dark) {
-    html {
-      color-scheme: dark;
-    }
   }
   :focus-visible {
     outline: 2px solid var(--color-secondary);
