@@ -36,6 +36,8 @@ RewriteRule ^atv-gokart(\.html)?$ /mini-buggies-paracas [R=301,L,NC]
 RewriteRule ^en/atv-gokart(\.html)?$ /en/mini-buggies-paracas [R=301,L,NC]
 RewriteRule ^sobrevuelo-lineas-de-nazca(\.html)?$ /tours [R=301,L,NC]
 RewriteRule ^en/sobrevuelo-lineas-de-nazca(\.html)?$ /en/tours [R=301,L,NC]
+RewriteRule ^snorkel(\.html)?$ /buceo [R=301,L,NC]
+RewriteRule ^en/snorkel(\.html)?$ /en/buceo [R=301,L,NC]
 
 # 4. EVITAR LISTADO DE DIRECTORIOS
 Options -Indexes
