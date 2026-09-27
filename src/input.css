@@ -31,11 +31,12 @@
 @source "../js/**/*.js";
 @source "../generate_pages.py";
 
-/* Modo oscuro: sigue la preferencia del sistema. Mismos tokens, valores de
-   noche en el Pacífico; el flamenco se aclara y su texto pasa a oscuro para
-   mantener contraste AA en los botones. */
+/* Modo oscuro. Mismos tokens, valores de noche en el Pacífico; el flamenco se
+   aclara y su texto pasa a oscuro para mantener contraste AA en los botones.
+   Por defecto sigue al sistema; el botón del header fija <html data-theme="light|dark">
+   (guardado en localStorage) y eso tiene prioridad. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     color-scheme: dark;
     --color-primary: #8fcbe0;
     --color-primary-container: #b5dfee;
@@ -52,16 +53,39 @@
     --color-deep: #06202b;
   }
 }
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-primary: #8fcbe0;
+    --color-primary-container: #b5dfee;
+    --color-secondary: #7cc0d2;
+    --color-tertiary: #e8899b;
+    --color-tertiary-container: #f0a3b2;
+    --color-on-tertiary: #2a0d14;
+    --color-surface: #0e171c;
+    --color-surface-container: #1f1b16;
+    --color-surface-container-low: #131e24;
+    --color-on-surface: #e6ecee;
+    --color-on-surface-variant: #a9b8bf;
+    --color-sand: #c9a878;
+    --color-deep: #06202b;
+}
+
+/* `dark:` sigue la misma regla: sistema salvo que el usuario elija. */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]), :root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+}
 
 @layer base {
   html {
     scroll-padding-top: 5rem;
     color-scheme: light;
-  }
-  @media (prefers-color-scheme: dark) {
-    html {
-      color-scheme: dark;
-    }
   }
   :focus-visible {
     outline: 2px solid var(--color-secondary);

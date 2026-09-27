@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
             faq: "Preguntas",
             book: "Reservar por WhatsApp",
             menu: "Abrir menú",
+            toDark: "Activar modo oscuro",
+            toLight: "Activar modo claro",
             waText: "Hola%2C+quiero+reservar+un+tour",
             groups: ["Mar", "Desierto", "Aire, cultura y traslados"],
             tours: {
@@ -40,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
             faq: "FAQ",
             book: "Book on WhatsApp",
             menu: "Open menu",
+            toDark: "Switch to dark mode",
+            toLight: "Switch to light mode",
             waText: "Hi%2C+I+would+like+to+book+a+tour",
             groups: ["Sea", "Desert", "Air, culture & transfers"],
             tours: {
@@ -104,6 +108,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <!-- Mobile: idioma + menú -->
             <div class="flex items-center gap-2 lg:hidden">
+                <button type="button" data-theme-toggle class="w-10 h-10 inline-flex items-center justify-center rounded-full text-on-surface-variant transition-colors hover:text-primary hover:bg-primary/10" aria-label="${t.toDark}">
+                    <span class="flex dark:hidden"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">dark_mode</span></span>
+                    <span class="hidden dark:flex"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">light_mode</span></span>
+                </button>
                 <a href="${otherLangLink}" hreflang="${otherLangCode}" title="${otherLangTitle}" aria-label="${otherLangTitle}" class="text-sm font-semibold px-3 py-2 text-on-surface-variant hover:text-primary">${otherLangText}</a>
                 <button type="button" class="relative w-11 h-11 flex items-center justify-center rounded-full z-[1100]" aria-label="${t.menu}" aria-expanded="false" aria-controls="mobile-nav" id="mobile-menu-btn">
                     <span class="w-6 h-0.5 bg-primary relative transition-all duration-300 before:content-[''] before:absolute before:w-6 before:h-0.5 before:bg-primary before:-top-2 before:left-0 before:transition-all before:duration-300 after:content-[''] after:absolute after:w-6 after:h-0.5 after:bg-primary after:top-2 after:left-0 after:transition-all after:duration-300" id="hamburger-icon"></span>
@@ -115,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="relative group">
                     <button type="button" class="${navLink} w-full text-left flex items-center justify-between gap-1 lg:w-auto" aria-haspopup="true" id="tours-menu-btn">
                         ${t.experiences}
-                        <span class="material-symbols-outlined text-xl hidden lg:inline" aria-hidden="true">expand_more</span>
+                        <span class="hidden lg:flex"><span class="material-symbols-outlined text-xl" aria-hidden="true">expand_more</span></span>
                     </button>
                     <div class="pl-4 py-2 border-b border-primary/10 lg:border lg:border-primary/10 lg:absolute lg:top-full lg:-left-6 lg:hidden lg:group-hover:block lg:group-focus-within:block lg:bg-surface-container-low lg:w-[640px] lg:p-6 lg:rounded-sm lg:shadow-[0_20px_40px_-12px_rgba(10,61,82,0.25)]">
                         <div class="flex flex-col gap-2 lg:grid lg:grid-cols-3 lg:gap-6">${tourLinks}
@@ -137,7 +145,11 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
 
             <!-- Desktop: idioma + reserva -->
-            <div class="hidden lg:flex items-center gap-5 shrink-0">
+            <div class="hidden lg:flex items-center gap-4 shrink-0">
+                <button type="button" data-theme-toggle class="w-10 h-10 inline-flex items-center justify-center rounded-full text-on-surface-variant transition-colors hover:text-primary hover:bg-primary/10" aria-label="${t.toDark}">
+                    <span class="flex dark:hidden"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">dark_mode</span></span>
+                    <span class="hidden dark:flex"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">light_mode</span></span>
+                </button>
                 <a href="${otherLangLink}" hreflang="${otherLangCode}" title="${otherLangTitle}" aria-label="${otherLangTitle}" class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors">${otherLangText}</a>
                 <a href="https://wa.me/51961542547?text=${t.waText}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-tertiary text-on-tertiary py-2.5 px-5 rounded-full text-sm font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">${waIcon}${t.book}</a>
             </div>
@@ -179,4 +191,24 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
+
+    // Tema claro/oscuro: sin elección sigue al sistema; el botón fija data-theme
+    // en <html> y lo guarda (el <head> de cada página lo aplica antes de pintar).
+    const root = document.documentElement;
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : systemDark.matches;
+    const syncThemeButtons = () => {
+        document.querySelectorAll('[data-theme-toggle]').forEach(b => {
+            b.setAttribute('aria-label', isDark() ? t.toLight : t.toDark);
+            b.setAttribute('aria-pressed', String(isDark()));
+        });
+    };
+    document.querySelectorAll('[data-theme-toggle]').forEach(b => b.addEventListener('click', () => {
+        const next = isDark() ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) { /* almacenamiento bloqueado: solo esta visita */ }
+        syncThemeButtons();
+    }));
+    systemDark.addEventListener('change', syncThemeButtons);
+    syncThemeButtons();
 });
