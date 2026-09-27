@@ -474,34 +474,34 @@ tours = {
     "buceo": {
         "filename": "buceo.html",
         "image": "img/buceo.jpg",
-        "price": "S/ 400",
-        "price_val": "400",
+        "price": "S/ 480",
+        "price_val": "480",
         "price_cur": "PEN",
         "category": "mar",
         "es": {
             "title": "Buceo en Paracas 2026: Bautizo de Mar con Instructor | SolyMar Paracas",
-            "desc": "Bautizo de buceo y salidas guiadas en Bahía de Paracas ($120 USD / S/ 400) e Islas Blanca ($220 USD / S/ 745). Instructor, equipo completo y fotos bajo el agua. Reserva por WhatsApp.",
+            "desc": "Bautizo de buceo y salidas guiadas en Bahía de Paracas ($145 USD / S/ 480) e Islas Blanca ($255 USD / S/ 850). Instructor, equipo completo y fotos bajo el agua. Reserva por WhatsApp.",
             "h1": "Buceo en Paracas",
             "keywords": "buceo paracas, buceo paracas precio, buceo islas blanca, bautizo de buceo peru, donde bucear en peru, discover scuba diving peru, buceo con lobos marinos",
             "subtitle": "Sumérgete en los ecosistemas de la corriente de Humboldt: bosques de algas, estrellas de mar y lobos marinos curiosos.",
             "intro": "El <strong>buceo en Paracas</strong> te abre las puertas a uno de los mares más productivos del planeta: las aguas frías y ricas en nutrientes de la corriente de Humboldt concentran una vida marina que sorprende incluso a buzos experimentados.",
-            "intro_p2": "Ofrecemos el <strong>Bautizo de Buceo (Discover Scuba Diving)</strong> para principiantes sin licencia y <strong>salidas guiadas para buzos certificados y aficionados</strong> en dos puntos principales: la <strong>Bahía de Paracas</strong> ($120 USD / S/ 400 soles) e <strong>Islas Blanca</strong> ($220 USD / S/ 745 soles).",
+            "intro_p2": "Ofrecemos el <strong>Bautizo de Buceo (Discover Scuba Diving)</strong> para principiantes sin licencia y <strong>salidas guiadas para buzos certificados y aficionados</strong> en dos puntos principales: la <strong>Bahía de Paracas</strong> ($145 USD / S/ 480 soles) e <strong>Islas Blanca</strong> ($255 USD / S/ 850 soles).",
             "intro_p3": "Todas las salidas van acompañadas de instructores certificados que controlan tu flotabilidad y te guían paso a paso, con fotos y videos subacuáticos incluidos para que te lleves el recuerdo.",
             "why_title": "Opciones y puntos de inmersión",
             "why_items": [
-                {"icon": "water_drop", "title": "Bahía de Paracas ($120 USD / S/ 400)", "desc": "Inmersión en la Bahía de Paracas. Ideal para principiantes y bautizos de buceo en aguas tranquilas con variada fauna marina."},
-                {"icon": "landscape", "title": "Islas Blanca ($220 USD / S/ 745)", "desc": "Navegación a Islas Blanca para sumergirte en aguas cristalinas con paisajes rocosos y abundantes especies marinas."},
+                {"icon": "water_drop", "title": "Bahía de Paracas ($145 USD / S/ 480)", "desc": "Inmersión en la Bahía de Paracas. Ideal para principiantes y bautizos de buceo en aguas tranquilas con variada fauna marina."},
+                {"icon": "landscape", "title": "Islas Blanca ($255 USD / S/ 850)", "desc": "Navegación a Islas Blanca para sumergirte en aguas cristalinas con paisajes rocosos y abundantes especies marinas."},
                 {"icon": "photo_camera", "title": "Fotos Subacuáticas", "desc": "Te tomamos fotos y videos bajo el agua con cámaras especiales para que compartas tu experiencia."},
                 {"icon": "shield", "title": "Equipamiento Completo", "desc": "Traje de neopreno de 5mm, tanque, regulador, chaleco compensador (BCD), máscara, aletas y plomos incluidos."}
             ],
             "custom_price_html": """<div class="flex flex-col gap-3 mb-2">
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Bahía de Paracas:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$120 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 400)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$145 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 480)</span></span>
     </div>
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Islas Blanca:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$220 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 745)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$255 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 850)</span></span>
     </div>
 </div>""",
             "price_sub_label": "Precio por persona según punto de inmersión",
@@ -510,7 +510,7 @@ tours = {
             "schedule_label": "* Salidas diarias a las 8:30 AM. Duración total de la actividad: 3.5 horas aprox.",
             "faq_title": "Preguntas Frecuentes",
             "faqs": [
-                {"q": "¿Cuánto cuesta el buceo en Paracas?", "a": "El precio del buceo en Paracas varía según el punto de inmersión seleccionado:<br>• <strong>Bahía de Paracas:</strong> $120 USD ó S/ 400 soles por persona.<br>• <strong>Islas Blanca:</strong> $220 USD ó S/ 745 soles por persona.<br><br>Ambas opciones incluyen clase teórica y práctica, inmersión guiada con instructor certificado, equipo completo de buceo (traje de neopreno 5mm, tanque, regulador, BCD, plomos), fotos y videos digitales bajo el agua y navegación al punto de buceo. Solo se paga aparte la entrada a la Reserva Nacional SERNANP (S/ 16.00 soles por persona)."},
+                {"q": "¿Cuánto cuesta el buceo en Paracas?", "a": "El precio del buceo en Paracas varía según el punto de inmersión seleccionado:<br>• <strong>Bahía de Paracas:</strong> $145 USD ó S/ 480 soles por persona.<br>• <strong>Islas Blanca:</strong> $255 USD ó S/ 850 soles por persona.<br><br>Ambas opciones incluyen clase teórica y práctica, inmersión guiada con instructor certificado, equipo completo de buceo (traje de neopreno 5mm, tanque, regulador, BCD, plomos), fotos y videos digitales bajo el agua y navegación al punto de buceo. Solo se paga aparte la entrada a la Reserva Nacional SERNANP (S/ 16.00 soles por persona)."},
                 {"q": "¿Necesito saber nadar para el Bautizo?", "a": "Es recomendable sentirse cómodo en el agua, pero no necesitas ser un nadador experto. El instructor te sostiene y controla tu flotabilidad durante toda la inmersión."},
                 {"q": "¿A qué profundidad descendemos?", "a": "Para el bautizo de buceo descendemos a una profundidad máxima de entre 5 y 10 metros, ideal para observar la fauna marina con luz natural y total seguridad."},
                 {"q": "¿Qué fauna se puede ver bajo el agua?", "a": "El fondo marino de Paracas alberga erizos, estrellas de mar rojas, pulpos, cangrejos, lenguados, caballitos de mar en temporada, bosques de algas y, con frecuencia, lobos marinos juveniles curiosos que se acercan a los buzos."},
@@ -521,28 +521,28 @@ tours = {
         },
         "en": {
             "title": "Scuba Diving in Paracas 2026: Discover Dive & Fun Dives | SolyMar",
-            "desc": "Discover Scuba dives and guided trips in Paracas Bay ($120 USD / S/ 400) and Islas Blanca ($220 USD / S/ 745). Instructor, full gear, and underwater photos included. Book via WhatsApp.",
+            "desc": "Discover Scuba dives and guided trips in Paracas Bay ($145 USD / S/ 480) and Islas Blanca ($255 USD / S/ 850). Instructor, full gear, and underwater photos included. Book via WhatsApp.",
             "h1": "Scuba Diving in Paracas",
             "keywords": "scuba diving paracas, scuba diving paracas price, diving islas blanca, discovery dive peru, where to dive in peru, diving with sea lions peru",
             "subtitle": "Dive into the Humboldt Current ecosystems: kelp forests, red starfish, and curious sea lions.",
             "intro": "<strong>Scuba diving in Paracas</strong> opens the door to one of the most productive seas on Earth: the cold, nutrient-rich waters of the Humboldt Current concentrate marine life that surprises even experienced divers.",
-            "intro_p2": "We offer the <strong>Discover Scuba Diving</strong> experience for beginners without certification, as well as <strong>guided dives for certified divers</strong> in two main locations: <strong>Paracas Bay</strong> ($120 USD / S/ 400 soles) and <strong>Islas Blanca</strong> ($220 USD / S/ 745 soles).",
+            "intro_p2": "We offer the <strong>Discover Scuba Diving</strong> experience for beginners without certification, as well as <strong>guided dives for certified divers</strong> in two main locations: <strong>Paracas Bay</strong> ($145 USD / S/ 480 soles) and <strong>Islas Blanca</strong> ($255 USD / S/ 850 soles).",
             "intro_p3": "Every trip is led by certified instructors who manage your buoyancy and guide you step by step, with underwater photos and videos included so you take the memory home.",
             "why_title": "Diving Options & Dive Spots",
             "why_items": [
-                {"icon": "water_drop", "title": "Paracas Bay ($120 USD / S/ 400)", "desc": "Diving experience in Paracas Bay. Perfect for beginners and discovery dives in calm, protected waters rich in marine life."},
-                {"icon": "landscape", "title": "Islas Blanca ($220 USD / S/ 745)", "desc": "Boat trip to Islas Blanca to dive in clear island waters with underwater rock structures and diverse wildlife."},
+                {"icon": "water_drop", "title": "Paracas Bay ($145 USD / S/ 480)", "desc": "Diving experience in Paracas Bay. Perfect for beginners and discovery dives in calm, protected waters rich in marine life."},
+                {"icon": "landscape", "title": "Islas Blanca ($255 USD / S/ 850)", "desc": "Boat trip to Islas Blanca to dive in clear island waters with underwater rock structures and diverse wildlife."},
                 {"icon": "photo_camera", "title": "GoPro Photos & Videos", "desc": "We capture underwater HD photos and videos of your dive so you can remember and share your adventure."},
                 {"icon": "shield", "title": "Complete Equipment", "desc": "5mm wetsuit, tanks, regulator, BCD jacket, mask, fins, and weights are fully provided."}
             ],
             "custom_price_html": """<div class="flex flex-col gap-3 mb-2">
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Paracas Bay:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$120 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 400)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$145 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 480)</span></span>
     </div>
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Islas Blanca:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$220 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 745)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$255 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 850)</span></span>
     </div>
 </div>""",
             "price_sub_label": "Price per person based on selected dive spot",
@@ -551,7 +551,7 @@ tours = {
             "schedule_label": "* Daily departures at 8:30 AM. Total activity duration: approx. 3.5 hours.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does scuba diving in Paracas cost?", "a": "The price for scuba diving in Paracas depends on the selected dive spot:<br>• <strong>Paracas Bay:</strong> $120 USD or S/ 400 soles per person.<br>• <strong>Islas Blanca:</strong> $220 USD or S/ 745 soles per person.<br><br>Both options include theoretical and practical instruction, a guided dive with a certified instructor, full dive gear (5mm wetsuit, tank, regulator, BCD, weights), digital underwater photos/videos, and boat transport. The SERNANP Paracas Reserve entrance fee (S/ 16.00 soles per person) is paid separately."},
+                {"q": "How much does scuba diving in Paracas cost?", "a": "The price for scuba diving in Paracas depends on the selected dive spot:<br>• <strong>Paracas Bay:</strong> $145 USD or S/ 480 soles per person.<br>• <strong>Islas Blanca:</strong> $255 USD or S/ 850 soles per person.<br><br>Both options include theoretical and practical instruction, a guided dive with a certified instructor, full dive gear (5mm wetsuit, tank, regulator, BCD, weights), digital underwater photos/videos, and boat transport. The SERNANP Paracas Reserve entrance fee (S/ 16.00 soles per person) is paid separately."},
                 {"q": "Do I need to know how to swim for the Discovery Dive?", "a": "Basic water comfort is recommended, but you don't need to be an expert swimmer. Your instructor holds you and manages your buoyancy throughout the dive."},
                 {"q": "How deep do we go?", "a": "For first-time divers, the maximum depth is restricted to 5-10 meters (15-30 feet), which is optimal for natural light, wildlife viewing, and safety."},
                 {"q": "What marine life will we see?", "a": "The cold waters host red starfish, sea urchins, octopuses, crabs, flounders, seasonal seahorses, kelp forests, and frequently curious juvenile sea lions that approach divers."},
@@ -1030,7 +1030,7 @@ PRICE_USD_MAP = {
     "ruta-del-pisco-bodegas-ica": "≈ US$ 22",
     "paracas-huacachina-full-day": "≈ US$ 52",
     "parapente": "≈ US$ 68",
-    "buceo": "≈ US$ 109",
+    "buceo": "≈ US$ 131",
     "kayak-paddle-paracas": "≈ US$ 16",
     "mini-buggies-paracas": "≈ US$ 33",
     "tambo-colorado": "≈ US$ 22",
