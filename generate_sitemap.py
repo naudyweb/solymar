@@ -25,7 +25,8 @@ other_pages = [
     {"es": "tours", "en": "en/tours", "priority": "0.9"},
     {"es": "blog/", "en": "en/blog/", "priority": "0.8"},
     {"es": "blog/lima-a-paracas", "en": "en/blog/lima-a-paracas", "priority": "0.8"},
-    {"es": "blog/circuito-reserva-nacional-paracas", "en": "en/blog/circuito-reserva-nacional-paracas", "priority": "0.8"}
+    {"es": "blog/circuito-reserva-nacional-paracas", "en": "en/blog/circuito-reserva-nacional-paracas", "priority": "0.8"},
+    {"es": "blog/guia-islas-ballestas", "en": "en/blog/guia-islas-ballestas", "priority": "0.8"}
 ]
 
 # Generate XML entries

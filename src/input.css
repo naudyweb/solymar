@@ -17,6 +17,9 @@
   --color-on-surface: #14232b;
   --color-on-surface-variant: #4a5a62;
   --color-sand: #d8b98a;
+  /* Fondo oscuro de bandas y overlays sobre foto: es oscuro en ambos modos
+     (`primary` se aclara en modo oscuro porque se usa como color de texto). */
+  --color-deep: #0a3d52;
 
   --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
@@ -28,9 +31,37 @@
 @source "../js/**/*.js";
 @source "../generate_pages.py";
 
+/* Modo oscuro: sigue la preferencia del sistema. Mismos tokens, valores de
+   noche en el Pacífico; el flamenco se aclara y su texto pasa a oscuro para
+   mantener contraste AA en los botones. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-primary: #8fcbe0;
+    --color-primary-container: #b5dfee;
+    --color-secondary: #7cc0d2;
+    --color-tertiary: #e8899b;
+    --color-tertiary-container: #f0a3b2;
+    --color-on-tertiary: #2a0d14;
+    --color-surface: #0e171c;
+    --color-surface-container: #1f1b16;
+    --color-surface-container-low: #131e24;
+    --color-on-surface: #e6ecee;
+    --color-on-surface-variant: #a9b8bf;
+    --color-sand: #c9a878;
+    --color-deep: #06202b;
+  }
+}
+
 @layer base {
   html {
     scroll-padding-top: 5rem;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
   }
   :focus-visible {
     outline: 2px solid var(--color-secondary);

@@ -74,23 +74,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (footerContainer) {
         const pathPrefix = isEn ? (isBlog ? "../../" : "../") : (isBlog ? "../" : "");
         const baseNavPath = `${pathPrefix}${langPath}`;
+        const homePath = baseNavPath || "./";
         const link = "text-on-surface-variant transition-colors hover:text-primary";
         const tourItems = [
-            ["islas-ballestas.html", t.tours.ballestas],
-            ["reserva-nacional-paracas.html", t.tours.reserva],
-            ["ballestas-y-reserva-full-day.html", t.tours.combo],
-            ["buggies-sandboard-huacachina.html", t.tours.huacachina],
-            ["parapente.html", t.tours.parapente],
-            ["buceo.html", t.tours.buceo],
-            ["transporte-personalizado.html", t.tours.traslados]
+            ["islas-ballestas", t.tours.ballestas],
+            ["reserva-nacional-paracas", t.tours.reserva],
+            ["ballestas-y-reserva-full-day", t.tours.combo],
+            ["buggies-sandboard-huacachina", t.tours.huacachina],
+            ["parapente", t.tours.parapente],
+            ["buceo", t.tours.buceo],
+            ["transporte-personalizado", t.tours.traslados]
         ].map(([href, label]) => `<li><a class="${link}" href="${baseNavPath}${href}">${label}</a></li>`).join("");
 
         footerContainer.className = "bg-surface-container text-on-surface px-4 sm:px-8 pt-20";
         footerContainer.innerHTML = `
             <div class="max-w-[1336px] mx-auto grid grid-cols-1 gap-14 pb-16 md:grid-cols-12 md:gap-10">
                 <div class="md:col-span-5 flex flex-col gap-6 max-w-[420px]">
-                    <a href="${baseNavPath}index.html" class="self-start">
-                        <img alt="SolyMar Paracas" class="h-12 w-auto" width="310" height="100" loading="lazy" decoding="async" src="${pathPrefix}img/SolyMar-web.png" />
+                    <a href="${homePath}" class="self-start">
+                        <img alt="SolyMar Paracas" class="h-12 w-auto dark:box-content dark:bg-[#eef1ef] dark:rounded-full dark:px-3 dark:py-1" width="310" height="100" loading="lazy" decoding="async" src="${pathPrefix}img/SolyMar-web.png" />
                     </a>
                     <p class="text-on-surface-variant leading-relaxed">${t.description}</p>
                     <div class="flex flex-col gap-3 font-medium">
@@ -114,15 +115,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h2 class="font-display text-lg text-primary mb-5">${t.experiences}</h2>
                     <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-x-8">
                         ${tourItems}
-                        <li><a class="font-semibold text-primary underline decoration-sand decoration-2 underline-offset-4" href="${baseNavPath}tours.html">${t.tours.all}</a></li>
+                        <li><a class="font-semibold text-primary underline decoration-sand decoration-2 underline-offset-4" href="${baseNavPath}tours">${t.tours.all}</a></li>
                     </ul>
                 </nav>
                 <nav class="md:col-span-3" aria-label="${t.support}">
                     <h2 class="font-display text-lg text-primary mb-5">${t.support}</h2>
                     <ul class="flex flex-col gap-3">
-                        <li><a class="${link}" href="${baseNavPath}index.html#faq">${t.faq}</a></li>
-                        <li><a class="${link}" href="${baseNavPath}index.html#nosotros">${t.about}</a></li>
-                        <li><a class="${link}" href="${baseNavPath}blog/index.html">${t.blog}</a></li>
+                        <li><a class="${link}" href="${homePath}#faq">${t.faq}</a></li>
+                        <li><a class="${link}" href="${homePath}#nosotros">${t.about}</a></li>
+                        <li><a class="${link}" href="${baseNavPath}blog/">${t.blog}</a></li>
                         <li><a class="${link}" href="https://api.whatsapp.com/send?phone=51961542547&text=${t.waText}" target="_blank" rel="noopener">${t.contact}</a></li>
                     </ul>
                 </nav>
@@ -136,7 +137,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Botón flotante de WhatsApp
     const waButton = document.createElement('a');
     waButton.href = `https://api.whatsapp.com/send?phone=51961542547&text=${t.waFloatText}`;
-    waButton.className = "fixed w-14 h-14 bottom-5 right-5 bg-[#25d366] text-white rounded-full flex items-center justify-center z-[900] shadow-[0_10px_30px_-6px_rgba(10,61,82,0.45)] transition-transform hover:-translate-y-0.5 active:scale-95";
+    // En los tours, la barra de reserva fija (#mobile-book-bar) reemplaza al botón flotante en móvil.
+    const hasBookBar = document.getElementById('mobile-book-bar') !== null;
+    waButton.className = `fixed w-14 h-14 bottom-5 right-5 bg-[#25d366] text-white rounded-full ${hasBookBar ? 'hidden lg:flex' : 'flex'} items-center justify-center z-[900] shadow-[0_10px_30px_-6px_rgba(10,61,82,0.45)] transition-transform hover:-translate-y-0.5 active:scale-95`;
     waButton.target = "_blank";
     waButton.rel = "noopener";
     waButton.setAttribute('aria-label', 'WhatsApp');

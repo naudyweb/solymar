@@ -38,9 +38,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap"
         rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block"
         rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preload" as="image" imagesrcset="../img/w/reserva-nacional-paracas-480.webp 480w, ../img/w/reserva-nacional-paracas-960.webp 960w, ../img/w/reserva-nacional-paracas-1264.webp 1264w" imagesizes="100vw" fetchpriority="high" />
 
     <!-- ===== DATA STRUCTURE (JSON-LD) FOR GOOGLE ===== -->
     <script type="application/ld+json">
@@ -213,10 +214,10 @@
 
     <main>
         <!-- Hero -->
-        <section class="relative min-h-[min(calc(100dvh-4rem),880px)] flex items-end overflow-hidden bg-primary">
-            <img class="absolute inset-0 w-full h-full object-cover" src="../img/reserva-nacional-paracas.jpg" alt="Cliffs of the Paracas National Reserve above the ocean" width="1264" height="848" fetchpriority="high" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/55 to-primary/10"></div>
-            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-primary/70 to-transparent"></div>
+        <section class="relative min-h-[min(calc(100dvh-4rem),880px)] flex items-end overflow-hidden bg-deep">
+            <img class="absolute inset-0 w-full h-full object-cover" src="../img/w/reserva-nacional-paracas-1264.webp" srcset="../img/w/reserva-nacional-paracas-480.webp 480w, ../img/w/reserva-nacional-paracas-960.webp 960w, ../img/w/reserva-nacional-paracas-1264.webp 1264w" sizes="100vw" alt="Cliffs of the Paracas National Reserve above the ocean" width="1264" height="848" fetchpriority="high" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/55 to-deep/10"></div>
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-deep/70 to-transparent"></div>
             <svg viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="candelabro-draw hidden md:block absolute right-[6%] top-1/2 -translate-y-1/2 h-[62%] w-auto text-sand/90"><path pathLength="1" vector-effect="non-scaling-stroke" d="M50 172V14M34 172H66M50 128C31 128 22 116 22 96V42M50 128C69 128 78 116 78 96V42M50 76L40 63M50 76L60 63M22 66L13 55M22 66L31 55M78 66L69 55M78 66L87 55"/></svg>
             <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pb-16 pt-24 md:pb-24">
                 <div class="max-w-[900px] text-white">
@@ -240,9 +241,9 @@
                 <p class="text-lg text-on-surface-variant leading-relaxed max-w-[60ch]">We select the best routes to guarantee you an <strong>authentic experience</strong> with certified guides.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
-                <a href="islas-ballestas.html" id="activity-ballestas-card-en" class="group flex flex-col gap-4 lg:col-span-2">
+                <a href="islas-ballestas" id="activity-ballestas-card-en" class="group flex flex-col gap-4 lg:col-span-2">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/islas-ballestas.jpg" alt="Ballestas Islands Tour in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/islas-ballestas-1264.webp" srcset="../img/w/islas-ballestas-480.webp 480w, ../img/w/islas-ballestas-960.webp 960w, ../img/w/islas-ballestas-1264.webp 1264w" sizes="(min-width: 1024px) 66vw, (min-width: 768px) 50vw, 100vw" alt="Ballestas Islands Tour in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -252,9 +253,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Cruise the "Peruvian Galapagos" and spot sea lions, Humboldt penguins, and thousands of marine birds.</p>
                     </div>
                 </a>
-                <a href="reserva-nacional-paracas.html" id="activity-reserva-card-en" class="group flex flex-col gap-4">
+                <a href="reserva-nacional-paracas" id="activity-reserva-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/reserva-nacional-paracas.jpg" alt="Paracas National Reserve" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/reserva-nacional-paracas-1264.webp" srcset="../img/w/reserva-nacional-paracas-480.webp 480w, ../img/w/reserva-nacional-paracas-960.webp 960w, ../img/w/reserva-nacional-paracas-1264.webp 1264w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Paracas National Reserve" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -264,9 +265,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Explore colorful desert cliffs and unique shorelines like Red Beach where the dry dunes meet the ocean.</p>
                     </div>
                 </a>
-                <a href="ballestas-y-reserva-full-day.html" id="activity-fullday-card-en" class="group flex flex-col gap-4">
+                <a href="ballestas-y-reserva-full-day" id="activity-fullday-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/ballestas-y-reserva-full-day.jpg" alt="Full Day Ballestas Islands and National Reserve" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/ballestas-y-reserva-full-day-1264.webp" srcset="../img/w/ballestas-y-reserva-full-day-480.webp 480w, ../img/w/ballestas-y-reserva-full-day-960.webp 960w, ../img/w/ballestas-y-reserva-full-day-1264.webp 1264w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Full Day Ballestas Islands and National Reserve" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -276,9 +277,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">The ultimate classic day trip: visit the Ballestas Islands by boat in the morning and the Reserve by land at noon.</p>
                     </div>
                 </a>
-                <a href="parapente.html" id="activity-parapente-card-en" class="group flex flex-col gap-4">
+                <a href="parapente" id="activity-parapente-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/parapente.jpg" alt="Paragliding in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/parapente-1264.webp" srcset="../img/w/parapente-480.webp 480w, ../img/w/parapente-960.webp 960w, ../img/w/parapente-1264.webp 1264w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Paragliding in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -288,9 +289,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Fly over the majestic coast of the National Reserve and feel the freedom of tandem paragliding.</p>
                     </div>
                 </a>
-                <a href="buceo.html" id="activity-buceo-card-en" class="group flex flex-col gap-4">
+                <a href="buceo" id="activity-buceo-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/buceo.jpg" alt="Diving in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/buceo-1264.webp" srcset="../img/w/buceo-480.webp 480w, ../img/w/buceo-960.webp 960w, ../img/w/buceo-1264.webp 1264w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Diving in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -300,9 +301,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Dive into the deep ocean with certified PADI instructors in the highly biodiverse waters of Paracas.</p>
                     </div>
                 </a>
-                <a href="trekking.html" id="activity-trekking-card-en" class="group flex flex-col gap-4">
+                <a href="trekking" id="activity-trekking-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/trekking.jpg" alt="Trekking in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/trekking-1264.webp" srcset="../img/w/trekking-480.webp 480w, ../img/w/trekking-960.webp 960w, ../img/w/trekking-1264.webp 1264w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Trekking in Paracas" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -312,9 +313,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Hike along ancient coastal cliffs of the desert and catch the golden sunset over the Pacific.</p>
                     </div>
                 </a>
-                <a href="buggies-sandboard-huacachina.html" id="activity-buggies-card-en" class="group flex flex-col gap-4 lg:col-span-2">
+                <a href="buggies-sandboard-huacachina" id="activity-buggies-card-en" class="group flex flex-col gap-4 lg:col-span-2">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/huacachina.jpg" alt="Dune buggies and sandboarding in Huacachina" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/huacachina-1376.webp" srcset="../img/w/huacachina-480.webp 480w, ../img/w/huacachina-960.webp 960w, ../img/w/huacachina-1376.webp 1376w" sizes="(min-width: 1024px) 66vw, (min-width: 768px) 50vw, 100vw" alt="Dune buggies and sandboarding in Huacachina" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -324,9 +325,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Feel the adrenaline racing through giant sand dunes in tubular buggies and sliding down on sandboards at sunset.</p>
                     </div>
                 </a>
-                <a href="kayak-paddle-paracas.html" id="activity-kayak-card-en" class="group flex flex-col gap-4">
+                <a href="kayak-paddle-paracas" id="activity-kayak-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/kayak-paddle.jpg" alt="Kayak & Stand Up Paddle in Paracas Bay" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/kayak-paddle-1376.webp" srcset="../img/w/kayak-paddle-480.webp 480w, ../img/w/kayak-paddle-960.webp 960w, ../img/w/kayak-paddle-1376.webp 1376w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Kayak & Stand Up Paddle in Paracas Bay" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -336,9 +337,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Paddle through calm morning waters of Paracas Bay, spotting seabirds, flamingos, and marine life in complete peace.</p>
                     </div>
                 </a>
-                <a href="yakupark-paracas.html" id="activity-yakupark-card-en" class="group flex flex-col gap-4">
+                <a href="yakupark-paracas" id="activity-yakupark-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/yakupark.jpg" alt="Yakupark inflatable water park" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/yakupark-1376.webp" srcset="../img/w/yakupark-480.webp 480w, ../img/w/yakupark-960.webp 960w, ../img/w/yakupark-1376.webp 1376w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Yakupark inflatable water park" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -348,9 +349,9 @@
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed max-w-[60ch]">Have giant fun sliding, jumping, and racing in the largest inflatable water park in South America.</p>
                     </div>
                 </a>
-                <a href="ruta-del-pisco-bodegas-ica.html" id="activity-piscoroute-card-en" class="group flex flex-col gap-4">
+                <a href="ruta-del-pisco-bodegas-ica" id="activity-piscoroute-card-en" class="group flex flex-col gap-4">
                     <div class="h-64 md:h-72 overflow-hidden rounded-sm bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/ruta-del-pisco.jpg" alt="Pisco wineries and vineyards" width="1264" height="848" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/ruta-del-pisco-1376.webp" srcset="../img/w/ruta-del-pisco-480.webp 480w, ../img/w/ruta-del-pisco-960.webp 960w, ../img/w/ruta-del-pisco-1376.webp 1376w" sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" alt="Pisco wineries and vineyards" width="1264" height="848" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline justify-between gap-4">
@@ -361,7 +362,7 @@
                     </div>
                 </a>
             </div>
-            <a href="tours.html" class="inline-flex items-center gap-2 mt-14 font-semibold text-primary group">
+            <a href="tours" class="inline-flex items-center gap-2 mt-14 font-semibold text-primary group">
                 <span class="underline decoration-sand decoration-2 underline-offset-8 group-hover:decoration-primary">View all tours</span>
                 <span class="material-symbols-outlined text-xl" aria-hidden="true">arrow_forward</span>
             </a>
@@ -428,7 +429,7 @@
         <section class="py-20 md:py-28 px-4 sm:px-8 bg-surface-container-low" id="guia-viaje">
             <div class="max-w-[1336px] mx-auto grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:items-start">
                 <div class="lg:col-span-5 h-72 md:h-[420px] lg:h-[640px] overflow-hidden rounded-sm bg-surface-container">
-                    <img class="w-full h-full object-cover" src="../img/caminata-paracas.jpg" alt="Travelers walking along a beach in the Paracas National Reserve" width="1600" height="1071" loading="lazy" decoding="async" />
+                    <img class="w-full h-full object-cover" src="../img/w/caminata-paracas-1600.webp" srcset="../img/w/caminata-paracas-480.webp 480w, ../img/w/caminata-paracas-960.webp 960w, ../img/w/caminata-paracas-1600.webp 1600w" sizes="(min-width: 1024px) 40vw, 100vw" alt="Travelers walking along a beach in the Paracas National Reserve" width="1600" height="1071" loading="lazy" decoding="async" />
                 </div>
                 <div class="lg:col-span-7">
                     <h2 class="font-display text-4xl md:text-5xl text-primary leading-[1.05] mb-5 text-balance">Paracas travel guide</h2>
@@ -609,9 +610,19 @@
             <div class="max-w-[1336px] mx-auto">
                 <h2 class="font-display text-4xl md:text-5xl text-primary leading-[1.05] mb-10 text-balance">Travel tips & guides</h2>
                 <div class="max-w-[1100px] border-b border-primary/15">
-                    <a href="blog/lima-a-paracas.html" id="blog-post-lima-to-paracas-en" class="group grid grid-cols-1 gap-5 py-8 border-t border-primary/15 sm:grid-cols-[220px_1fr] sm:gap-8 sm:items-center">
+                    <a href="blog/guia-islas-ballestas" id="blog-post-ballestas-guide-en" class="group grid grid-cols-1 gap-5 py-8 border-t border-primary/15 sm:grid-cols-[220px_1fr] sm:gap-8 sm:items-center">
                         <div class="h-44 sm:h-36 overflow-hidden rounded-sm bg-surface-container">
-                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/reserva-nacional-paracas.jpg" alt="How to get to Paracas from Lima" loading="lazy" decoding="async" />
+                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/islas-ballestas-1264.webp" srcset="../img/w/islas-ballestas-480.webp 480w, ../img/w/islas-ballestas-960.webp 960w, ../img/w/islas-ballestas-1264.webp 1264w" sizes="(min-width: 640px) 220px, 100vw" alt="Boat in front of the Ballestas Islands" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <span class="text-sm text-on-surface-variant">Guides</span>
+                            <h3 class="font-display text-xl md:text-2xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">Complete Ballestas Islands Guide 2026</h3>
+                            <p class="text-on-surface-variant leading-relaxed max-w-[62ch]">Learn all about prices, pier fees, recommended schedules, and what wildlife to see on the tour.</p>
+                        </div>
+                    </a>
+                    <a href="blog/lima-a-paracas" id="blog-post-lima-to-paracas-en" class="group grid grid-cols-1 gap-5 py-8 border-t border-primary/15 sm:grid-cols-[220px_1fr] sm:gap-8 sm:items-center">
+                        <div class="h-44 sm:h-36 overflow-hidden rounded-sm bg-surface-container">
+                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/reserva-nacional-paracas-1264.webp" srcset="../img/w/reserva-nacional-paracas-480.webp 480w, ../img/w/reserva-nacional-paracas-960.webp 960w, ../img/w/reserva-nacional-paracas-1264.webp 1264w" sizes="(min-width: 640px) 220px, 100vw" alt="How to get to Paracas from Lima" loading="lazy" decoding="async" />
                         </div>
                         <div class="flex flex-col gap-2">
                             <span class="text-sm text-on-surface-variant">Transport</span>
@@ -619,9 +630,9 @@
                             <p class="text-on-surface-variant leading-relaxed max-w-[62ch]">Discover the most comfortable and safe options to travel from Lima to Paracas by bus, private car, or shared tour.</p>
                         </div>
                     </a>
-                    <a href="blog/circuito-reserva-nacional-paracas.html" id="blog-post-circuito-reserva-en" class="group grid grid-cols-1 gap-5 py-8 border-t border-primary/15 sm:grid-cols-[220px_1fr] sm:gap-8 sm:items-center">
+                    <a href="blog/circuito-reserva-nacional-paracas" id="blog-post-circuito-reserva-en" class="group grid grid-cols-1 gap-5 py-8 border-t border-primary/15 sm:grid-cols-[220px_1fr] sm:gap-8 sm:items-center">
                         <div class="h-44 sm:h-36 overflow-hidden rounded-sm bg-surface-container">
-                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/scooter-reserva-paracas.png" alt="Riding a scooter through the Paracas National Reserve" loading="lazy" decoding="async" />
+                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" src="../img/w/scooter-reserva-paracas-980.webp" srcset="../img/w/scooter-reserva-paracas-480.webp 480w, ../img/w/scooter-reserva-paracas-960.webp 960w, ../img/w/scooter-reserva-paracas-980.webp 980w" sizes="(min-width: 640px) 220px, 100vw" alt="Riding a scooter through the Paracas National Reserve" loading="lazy" decoding="async" />
                         </div>
                         <div class="flex flex-col gap-2">
                             <span class="text-sm text-on-surface-variant">Guide & map</span>
@@ -630,7 +641,7 @@
                         </div>
                     </a>
                 </div>
-                <a href="blog/index.html" id="view-all-blog-btn-en" class="inline-flex items-center gap-2 mt-10 font-semibold text-primary group">
+                <a href="blog/" id="view-all-blog-btn-en" class="inline-flex items-center gap-2 mt-10 font-semibold text-primary group">
                 <span class="underline decoration-sand decoration-2 underline-offset-8 group-hover:decoration-primary">View all posts</span>
                     <span class="material-symbols-outlined text-xl" aria-hidden="true">arrow_forward</span>
                 </a>
@@ -638,7 +649,7 @@
         </section>
 
         <!-- Reserva -->
-        <section class="relative overflow-hidden py-24 md:py-32 px-4 sm:px-8 bg-primary text-white">
+        <section class="relative overflow-hidden py-24 md:py-32 px-4 sm:px-8 bg-deep text-white">
             <svg viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden md:block absolute right-8 lg:right-24 bottom-0 h-[85%] w-auto text-sand/35"><path pathLength="1" vector-effect="non-scaling-stroke" d="M50 172V14M34 172H66M50 128C31 128 22 116 22 96V42M50 128C69 128 78 116 78 96V42M50 76L40 63M50 76L60 63M22 66L13 55M22 66L31 55M78 66L69 55M78 66L87 55"/></svg>
             <div class="relative max-w-[1336px] mx-auto">
                 <div class="max-w-[640px]">

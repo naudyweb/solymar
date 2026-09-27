@@ -13,17 +13,25 @@ document.addEventListener("DOMContentLoaded", () => {
             book: "Reservar por WhatsApp",
             menu: "Abrir menú",
             waText: "Hola%2C+quiero+reservar+un+tour",
+            groups: ["Mar", "Desierto", "Aire, cultura y traslados"],
             tours: {
-                ballestas: "Islas Ballestas",
-                reserva: "Reserva Nacional",
-                combo: "Combo Full Day",
-                huacachina: "Buggies Huacachina",
-                parapente: "Parapente",
-                buceo: "Buceo",
-                trekking: "Trekking Sombras Doradas",
-                traslados: "Traslados privados",
-                all: "Ver todos los tours"
-            }
+                "islas-ballestas": "Islas Ballestas",
+                "buceo": "Buceo",
+                "kayak-paddle-paracas": "Kayak y paddle",
+                "yakupark-paracas": "Yakupark",
+                "reserva-nacional-paracas": "Reserva Nacional",
+                "ballestas-y-reserva-full-day": "Ballestas + Reserva",
+                "paracas-huacachina-full-day": "Paracas + Huacachina",
+                "buggies-sandboard-huacachina": "Buggies Huacachina",
+                "adrenarena": "Adrenarena",
+                "mini-buggies-paracas": "Cuatrimotos y mini buggies",
+                "trekking": "Trekking Sombras Doradas",
+                "parapente": "Parapente",
+                "ruta-del-pisco-bodegas-ica": "Ruta del Pisco",
+                "tambo-colorado": "Tambo Colorado",
+                "transporte-personalizado": "Traslados privados"
+            },
+            all: "Ver todos los tours"
         },
         en: {
             experiences: "Experiences",
@@ -33,32 +41,36 @@ document.addEventListener("DOMContentLoaded", () => {
             book: "Book on WhatsApp",
             menu: "Open menu",
             waText: "Hi%2C+I+would+like+to+book+a+tour",
+            groups: ["Sea", "Desert", "Air, culture & transfers"],
             tours: {
-                ballestas: "Ballestas Islands",
-                reserva: "National Reserve",
-                combo: "Combo Full Day",
-                huacachina: "Huacachina Buggies",
-                parapente: "Paragliding",
-                buceo: "Diving",
-                trekking: "Golden Shadows Trek",
-                traslados: "Private transfers",
-                all: "View all tours"
-            }
+                "islas-ballestas": "Ballestas Islands",
+                "buceo": "Diving",
+                "kayak-paddle-paracas": "Kayak & paddle",
+                "yakupark-paracas": "Yakupark",
+                "reserva-nacional-paracas": "National Reserve",
+                "ballestas-y-reserva-full-day": "Ballestas + Reserve",
+                "paracas-huacachina-full-day": "Paracas + Huacachina",
+                "buggies-sandboard-huacachina": "Huacachina Buggies",
+                "adrenarena": "Adrenarena",
+                "mini-buggies-paracas": "ATVs & mini buggies",
+                "trekking": "Golden Shadows Trek",
+                "parapente": "Paragliding",
+                "ruta-del-pisco-bodegas-ica": "Pisco Route",
+                "tambo-colorado": "Tambo Colorado",
+                "transporte-personalizado": "Private transfers"
+            },
+            all: "View all tours"
         }
     };
 
     const t = isEn ? translations.en : translations.es;
     const langPath = isEn ? "en/" : "";
     const baseNavPath = `${rootPath}${langPath}`;
+    const homePath = baseNavPath || "./";
 
-    // Compute language switch links
-    let currentPath = window.location.pathname;
-    let currentFile = currentPath.split('/').pop().replace('.html', '');
-    if (!currentFile || currentFile === "" || currentFile === "en" || currentFile === "blog" || currentFile === "index") {
-        currentFile = "index.html";
-    } else {
-        currentFile = currentFile + ".html";
-    }
+    // Compute language switch links (clean URLs: "" = index of the folder)
+    let currentFile = window.location.pathname.split('/').pop().replace(/\.html$/, '');
+    if (currentFile === "index" || currentFile === "en" || currentFile === "blog") currentFile = "";
 
     const esPath = isBlog ? (isEn ? "../../blog/" : "./") : (isEn ? "../" : "./");
     const enPath = isBlog ? (isEn ? "./" : "../en/blog/") : (isEn ? "./" : "en/");
@@ -70,26 +82,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const otherLangTitle = isEn ? "Cambiar a Español" : "Switch to English";
     const otherLangCode = isEn ? "es" : "en";
 
-    const tourLinks = [
-        ["islas-ballestas.html", t.tours.ballestas],
-        ["reserva-nacional-paracas.html", t.tours.reserva],
-        ["ballestas-y-reserva-full-day.html", t.tours.combo],
-        ["buggies-sandboard-huacachina.html", t.tours.huacachina],
-        ["parapente.html", t.tours.parapente],
-        ["buceo.html", t.tours.buceo],
-        ["trekking.html", t.tours.trekking],
-        ["transporte-personalizado.html", t.tours.traslados]
-    ].map(([href, label]) =>
-        `<a href="${baseNavPath}${href}" class="block py-2.5 text-[0.9375rem] text-on-surface-variant transition-colors hover:text-primary lg:px-5">${label}</a>`
-    ).join("");
+    const tourGroups = [
+        ["islas-ballestas", "buceo", "kayak-paddle-paracas", "yakupark-paracas"],
+        ["reserva-nacional-paracas", "ballestas-y-reserva-full-day", "paracas-huacachina-full-day", "buggies-sandboard-huacachina", "adrenarena", "mini-buggies-paracas", "trekking"],
+        ["parapente", "ruta-del-pisco-bodegas-ica", "tambo-colorado", "transporte-personalizado"]
+    ];
+    const tourLinks = tourGroups.map((slugs, i) => `
+                        <div>
+                            <p class="pt-2 pb-1 text-sm text-on-surface-variant lg:pt-0">${t.groups[i]}</p>
+                            ${slugs.map(slug => `<a href="${baseNavPath}${slug}" class="block py-2 text-[0.9375rem] text-on-surface transition-colors hover:text-primary">${t.tours[slug]}</a>`).join("")}
+                        </div>`).join("");
 
     const navLink = "block py-4 text-lg font-medium text-on-surface border-b border-primary/10 transition-colors hover:text-primary lg:py-2 lg:text-[0.9375rem] lg:text-on-surface-variant lg:border-none";
     const waIcon = `<svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>`;
 
     const headerHTML = `
         <div class="max-w-[1400px] mx-auto px-4 sm:px-8 h-16 flex justify-between items-center gap-6">
-            <a href="${baseNavPath}index.html" class="shrink-0">
-                <img class="h-9 w-auto" src="${rootPath}img/SolyMar-web.webp" alt="SolyMar Paracas" width="310" height="100" fetchpriority="high" decoding="async" />
+            <a href="${homePath}" class="shrink-0">
+                <img class="h-9 w-auto dark:box-content dark:bg-[#eef1ef] dark:rounded-full dark:px-3 dark:py-1" src="${rootPath}img/SolyMar-web.webp" alt="SolyMar Paracas" width="310" height="100" fetchpriority="high" decoding="async" />
             </a>
 
             <!-- Mobile: idioma + menú -->
@@ -107,14 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${t.experiences}
                         <span class="material-symbols-outlined text-xl hidden lg:inline" aria-hidden="true">expand_more</span>
                     </button>
-                    <div class="pl-4 py-2 border-b border-primary/10 lg:border lg:border-primary/10 lg:absolute lg:top-full lg:left-0 lg:hidden lg:group-hover:block lg:group-focus-within:block lg:bg-surface-container-low lg:min-w-[260px] lg:p-0 lg:py-3 lg:rounded-sm lg:shadow-[0_20px_40px_-12px_rgba(10,61,82,0.25)]">
-                        ${tourLinks}
-                        <a href="${baseNavPath}tours.html" class="block py-2.5 text-[0.9375rem] font-semibold text-primary underline decoration-sand decoration-2 underline-offset-4 lg:px-5 lg:mt-1">${t.tours.all}</a>
+                    <div class="pl-4 py-2 border-b border-primary/10 lg:border lg:border-primary/10 lg:absolute lg:top-full lg:-left-6 lg:hidden lg:group-hover:block lg:group-focus-within:block lg:bg-surface-container-low lg:w-[640px] lg:p-6 lg:rounded-sm lg:shadow-[0_20px_40px_-12px_rgba(10,61,82,0.25)]">
+                        <div class="flex flex-col gap-2 lg:grid lg:grid-cols-3 lg:gap-6">${tourLinks}
+                        </div>
+                        <a href="${baseNavPath}tours" class="inline-block py-2.5 mt-1 text-[0.9375rem] font-semibold text-primary underline decoration-sand decoration-2 underline-offset-4 lg:mt-4">${t.all}</a>
                     </div>
                 </div>
-                <a class="${navLink}" href="${baseNavPath}index.html#nosotros">${t.about}</a>
-                <a class="${navLink}" href="${baseNavPath}blog/index.html">${t.blog}</a>
-                <a class="${navLink}" href="${baseNavPath}index.html#faq">${t.faq}</a>
+                <a class="${navLink}" href="${homePath}#nosotros">${t.about}</a>
+                <a class="${navLink}" href="${baseNavPath}blog/">${t.blog}</a>
+                <a class="${navLink}" href="${homePath}#faq">${t.faq}</a>
 
                 <div class="mt-8 flex flex-col gap-5 lg:hidden">
                     <a href="https://wa.me/51961542547?text=${t.waText}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-tertiary text-on-tertiary py-3.5 px-6 rounded-full font-semibold active:scale-[0.98]">${waIcon}${t.book}</a>

@@ -20,12 +20,18 @@ npx tailwindcss -i ./src/input.css -o ./css/style.css
 
 **Run local dev server:**
 ```bash
-python3 -m http.server
+python3 dev_server.py        # resolves clean URLs (/tours -> tours.html) like production
 ```
 
 **Generate tour pages from templates:**
 ```bash
 python3 generate_pages.py
+```
+
+**Regenerate responsive images / icon font subset (after adding photos or icons):**
+```bash
+python3 optimize_images.py      # img/<photo> -> img/w/<photo>-<width>.webp
+python3 generate_pages.py && python3 update_icon_font.py
 ```
 
 **Generate sitemap:**
@@ -73,18 +79,20 @@ Both scripts detect the current language and path depth to compute correct relat
 ### CSS / Tailwind v4
 - Source: `src/input.css` — defines the theme (color tokens, font) and scans `**/*.html` and `js/**/*.js` for class usage.
 - Output: `css/style.css` — compiled bundle committed to the repo and served directly.
-- Custom theme tokens (defined in `src/input.css`): `primary`, `primary-container`, `secondary`, `tertiary`, `tertiary-container`, `on-tertiary`, `surface`, `surface-container`, `surface-container-low`, `on-surface`, `on-surface-variant`, `sand`. Always use these tokens instead of arbitrary colors.
+- Custom theme tokens (defined in `src/input.css`): `primary`, `primary-container`, `secondary`, `tertiary`, `tertiary-container`, `on-tertiary`, `surface`, `surface-container`, `surface-container-low`, `on-surface`, `on-surface-variant`, `sand`, `deep`. Always use these tokens instead of arbitrary colors. `deep` is for dark bands and photo overlays (stays dark in both modes); `primary` is for text/accents (it lightens in dark mode).
 - Visual identity ("desierto + Humboldt"): `tertiary` (flamingo) is the only UI accent and is reserved for prices and booking buttons; every booking CTA uses the same label ("Reservar por WhatsApp" / "Book on WhatsApp"). Headings use the `font-display` utility (Archivo at 125% width, loaded from Google Fonts with the `wdth` axis). Radius rule: photos and panels `rounded-sm`, interactive buttons `rounded-full`. No uppercase eyebrow labels above headings.
 - Motion lives in `src/input.css` (`rise-in`, `candelabro-draw`) and is gated behind `prefers-reduced-motion`.
+- Dark mode follows `prefers-color-scheme`: the same tokens are redefined in `src/input.css`, so new markup only needs tokens (never raw hex) to work in both modes.
+- Photos are served as WebP via `srcset` from `img/w/` (see `img_attrs` in `generate_pages.py`); the Material Symbols font is subset with `icon_names` by `update_icon_font.py`.
 
 ### Page Generation
 `generate_pages.py` is the source of truth for all tour pages. It contains structured data (titles, descriptions, prices, FAQ, schema.org markup) for each tour in both languages and renders them into HTML files. **Edit tour content in `generate_pages.py`, then re-run it** — don't edit generated HTML files by hand for content changes.
 
 ### Deployment
-`upload.sh` syncs the working directory to `/public_html` on the FTP server using `lftp --only-newer`. It excludes dev files (`node_modules/`, `src/`, `.git/`, `generate_*.py`, etc.). The script contains FTP credentials — do not commit changes to those credentials.
+`upload.sh` publishes an **allowlist** (root `*.html`, `.htaccess`, `robots.txt`, `sitemap.xml`, `llms.txt`, `favicon.ico`, and the `css/ js/ img/ en/ blog/` folders) to `/public_html` over **FTPS with certificate verification**, using `lftp --only-newer --delete` so removed files disappear from the server too. Anything not on the allowlist (scripts, credentials, docs, `src/`) never leaves the machine. Run `bash upload.sh --dry-run` to preview. The script contains FTP credentials and is gitignored; `.htaccess` additionally 403s hidden folders and dev file types as a second layer.
 
 ### URL Rewriting
-`.htaccess` strips `.html` extensions from public URLs (e.g., `/snorkel` → `snorkel.html`). Internal HTML links still use `.html` extensions so they work on the local dev server too. Permanent redirects for retired pages (e.g., `atv-gokart` → `mini-buggies-paracas`) are managed in `.htaccess`.
+`.htaccess` serves clean URLs (`/tours` → `tours.html`) and 301s any `.html` request to its clean form. Internal links are written clean (`tours`, `blog/`, `./#faq`), including those built by `js/header.js`/`js/footer.js`; use `python3 dev_server.py` locally since `http.server` can't resolve them. Permanent redirects for retired pages (e.g., `atv-gokart` → `mini-buggies-paracas`) are managed in `.htaccess`.
 
 Two rules exist only because of the `reservas` subdomain (see below) — do not remove them as dead code:
 - The canonical-domain redirect (`HTTP_HOST !^solymarparacas\.com$` → redirect) explicitly excludes `reservas.solymarparacas.com`, otherwise it would force-redirect the subdomain to the main site.
