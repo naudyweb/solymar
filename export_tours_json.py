@@ -53,6 +53,7 @@ for slug, t in tours.items():
         "price": t["price"],
         "price_val": t["price_val"],
         "price_cur": t["price_cur"],
+        "price_options": t.get("price_options", []),
         "quote_only": bool(t.get("quote_only", False)),
         "schedule_es": t["es"].get("schedule_label", ""),
         "schedule_en": t["en"].get("schedule_label", ""),

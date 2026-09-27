@@ -477,6 +477,10 @@ tours = {
         "price": "S/ 480",
         "price_val": "480",
         "price_cur": "PEN",
+        "price_options": [
+            {"label_es": "Bahía de Paracas", "label_en": "Paracas Bay", "price_val": "480"},
+            {"label_es": "Islas Blanca", "label_en": "Islas Blanca", "price_val": "850"},
+        ],
         "category": "mar",
         "es": {
             "title": "Buceo en Paracas 2026: Bautizo de Mar con Instructor | SolyMar Paracas",
