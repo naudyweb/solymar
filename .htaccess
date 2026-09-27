@@ -20,6 +20,13 @@ RewriteCond %{HTTP_HOST} ^solymarparacas\.com$ [NC]
 RewriteCond %{REQUEST_URI} ^/reservas(/|$)
 RewriteRule ^ - [F,L]
 
+# 2c. Bloquear archivos de desarrollo y carpetas ocultas (.git, .claude, etc.)
+# que no deben ser públicos aunque lleguen al servidor por error.
+RewriteRule (^|/)\.(?!well-known/) - [F,L]
+RewriteRule \.(py|pyc|md|sh|sqlite|ini|bak|log)$ - [F,L,NC]
+RewriteRule ^(src|scratch|node_modules|__pycache__)(/|$) - [F,L]
+RewriteRule ^(LICENSE|seo-content-ideas\.txt|package(-lock)?\.json)$ - [F,L]
+
 # 3. REDIRIGIR .html → URL limpia (evitar contenido duplicado)
 RewriteCond %{THE_REQUEST} \.html[\s?/]
 RewriteRule ^(.+?)\.html$ /$1 [R=301,L]
