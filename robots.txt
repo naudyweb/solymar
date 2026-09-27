@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /css/
-Disallow: /js/
+Disallow: /reservas/
+Disallow: /scratch/
 
-Sitemap: https://solymarparacas.site/sitemap.xml
+Sitemap: https://solymarparacas.com/sitemap.xml

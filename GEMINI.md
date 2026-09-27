@@ -3,29 +3,36 @@
 SolyMar Paracas is a static website for a tourism agency based in Paracas, Peru. The site showcases various adventure activities including diving, snorkeling, trekking, paragliding, and more.
 
 ## Technologies
-- **Frontend:** HTML5, Vanilla CSS3
+- **Frontend:** HTML5, Tailwind CSS v4
 - **Fonts:** Manrope (Google Fonts)
 - **Icons:** Material Symbols Outlined
-- **Interactivity:** Vanilla JavaScript (embedded in HTML files)
-- **Assets:** Images are primarily hosted on external services (Unsplash, Google User Content)
+- **Interactivity:** Vanilla JavaScript (modular components in `/js/`)
+- **Assets:** Images hosted locally in `/img/` and optimized (WebP)
 
 ## Project Structure
-- `/*.html`: Individual pages for the home screen and each specific activity.
+- `/*.html`: Individual Spanish pages for the home screen and activities.
+- `/en/*.html`: English versions of all pages.
+- `/blog/*.html`: Blog articles and index (Spanish).
+- `/en/blog/*.html`: Blog articles and index (English).
 - `/css/`:
-    - `base.css`: Shared variables, resets, and common component styles (header, footer).
-    - `[page].css`: Desktop-specific styles for a given page.
-    - `[page]-tablet.css`: Tablet-specific media queries and adjustments.
-    - `[page]-mobile.css`: Mobile-specific media queries and adjustments.
+    - `style.css`: Compiled Tailwind CSS v4 bundle.
+- `/js/`:
+    - `header.js`: Dynamic header injection with language detection and mobile menu logic.
+    - `footer.js`: Dynamic footer injection with language switcher and floating WhatsApp button.
+- `/src/`:
+    - `input.css`: Tailwind CSS source file.
 
 ## Building and Running
-This is a pure static project and does not require a build step.
-- **Development:** Open `index.html` directly in a browser or use a simple static server:
+This project uses Tailwind CSS v4.
+- **Development:** To watch CSS changes, run:
+  - `npx tailwindcss -i ./src/input.css -o ./css/style.css --watch`
+- **Static Server:** 
   - `npx serve .`
   - `python3 -m http.server`
-- **Deployment:** The entire root directory can be served by any static web host.
 
 ## Development Conventions
-- **CSS Naming:** Follows a BEM-inspired convention (e.g., `.header__container`, `.activity-card__title`).
-- **Responsive Design:** Styles are modularized by device type. When modifying layout, ensure changes are reflected or accounted for in the corresponding `-tablet.css` and `-mobile.css` files.
-- **Navigation:** The header and footer are duplicated across HTML files. Any change to the navigation menu must be synchronized across all `.html` files.
-- **External Links:** WhatsApp booking links and social media links are hardcoded in the HTML; verify the phone numbers and handles if updates are needed.
+- **CSS Naming:** Tailwind utility classes are preferred.
+- **Responsive Design:** Mobile-first approach using Tailwind breakpoints (`md:`, `lg:`).
+- **Navigation:** The header and footer are injected dynamically via `/js/header.js` and `/js/footer.js`. Any global changes should be made there.
+- **Language Support:** Detection is based on the URL path (`/en/` segments). Links in the header and footer are automatically adjusted.
+- **External Links:** WhatsApp booking links and social media links are managed in `/js/footer.js`.

@@ -11,23 +11,23 @@
     <meta name="keywords" content="blog paracas, como llegar a paracas, transporte lima paracas, consejos viaje paracas, turismo paracas peru">
     <meta name="robots" content="index, follow">
     <meta name="author" content="SolyMar Paracas">
-<link rel="canonical" href="https://solymarparacas.site/blog/">
-    <link rel="alternate" hreflang="es" href="https://solymarparacas.site/blog/">
-    <link rel="alternate" hreflang="en" href="https://solymarparacas.site/en/blog/">
-    <link rel="alternate" hreflang="x-default" href="https://solymarparacas.site/blog/">
+<link rel="canonical" href="https://solymarparacas.com/blog/">
+    <link rel="alternate" hreflang="es" href="https://solymarparacas.com/blog/">
+    <link rel="alternate" hreflang="en" href="https://solymarparacas.com/en/blog/">
+    <link rel="alternate" hreflang="x-default" href="https://solymarparacas.com/blog/">
 
     <!-- ===== OPEN GRAPH ===== -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://solymarparacas.site/blog/">
+    <meta property="og:url" content="https://solymarparacas.com/blog/">
     <meta property="og:title" content="Blog de Viajes en Paracas | SolyMar Paracas">
     <meta property="og:description" content="Toda la información que necesitas para planificar tu viaje perfecto a Paracas. Guías, consejos y seguridad.">
-    <meta property="og:image" content="https://solymarparacas.site/img/og-solymar-paracas.webp">
+    <meta property="og:image" content="https://solymarparacas.com/img/og-solymar-paracas.jpg">
     <meta property="og:locale" content="es_PE">
     <meta property="og:site_name" content="SolyMar Paracas">
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/base.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -43,86 +43,54 @@
         "name": "SolyMar Paracas",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://solymarparacas.site/img/SolyMar-web.webp"
+          "url": "https://solymarparacas.com/img/SolyMar-web.webp"
         }
       },
-      "image": "https://solymarparacas.site/img/og-solymar-paracas.webp"
+      "image": "https://solymarparacas.com/img/og-solymar-paracas.jpg"
     }
     </script>
-    <style>
-        .blog-hero { padding: 160px 20px 80px; background: var(--primary); color: white; text-align: center; }
-        .blog-section { padding: 80px 20px; max-width: 1400px; margin: 0 auto; }
-        .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem; }
-        
-        .blog-card {
-            position: relative;
-            border-radius: 2rem;
-            overflow: hidden;
-            text-decoration: none;
-            color: #ffffff;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            height: 480px;
-            background-color: var(--surface-container);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .blog-card:hover { transform: translateY(-12px); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); }
-        .blog-card--large { grid-column: span 2; }
-
-        .blog-card__image-wrapper {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;
-        }
-
-        .blog-card__image {
-            width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .blog-card:hover .blog-card__image { transform: scale(1.1); }
-        .blog-card__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 20, 40, 0.9) 0%, rgba(0, 0, 0, 0) 60%); z-index: 1; }
-        .blog-card__content { position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem; z-index: 2; transition: all 0.3s ease; }
-        .blog-card__tag { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #a6c8ff; display: block; margin-bottom: 0.5rem; }
-        .blog-card__title { font-size: 2.25rem; font-weight: 800; margin: 0; letter-spacing: -0.02em; line-height: 1.2; color: #ffffff; }
-        .blog-card__excerpt { font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); margin: 1rem 0 0 0; opacity: 0; max-height: 0; overflow: hidden; transform: translateY(10px); transition: all 0.3s ease; }
-        .blog-card:hover .blog-card__excerpt { opacity: 1; max-height: 100px; transform: translateY(0); }
-        .blog-card:hover .blog-card__content { transform: translateY(-1.5rem); }
-
-        @media (max-width: 1024px) {
-            .blog-grid { grid-template-columns: repeat(2, 1fr); }
-            .blog-card--large { grid-column: span 2; }
-        }
-
-        @media (max-width: 767px) {
-            .blog-grid { grid-template-columns: 1fr; }
-            .blog-card--large { grid-column: span 1; }
-            .blog-card { height: 400px; }
-            .blog-card__title { font-size: 1.75rem; }
-            .blog-card__excerpt { display: none; }
-        }
-    </style>
 </head>
 
-<body>
+<body class="font-sans bg-surface text-on-surface leading-relaxed antialiased overflow-x-hidden pt-16">
     <nav id="header-placeholder"></nav>
 
-    <header class="blog-hero">
-        <h1 style="font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; letter-spacing: -0.03em;">Blog de SolyMar Paracas</h1>
-        <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto; opacity: 0.9;">Tu guía definitiva para explorar Paracas, encontrar el mejor precio en actividades y vivir experiencias inolvidables.</p>
+    <header class="bg-surface-container px-4 sm:px-8 pt-16 pb-14 md:pt-24 md:pb-20">
+        <div class="max-w-[1336px] mx-auto">
+            <h1 class="font-display text-4xl md:text-6xl text-primary leading-[1.04] mb-6 text-balance">Blog de SolyMar Paracas</h1>
+            <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-[56ch]">Tu guía definitiva para explorar Paracas, encontrar el mejor precio en actividades y vivir experiencias inolvidables.</p>
+        </div>
     </header>
 
-    <main class="blog-section">
-        <div class="blog-grid">
-            <!-- Post 1 -->
-            <a href="lima-a-paracas" class="blog-card blog-card--large">
-                <div class="blog-card__image-wrapper">
-                    <img src="../img/Reserva nacional de Paracas.webp" class="blog-card__image" alt="Reserva Nacional de Paracas" loading="lazy" decoding="async" />
-                    <div class="blog-card__overlay"></div>
+    <main class="py-16 md:py-24 px-4 sm:px-8">
+        <div class="max-w-[1336px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
+            <a href="/blog/guia-islas-ballestas" class="group flex flex-col gap-5 md:col-span-2">
+                <div class="h-72 md:h-[420px] overflow-hidden rounded-sm bg-surface-container">
+                    <img src="../img/w/islas-ballestas-1264.webp" srcset="../img/w/islas-ballestas-480.webp 480w, ../img/w/islas-ballestas-960.webp 960w, ../img/w/islas-ballestas-1264.webp 1264w" sizes="100vw" class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" alt="Lancha frente a las Islas Ballestas" loading="eager" decoding="async" />
                 </div>
-                <div class="blog-card__content">
-                    <span class="blog-card__tag">Transporte</span>
-                    <h3 class="blog-card__title">3 formas seguras de llegar a Paracas desde Lima</h3>
-                    <p class="blog-card__excerpt">¿Planeas visitar Paracas desde Miraflores, Barranco o el Cercado? Aquí te mostramos las opciones más seguras y cómodas para tu viaje.</p>
+                <div class="flex flex-col gap-2">
+                    <span class="text-sm text-on-surface-variant">Guías</span>
+                    <h2 class="font-display text-2xl md:text-4xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">Guía completa de las Islas Ballestas 2026</h2>
+                    <p class="text-on-surface-variant leading-relaxed max-w-[60ch]">Precio total con impuestos del muelle, horarios, qué fauna verás y qué llevar.</p>
+                </div>
+            </a>
+            <a href="/blog/lima-a-paracas" class="group flex flex-col gap-5">
+                <div class="h-64 md:h-80 overflow-hidden rounded-sm bg-surface-container">
+                    <img src="../img/w/reserva-nacional-paracas-1264.webp" srcset="../img/w/reserva-nacional-paracas-480.webp 480w, ../img/w/reserva-nacional-paracas-960.webp 960w, ../img/w/reserva-nacional-paracas-1264.webp 1264w" sizes="(min-width: 768px) 50vw, 100vw" class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" alt="Reserva Nacional de Paracas" loading="lazy" decoding="async" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-sm text-on-surface-variant">Transporte</span>
+                    <h2 class="font-display text-2xl md:text-3xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">3 formas seguras de llegar a Paracas desde Lima</h2>
+                    <p class="text-on-surface-variant leading-relaxed max-w-[60ch]">¿Planeas visitar Paracas desde Miraflores, Barranco o el Cercado? Aquí te mostramos las opciones más seguras y cómodas para tu viaje.</p>
+                </div>
+            </a>
+            <a href="/blog/circuito-reserva-nacional-paracas" class="group flex flex-col gap-5">
+                <div class="h-64 md:h-80 overflow-hidden rounded-sm bg-surface-container">
+                    <img src="../img/w/scooter-reserva-paracas-980.webp" srcset="../img/w/scooter-reserva-paracas-480.webp 480w, ../img/w/scooter-reserva-paracas-960.webp 960w, ../img/w/scooter-reserva-paracas-980.webp 980w" sizes="(min-width: 768px) 50vw, 100vw" class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" alt="Circuito de la Reserva Nacional de Paracas" loading="lazy" decoding="async" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-sm text-on-surface-variant">Guía y Mapa</span>
+                    <h2 class="font-display text-2xl md:text-3xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">Circuito de la Reserva Nacional de Paracas: en moto, bicicleta o caminando</h2>
+                    <p class="text-on-surface-variant leading-relaxed max-w-[60ch]">Mapa interactivo y guía punto por punto para recorrer la reserva por tu cuenta.</p>
                 </div>
             </a>
         </div>

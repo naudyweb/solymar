@@ -1,26 +1,215 @@
-# SolyMar Paracas - Agencia de Turismo Aventura
+# SolyMar Paracas - Agencia de Turismo y Aventura / Adventure Travel Agency
 
-SolyMar Paracas es una agencia de turismo líder ubicada en Paracas, Pisco (Perú), especializada en experiencias personalizadas de aventura, naturaleza y deportes extremos en la Reserva Nacional de Paracas y las Islas Ballestas.
+> SolyMar Paracas es una agencia oficial de turismo de aventura con sede en El Chaco, Paracas (Ica, Perú), registrada ante MINCETUR. Especialistas en tours marítimos, desierto, reservas naturales y deportes de aventura.
+> SolyMar Paracas is a licensed adventure tour operator based in El Chaco, Paracas (Ica, Peru), registered with MINCETUR. Specializing in marine excursions, desert adventures, natural reserves, and extreme sports.
 
-## Información de Contacto
-- **Teléfono/WhatsApp:** [+51 961 542 547](https://api.whatsapp.com/send?phone=+51961542547)
-- **Ubicación:** El Chaco, Paracas, Ica, Perú
-- **Sitio Web:** https://solymarparacas.site/
-- **Redes Sociales:** Facebook, Instagram y Twitter (@solymarparacas)
+---
 
-## Experiencias y Tours Principales
+## 📞 Información de Contacto / Contact Information
 
-- **[Snorkel en Paracas](https://solymarparacas.site/snorkel.html)**: Observación de lobos marinos, pingüinos y biodiversidad marina en aguas cristalinas. Equipo incluido.
-- **[Buceo (Bautismo PADI)](https://solymarparacas.site/buceo.html)**: Inmersiones para principiantes y certificados en el Océano Pacífico. Instructores certificados.
-- **[Parapente](https://solymarparacas.site/parapente.html)**: Vuelos tándem de 5-12 minutos de adrenalina pura sobre Playa Supay y el Cerro El Maldito.
-- **[Trekking (Golden Shadows)](https://solymarparacas.site/trekking.html)**: Caminatas por acantilados milenarios y paisajes desérticos al atardecer.
-- **[Islas Ballestas](https://solymarparacas.site/islas-ballestas.html)**: Tour en lancha para ver lobos marinos, pingüinos de Humboldt y el geoglifo "El Candelabro".
-- **[Reserva Nacional de Paracas](https://solymarparacas.site/reserva-nacional-paracas.html)**: Tour terrestre por playas emblemáticas (Playa Roja, Yumaque) y miradores naturales.
-- **[ATV y Go Karts](https://solymarparacas.site/atv-gokart.html)**: Recorridos en cuatrimotos y karts por las dunas del desierto.
-- **[Adrenarena Park](https://solymarparacas.site/adrenarena.html)**: Parque de aventura extrema con múltiples actividades de adrenalina.
+- **WhatsApp / Teléfono:** [+51 961 542 547](https://api.whatsapp.com/send?phone=+51961542547)
+- **Email:** reservas@solymarparacas.com
+- **Instagram:** [@solymarparacas](https://www.instagram.com/solymarparacas/)
+- **Ubicación / Office Location:** Malecón El Chaco s/n, Paracas, Pisco, Ica, Perú — [Google Maps Pin](https://maps.google.com/?q=SolyMar+Paracas+Peru)
+- **Sitio Web Oficial:** [https://solymarparacas.com/](https://solymarparacas.com/) (Español) | [https://solymarparacas.com/en/](https://solymarparacas.com/en/) (English)
 
-## Valores Diferenciales
-- Seguridad total con equipos modernos y guías certificados.
-- Atención personalizada 24/7.
-- Expertos locales apasionados por la conservación y el turismo sostenible.
-- Reserva directa y segura a través de WhatsApp.
+---
+
+## 💳 Medios de Pago y Garantías / Payment Methods & Guarantees
+
+### Español
+- **Formas de pago:** Tarjeta de crédito/débito a través de enlace de pago seguro online, o efectivo a la llegada (Soles PEN o Dólares USD).
+- **Cancelación Flexible:** Cancelación gratuita hasta 24 horas antes del tour sin penalidad.
+- **Garantía por Clima:** Reembolso del 100% o reprogramación si Capitanía de Puerto o SERNANP cierran el puerto/reserva por oleaje o viento.
+- **Recojo Gratuito:** Recojo incluido en todos los hoteles, hostales y alojamientos de Paracas pueblo / El Chaco.
+- **Custodia de Equipaje:** Custodia gratuita de maletas en nuestra oficina del malecón para quienes viajan en buses nocturnos (Cruz del Sur, Peru Hop).
+
+### English
+- **Payment Options:** Pay by credit/debit card via secure payment link or cash on arrival (Peruvian Soles PEN or US Dollars USD).
+- **Flexible Cancellation:** Free cancellation up to 24 hours prior to tour departure with no penalty.
+- **Weather Guarantee:** 100% full refund or free rescheduling if the port authority or SERNANP closes the bay/reserve due to weather.
+- **Complimentary Pick-Up:** Free pick-up from any hotel, hostel, or Airbnb in Paracas town / El Chaco area.
+- **Luggage Storage:** Free luggage storage at our boardwalk office for travelers catching evening night buses (Cruz del Sur, Peru Hop).
+
+---
+
+## 🇵🇪 Catálogo de Tours Activos y Precios (Español)
+
+> ⚠️ **Aviso de Servicio:** El sobrevuelo a las Líneas de Nazca desde el Aeropuerto de Pisco se encuentra **desactivado**. Para realizar el sobrevuelo en Nazca o Ica, ofrecemos servicio de [Transporte Personalizado](https://solymarparacas.com/transporte-personalizado) puerta a puerta.
+
+1. **[Islas Ballestas](https://solymarparacas.com/islas-ballestas)**
+   - **Precio:** S/ 80 (≈ US$ 22) por persona
+   - **No incluye:** S/ 16 en efectivo (S/ 11 SERNANP + S/ 5 tasa de muelle)
+   - **Horario:** Salidas diarias 8:00 AM y 10:00 AM (Duración: 2h)
+   - **Incluye:** Lancha a motor con chaleco salvavidas, guía bilingüe (inglés/español), avistamiento de lobos marinos, pingüinos de Humboldt, aves guaneras y El Candelabro.
+
+2. **[Reserva Nacional de Paracas](https://solymarparacas.com/reserva-nacional-paracas)**
+   - **Precio:** S/ 50 (≈ US$ 14) por persona
+   - **No incluye:** S/ 11 en efectivo (boleto de ingreso SERNANP)
+   - **Horario:** Diario 11:00 AM (Duración: 3.5h)
+   - **Incluye:** Miniván turística climatizada, guía bilingüe, paradas en Playa Roja, Mirador La Catedral, Yumaque e Istmo Península.
+
+3. **[Combo Full Day: Ballestas + Reserva](https://solymarparacas.com/ballestas-y-reserva-full-day)**
+   - **Precio:** S/ 120 (≈ US$ 33) por persona
+   - **No incluye:** S/ 22 en efectivo (S/ 17 boleto conjunto SERNANP + S/ 5 tasa de muelle)
+   - **Horario:** Diario 8:00 AM a 2:30 PM (Duración: 6.5h)
+   - **Incluye:** Tour en lancha Islas Ballestas + circuito terrestre completo por la Reserva Nacional + tiempo para almorzar en Caleta Lagunillas. Retorno con tiempo para buses nocturnos.
+
+4. **[Buggies y Sandboard en Huacachina](https://solymarparacas.com/buggies-sandboard-huacachina)**
+   - **Precio:** S/ 70 (≈ US$ 19) por persona
+   - **No incluye:** S/ 4 en efectivo (impuesto municipal de dunas)
+   - **Horario:** Turno estelar al atardecer 4:00 PM (Duración: 2h)
+   - **Incluye:** Paseo en carro tubular 4x4 por dunas gigantes, tablas de sandboard e instrucción para deslizarse, parada fotográfica para ver el atardecer.
+
+5. **[Ruta del Pisco - Bodegas de Ica](https://solymarparacas.com/ruta-del-pisco-bodegas-ica)**
+   - **Precio:** S/ 80 (≈ US$ 22) por persona
+   - **Horario:** Diario 10:00 AM (Duración: 4h)
+   - **Incluye:** Visita guiada a bodega artesanal tradicional y bodega industrial histórica (El Catador / Tacama), degustación de piscos, vinos y cremas, historia vitivinícola peruana.
+
+6. **[Full Day Paracas + Huacachina](https://solymarparacas.com/paracas-huacachina-full-day)**
+   - **Precio:** S/ 190 (≈ US$ 52) por persona
+   - **No incluye:** Tasas de muelle y dunas (aprox. S/ 20)
+   - **Horario:** Diario 8:00 AM a 6:30 PM (Duración: 10h)
+   - **Incluye:** Islas Ballestas en lancha + circuito Reserva Nacional + traslado a Ica + Buggies y Sandboard en Huacachina al atardecer + retorno a Paracas o bajada en Huacachina con equipaje seguro.
+
+7. **[Parapente en Paracas](https://solymarparacas.com/parapente)**
+   - **Precio:** S/ 250 (≈ US$ 68) por persona
+   - **No incluye:** S/ 11 en efectivo (ingreso a la Reserva SERNANP)
+   - **Horario:** 12:00 PM a 4:00 PM según viento (Duración: 15–20 min de vuelo tándem, 2h total)
+   - **Incluye:** Vuelo biplaza con piloto instructor certificado APVL sobre Cerro Maldito y acantilados de Playa Supay, fotos y videos en alta definición incluidos.
+
+8. **[Buceo (Bautismo PADI)](https://solymarparacas.com/buceo)**
+   - **Precio:** S/ 400 (≈ US$ 109) por persona
+   - **Horario:** Diario 9:00 AM (Duración: 3h)
+   - **Incluye:** Clase teórica, práctica en aguas confinadas e inmersión en mar abierto en la Reserva Marina, equipo PADI completo (traje de neopreno, tanque, regulador), máximo 2 personas por instructor PADI.
+
+9. **[Kayak y Paddle en Paracas](https://solymarparacas.com/kayak-paddle-paracas)**
+   - **Precio:** S/ 60 (≈ US$ 16) por persona
+   - **Horario:** 6:30 AM a 9:00 AM (las horas de menor oleaje) (Duración: 1.5 a 2h)
+   - **Incluye:** Kayaks simples o dobles / tablas SUP, chaleco salvavidas reglamentario, inducción técnica y remo por la apacible Bahía de Paracas con avistamiento de aves y flamencos.
+
+10. **[Mini Buggies Paracas (Manejo Propio)](https://solymarparacas.com/mini-buggies-paracas)**
+    - **Precio:** S/ 120 (≈ US$ 33) por vehículo buggy (para 2 personas)
+    - **Horario:** Turnos por la mañana y tarde (Duración: 2h)
+    - **Incluye:** Buggy 4x4 biplaza, casco, antiparras para polvo, guía líder en vehículo guía y recorrido por senderos de arena y vistas del desierto costero.
+
+11. **[Tambo Colorado](https://solymarparacas.com/tambo-colorado)**
+    - **Precio:** S/ 80 (≈ US$ 22) por persona
+    - **No incluye:** S/ 5 en efectivo (entrada arqueológica)
+    - **Horario:** Diario 9:00 AM (Duración: 3h)
+    - **Incluye:** Traslado ida y vuelta al valle de Pisco, visita guiada al palacio inca mejor conservado de la costa con sus muros pintados en ocre y rojo.
+
+12. **[YakuPark Paracas (Parque Acuático)](https://solymarparacas.com/yakupark-paracas)**
+    - **Precio:** S/ 50 (≈ US$ 14) por persona
+    - **Horario:** 9:00 AM a 5:00 PM turnos rotativos (Duración: 45 min)
+    - **Incluye:** Circuito gigante de juegos y obstáculos inflables sobre el mar en la playa de El Chaco, chaleco salvavidas obligatorio y socorristas acuáticos.
+
+13. **[Trekking Sombras Doradas (Golden Shadows)](https://solymarparacas.com/trekking)**
+    - **Precio:** S/ 120 (≈ US$ 33) por persona
+    - **No incluye:** S/ 11 en efectivo (ingreso a la Reserva Nacional SERNANP)
+    - **Horario:** Diario 3:30 PM (retorno 6:30–7:00 PM, perfecto para buses nocturnos) (Duración: 3h)
+    - **Incluye:** Traslado 4x4, guía bilingüe especializado, caminata guiada de 5 km por Kori-Apu, Cuesta Farallones, Punta Lobos, Dos Cruces y Playa Mendieta con puesta de sol en el Pacífico.
+
+14. **[Adrenarena Park](https://solymarparacas.com/adrenarena)**
+    - **Precio:** S/ 150 (≈ US$ 40) por persona
+    - **Horario:** Previa reserva matutina o vespertina (Duración: 3 a 4h)
+    - **Incluye:** Experiencia extrema en parque privado de dunas gigantes, circuitos todoterreno 4x4, sandboarding extremo y tirolesa/actividades de aventura.
+
+15. **[Transporte Personalizado y Traslados Privados](https://solymarparacas.com/transporte-personalizado)**
+    - **Precio:** A cotizar según ruta y número de pasajeros (tarifas desde S/ 150 / US$ 40)
+    - **Rutas frecuentes:** Lima ⇄ Paracas, Paracas ⇄ Huacachina / Ica, Paracas ⇄ Nazca (ideal para sobrevolar las líneas en el aeródromo de Nazca), traslados al Aeropuerto Jorge Chávez.
+    - **Incluye:** Vehículos modernos climatizados, conductor profesional, paradas turísticas panorámicas personalizadas a solicitud del cliente.
+
+---
+
+## 🇺🇸 Active Tours & Price Catalog (English)
+
+> ⚠️ **Service Notice:** Direct scenic flights over the Nazca Lines departing from Pisco Airport are **currently deactivated**. For travelers wishing to see the Nazca Lines directly at the Nazca or Ica airfields, we provide private door-to-door [Custom Transfers](https://solymarparacas.com/en/transporte-personalizado).
+
+1. **[Ballestas Islands Speedboat Tour](https://solymarparacas.com/en/islas-ballestas)**
+   - **Price:** S/ 80 (≈ US$ 22) per person
+   - **Extra fees:** S/ 16 cash (SERNANP reserve fee S/ 11 + port pier tax S/ 5)
+   - **Schedule:** Daily 8:00 AM & 10:00 AM (Duration: 2 hours)
+   - **Includes:** High-speed modern boat, certified bilingual guide (English/Spanish), life vest, close-up viewing of Humboldt penguins, sea lions, marine birds, and the enigmatic Candelabra geoglyph.
+
+2. **[Paracas National Reserve Tour](https://solymarparacas.com/en/reserva-nacional-paracas)**
+   - **Price:** S/ 50 (≈ US$ 14) per person
+   - **Extra fees:** S/ 11 cash (SERNANP entrance fee)
+   - **Schedule:** Daily 11:00 AM (Duration: 3.5 hours)
+   - **Includes:** Comfortable air-conditioned tourist van, bilingual nature & geology guide, visits to the iconic Red Beach (Playa Roja), Cathedral viewpoint, Yumaque beach, and the desert peninsula.
+
+3. **[Full Day Combo: Ballestas Islands + Paracas Reserve](https://solymarparacas.com/en/ballestas-y-reserva-full-day)**
+   - **Price:** S/ 120 (≈ US$ 33) per person
+   - **Extra fees:** S/ 22 cash (combined SERNANP entrance S/ 17 + pier tax S/ 5)
+   - **Schedule:** Daily 8:00 AM to 2:30 PM (Duration: 6.5 hours)
+   - **Includes:** Morning Ballestas speedboat tour + land circuit of Paracas National Reserve + free lunch time at Lagunillas coastal village. Returns with plenty of time for evening buses.
+
+4. **[Huacachina Dune Buggy & Sandboarding](https://solymarparacas.com/en/buggies-sandboard-huacachina)**
+   - **Price:** S/ 70 (≈ US$ 19) per person
+   - **Extra fees:** S/ 4 cash (municipal dune conservation fee)
+   - **Schedule:** Prime sunset departure at 4:00 PM (Duration: 2 hours)
+   - **Includes:** Thrilling 4x4 dune buggy ride over massive South American dunes, sandboard equipment and coaching (lay-down or stand-up), and golden hour photo stops.
+
+5. **[Pisco & Wine Route - Ica Bodegas](https://solymarparacas.com/en/ruta-del-pisco-bodegas-ica)**
+   - **Price:** S/ 80 (≈ US$ 22) per person
+   - **Schedule:** Daily 10:00 AM (Duration: 4 hours)
+   - **Includes:** Guided tours of both traditional artisanal distilleries and historic industrial wineries (El Catador / Tacama), generous tastings of Pisco, wines, and creams, and local culinary culture.
+
+6. **[Paracas + Huacachina Full Day](https://solymarparacas.com/en/paracas-huacachina-full-day)**
+   - **Price:** S/ 190 (≈ US$ 52) per person
+   - **Extra fees:** Pier and dune taxes (approx. S/ 20)
+   - **Schedule:** Daily 8:00 AM to 6:30 PM (Duration: 10 hours)
+   - **Includes:** Ballestas Islands boat tour + Paracas National Reserve + transfer to Ica + sunset dune buggy & sandboarding in Huacachina + return to Paracas or drop-off in Huacachina. Luggage travels safely onboard.
+
+7. **[Paragliding in Paracas Reserve](https://solymarparacas.com/en/parapente)**
+   - **Price:** S/ 250 (≈ US$ 68) per person
+   - **Extra fees:** S/ 11 cash (SERNANP reserve gate fee)
+   - **Schedule:** 12:00 PM to 4:00 PM wind window (Duration: 15–20 min flight, 2 hours total)
+   - **Includes:** 1-on-1 tandem flight with certified APVL instructor pilot over Cerro Maldito and Supay Beach cliffs, complete safety harness, and HD action video/photos included.
+
+8. **[Scuba Diving (PADI Discovery Dive)](https://solymarparacas.com/en/buceo)**
+   - **Price:** S/ 400 (≈ US$ 109) per person
+   - **Schedule:** Daily 9:00 AM (Duration: 3 hours)
+   - **Includes:** Theory briefing, confined shallow water practice, and Pacific open water dive with certified PADI divemaster (max 2 students per instructor), full scuba wetsuit and gear provided.
+
+9. **[Kayak & Stand Up Paddle Tour](https://solymarparacas.com/en/kayak-paddle-paracas)**
+   - **Price:** S/ 60 (≈ US$ 16) per person
+   - **Schedule:** 6:30 AM to 9:00 AM (best calm morning ocean conditions) (Duration: 1.5–2 hours)
+   - **Includes:** High quality single/double kayaks or SUP board, life vest, safety briefing, paddling through tranquil Paracas Bay with seabird encounters.
+
+10. **[Mini Buggies Paracas (Self-Drive Dune Adventure)](https://solymarparacas.com/en/mini-buggies-paracas)**
+    - **Price:** S/ 120 (≈ US$ 33) per buggy (seats 2 persons)
+    - **Schedule:** Scheduled morning and afternoon sessions (Duration: 2 hours)
+    - **Includes:** 2-seater automatic 4x4 buggy, helmets, dust goggles, lead guide with support vehicle along designated desert and coastal trails.
+
+11. **[Tambo Colorado Inca Ruins](https://solymarparacas.com/en/tambo-colorado)**
+    - **Price:** S/ 80 (≈ US$ 22) per person
+    - **Extra fees:** S/ 5 cash (archaeological site entrance ticket)
+    - **Schedule:** Daily 9:00 AM (Duration: 3 hours)
+    - **Includes:** Round-trip transport to the Pisco River Valley, certified history guide exploring the best-preserved coastal Inca adobe fortress with original red and yellow wall pigments.
+
+12. **[YakuPark Paracas (Floating Water Obstacle Park)](https://solymarparacas.com/en/yakupark-paracas)**
+    - **Price:** S/ 50 (≈ US$ 14) per person
+    - **Schedule:** 9:00 AM to 5:00 PM rolling sessions (Duration: 45 min)
+    - **Includes:** Massive floating obstacle course on the calm waters of El Chaco beach, certified life vest, on-deck lifeguards. Suitable for ages 7 and up.
+
+13. **[Golden Shadows Trek (Paracas Sunset Hike)](https://solymarparacas.com/en/trekking)**
+    - **Price:** S/ 120 (≈ US$ 33) per person
+    - **Extra fees:** S/ 11 cash (SERNANP reserve gate fee)
+    - **Schedule:** Daily 3:30 PM (back by 6:30–7:00 PM, ideal before night buses) (Duration: 3 hours)
+    - **Includes:** 4x4 round-trip transfer, expert bilingual hiking guide, 5 km trail along Kori-Apu (Golden Mountain), Farallones slopes, Punta Lobos, Dos Cruces, and Mendieta Beach sunset. Small group (max 8–10 people).
+
+14. **[Adrenarena Mega Dunes Park](https://solymarparacas.com/en/adrenarena)**
+    - **Price:** S/ 150 (≈ US$ 40) per person
+    - **Schedule:** Morning or afternoon slots upon booking (Duration: 3–4 hours)
+    - **Includes:** Extreme desert adventure inside a private mega dunes natural reserve, advanced 4x4 trails, professional high-speed sandboarding, and adrenaline activities.
+
+15. **[Private Custom Transfers & Door-to-Door Transport](https://solymarparacas.com/en/transporte-personalizado)**
+    - **Price:** Custom quote based on route & passenger count (rates starting from S/ 150 / US$ 40)
+    - **Popular Routes:** Lima ⇄ Paracas, Paracas ⇄ Huacachina / Ica, Paracas ⇄ Nazca (connect directly with Nazca airfield flights), Jorge Chávez Airport transfers.
+    - **Includes:** Modern air-conditioned private vehicles, licensed professional drivers, luggage assistance, and customized scenic photo stops upon request.
+
+---
+
+## 🚌 Bus Connections & Night Departures / Conexión de Buses
+All morning and afternoon tours conclude with ample time to check out, dine in El Chaco, and board the evening long-distance buses (Cruz del Sur, Peru Hop) to Lima (3.5h), Huacachina/Ica (1h), or Arequipa (12h). Free luggage storage is available all day at the SolyMar Paracas boardwalk office.
