@@ -216,7 +216,9 @@
     <main>
         <!-- Hero -->
         <section class="relative min-h-[min(calc(100dvh-4rem),880px)] flex items-end overflow-hidden bg-deep">
-            <img class="absolute inset-0 w-full h-full object-cover" src="../img/w/reserva-nacional-paracas-1264.webp" srcset="../img/w/reserva-nacional-paracas-480.webp 480w, ../img/w/reserva-nacional-paracas-960.webp 960w, ../img/w/reserva-nacional-paracas-1264.webp 1264w" sizes="100vw" alt="Cliffs of the Paracas National Reserve above the ocean" width="1264" height="848" fetchpriority="high" decoding="async" />
+            <div id="hero-slider" class="absolute inset-0 w-full h-full overflow-hidden" aria-label="Photo gallery">
+                <img class="hero-slide is-active" src="../img/w/reserva-nacional-paracas-1264.webp" srcset="../img/w/reserva-nacional-paracas-480.webp 480w, ../img/w/reserva-nacional-paracas-960.webp 960w, ../img/w/reserva-nacional-paracas-1264.webp 1264w" sizes="100vw" alt="Cliffs of the Paracas National Reserve above the ocean" width="1264" height="848" fetchpriority="high" decoding="async" />
+            </div>
             <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/55 to-deep/10"></div>
             <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-deep/70 to-transparent"></div>
             <svg viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="candelabro-draw hidden md:block absolute right-[6%] top-1/2 -translate-y-1/2 h-[62%] w-auto text-sand/90"><path pathLength="1" vector-effect="non-scaling-stroke" d="M50 172V14M34 172H66M50 128C31 128 22 116 22 96V42M50 128C69 128 78 116 78 96V42M50 76L40 63M50 76L60 63M22 66L13 55M22 66L31 55M78 66L69 55M78 66L87 55"/></svg>
@@ -665,6 +667,7 @@
     <footer class="footer"></footer>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/hero-slider.js" defer></script>
 </body>
 
 </html>

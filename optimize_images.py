@@ -10,7 +10,7 @@ hand-written pages). Re-run after adding or replacing a photo:
 import os
 from PIL import Image
 
-WIDTHS = (480, 960, 1600)
+WIDTHS = (480, 960, 1264, 1600)
 QUALITY = 76
 OUT_DIR = "img/w"
 SOURCES = [
@@ -19,6 +19,8 @@ SOURCES = [
     "img/huacachina.jpg", "img/islas-ballestas.jpg", "img/kayak-paddle.jpg",
     "img/parapente.jpg", "img/reserva-nacional-paracas.jpg", "img/ruta-del-pisco.jpg",
     "img/scooter-reserva-paracas.png", "img/tambo-colorado.jpg", "img/trekking.jpg",
+    "img/trekking-2.jpg", "img/trekking-3.jpg", "img/trekking-4.jpg",
+    "img/trekking-5.jpg", "img/trekking-6.jpg",
     "img/yakupark.jpg",
 ]
 

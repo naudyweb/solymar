@@ -170,10 +170,12 @@
     <main>
         <!-- Hero -->
         <section class="relative min-h-[min(78dvh,760px)] flex items-end overflow-hidden bg-deep">
-            <img class="absolute inset-0 w-full h-full object-cover" src="img/w/islas-ballestas-1264.webp" srcset="img/w/islas-ballestas-480.webp 480w, img/w/islas-ballestas-960.webp 960w, img/w/islas-ballestas-1264.webp 1264w" sizes="100vw" alt="Tour a las Islas Ballestas desde Paracas" fetchpriority="high" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/55 to-deep/10"></div>
-            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-deep/80 to-transparent"></div>
-            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-24 pb-14 md:pb-20">
+            <div id="hero-slider" class="absolute inset-0 w-full h-full overflow-hidden" aria-label="Galería de fotos">
+                <img class="hero-slide is-active" src="img/w/islas-ballestas-1264.webp" srcset="img/w/islas-ballestas-480.webp 480w, img/w/islas-ballestas-960.webp 960w, img/w/islas-ballestas-1264.webp 1264w" sizes="100vw" alt="Tour a las Islas Ballestas desde Paracas" fetchpriority="high" decoding="async" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/55 to-deep/10 pointer-events-none"></div>
+            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-deep/80 to-transparent pointer-events-none"></div>
+            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-24 pb-14 md:pb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
                 <div class="max-w-[860px] text-white">
                     <nav aria-label="Breadcrumb" class="rise-in text-sm text-white/75 mb-5">
                         <a href="./" class="hover:text-white hover:underline">Inicio</a>
@@ -580,6 +582,7 @@
 
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/hero-slider.js" defer></script>
 </body>
 
 </html>
