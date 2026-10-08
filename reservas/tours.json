@@ -101,6 +101,24 @@
     "url_en": "https://solymarparacas.com/en/adrenarena"
   },
   {
+    "slug": "buggies-sandboard-huacachina-desde-paracas",
+    "category": "desierto",
+    "category_order": 1,
+    "category_label_es": "Desierto",
+    "category_label_en": "Desert",
+    "title_es": "Buggies y Sandboard en Huacachina desde Paracas",
+    "title_en": "Huacachina Dune Buggy & Sandboarding from Paracas",
+    "price": "S/ 100",
+    "price_val": "100",
+    "price_cur": "PEN",
+    "price_options": [],
+    "quote_only": false,
+    "schedule_es": "* Incluye traslado desde Paracas a Huacachina. Turnos recomendados a las 4:00 PM y 4:30 PM para disfrutar de la puesta del sol.",
+    "schedule_en": "* Includes transfer from Paracas to Huacachina. Best times are 4:00 PM and 4:30 PM to enjoy the sunset.",
+    "url_es": "https://solymarparacas.com/buggies-sandboard-huacachina",
+    "url_en": "https://solymarparacas.com/en/buggies-sandboard-huacachina"
+  },
+  {
     "slug": "ballestas-y-reserva-full-day",
     "category": "desierto",
     "category_order": 1,
