@@ -1,28 +1,44 @@
 @import "tailwindcss";
 
-/* Identidad "desierto + Humboldt": el desierto de Paracas cae directo al mar frío.
-   Neutros fríos (garúa) para la página; la duna (surface-container) es un acento
-   de sección usado con moderación; el flamenco (tertiary) es el único acento de UI
-   y solo marca precios y botones de reserva. */
+/* Identidad "Raus" (ver design.md): diario de viaje sobre papel crema. Charcoal es
+   el único color de texto; Pine (primary) solo para logo, titular del hero y enlaces;
+   Marigold (tertiary) es el único acento fuerte y solo marca los botones de reserva
+   y el bloque de reserva final. Sin sombras: la profundidad sale de crema sobre crema. */
 @theme {
-  --color-primary: #0a3d52;
-  --color-primary-container: #12607a;
-  --color-secondary: #1f6a80;
-  --color-tertiary: #b4435a;
-  --color-tertiary-container: #9c3549;
-  --color-on-tertiary: #ffffff;
-  --color-surface: #eef1ef;
-  --color-surface-container: #e4dccb;
-  --color-surface-container-low: #f6f8f7;
-  --color-on-surface: #14232b;
-  --color-on-surface-variant: #4a5a62;
-  --color-sand: #d8b98a;
-  /* Fondo oscuro de bandas y overlays sobre foto: es oscuro en ambos modos
-     (`primary` se aclara en modo oscuro porque se usa como color de texto). */
-  --color-deep: #0a3d52;
+  --color-primary: #006434;
+  --color-primary-container: #004d28;
+  --color-secondary: #23212c;
+  --color-tertiary: #fcbd1c;
+  --color-tertiary-container: #eaa900;
+  --color-on-tertiary: #23212c;
+  --color-surface: #f7f0e1;
+  --color-surface-container: #efe4cc;
+  --color-surface-container-low: #ffffff;
+  --color-on-surface: #23212c;
+  --color-on-surface-variant: #57535f;
 
-  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --text-subheading: 1.125rem;
+  --text-subheading--line-height: 1.22;
+  --text-subheading--letter-spacing: -0.01em;
+  --text-heading-sm: 1.375rem;
+  --text-heading-sm--line-height: 1.15;
+  --text-heading-sm--letter-spacing: -0.015em;
+  --text-heading: 1.75rem;
+  --text-heading--line-height: 1.07;
+  --text-heading--letter-spacing: -0.015em;
+  --text-heading-lg: 2.25rem;
+  --text-heading-lg--line-height: 1;
+  --text-heading-lg--letter-spacing: -0.02em;
+  --text-display: 2.5rem;
+  --text-display--line-height: 0.95;
+  --text-display--letter-spacing: -0.02em;
+
+  --radius-chip: 12px;
+  --radius-card: 20px;
+  --radius-hero: 40px;
 
   --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -31,43 +47,39 @@
 @source "../js/**/*.js";
 @source "../generate_pages.py";
 
-/* Modo oscuro. Mismos tokens, valores de noche en el Pacífico; el flamenco se
-   aclara y su texto pasa a oscuro para mantener contraste AA en los botones.
+/* Modo oscuro: la misma paleta de noche, carbón cálido en vez de crema. Marigold
+   no cambia (sigue con texto Charcoal); Pine se aclara para leerse sobre oscuro.
    Por defecto sigue al sistema; el botón del header fija <html data-theme="light|dark">
    (guardado en localStorage) y eso tiene prioridad. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --color-primary: #8fcbe0;
-    --color-primary-container: #b5dfee;
-    --color-secondary: #7cc0d2;
-    --color-tertiary: #e8899b;
-    --color-tertiary-container: #f0a3b2;
-    --color-on-tertiary: #2a0d14;
-    --color-surface: #0e171c;
-    --color-surface-container: #1f1b16;
-    --color-surface-container-low: #131e24;
-    --color-on-surface: #e6ecee;
-    --color-on-surface-variant: #a9b8bf;
-    --color-sand: #c9a878;
-    --color-deep: #06202b;
+    --color-primary: #7fd6a2;
+    --color-primary-container: #a6e6bf;
+    --color-secondary: #f7f0e1;
+    --color-tertiary: #fcbd1c;
+    --color-tertiary-container: #ffcf4d;
+    --color-on-tertiary: #23212c;
+    --color-surface: #1c1a22;
+    --color-surface-container: #26232d;
+    --color-surface-container-low: #2e2b36;
+    --color-on-surface: #f7f0e1;
+    --color-on-surface-variant: #c9c0ad;
   }
 }
 :root[data-theme="dark"] {
     color-scheme: dark;
-    --color-primary: #8fcbe0;
-    --color-primary-container: #b5dfee;
-    --color-secondary: #7cc0d2;
-    --color-tertiary: #e8899b;
-    --color-tertiary-container: #f0a3b2;
-    --color-on-tertiary: #2a0d14;
-    --color-surface: #0e171c;
-    --color-surface-container: #1f1b16;
-    --color-surface-container-low: #131e24;
-    --color-on-surface: #e6ecee;
-    --color-on-surface-variant: #a9b8bf;
-    --color-sand: #c9a878;
-    --color-deep: #06202b;
+    --color-primary: #7fd6a2;
+    --color-primary-container: #a6e6bf;
+    --color-secondary: #f7f0e1;
+    --color-tertiary: #fcbd1c;
+    --color-tertiary-container: #ffcf4d;
+    --color-on-tertiary: #23212c;
+    --color-surface: #1c1a22;
+    --color-surface-container: #26232d;
+    --color-surface-container-low: #2e2b36;
+    --color-on-surface: #f7f0e1;
+    --color-on-surface-variant: #c9c0ad;
 }
 
 /* `dark:` sigue la misma regla: sistema salvo que el usuario elija. */
@@ -87,6 +99,13 @@
     scroll-padding-top: 5rem;
     color-scheme: light;
   }
+  body {
+    font-feature-settings: "ss01";
+  }
+  strong,
+  b {
+    font-weight: 500;
+  }
   :focus-visible {
     outline: 2px solid var(--color-secondary);
     outline-offset: 3px;
@@ -98,23 +117,7 @@
 
 @utility font-display {
   font-family: var(--font-display);
-  font-stretch: 125%;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-/* Candelabro de Paracas: se dibuja una sola vez al cargar. */
-@utility candelabro-draw {
-  & path {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 0;
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    & path {
-      stroke-dashoffset: 1;
-      animation: candelabro-draw 2.4s var(--ease-out-soft) 0.3s forwards;
-    }
-  }
+  font-weight: 300;
 }
 
 @utility rise-in {
@@ -122,12 +125,6 @@
     opacity: 0;
     animation: rise-in 0.9s var(--ease-out-soft) forwards;
     animation-delay: calc(var(--i, 0) * 120ms);
-  }
-}
-
-@keyframes candelabro-draw {
-  to {
-    stroke-dashoffset: 0;
   }
 }
 

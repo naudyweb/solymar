@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const pathPrefix = isEn ? (isBlog ? "../../" : "../") : (isBlog ? "../" : "");
         const baseNavPath = `${pathPrefix}${langPath}`;
         const homePath = baseNavPath || "./";
-        const link = "text-on-surface-variant transition-colors hover:text-primary";
+        const link = "text-sm text-on-surface transition-colors hover:text-primary";
         const tourItems = [
             ["islas-ballestas", t.tours.ballestas],
             ["reserva-nacional-paracas", t.tours.reserva],
@@ -86,41 +86,41 @@ document.addEventListener("DOMContentLoaded", () => {
             ["transporte-personalizado", t.tours.traslados]
         ].map(([href, label]) => `<li><a class="${link}" href="${baseNavPath}${href}">${label}</a></li>`).join("");
 
-        footerContainer.className = "bg-surface-container text-on-surface px-4 sm:px-8 pt-20";
+        footerContainer.className = "bg-surface text-on-surface px-4 sm:px-8 pt-24";
         footerContainer.innerHTML = `
-            <div class="max-w-[1336px] mx-auto grid grid-cols-1 gap-14 pb-16 md:grid-cols-12 md:gap-10">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 gap-14 pb-16 md:grid-cols-12 md:gap-10">
                 <div class="md:col-span-5 flex flex-col gap-6 max-w-[420px]">
                     <a href="${homePath}" class="self-start">
-                        <img alt="SolyMar Paracas" class="h-12 w-auto dark:box-content dark:bg-[#eef1ef] dark:rounded-full dark:px-3 dark:py-1" width="310" height="100" loading="lazy" decoding="async" src="${pathPrefix}img/SolyMar-web.png" />
+                        <img alt="SolyMar Paracas" class="h-10 w-auto dark:box-content dark:bg-on-surface dark:rounded-full dark:px-3 dark:py-1" width="310" height="100" loading="lazy" decoding="async" src="${pathPrefix}img/SolyMar-web.png" />
                     </a>
-                    <p class="text-on-surface-variant leading-relaxed">${t.description}</p>
-                    <div class="flex flex-col gap-3 font-medium">
+                    <p class="text-sm text-on-surface-variant leading-relaxed">${t.description}</p>
+                    <div class="flex flex-col gap-3 text-sm">
                         <a href="tel:+51961542547" class="inline-flex items-center gap-3 hover:text-primary">
-                            <span class="material-symbols-outlined text-primary" aria-hidden="true">call</span>+51 961 542 547
+                            <span class="material-symbols-outlined text-on-surface" aria-hidden="true">call</span>+51 961 542 547
                         </a>
                         <span class="inline-flex items-center gap-3">
-                            <span class="material-symbols-outlined text-primary" aria-hidden="true">location_on</span>El Chaco, Paracas, Ica
+                            <span class="material-symbols-outlined text-on-surface" aria-hidden="true">location_on</span>El Chaco, Paracas, Ica
                         </span>
                     </div>
                     <div class="flex gap-5">
-                        <a class="text-primary transition-opacity hover:opacity-70" href="https://facebook.com/solymarparacas" target="_blank" rel="noopener" aria-label="Facebook">
+                        <a class="text-on-surface transition-opacity hover:opacity-70" href="https://facebook.com/solymarparacas" target="_blank" rel="noopener" aria-label="Facebook">
                             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
                         </a>
-                        <a class="text-primary transition-opacity hover:opacity-70" href="https://instagram.com/solymarparacas" target="_blank" rel="noopener" aria-label="Instagram">
+                        <a class="text-on-surface transition-opacity hover:opacity-70" href="https://instagram.com/solymarparacas" target="_blank" rel="noopener" aria-label="Instagram">
                             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                         </a>
                     </div>
                 </div>
                 <nav class="md:col-span-4" aria-label="${t.experiences}">
-                    <h2 class="font-display text-lg text-primary mb-5">${t.experiences}</h2>
-                    <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-x-8">
+                    <h2 class="font-display text-heading-sm text-on-surface mb-6">${t.experiences}</h2>
+                    <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-x-8">
                         ${tourItems}
-                        <li><a class="font-semibold text-primary underline decoration-sand decoration-2 underline-offset-4" href="${baseNavPath}tours">${t.tours.all}</a></li>
+                        <li><a class="text-sm text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary" href="${baseNavPath}tours">${t.tours.all}</a></li>
                     </ul>
                 </nav>
                 <nav class="md:col-span-3" aria-label="${t.support}">
-                    <h2 class="font-display text-lg text-primary mb-5">${t.support}</h2>
-                    <ul class="flex flex-col gap-3">
+                    <h2 class="font-display text-heading-sm text-on-surface mb-6">${t.support}</h2>
+                    <ul class="flex flex-col gap-4">
                         <li><a class="${link}" href="${homePath}#faq">${t.faq}</a></li>
                         <li><a class="${link}" href="${homePath}#nosotros">${t.about}</a></li>
                         <li><a class="${link}" href="${baseNavPath}blog/">${t.blog}</a></li>
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </ul>
                 </nav>
             </div>
-            <div class="max-w-[1336px] mx-auto py-8 border-t border-primary/15 text-sm text-on-surface-variant">
+            <div class="max-w-[1280px] mx-auto py-8 text-xs text-on-surface-variant">
                 <span>${t.rights}</span>
             </div>
         `;
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     waButton.href = `https://api.whatsapp.com/send?phone=51961542547&text=${t.waFloatText}`;
     // En los tours, la barra de reserva fija (#mobile-book-bar) reemplaza al botón flotante en móvil.
     const hasBookBar = document.getElementById('mobile-book-bar') !== null;
-    waButton.className = `fixed w-14 h-14 bottom-5 right-5 bg-[#25d366] text-white rounded-full ${hasBookBar ? 'hidden lg:flex' : 'flex'} items-center justify-center z-[900] shadow-[0_10px_30px_-6px_rgba(10,61,82,0.45)] transition-transform hover:-translate-y-0.5 active:scale-95`;
+    waButton.className = `fixed w-14 h-14 bottom-5 right-5 bg-[#25d366] text-white rounded-full ${hasBookBar ? 'hidden lg:flex' : 'flex'} items-center justify-center z-[900] transition-transform hover:-translate-y-0.5 active:scale-95`;
     waButton.target = "_blank";
     waButton.rel = "noopener";
     waButton.setAttribute('aria-label', 'WhatsApp');

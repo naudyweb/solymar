@@ -1252,14 +1252,18 @@ def img_attrs(root_prefix, image, sizes):
     return f'src="{root_prefix}img/w/{name}-{widths[-1]}.webp" srcset="{srcset}" sizes="{sizes}"'
 
 
+# Hero photo card: ~58% of the width on desktop (lg:col-span-7), full width below.
+HERO_SIZES = "(min-width: 1024px) 58vw, 100vw"
+
+
 def hero_slideshow(root_prefix, slides, label):
-    """Hero background slideshow: slides is a list of (image, alt); js/hero-slider.js cross-fades them."""
+    """Hero photo-card slideshow: slides is a list of (image, alt); js/hero-slider.js cross-fades them."""
     imgs = []
     for idx, (image, alt) in enumerate(slides):
         if idx == 0:
-            imgs.append(f'                <img class="hero-slide is-active" {img_attrs(root_prefix, image, "100vw")} alt="{alt}" fetchpriority="high" decoding="async" />')
+            imgs.append(f'                <img class="hero-slide is-active" {img_attrs(root_prefix, image, HERO_SIZES)} alt="{alt}" fetchpriority="high" decoding="async" />')
         else:
-            imgs.append(f'                <img class="hero-slide" {img_attrs(root_prefix, image, "100vw")} alt="{alt}" decoding="async" />')
+            imgs.append(f'                <img class="hero-slide" {img_attrs(root_prefix, image, HERO_SIZES)} alt="{alt}" decoding="async" />')
     joined = "\n".join(imgs)
     return f'''<div id="hero-slider" class="absolute inset-0 w-full h-full overflow-hidden" aria-label="{label}">
 {joined}
@@ -1271,19 +1275,14 @@ def img_preload(root_prefix, image):
     if not widths:
         return ""
     srcset = ", ".join(f"{root_prefix}img/w/{name}-{w}.webp {w}w" for w in widths)
-    return f'<link rel="preload" as="image" imagesrcset="{srcset}" imagesizes="100vw" fetchpriority="high" />'
+    return f'<link rel="preload" as="image" imagesrcset="{srcset}" imagesizes="{HERO_SIZES}" fetchpriority="high" />'
 
 
-# Shared SVG snippets (WhatsApp mark from Simple Icons; Candelabro de Paracas line mark)
 # Hero photos of tours.html / en/tours.html (add more to turn it into a slideshow)
 TOURS_INDEX_HERO_GALLERY = ["img/reserva-nacional-paracas.jpg"]
 
+# Shared SVG snippet (WhatsApp mark from Simple Icons)
 WA_ICON = '<svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>'
-CANDELABRO = ('<svg viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" '
-              'stroke-linejoin="round" aria-hidden="true" class="hidden md:block absolute right-8 lg:right-24 bottom-0 h-[85%] w-auto text-sand/35">'
-              '<path pathLength="1" vector-effect="non-scaling-stroke" d="M50 172V14M34 172H66M50 128C31 128 22 116 22 96V42M50 128C69 128 78 116 78 96V42'
-              'M50 76L40 63M50 76L60 63M22 66L13 55M22 66L31 55M78 66L69 55M78 66L87 55"/></svg>')
-
 template = """<!DOCTYPE html>
 <html lang="{lang}">
 
@@ -1321,7 +1320,7 @@ template = """<!DOCTYPE html>
     <!-- ===== FIN SEO ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,dark_mode,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,light_mode,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block" rel="stylesheet" />
     <link rel="stylesheet" href="{root_prefix}css/style.css" />
     {hero_preload}
@@ -1385,102 +1384,102 @@ template = """<!DOCTYPE html>
 
     <main>
         <!-- Hero -->
-        <section class="relative min-h-[min(78dvh,760px)] flex items-end overflow-hidden bg-deep">
-            {hero_bg_html}
-            <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/55 to-deep/10 pointer-events-none"></div>
-            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-deep/80 to-transparent pointer-events-none"></div>
-            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-24 pb-14 md:pb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-                <div class="max-w-[860px] text-white">
-                    <nav aria-label="Breadcrumb" class="rise-in text-sm text-white/75 mb-5">
-                        <a href="{home_link}" class="hover:text-white hover:underline">{home_label}</a>
-                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
-                        <a href="{tours_link}" class="hover:text-white hover:underline">{tours_index_label}</a>
-                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
+        <section class="px-4 sm:px-8 pt-8 md:pt-14">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12 lg:items-end">
+                <div class="lg:col-span-5 lg:pb-2">
+                    <nav aria-label="Breadcrumb" class="rise-in text-sm text-on-surface-variant mb-6">
+                        <a href="{home_link}" class="hover:text-primary hover:underline">{home_label}</a>
+                        <span class="mx-2" aria-hidden="true">/</span>
+                        <a href="{tours_link}" class="hover:text-primary hover:underline">{tours_index_label}</a>
+                        <span class="mx-2" aria-hidden="true">/</span>
                         <span aria-current="page">{breadcrumb_title}</span>
                     </nav>
-                    <h1 class="rise-in [--i:1] font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.04] mb-6 text-balance">{h1}</h1>
-                    <p class="rise-in [--i:2] text-lg md:text-xl text-white/85 leading-relaxed max-w-[52ch] mb-9">{subtitle}</p>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="rise-in [--i:3] inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                    <h1 class="rise-in [--i:1] font-display text-display text-primary mb-6 text-balance">{h1}</h1>
+                    <p class="rise-in [--i:2] text-subheading font-light text-on-surface-variant max-w-[46ch] mb-8">{subtitle}</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="rise-in [--i:3] inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
                         {wa_icon}
                         <span>{sidebar_whatsapp_btn}</span>
                     </a>
+                </div>
+                <div class="relative lg:col-span-7 h-80 sm:h-[440px] lg:h-[min(72dvh,620px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
+                    {hero_bg_html}
                 </div>
             </div>
         </section>
 
         <!-- Datos rápidos -->
-        <section class="bg-surface-container-low border-b border-primary/10 px-4 sm:px-8 py-8">
-            <dl class="max-w-[1336px] mx-auto grid grid-cols-2 gap-x-6 gap-y-7 md:grid-cols-4 lg:grid-cols-7">
-                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
-                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">schedule</span>
-                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_sched_sub}</dt>
-                    <dd class="font-semibold text-on-surface leading-snug">{qf_sched}</dd>
+        <section class="px-4 sm:px-8 pt-8 md:pt-10">
+            <dl class="max-w-[1280px] mx-auto bg-surface-container rounded-card p-6 sm:p-8 grid grid-cols-2 gap-x-6 gap-y-7 md:grid-cols-4 lg:grid-cols-7">
+                <div class="flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">schedule</span>
+                    <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_sched_sub}</dt>
+                    <dd class="text-on-surface leading-snug">{qf_sched}</dd>
                 </div>
-                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
-                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">timelapse</span>
-                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_dur_sub}</dt>
-                    <dd class="font-semibold text-on-surface leading-snug">{qf_dur}</dd>
+                <div class="flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">timelapse</span>
+                    <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_dur_sub}</dt>
+                    <dd class="text-on-surface leading-snug">{qf_dur}</dd>
                 </div>
-                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
-                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">terrain</span>
-                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_type_sub}</dt>
-                    <dd class="font-semibold text-on-surface leading-snug">{qf_type}</dd>
+                <div class="flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">terrain</span>
+                    <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_type_sub}</dt>
+                    <dd class="text-on-surface leading-snug">{qf_type}</dd>
                 </div>
-                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
-                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">speed</span>
-                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_diff_sub}</dt>
-                    <dd class="font-semibold text-on-surface leading-snug">{qf_diff}</dd>
+                <div class="flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">speed</span>
+                    <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_diff_sub}</dt>
+                    <dd class="text-on-surface leading-snug">{qf_diff}</dd>
                 </div>
-                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
-                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">record_voice_over</span>
-                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_guide_sub}</dt>
-                    <dd class="font-semibold text-on-surface leading-snug">{qf_guide}</dd>
+                <div class="flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">record_voice_over</span>
+                    <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_guide_sub}</dt>
+                    <dd class="text-on-surface leading-snug">{qf_guide}</dd>
                 </div>
-                <div class="flex flex-col gap-1 border-l-2 border-sand pl-4">
-                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">groups</span>
-                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{qf_group_sub}</dt>
-                    <dd class="font-semibold text-on-surface leading-snug">{qf_group}</dd>
+                <div class="flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">groups</span>
+                    <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_group_sub}</dt>
+                    <dd class="text-on-surface leading-snug">{qf_group}</dd>
                 </div>
-                <div class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col gap-1 border-l-2 border-tertiary pl-4">
-                    <span class="material-symbols-outlined text-xl text-tertiary mb-1" aria-hidden="true">sell</span>
-                    <dt class="order-last text-sm text-on-surface-variant leading-snug">{price_sub_label}</dt>
-                    <dd class="font-semibold text-tertiary text-lg leading-snug">{qf_price_badge}</dd>
+                <div class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">sell</span>
+                    <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{price_sub_label}</dt>
+                    <dd class="font-medium text-on-surface text-lg leading-snug tabular-nums">{qf_price_badge}</dd>
                 </div>
             </dl>
         </section>
 
         <!-- Detalles -->
         <section class="py-16 md:py-24 px-4 sm:px-8">
-            <div class="max-w-[1336px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-16 xl:gap-24">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-16 xl:gap-24">
 
                 <div class="flex flex-col gap-16 md:gap-20 min-w-0">
 
                     <!-- Descripción -->
                     <div>
-                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-7">{details_label}</h2>
+                        <h2 class="font-display text-heading md:text-heading-lg text-on-surface mb-7">{details_label}</h2>
                         <div class="flex flex-col gap-5 text-lg text-on-surface-variant leading-relaxed max-w-[68ch]">
                             <p>{intro}</p>
                             <p>{intro_p2}</p>
                             <p>{intro_p3}</p>
                         </div>
-                        <ul class="flex flex-wrap gap-x-7 gap-y-3 mt-8 text-sm font-semibold text-on-surface">
-                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>{trust_badge_guide}</li>
-                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">event_available</span>{trust_badge_cancel}</li>
-                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">directions_bus</span>{trust_badge_bus}</li>
+                        <ul class="flex flex-wrap gap-x-7 gap-y-3 mt-8 text-sm text-on-surface">
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-on-surface" aria-hidden="true">verified</span>{trust_badge_guide}</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-on-surface" aria-hidden="true">event_available</span>{trust_badge_cancel}</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-on-surface" aria-hidden="true">directions_bus</span>{trust_badge_bus}</li>
                         </ul>
                     </div>
 
                     <!-- Lo más destacado -->
                     <div>
-                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-8">{why_title}</h2>
+                        <h2 class="font-display text-heading md:text-heading-lg text-on-surface mb-8">{why_title}</h2>
                         <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
 {why_items_html}
                         </ul>
                     </div>
 
                     <!-- Punto de encuentro -->
-                    <div class="bg-surface-container rounded-sm p-7 sm:p-10">
-                        <h2 class="font-display text-2xl text-primary leading-tight mb-5 flex items-center gap-3">
+                    <div class="bg-surface-container rounded-card p-7 sm:p-10">
+                        <h2 class="font-display text-heading-sm text-on-surface mb-5 flex items-center gap-3">
                             <span class="material-symbols-outlined text-3xl" aria-hidden="true">location_on</span>
                             {meeting_card_title}
                         </h2>
@@ -1488,9 +1487,9 @@ template = """<!DOCTYPE html>
                             <p>{meeting_hotel_text}</p>
                             <p>{meeting_office_text}</p>
                         </div>
-                        <div class="mt-7 border-l-2 border-tertiary pl-5">
-                            <p class="font-semibold text-on-surface flex items-center gap-2 mb-1">
-                                <span class="material-symbols-outlined text-tertiary" aria-hidden="true">departure_board</span>
+                        <div class="mt-7 bg-surface-container-low rounded-chip p-5">
+                            <p class="font-medium text-on-surface flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-on-surface" aria-hidden="true">departure_board</span>
                                 {bus_connection_title}
                             </p>
                             <p class="text-sm text-on-surface-variant leading-relaxed max-w-[68ch]">{bus_connection_text}</p>
@@ -1499,7 +1498,7 @@ template = """<!DOCTYPE html>
 
                     <!-- Qué llevar -->
                     <div>
-                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-8">{what_to_bring_title}</h2>
+                        <h2 class="font-display text-heading md:text-heading-lg text-on-surface mb-8">{what_to_bring_title}</h2>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
 {what_to_bring_html}
                         </div>
@@ -1507,11 +1506,11 @@ template = """<!DOCTYPE html>
 
                     <!-- Opiniones -->
                     <div>
-                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-8">{reviews_title}</h2>
-                        <figure class="border-l-2 border-tertiary pl-6 md:pl-8">
-                            <blockquote class="font-display text-xl md:text-2xl text-on-surface leading-snug">&ldquo;{featured_review_text}&rdquo;</blockquote>
+                        <h2 class="font-display text-heading md:text-heading-lg text-on-surface mb-8">{reviews_title}</h2>
+                        <figure class="max-w-[60ch]">
+                            <blockquote class="font-display text-heading-sm md:text-heading text-on-surface">&ldquo;{featured_review_text}&rdquo;</blockquote>
                             <figcaption class="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-                                <span class="font-semibold text-primary text-base">{featured_review_author}</span>
+                                <span class="text-on-surface text-base">{featured_review_author}</span>
                                 <span class="inline-flex items-center gap-1 text-on-surface-variant"><span class="material-symbols-outlined text-base" aria-hidden="true">verified</span>{verified_booking_label}</span>
                                 <span class="text-on-surface-variant">{featured_review_date}</span>
                             </figcaption>
@@ -1525,53 +1524,53 @@ template = """<!DOCTYPE html>
 
                 <!-- Reserva -->
                 <aside>
-                    <div class="lg:sticky lg:top-24 bg-surface-container-low border border-primary/10 rounded-sm p-7 sm:p-9 flex flex-col gap-7">
+                    <div class="lg:sticky lg:top-24 bg-surface-container rounded-card p-7 sm:p-9 flex flex-col gap-7">
 
                         <div>
-                            <p class="flex flex-wrap items-center justify-between gap-2 text-sm">
-                                <span class="font-semibold text-primary">{sidebar_guarantee_badge}</span>
+                            <p class="flex flex-wrap items-center justify-between gap-2 text-xs uppercase tracking-[0.04em]">
+                                <span class="text-on-surface">{sidebar_guarantee_badge}</span>
                                 <span class="text-on-surface-variant">{sidebar_small_group_badge}</span>
                             </p>
                             {sidebar_price_block}
                             <p class="text-sm text-on-surface-variant mt-1">{per_person_no_fees_label}</p>
                         </div>
 
-                        <div class="border-t border-primary/15 pt-6">
-                            <h2 class="font-semibold text-on-surface mb-4">{whats_included_label}</h2>
+                        <div class="border-t border-on-surface/10 pt-6">
+                            <h2 class="font-display text-subheading text-on-surface mb-4">{whats_included_label}</h2>
                             <ul class="flex flex-col gap-3 text-[0.9375rem]">
 {included_html}{excluded_html}
                             </ul>
                         </div>
 
-                        <ul class="flex flex-col gap-2.5 text-sm border-t border-primary/15 pt-6">
-                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">event_available</span>{cancel_guarantee_text}</li>
-                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">cloud_sync</span>{weather_guarantee_text}</li>
-                            <li class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">credit_card</span>{payment_methods_text}</li>
+                        <ul class="flex flex-col gap-2.5 text-sm border-t border-on-surface/10 pt-6">
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-on-surface" aria-hidden="true">event_available</span>{cancel_guarantee_text}</li>
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-on-surface" aria-hidden="true">cloud_sync</span>{weather_guarantee_text}</li>
+                            <li class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-lg text-on-surface" aria-hidden="true">credit_card</span>{payment_methods_text}</li>
                         </ul>
 
                         <div>
-                            <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-4 px-6 rounded-full text-lg font-semibold transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                            <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-4 px-6 rounded-full text-lg transition-colors hover:bg-tertiary-container active:scale-[0.98]">
                                 {wa_icon}
                                 <span>{sidebar_whatsapp_btn}</span>
                             </a>
-                            <p class="text-sm text-on-surface-variant text-center mt-3">{instant_reply_subtext}</p>
+                            <p class="text-sm text-on-surface-variant mt-3">{instant_reply_subtext}</p>
                         </div>
 
-                        <div class="border-t border-primary/15 pt-6 text-sm">
+                        <div class="border-t border-on-surface/10 pt-6 text-sm">
                             <p class="text-on-surface-variant mb-3">{alt_contacts_label}</p>
                             <div class="flex flex-wrap gap-x-6 gap-y-2">
-                                <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20{mail_subject_encoded}&body={mail_body_encoded}" class="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
+                                <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20{mail_subject_encoded}&body={mail_body_encoded}" class="inline-flex items-center gap-1.5 text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary">
                                     <span class="material-symbols-outlined text-lg" aria-hidden="true">mail</span>{email_btn_label}
                                 </a>
-                                <a href="https://instagram.com/solymarparacas" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline">
+                                <a href="https://instagram.com/solymarparacas" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary">
                                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                                     Instagram DM
                                 </a>
                             </div>
                         </div>
 
-                        <p class="text-sm border-t border-primary/15 pt-6">
-                            <strong class="block font-semibold text-on-surface">{schedule_callout_main}</strong>
+                        <p class="text-sm border-t border-on-surface/10 pt-6">
+                            <strong class="block font-medium text-on-surface">{schedule_callout_main}</strong>
                             <span class="text-on-surface-variant">{schedule_label}</span>
                         </p>
 
@@ -1582,61 +1581,60 @@ template = """<!DOCTYPE html>
         </section>
 
         <!-- Por qué elegirnos -->
-        <section class="py-16 md:py-24 px-4 sm:px-8 bg-surface-container">
-            <div class="max-w-[1336px] mx-auto grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
-                <h2 class="lg:col-span-4 font-display text-3xl sm:text-4xl text-primary leading-[1.08] text-balance">{why_choose_us_label}</h2>
+        <section class="px-4 sm:px-8">
+            <div class="max-w-[1280px] mx-auto bg-surface-container rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+                <h2 class="lg:col-span-4 font-display text-heading md:text-heading-lg text-on-surface text-balance">{why_choose_us_label}</h2>
                 <ul class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
-                    <li class="flex gap-4 pt-5 border-t border-primary/20">
-                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">shield</span>
-                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_1_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_1_desc}</p></div>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">shield</span>
+                        <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_1_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_1_desc}</p></div>
                     </li>
-                    <li class="flex gap-4 pt-5 border-t border-primary/20">
-                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">record_voice_over</span>
-                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_2_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_2_desc}</p></div>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">record_voice_over</span>
+                        <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_2_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_2_desc}</p></div>
                     </li>
-                    <li class="flex gap-4 pt-5 border-t border-primary/20">
-                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">workspace_premium</span>
-                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_3_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_3_desc}</p></div>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">workspace_premium</span>
+                        <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_3_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_3_desc}</p></div>
                     </li>
-                    <li class="flex gap-4 pt-5 border-t border-primary/20">
-                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">verified_user</span>
-                        <div><h3 class="font-display text-lg text-primary mb-1">{val_prop_4_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_4_desc}</p></div>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">verified_user</span>
+                        <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_4_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_4_desc}</p></div>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- Reserva final -->
-        <section class="relative overflow-hidden py-20 md:py-28 px-4 sm:px-8 bg-deep text-white">
-            {candelabro}
-            <div class="relative max-w-[1336px] mx-auto">
+        <section class="py-20 md:py-28 px-4 sm:px-8">
+            <div class="max-w-[1280px] mx-auto bg-tertiary text-on-tertiary rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20">
                 <div class="max-w-[680px]">
-                    <p class="text-sand font-semibold mb-4">{cta_kicker}</p>
-                    <h2 class="font-display text-4xl md:text-5xl leading-[1.04] mb-6 text-balance">{cta_title}</h2>
-                    <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-[52ch]">{cta_desc}</p>
+                    <p class="text-xs uppercase tracking-[0.04em] mb-4">{cta_kicker}</p>
+                    <h2 class="font-display text-heading-lg md:text-display mb-6 text-balance">{cta_title}</h2>
+                    <p class="text-subheading font-light mb-10 max-w-[52ch]">{cta_desc}</p>
                     <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                        <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-on-tertiary text-white py-3.5 px-7 rounded-full whitespace-nowrap transition-opacity hover:opacity-85 active:scale-[0.98]">
                             {wa_icon}
                             <span>{cta_button_label}</span>
                         </a>
-                        <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20{mail_subject_encoded}&body={mail_body_encoded}" class="inline-flex items-center justify-center gap-2 py-3.5 px-7 rounded-full border border-white/40 font-semibold text-white transition-colors hover:bg-white/10">
+                        <a href="mailto:reservas@solymarparacas.com?subject=Booking%20Inquiry:%20{mail_subject_encoded}&body={mail_body_encoded}" class="inline-flex items-center justify-center gap-2 py-3.5 px-7 rounded-full border border-on-tertiary transition-colors hover:bg-on-tertiary hover:text-white">
                             <span class="material-symbols-outlined text-lg" aria-hidden="true">mail</span>
                             <span>{email_btn_label}</span>
                         </a>
                     </div>
-                    <p class="text-sm text-white/65 mt-8">{cta_guarantee_footer}</p>
+                    <p class="text-sm text-on-tertiary/75 mt-8">{cta_guarantee_footer}</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Reserva fija en móvil -->
-    <div id="mobile-book-bar" class="fixed inset-x-0 bottom-0 z-[900] lg:hidden flex items-center justify-between gap-4 bg-surface/95 backdrop-blur-md border-t border-primary/15 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+    <div id="mobile-book-bar" class="fixed inset-x-0 bottom-0 z-[900] lg:hidden flex items-center justify-between gap-4 bg-surface/95 backdrop-blur-md border-t border-on-surface/10 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
         <div class="min-w-0">
             <p class="text-xs text-on-surface-variant truncate">{price_sub_label}</p>
-            <p class="font-display text-lg text-tertiary leading-tight whitespace-nowrap">{bar_price}</p>
+            <p class="font-display text-lg text-on-surface leading-tight whitespace-nowrap tabular-nums">{bar_price}</p>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="shrink-0 inline-flex items-center gap-2 bg-tertiary text-on-tertiary py-3 px-5 rounded-full text-sm font-semibold whitespace-nowrap active:scale-[0.98]">
+        <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="shrink-0 inline-flex items-center gap-2 bg-tertiary text-on-tertiary py-3 px-5 rounded-full text-sm whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
             {wa_icon}
             <span>{sidebar_whatsapp_btn}</span>
         </a>
@@ -1684,7 +1682,7 @@ common = {
         "trust_badge_bus": "Regreso a tiempo para buses nocturnos",
         "meeting_card_title": "Punto de encuentro y conexión de buses",
         "meeting_hotel_text": "<strong>Recojo gratuito en hotel:</strong> Te recogemos directamente en tu hotel u hostal en Paracas / El Chaco.",
-        "meeting_office_text": "<strong>Oficina central:</strong> Si te hospedas fuera del centro o llegas con maletas antes del tour, te esperamos en nuestra oficina en el malecón El Chaco: <a href='https://maps.google.com/?q=SolyMar+Paracas+Peru' target='_blank' rel='noopener' class='font-bold text-primary hover:underline ml-1'>SolyMar Paracas (Google Maps)</a>",
+        "meeting_office_text": "<strong>Oficina central:</strong> Si te hospedas fuera del centro o llegas con maletas antes del tour, te esperamos en nuestra oficina en el malecón El Chaco: <a href='https://maps.google.com/?q=SolyMar+Paracas+Peru' target='_blank' rel='noopener' class='text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary ml-1'>SolyMar Paracas (Google Maps)</a>",
         "bus_connection_title": "¿Tomas un bus nocturno esa misma noche?",
         "bus_connection_text": "Nuestros horarios están planificados para que regreses al pueblo con tiempo de sobra para cenar o abordar tu bus nocturno a Lima, Huacachina o Arequipa (Cruz del Sur, Peru Hop). ¡Puedes dejar tu equipaje en custodia gratuita en nuestra oficina!",
         "what_to_bring_title": "Qué llevar",
@@ -1736,7 +1734,7 @@ common = {
         "trust_badge_bus": "Back in time for evening night buses",
         "meeting_card_title": "Meeting point & bus connections",
         "meeting_hotel_text": "<strong>Free hotel pick-up:</strong> Complimentary pick-up from any hotel, hostel, or Airbnb in Paracas town / El Chaco area.",
-        "meeting_office_text": "<strong>Central meeting office:</strong> If you are staying outside the center or arriving with luggage before the tour, meet us at our boardwalk office: <a href='https://maps.google.com/?q=SolyMar+Paracas+Peru' target='_blank' rel='noopener' class='font-bold text-primary hover:underline ml-1'>SolyMar Paracas (Google Maps)</a>",
+        "meeting_office_text": "<strong>Central meeting office:</strong> If you are staying outside the center or arriving with luggage before the tour, meet us at our boardwalk office: <a href='https://maps.google.com/?q=SolyMar+Paracas+Peru' target='_blank' rel='noopener' class='text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary ml-1'>SolyMar Paracas (Google Maps)</a>",
         "bus_connection_title": "Catching an evening night bus?",
         "bus_connection_text": "All our day and afternoon tours are timed so you return with plenty of time for dinner or to catch your evening night bus (Cruz del Sur, Peru Hop) to Lima, Huacachina, or Arequipa. Free luggage storage is available at our office!",
         "what_to_bring_title": "What to bring",
@@ -1784,10 +1782,10 @@ for tour_key, tour_info in tours_formatted.items():
         # Build Why Items HTML
         why_items_html = ""
         for item in content["why_items"]:
-            why_items_html += f"""                            <li class="flex gap-4 pt-5 border-t border-primary/15">
-                                <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">{item['icon']}</span>
+            why_items_html += f"""                            <li class="flex gap-4">
+                                <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">{item['icon']}</span>
                                 <div>
-                                    <h3 class="font-display text-lg text-primary leading-snug mb-1">{item['title']}</h3>
+                                    <h3 class="font-display text-subheading text-on-surface mb-1">{item['title']}</h3>
                                     <p class="text-on-surface-variant leading-relaxed">{item['desc']}</p>
                                 </div>
                             </li>
@@ -1797,7 +1795,7 @@ for tour_key, tour_info in tours_formatted.items():
         included_html = ""
         for inc in content["included"]:
             included_html += f"""                                <li class="flex items-start gap-2.5 text-on-surface">
-                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">check</span>
+                                    <span class="material-symbols-outlined text-lg text-on-surface shrink-0" aria-hidden="true">check</span>
                                     <span>{inc}</span>
                                 </li>
 """
@@ -1806,7 +1804,7 @@ for tour_key, tour_info in tours_formatted.items():
         excluded_html = ""
         for exc in content["excluded"]:
             excluded_html += f"""                                <li class="flex items-start gap-2.5 text-on-surface-variant">
-                                    <span class="material-symbols-outlined text-lg text-tertiary shrink-0" aria-hidden="true">info</span>
+                                    <span class="material-symbols-outlined text-lg text-on-surface shrink-0" aria-hidden="true">info</span>
                                     <span>{exc}</span>
                                 </li>
 """
@@ -1816,9 +1814,9 @@ for tour_key, tour_info in tours_formatted.items():
         what_to_bring_html = ""
         for b_icon, b_title, b_desc in bring_items:
             what_to_bring_html += f"""                            <div class="flex items-start gap-4">
-                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">{b_icon}</span>
+                                <span class="material-symbols-outlined text-2xl text-on-surface shrink-0" aria-hidden="true">{b_icon}</span>
                                 <div>
-                                    <h3 class="font-semibold text-on-surface mb-0.5">{b_title}</h3>
+                                    <h3 class="font-medium text-on-surface mb-0.5">{b_title}</h3>
                                     <p class="text-sm text-on-surface-variant leading-relaxed">{b_desc}</p>
                                 </div>
                             </div>
@@ -1829,16 +1827,16 @@ for tour_key, tour_info in tours_formatted.items():
         faq_schema = ""
         if "faqs" in content:
             faq_section_html = f"""                    <div>
-                        <h2 class="font-display text-3xl sm:text-4xl text-primary leading-[1.08] mb-6">{content['faq_title']}</h2>
-                        <div class="border-t-2 border-sand">"""
+                        <h2 class="font-display text-heading md:text-heading-lg text-on-surface mb-6">{content['faq_title']}</h2>
+                        <div class="border-t border-on-surface/10">"""
             
             faq_schema_items = []
             for faq in content["faqs"]:
                 faq_section_html += f"""
-                            <details class="group border-b border-primary/15">
+                            <details class="group border-b border-on-surface/10">
                                 <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
-                                    <h3 class="text-base md:text-lg font-semibold text-on-surface group-open:text-primary">{faq['q']}</h3>
-                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                    <h3 class="text-base md:text-subheading text-on-surface group-open:text-primary">{faq['q']}</h3>
+                                    <span class="material-symbols-outlined text-on-surface shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
                                 </summary>
                                 <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">{faq['a']}</p>
                             </details>"""
@@ -1900,7 +1898,7 @@ for tour_key, tour_info in tours_formatted.items():
         if tour_info.get("quote_only"):
             price_display = "Cotizar" if lang == "es" else "Get a Quote"
             price_sub = "Tarifa por vehículo, según ruta" if lang == "es" else "Per vehicle, based on route"
-            sidebar_price_block = f'<p class="font-display text-4xl text-tertiary mt-3">{price_display}</p>'
+            sidebar_price_block = f'<p class="font-display text-heading-lg text-on-surface mt-3">{price_display}</p>'
             qf_price_badge = price_display
             offers_json = ""
         else:
@@ -1908,8 +1906,8 @@ for tour_key, tour_info in tours_formatted.items():
             price_sub = content.get("price_sub_label", comm["price_sub_label"])
             usd_str = f" ({price_usd})" if price_usd else ""
             sidebar_price_block = f'''<p class="flex flex-wrap items-baseline gap-x-2 mt-3">
-                                <span class="font-display text-5xl text-tertiary">{price_display}</span>
-                                <span class="text-xl text-on-surface-variant">{usd_str}</span>
+                                <span class="font-display text-[3rem] leading-none tracking-[-0.02em] text-on-surface tabular-nums">{price_display}</span>
+                                <span class="text-xl text-on-surface-variant tabular-nums">{usd_str}</span>
                             </p>'''
             qf_price_badge = f"{price_display}{usd_str}"
             offers_json = f'''"offers": {{
@@ -2032,7 +2030,6 @@ for tour_key, tour_info in tours_formatted.items():
             cta_guarantee_footer=comm["cta_guarantee_footer"],
             offers_json=offers_json,
             wa_icon=WA_ICON,
-            candelabro=CANDELABRO,
             hero_bg_html=hero_bg_html,
             hero_slider_js=f'<script src="{root_prefix}js/hero-slider.js" defer></script>',
             bar_price=price_display,
@@ -2091,7 +2088,7 @@ index_template = """<!DOCTYPE html>
     <!-- ===== FIN SEO ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,dark_mode,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,light_mode,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block" rel="stylesheet" />
     <link rel="stylesheet" href="{root_prefix}css/style.css" />
     {hero_preload}
@@ -2137,38 +2134,37 @@ index_template = """<!DOCTYPE html>
 
     <main>
         <!-- Hero -->
-        <section class="relative min-h-[min(56dvh,560px)] flex items-end overflow-hidden bg-deep">
-            {hero_bg_html}
-            <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/60 to-deep/15"></div>
-            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-deep/80 to-transparent"></div>
-            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-20 pb-14 md:pb-20">
-                <div class="max-w-[860px] text-white">
-                    <nav aria-label="Breadcrumb" class="rise-in text-sm text-white/75 mb-5">
-                        <a href="{home_link}" class="hover:text-white hover:underline">{home_label}</a>
-                        <span class="mx-2 text-sand" aria-hidden="true">/</span>
+        <section class="px-4 sm:px-8 pt-8 md:pt-14">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12 lg:items-end">
+                <div class="lg:col-span-5 lg:pb-2">
+                    <nav aria-label="Breadcrumb" class="rise-in text-sm text-on-surface-variant mb-6">
+                        <a href="{home_link}" class="hover:text-primary hover:underline">{home_label}</a>
+                        <span class="mx-2" aria-hidden="true">/</span>
                         <span aria-current="page">{tours_index_label}</span>
                     </nav>
-                    <h1 class="rise-in [--i:1] font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.04] mb-6 text-balance">{h1}</h1>
-                    <p class="rise-in [--i:2] text-lg md:text-xl text-white/85 leading-relaxed max-w-[52ch]">{subtitle}</p>
+                    <h1 class="rise-in [--i:1] font-display text-display text-primary mb-6 text-balance">{h1}</h1>
+                    <p class="rise-in [--i:2] text-subheading font-light text-on-surface-variant max-w-[46ch]">{subtitle}</p>
+                </div>
+                <div class="relative lg:col-span-7 h-72 sm:h-96 lg:h-[min(56dvh,480px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
+                    {hero_bg_html}
                 </div>
             </div>
         </section>
 
         <!-- Tours -->
         <section class="py-16 md:py-24 px-4 sm:px-8">
-            <div class="max-w-[1336px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
 {grid_html}
             </div>
         </section>
 
         <!-- Ayuda -->
-        <section class="relative overflow-hidden py-20 md:py-28 px-4 sm:px-8 bg-deep text-white">
-            {candelabro}
-            <div class="relative max-w-[1336px] mx-auto">
+        <section class="pb-20 md:pb-28 px-4 sm:px-8">
+            <div class="max-w-[1280px] mx-auto bg-tertiary text-on-tertiary rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20">
                 <div class="max-w-[680px]">
-                    <h2 class="font-display text-4xl md:text-5xl leading-[1.04] mb-6 text-balance">{cta_title}</h2>
-                    <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-[52ch]">{cta_desc}</p>
-                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full font-semibold whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
+                    <h2 class="font-display text-heading-lg md:text-display mb-6 text-balance">{cta_title}</h2>
+                    <p class="text-subheading font-light mb-10 max-w-[52ch]">{cta_desc}</p>
+                    <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-on-tertiary text-white py-3.5 px-7 rounded-full whitespace-nowrap transition-opacity hover:opacity-85 active:scale-[0.98]">
                         {wa_icon}
                         <span>{cta_button_label}</span>
                     </a>
@@ -2259,14 +2255,14 @@ for lang in ["es", "en"]:
             price_badge = f"{texts['from_label']} {tour_info['price']}{usd_note}"
         
         card_html = f"""                <a href="{tour_info['filename'].removesuffix('.html')}" class="group flex flex-col gap-4">
-                    <div class="h-60 md:h-64 overflow-hidden rounded-sm bg-surface-container">
+                    <div class="h-60 md:h-64 overflow-hidden rounded-card bg-surface-container">
                         <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" {img_attrs(root_prefix, tour_info['image'], "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw")} alt="{tour_content['h1']}" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-2 flex-1">
-                        <span class="text-sm text-on-surface-variant">{cat_label}</span>
-                        <h2 class="font-display text-xl text-primary leading-tight group-hover:underline decoration-sand decoration-2 underline-offset-4">{tour_content['h1']}</h2>
+                        <span class="text-xs uppercase tracking-[0.04em] text-on-surface-variant">{cat_label}</span>
+                        <h2 class="font-display text-heading-sm text-on-surface group-hover:underline decoration-1 underline-offset-4">{tour_content['h1']}</h2>
                         <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed line-clamp-3">{tour_content['desc']}</p>
-                        <p class="font-semibold text-tertiary mt-auto pt-1">{price_badge}</p>
+                        <p class="font-medium text-on-surface tabular-nums mt-auto pt-1">{price_badge}</p>
                     </div>
                 </a>
 """
@@ -2311,7 +2307,6 @@ for lang in ["es", "en"]:
         whatsapp_text=texts["whatsapp_text"],
         cta_button_label=texts["cta_button_label"],
         wa_icon=WA_ICON,
-        candelabro=CANDELABRO,
         hero_bg_html=hero_slideshow(
             root_prefix,
             [(image, texts["h1"]) for image in TOURS_INDEX_HERO_GALLERY],
