@@ -21,7 +21,7 @@ SOURCES = [
     "img/scooter-reserva-paracas.png", "img/tambo-colorado.jpg", "img/trekking.jpg",
     "img/trekking-2.jpg", "img/trekking-3.jpg", "img/trekking-4.jpg",
     "img/trekking-5.jpg", "img/trekking-6.jpg",
-    "img/yakupark.jpg",
+    "img/yakupark.jpg", "img/snorkel.jpg", "img/gokarts.webp", "img/Atv-GoKart-Paracas.webp",
 ]
 
 

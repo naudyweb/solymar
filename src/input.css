@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
-/* Identidad "Raus" (ver design.md): diario de viaje sobre papel crema. Charcoal es
-   el único color de texto; Pine (primary) solo para logo, titular del hero y enlaces;
-   Marigold (tertiary) es el único acento fuerte y solo marca los botones de reserva
-   y el bloque de reserva final. Sin sombras: la profundidad sale de crema sobre crema. */
+/* Identidad "Raus" (ver design.md) con los colores del logo SolyMar: papel crema,
+   azul marino del logotipo (#262262) para todo el texto, azul mar (primary, el
+   #27aae1 del logo oscurecido para leerse sobre crema) para el titular del hero,
+   enlaces e iconos, celeste (secondary-container) para paneles de acento y el
+   naranja del sol (tertiary, #fbb040) como único acento fuerte: botones de reserva
+   y bloque de reserva final. Sin sombras: la profundidad sale de capas de color. */
 @theme {
-  --color-primary: #006434;
-  --color-primary-container: #004d28;
-  --color-secondary: #23212c;
-  --color-tertiary: #fcbd1c;
-  --color-tertiary-container: #eaa900;
-  --color-on-tertiary: #23212c;
+  --color-primary: #0b6a9e;
+  --color-primary-container: #084f77;
+  --color-secondary: #262262;
+  --color-secondary-container: #ddf0f9;
+  --color-tertiary: #fbb040;
+  --color-tertiary-container: #f59e1b;
+  --color-on-tertiary: #262262;
   --color-surface: #f7f0e1;
   --color-surface-container: #efe4cc;
   --color-surface-container-low: #ffffff;
-  --color-on-surface: #23212c;
-  --color-on-surface-variant: #57535f;
+  --color-on-surface: #262262;
+  --color-on-surface-variant: #57567d;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -30,10 +33,10 @@
   --text-heading--line-height: 1.07;
   --text-heading--letter-spacing: -0.015em;
   --text-heading-lg: 2.25rem;
-  --text-heading-lg--line-height: 1;
+  --text-heading-lg--line-height: 1.05;
   --text-heading-lg--letter-spacing: -0.02em;
   --text-display: 2.5rem;
-  --text-display--line-height: 0.95;
+  --text-display--line-height: 1;
   --text-display--letter-spacing: -0.02em;
 
   --radius-chip: 12px;
@@ -47,39 +50,41 @@
 @source "../js/**/*.js";
 @source "../generate_pages.py";
 
-/* Modo oscuro: la misma paleta de noche, carbón cálido en vez de crema. Marigold
-   no cambia (sigue con texto Charcoal); Pine se aclara para leerse sobre oscuro.
+/* Modo oscuro: noche azul marino en vez de crema. El naranja del sol no cambia
+   (sigue con texto marino); el azul mar pasa al celeste del logo.
    Por defecto sigue al sistema; el botón del header fija <html data-theme="light|dark">
    (guardado en localStorage) y eso tiene prioridad. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --color-primary: #7fd6a2;
-    --color-primary-container: #a6e6bf;
+    --color-primary: #70c6e5;
+    --color-primary-container: #9fd8ee;
     --color-secondary: #f7f0e1;
-    --color-tertiary: #fcbd1c;
-    --color-tertiary-container: #ffcf4d;
-    --color-on-tertiary: #23212c;
-    --color-surface: #1c1a22;
-    --color-surface-container: #26232d;
-    --color-surface-container-low: #2e2b36;
+    --color-secondary-container: #16304a;
+    --color-tertiary: #fbb040;
+    --color-tertiary-container: #fcc46e;
+    --color-on-tertiary: #262262;
+    --color-surface: #14162b;
+    --color-surface-container: #1e2142;
+    --color-surface-container-low: #262a52;
     --color-on-surface: #f7f0e1;
-    --color-on-surface-variant: #c9c0ad;
+    --color-on-surface-variant: #c3c4dc;
   }
 }
 :root[data-theme="dark"] {
     color-scheme: dark;
-    --color-primary: #7fd6a2;
-    --color-primary-container: #a6e6bf;
+    --color-primary: #70c6e5;
+    --color-primary-container: #9fd8ee;
     --color-secondary: #f7f0e1;
-    --color-tertiary: #fcbd1c;
-    --color-tertiary-container: #ffcf4d;
-    --color-on-tertiary: #23212c;
-    --color-surface: #1c1a22;
-    --color-surface-container: #26232d;
-    --color-surface-container-low: #2e2b36;
+    --color-secondary-container: #16304a;
+    --color-tertiary: #fbb040;
+    --color-tertiary-container: #fcc46e;
+    --color-on-tertiary: #262262;
+    --color-surface: #14162b;
+    --color-surface-container: #1e2142;
+    --color-surface-container-low: #262a52;
     --color-on-surface: #f7f0e1;
-    --color-on-surface-variant: #c9c0ad;
+    --color-on-surface-variant: #c3c4dc;
 }
 
 /* `dark:` sigue la misma regla: sistema salvo que el usuario elija. */
@@ -104,7 +109,7 @@
   }
   strong,
   b {
-    font-weight: 500;
+    font-weight: 600;
   }
   :focus-visible {
     outline: 2px solid var(--color-secondary);
@@ -117,7 +122,7 @@
 
 @utility font-display {
   font-family: var(--font-display);
-  font-weight: 300;
+  font-weight: 600;
 }
 
 @utility rise-in {
@@ -139,7 +144,7 @@
   }
 }
 
-/* Slideshow del hero (todas las páginas con hero): fundido con desenfoque + zoom lento, sin controles. */
+/* Slideshows del hero (.hero-slider, puede haber varios por página): fundido con desenfoque + zoom lento, sin controles. */
 @layer components {
   .hero-slide {
     position: absolute;

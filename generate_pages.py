@@ -1265,7 +1265,7 @@ def hero_slideshow(root_prefix, slides, label):
         else:
             imgs.append(f'                <img class="hero-slide" {img_attrs(root_prefix, image, HERO_SIZES)} alt="{alt}" decoding="async" />')
     joined = "\n".join(imgs)
-    return f'''<div id="hero-slider" class="absolute inset-0 w-full h-full overflow-hidden" aria-label="{label}">
+    return f'''<div class="hero-slider absolute inset-0 w-full h-full overflow-hidden" aria-label="{label}">
 {joined}
             </div>'''
 
@@ -1278,8 +1278,30 @@ def img_preload(root_prefix, image):
     return f'<link rel="preload" as="image" imagesrcset="{srcset}" imagesizes="{HERO_SIZES}" fetchpriority="high" />'
 
 
-# Hero photos of tours.html / en/tours.html (add more to turn it into a slideshow)
-TOURS_INDEX_HERO_GALLERY = ["img/reserva-nacional-paracas.jpg"]
+# Hero slideshow photos of tours.html / en/tours.html
+TOURS_INDEX_HERO_GALLERY = [
+    "img/reserva-nacional-paracas.jpg", "img/islas-ballestas.jpg", "img/huacachina.jpg",
+    "img/buceo.jpg", "img/parapente.jpg", "img/trekking.jpg",
+]
+
+# Extra hero slideshow photos per tour (only photos of that tour or the same place).
+# A tour's own "hero_gallery" (with alt texts, see trekking) takes precedence;
+# tours missing here show just their main photo.
+HERO_GALLERIES = {
+    "islas-ballestas": ["img/islas-ballestas.jpg", "img/ballestas-y-reserva-full-day.jpg"],
+    "reserva-nacional-paracas": ["img/reserva-nacional-paracas.jpg", "img/trekking-4.jpg", "img/caminata-paracas.jpg"],
+    "ballestas-y-reserva-full-day": ["img/ballestas-y-reserva-full-day.jpg", "img/islas-ballestas.jpg", "img/reserva-nacional-paracas.jpg"],
+    "buggies-sandboard-huacachina": ["img/huacachina.jpg", "img/adrenarena.jpg"],
+    "paracas-huacachina-full-day": ["img/huacachina.jpg", "img/islas-ballestas.jpg"],
+    "buceo": ["img/buceo.jpg", "img/snorkel.jpg"],
+    "kayak-paddle-paracas": ["img/kayak-paddle.jpg", "img/caminata-paracas.jpg"],
+    "yakupark-paracas": ["img/yakupark.jpg", "img/kayak-paddle.jpg"],
+    "mini-buggies-paracas": ["img/atv-gokart.jpg", "img/Atv-GoKart-Paracas.webp", "img/gokarts.webp"],
+    "transporte-personalizado": ["img/reserva-nacional-paracas.jpg", "img/huacachina.jpg", "img/ruta-del-pisco.jpg", "img/tambo-colorado.jpg"],
+}
+
+# Bump when css/style.css or js/*.js change: the server caches them for a month.
+ASSET_VERSION = "20261019"
 
 # Shared SVG snippet (WhatsApp mark from Simple Icons)
 WA_ICON = '<svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>'
@@ -1320,9 +1342,9 @@ template = """<!DOCTYPE html>
     <!-- ===== FIN SEO ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,dark_mode,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,light_mode,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block" rel="stylesheet" />
-    <link rel="stylesheet" href="{root_prefix}css/style.css" />
+    <link rel="stylesheet" href="{root_prefix}css/style.css?v={asset_version}" />
     {hero_preload}
 
     <!-- ===== ESTRUCTURA DE DATOS (JSON-LD) PARA GOOGLE ===== -->
@@ -1394,14 +1416,14 @@ template = """<!DOCTYPE html>
                         <span class="mx-2" aria-hidden="true">/</span>
                         <span aria-current="page">{breadcrumb_title}</span>
                     </nav>
-                    <h1 class="rise-in [--i:1] font-display text-display text-primary mb-6 text-balance">{h1}</h1>
+                    <h1 class="rise-in [--i:1] font-display text-display lg:text-[3.25rem] text-primary mb-6 text-balance">{h1}</h1>
                     <p class="rise-in [--i:2] text-subheading font-light text-on-surface-variant max-w-[46ch] mb-8">{subtitle}</p>
                     <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="rise-in [--i:3] inline-flex items-center justify-center gap-2.5 bg-tertiary text-on-tertiary py-3.5 px-7 rounded-full whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">
                         {wa_icon}
                         <span>{sidebar_whatsapp_btn}</span>
                     </a>
                 </div>
-                <div class="relative lg:col-span-7 h-80 sm:h-[440px] lg:h-[min(72dvh,620px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
+                <div class="relative lg:col-span-7 h-[400px] sm:h-[520px] lg:h-[min(80dvh,760px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
                     {hero_bg_html}
                 </div>
             </div>
@@ -1411,37 +1433,37 @@ template = """<!DOCTYPE html>
         <section class="px-4 sm:px-8 pt-8 md:pt-10">
             <dl class="max-w-[1280px] mx-auto bg-surface-container rounded-card p-6 sm:p-8 grid grid-cols-2 gap-x-6 gap-y-7 md:grid-cols-4 lg:grid-cols-7">
                 <div class="flex flex-col gap-1">
-                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">schedule</span>
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">schedule</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_sched_sub}</dt>
                     <dd class="text-on-surface leading-snug">{qf_sched}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">timelapse</span>
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">timelapse</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_dur_sub}</dt>
                     <dd class="text-on-surface leading-snug">{qf_dur}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">terrain</span>
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">terrain</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_type_sub}</dt>
                     <dd class="text-on-surface leading-snug">{qf_type}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">speed</span>
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">speed</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_diff_sub}</dt>
                     <dd class="text-on-surface leading-snug">{qf_diff}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">record_voice_over</span>
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">record_voice_over</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_guide_sub}</dt>
                     <dd class="text-on-surface leading-snug">{qf_guide}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">groups</span>
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">groups</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_group_sub}</dt>
                     <dd class="text-on-surface leading-snug">{qf_group}</dd>
                 </div>
                 <div class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col gap-1">
-                    <span class="material-symbols-outlined text-xl text-on-surface mb-1" aria-hidden="true">sell</span>
+                    <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">sell</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{price_sub_label}</dt>
                     <dd class="font-medium text-on-surface text-lg leading-snug tabular-nums">{qf_price_badge}</dd>
                 </div>
@@ -1463,9 +1485,9 @@ template = """<!DOCTYPE html>
                             <p>{intro_p3}</p>
                         </div>
                         <ul class="flex flex-wrap gap-x-7 gap-y-3 mt-8 text-sm text-on-surface">
-                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-on-surface" aria-hidden="true">verified</span>{trust_badge_guide}</li>
-                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-on-surface" aria-hidden="true">event_available</span>{trust_badge_cancel}</li>
-                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-on-surface" aria-hidden="true">directions_bus</span>{trust_badge_bus}</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">verified</span>{trust_badge_guide}</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">event_available</span>{trust_badge_cancel}</li>
+                            <li class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-primary" aria-hidden="true">directions_bus</span>{trust_badge_bus}</li>
                         </ul>
                     </div>
 
@@ -1489,7 +1511,7 @@ template = """<!DOCTYPE html>
                         </div>
                         <div class="mt-7 bg-surface-container-low rounded-chip p-5">
                             <p class="font-medium text-on-surface flex items-center gap-2 mb-1">
-                                <span class="material-symbols-outlined text-on-surface" aria-hidden="true">departure_board</span>
+                                <span class="material-symbols-outlined text-primary" aria-hidden="true">departure_board</span>
                                 {bus_connection_title}
                             </p>
                             <p class="text-sm text-on-surface-variant leading-relaxed max-w-[68ch]">{bus_connection_text}</p>
@@ -1543,9 +1565,9 @@ template = """<!DOCTYPE html>
                         </div>
 
                         <ul class="flex flex-col gap-2.5 text-sm border-t border-on-surface/10 pt-6">
-                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-on-surface" aria-hidden="true">event_available</span>{cancel_guarantee_text}</li>
-                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-on-surface" aria-hidden="true">cloud_sync</span>{weather_guarantee_text}</li>
-                            <li class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-lg text-on-surface" aria-hidden="true">credit_card</span>{payment_methods_text}</li>
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">event_available</span>{cancel_guarantee_text}</li>
+                            <li class="flex items-start gap-2.5 text-on-surface"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">cloud_sync</span>{weather_guarantee_text}</li>
+                            <li class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-lg text-primary" aria-hidden="true">credit_card</span>{payment_methods_text}</li>
                         </ul>
 
                         <div>
@@ -1582,23 +1604,23 @@ template = """<!DOCTYPE html>
 
         <!-- Por qué elegirnos -->
         <section class="px-4 sm:px-8">
-            <div class="max-w-[1280px] mx-auto bg-surface-container rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+            <div class="max-w-[1280px] mx-auto bg-secondary-container rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
                 <h2 class="lg:col-span-4 font-display text-heading md:text-heading-lg text-on-surface text-balance">{why_choose_us_label}</h2>
                 <ul class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
                     <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">shield</span>
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">shield</span>
                         <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_1_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_1_desc}</p></div>
                     </li>
                     <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">record_voice_over</span>
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">record_voice_over</span>
                         <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_2_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_2_desc}</p></div>
                     </li>
                     <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">workspace_premium</span>
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">workspace_premium</span>
                         <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_3_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_3_desc}</p></div>
                     </li>
                     <li class="flex gap-4">
-                        <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">verified_user</span>
+                        <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">verified_user</span>
                         <div><h3 class="font-display text-subheading text-on-surface mb-1">{val_prop_4_title}</h3><p class="text-on-surface-variant leading-relaxed">{val_prop_4_desc}</p></div>
                     </li>
                 </ul>
@@ -1642,8 +1664,8 @@ template = """<!DOCTYPE html>
 
     <footer class="footer"></footer>
 
-    <script src="{root_prefix}js/header.js"></script>
-    <script src="{root_prefix}js/footer.js"></script>
+    <script src="{root_prefix}js/header.js?v={asset_version}"></script>
+    <script src="{root_prefix}js/footer.js?v={asset_version}"></script>
     {hero_slider_js}
 </body>
 
@@ -1783,7 +1805,7 @@ for tour_key, tour_info in tours_formatted.items():
         why_items_html = ""
         for item in content["why_items"]:
             why_items_html += f"""                            <li class="flex gap-4">
-                                <span class="material-symbols-outlined text-3xl text-on-surface shrink-0" aria-hidden="true">{item['icon']}</span>
+                                <span class="material-symbols-outlined text-3xl text-primary shrink-0" aria-hidden="true">{item['icon']}</span>
                                 <div>
                                     <h3 class="font-display text-subheading text-on-surface mb-1">{item['title']}</h3>
                                     <p class="text-on-surface-variant leading-relaxed">{item['desc']}</p>
@@ -1795,7 +1817,7 @@ for tour_key, tour_info in tours_formatted.items():
         included_html = ""
         for inc in content["included"]:
             included_html += f"""                                <li class="flex items-start gap-2.5 text-on-surface">
-                                    <span class="material-symbols-outlined text-lg text-on-surface shrink-0" aria-hidden="true">check</span>
+                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">check</span>
                                     <span>{inc}</span>
                                 </li>
 """
@@ -1804,7 +1826,7 @@ for tour_key, tour_info in tours_formatted.items():
         excluded_html = ""
         for exc in content["excluded"]:
             excluded_html += f"""                                <li class="flex items-start gap-2.5 text-on-surface-variant">
-                                    <span class="material-symbols-outlined text-lg text-on-surface shrink-0" aria-hidden="true">info</span>
+                                    <span class="material-symbols-outlined text-lg text-primary shrink-0" aria-hidden="true">info</span>
                                     <span>{exc}</span>
                                 </li>
 """
@@ -1814,7 +1836,7 @@ for tour_key, tour_info in tours_formatted.items():
         what_to_bring_html = ""
         for b_icon, b_title, b_desc in bring_items:
             what_to_bring_html += f"""                            <div class="flex items-start gap-4">
-                                <span class="material-symbols-outlined text-2xl text-on-surface shrink-0" aria-hidden="true">{b_icon}</span>
+                                <span class="material-symbols-outlined text-2xl text-primary shrink-0" aria-hidden="true">{b_icon}</span>
                                 <div>
                                     <h3 class="font-medium text-on-surface mb-0.5">{b_title}</h3>
                                     <p class="text-sm text-on-surface-variant leading-relaxed">{b_desc}</p>
@@ -1836,7 +1858,7 @@ for tour_key, tour_info in tours_formatted.items():
                             <details class="group border-b border-on-surface/10">
                                 <summary class="flex items-center justify-between gap-6 py-5 cursor-pointer list-none">
                                     <h3 class="text-base md:text-subheading text-on-surface group-open:text-primary">{faq['q']}</h3>
-                                    <span class="material-symbols-outlined text-on-surface shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
+                                    <span class="material-symbols-outlined text-primary shrink-0 transition-transform duration-300 group-open:rotate-45" aria-hidden="true">add</span>
                                 </summary>
                                 <p class="pb-6 pr-8 text-on-surface-variant leading-relaxed max-w-[68ch]">{faq['a']}</p>
                             </details>"""
@@ -1928,8 +1950,8 @@ for tour_key, tour_info in tours_formatted.items():
             rev_text = comm["featured_review_text"]
             rev_author = comm["featured_review_author"]
         
-        # Hero slideshow: hero_gallery if the tour has one, otherwise just its main photo
-        gallery = tour_info.get("hero_gallery") or [{"image": tour_info["image"]}]
+        # Hero slideshow: the tour's hero_gallery, else HERO_GALLERIES, else just its main photo
+        gallery = tour_info.get("hero_gallery") or [{"image": image} for image in HERO_GALLERIES.get(tour_key, [tour_info["image"]])]
         hero_bg_html = hero_slideshow(
             root_prefix,
             [(item["image"], item.get(f"alt_{lang}", item.get("alt_es", content["h1"]))) for item in gallery],
@@ -2030,8 +2052,9 @@ for tour_key, tour_info in tours_formatted.items():
             cta_guarantee_footer=comm["cta_guarantee_footer"],
             offers_json=offers_json,
             wa_icon=WA_ICON,
+            asset_version=ASSET_VERSION,
             hero_bg_html=hero_bg_html,
-            hero_slider_js=f'<script src="{root_prefix}js/hero-slider.js" defer></script>',
+            hero_slider_js=f'<script src="{root_prefix}js/hero-slider.js?v={ASSET_VERSION}" defer></script>',
             bar_price=price_display,
             hero_preload=img_preload(root_prefix, tour_info["image"]),
             faq_schema=faq_schema
@@ -2088,9 +2111,9 @@ index_template = """<!DOCTYPE html>
     <!-- ===== FIN SEO ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,dark_mode,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,light_mode,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block" rel="stylesheet" />
-    <link rel="stylesheet" href="{root_prefix}css/style.css" />
+    <link rel="stylesheet" href="{root_prefix}css/style.css?v={asset_version}" />
     {hero_preload}
 
     <!-- ===== ESTRUCTURA DE DATOS (JSON-LD) PARA GOOGLE ===== -->
@@ -2142,10 +2165,10 @@ index_template = """<!DOCTYPE html>
                         <span class="mx-2" aria-hidden="true">/</span>
                         <span aria-current="page">{tours_index_label}</span>
                     </nav>
-                    <h1 class="rise-in [--i:1] font-display text-display text-primary mb-6 text-balance">{h1}</h1>
+                    <h1 class="rise-in [--i:1] font-display text-display lg:text-[3.25rem] text-primary mb-6 text-balance">{h1}</h1>
                     <p class="rise-in [--i:2] text-subheading font-light text-on-surface-variant max-w-[46ch]">{subtitle}</p>
                 </div>
-                <div class="relative lg:col-span-7 h-72 sm:h-96 lg:h-[min(56dvh,480px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
+                <div class="relative lg:col-span-7 h-[400px] sm:h-[520px] lg:h-[min(80dvh,760px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
                     {hero_bg_html}
                 </div>
             </div>
@@ -2175,9 +2198,9 @@ index_template = """<!DOCTYPE html>
 
     <footer class="footer"></footer>
 
-    <script src="{root_prefix}js/header.js"></script>
-    <script src="{root_prefix}js/footer.js"></script>
-    <script src="{root_prefix}js/hero-slider.js" defer></script>
+    <script src="{root_prefix}js/header.js?v={asset_version}"></script>
+    <script src="{root_prefix}js/footer.js?v={asset_version}"></script>
+    <script src="{root_prefix}js/hero-slider.js?v={asset_version}" defer></script>
 </body>
 
 </html>
@@ -2307,6 +2330,7 @@ for lang in ["es", "en"]:
         whatsapp_text=texts["whatsapp_text"],
         cta_button_label=texts["cta_button_label"],
         wa_icon=WA_ICON,
+        asset_version=ASSET_VERSION,
         hero_bg_html=hero_slideshow(
             root_prefix,
             [(image, texts["h1"]) for image in TOURS_INDEX_HERO_GALLERY],
