@@ -1301,7 +1301,7 @@ HERO_GALLERIES = {
 }
 
 # Bump when css/style.css or js/*.js change: the server caches them for a month.
-ASSET_VERSION = "20261019"
+ASSET_VERSION = "2026101902"
 
 # Shared SVG snippet (WhatsApp mark from Simple Icons)
 WA_ICON = '<svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>'
@@ -1423,7 +1423,7 @@ template = """<!DOCTYPE html>
                         <span>{sidebar_whatsapp_btn}</span>
                     </a>
                 </div>
-                <div class="relative lg:col-span-7 h-[400px] sm:h-[520px] lg:h-[min(80dvh,760px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
+                <div class="relative lg:col-span-7 h-[340px] sm:h-[520px] lg:h-[min(80dvh,760px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
                     {hero_bg_html}
                 </div>
             </div>
@@ -1431,36 +1431,36 @@ template = """<!DOCTYPE html>
 
         <!-- Datos rápidos -->
         <section class="px-4 sm:px-8 pt-8 md:pt-10">
-            <dl class="max-w-[1280px] mx-auto bg-surface-container rounded-card p-6 sm:p-8 grid grid-cols-2 gap-x-6 gap-y-7 md:grid-cols-4 lg:grid-cols-7">
+            <dl class="max-w-[1280px] mx-auto bg-surface-container rounded-card p-5 sm:p-8 grid grid-cols-2 gap-x-4 gap-y-5 sm:gap-x-6 sm:gap-y-7 md:grid-cols-4 lg:grid-cols-7">
                 <div class="flex flex-col gap-1">
                     <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">schedule</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_sched_sub}</dt>
-                    <dd class="text-on-surface leading-snug">{qf_sched}</dd>
+                    <dd class="text-[0.9375rem] sm:text-base text-on-surface leading-snug">{qf_sched}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
                     <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">timelapse</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_dur_sub}</dt>
-                    <dd class="text-on-surface leading-snug">{qf_dur}</dd>
+                    <dd class="text-[0.9375rem] sm:text-base text-on-surface leading-snug">{qf_dur}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
                     <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">terrain</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_type_sub}</dt>
-                    <dd class="text-on-surface leading-snug">{qf_type}</dd>
+                    <dd class="text-[0.9375rem] sm:text-base text-on-surface leading-snug">{qf_type}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
                     <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">speed</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_diff_sub}</dt>
-                    <dd class="text-on-surface leading-snug">{qf_diff}</dd>
+                    <dd class="text-[0.9375rem] sm:text-base text-on-surface leading-snug">{qf_diff}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
                     <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">record_voice_over</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_guide_sub}</dt>
-                    <dd class="text-on-surface leading-snug">{qf_guide}</dd>
+                    <dd class="text-[0.9375rem] sm:text-base text-on-surface leading-snug">{qf_guide}</dd>
                 </div>
                 <div class="flex flex-col gap-1">
                     <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">groups</span>
                     <dt class="order-last text-xs uppercase tracking-[0.04em] text-on-surface-variant leading-snug">{qf_group_sub}</dt>
-                    <dd class="text-on-surface leading-snug">{qf_group}</dd>
+                    <dd class="text-[0.9375rem] sm:text-base text-on-surface leading-snug">{qf_group}</dd>
                 </div>
                 <div class="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col gap-1">
                     <span class="material-symbols-outlined text-xl text-primary mb-1" aria-hidden="true">sell</span>
@@ -1471,15 +1471,15 @@ template = """<!DOCTYPE html>
         </section>
 
         <!-- Detalles -->
-        <section class="py-16 md:py-24 px-4 sm:px-8">
-            <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-16 xl:gap-24">
+        <section class="py-12 md:py-24 px-4 sm:px-8">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-12 md:gap-16 xl:gap-24">
 
-                <div class="flex flex-col gap-16 md:gap-20 min-w-0">
+                <div class="flex flex-col gap-12 md:gap-20 min-w-0">
 
                     <!-- Descripción -->
                     <div>
                         <h2 class="font-display text-heading md:text-heading-lg text-on-surface mb-7">{details_label}</h2>
-                        <div class="flex flex-col gap-5 text-lg text-on-surface-variant leading-relaxed max-w-[68ch]">
+                        <div class="flex flex-col gap-5 text-base md:text-lg text-on-surface-variant leading-relaxed max-w-[68ch]">
                             <p>{intro}</p>
                             <p>{intro_p2}</p>
                             <p>{intro_p3}</p>
@@ -1500,7 +1500,7 @@ template = """<!DOCTYPE html>
                     </div>
 
                     <!-- Punto de encuentro -->
-                    <div class="bg-surface-container rounded-card p-7 sm:p-10">
+                    <div class="bg-surface-container rounded-card p-5 sm:p-10">
                         <h2 class="font-display text-heading-sm text-on-surface mb-5 flex items-center gap-3">
                             <span class="material-symbols-outlined text-3xl" aria-hidden="true">location_on</span>
                             {meeting_card_title}
@@ -1546,7 +1546,7 @@ template = """<!DOCTYPE html>
 
                 <!-- Reserva -->
                 <aside>
-                    <div class="lg:sticky lg:top-24 bg-surface-container rounded-card p-7 sm:p-9 flex flex-col gap-7">
+                    <div class="lg:sticky lg:top-24 bg-surface-container rounded-card p-5 sm:p-9 flex flex-col gap-7">
 
                         <div>
                             <p class="flex flex-wrap items-center justify-between gap-2 text-xs uppercase tracking-[0.04em]">
@@ -1604,7 +1604,7 @@ template = """<!DOCTYPE html>
 
         <!-- Por qué elegirnos -->
         <section class="px-4 sm:px-8">
-            <div class="max-w-[1280px] mx-auto bg-secondary-container rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+            <div class="max-w-[1280px] mx-auto bg-secondary-container rounded-card lg:rounded-hero px-5 py-10 sm:px-12 md:py-20 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
                 <h2 class="lg:col-span-4 font-display text-heading md:text-heading-lg text-on-surface text-balance">{why_choose_us_label}</h2>
                 <ul class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
                     <li class="flex gap-4">
@@ -1628,11 +1628,11 @@ template = """<!DOCTYPE html>
         </section>
 
         <!-- Reserva final -->
-        <section class="py-20 md:py-28 px-4 sm:px-8">
-            <div class="max-w-[1280px] mx-auto bg-tertiary text-on-tertiary rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20">
+        <section class="py-14 md:py-28 px-4 sm:px-8">
+            <div class="max-w-[1280px] mx-auto bg-tertiary text-on-tertiary rounded-card lg:rounded-hero px-5 py-10 sm:px-12 md:py-20">
                 <div class="max-w-[680px]">
                     <p class="text-xs uppercase tracking-[0.04em] mb-4">{cta_kicker}</p>
-                    <h2 class="font-display text-heading-lg md:text-display mb-6 text-balance">{cta_title}</h2>
+                    <h2 class="font-display text-heading sm:text-heading-lg md:text-display mb-5 md:mb-6 text-balance">{cta_title}</h2>
                     <p class="text-subheading font-light mb-10 max-w-[52ch]">{cta_desc}</p>
                     <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                         <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-on-tertiary text-white py-3.5 px-7 rounded-full whitespace-nowrap transition-opacity hover:opacity-85 active:scale-[0.98]">
@@ -2168,24 +2168,24 @@ index_template = """<!DOCTYPE html>
                     <h1 class="rise-in [--i:1] font-display text-display lg:text-[3.25rem] text-primary mb-6 text-balance">{h1}</h1>
                     <p class="rise-in [--i:2] text-subheading font-light text-on-surface-variant max-w-[46ch]">{subtitle}</p>
                 </div>
-                <div class="relative lg:col-span-7 h-[400px] sm:h-[520px] lg:h-[min(80dvh,760px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
+                <div class="relative lg:col-span-7 h-[340px] sm:h-[520px] lg:h-[min(80dvh,760px)] overflow-hidden rounded-card lg:rounded-hero bg-surface-container">
                     {hero_bg_html}
                 </div>
             </div>
         </section>
 
         <!-- Tours -->
-        <section class="py-16 md:py-24 px-4 sm:px-8">
-            <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+        <section class="py-10 md:py-24 px-4 sm:px-8">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 sm:gap-y-14">
 {grid_html}
             </div>
         </section>
 
         <!-- Ayuda -->
-        <section class="pb-20 md:pb-28 px-4 sm:px-8">
-            <div class="max-w-[1280px] mx-auto bg-tertiary text-on-tertiary rounded-card lg:rounded-hero px-6 py-14 sm:px-12 md:py-20">
+        <section class="pb-14 md:pb-28 px-4 sm:px-8">
+            <div class="max-w-[1280px] mx-auto bg-tertiary text-on-tertiary rounded-card lg:rounded-hero px-5 py-10 sm:px-12 md:py-20">
                 <div class="max-w-[680px]">
-                    <h2 class="font-display text-heading-lg md:text-display mb-6 text-balance">{cta_title}</h2>
+                    <h2 class="font-display text-heading sm:text-heading-lg md:text-display mb-5 md:mb-6 text-balance">{cta_title}</h2>
                     <p class="text-subheading font-light mb-10 max-w-[52ch]">{cta_desc}</p>
                     <a href="https://api.whatsapp.com/send?phone=+51961542547&text={whatsapp_text}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-on-tertiary text-white py-3.5 px-7 rounded-full whitespace-nowrap transition-opacity hover:opacity-85 active:scale-[0.98]">
                         {wa_icon}
@@ -2277,15 +2277,15 @@ for lang in ["es", "en"]:
             usd_note = f" ({p_usd})" if p_usd else ""
             price_badge = f"{texts['from_label']} {tour_info['price']}{usd_note}"
         
-        card_html = f"""                <a href="{tour_info['filename'].removesuffix('.html')}" class="group flex flex-col gap-4">
-                    <div class="h-60 md:h-64 overflow-hidden rounded-card bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" {img_attrs(root_prefix, tour_info['image'], "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw")} alt="{tour_content['h1']}" loading="lazy" decoding="async" />
+        card_html = f"""                <a href="{tour_info['filename'].removesuffix('.html')}" class="group grid grid-cols-[112px_1fr] gap-4 sm:flex sm:flex-col">
+                    <div class="h-28 sm:h-60 md:h-64 overflow-hidden rounded-chip sm:rounded-card bg-surface-container">
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" {img_attrs(root_prefix, tour_info['image'], "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, (min-width: 640px) 100vw, 112px")} alt="{tour_content['h1']}" loading="lazy" decoding="async" />
                     </div>
-                    <div class="flex flex-col gap-2 flex-1">
+                    <div class="flex flex-col gap-1 sm:gap-2 flex-1 min-w-0">
                         <span class="text-xs uppercase tracking-[0.04em] text-on-surface-variant">{cat_label}</span>
-                        <h2 class="font-display text-heading-sm text-on-surface group-hover:underline decoration-1 underline-offset-4">{tour_content['h1']}</h2>
-                        <p class="text-[0.9375rem] text-on-surface-variant leading-relaxed line-clamp-3">{tour_content['desc']}</p>
-                        <p class="font-medium text-on-surface tabular-nums mt-auto pt-1">{price_badge}</p>
+                        <h2 class="font-display text-base sm:text-heading-sm text-on-surface group-hover:underline decoration-1 underline-offset-4">{tour_content['h1']}</h2>
+                        <p class="text-sm sm:text-[0.9375rem] text-on-surface-variant leading-relaxed line-clamp-2 sm:line-clamp-3">{tour_content['desc']}</p>
+                        <p class="text-sm sm:text-base font-medium text-on-surface tabular-nums mt-auto pt-1">{price_badge}</p>
                     </div>
                 </a>
 """

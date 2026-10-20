@@ -86,9 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ["transporte-personalizado", t.tours.traslados]
         ].map(([href, label]) => `<li><a class="${link}" href="${baseNavPath}${href}">${label}</a></li>`).join("");
 
-        footerContainer.className = "bg-surface text-on-surface px-4 sm:px-8 pt-24";
+        footerContainer.className = "bg-surface text-on-surface px-4 sm:px-8 pt-16 md:pt-24";
         footerContainer.innerHTML = `
-            <div class="max-w-[1280px] mx-auto grid grid-cols-1 gap-14 pb-16 md:grid-cols-12 md:gap-10">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 gap-10 pb-12 md:pb-16 md:grid-cols-12">
                 <div class="md:col-span-5 flex flex-col gap-6 max-w-[420px]">
                     <a href="${homePath}" class="self-start">
                         <img alt="SolyMar Paracas" class="h-10 w-auto dark:box-content dark:bg-on-surface dark:rounded-full dark:px-3 dark:py-1" width="310" height="100" loading="lazy" decoding="async" src="${pathPrefix}img/SolyMar-web.png" />
@@ -112,15 +112,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
                 <nav class="md:col-span-4" aria-label="${t.experiences}">
-                    <h2 class="font-display text-heading-sm text-on-surface mb-6">${t.experiences}</h2>
-                    <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-x-8">
+                    <h2 class="font-display text-heading-sm text-on-surface mb-4 md:mb-6">${t.experiences}</h2>
+                    <ul class="grid grid-cols-2 gap-x-6 gap-y-3 sm:gap-x-8 sm:gap-y-4">
                         ${tourItems}
                         <li><a class="text-sm text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary" href="${baseNavPath}tours">${t.tours.all}</a></li>
                     </ul>
                 </nav>
                 <nav class="md:col-span-3" aria-label="${t.support}">
-                    <h2 class="font-display text-heading-sm text-on-surface mb-6">${t.support}</h2>
-                    <ul class="flex flex-col gap-4">
+                    <h2 class="font-display text-heading-sm text-on-surface mb-4 md:mb-6">${t.support}</h2>
+                    <ul class="grid grid-cols-2 gap-x-6 gap-y-3 md:flex md:flex-col md:gap-4">
                         <li><a class="${link}" href="${homePath}#faq">${t.faq}</a></li>
                         <li><a class="${link}" href="${homePath}#nosotros">${t.about}</a></li>
                         <li><a class="${link}" href="${baseNavPath}blog/">${t.blog}</a></li>
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </ul>
                 </nav>
             </div>
-            <div class="max-w-[1280px] mx-auto py-8 text-xs text-on-surface-variant">
+            <div class="max-w-[1280px] mx-auto pt-8 pb-24 md:pb-8 text-xs text-on-surface-variant">
                 <span>${t.rights}</span>
             </div>
         `;
@@ -139,10 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
     waButton.href = `https://api.whatsapp.com/send?phone=51961542547&text=${t.waFloatText}`;
     // En los tours, la barra de reserva fija (#mobile-book-bar) reemplaza al botón flotante en móvil.
     const hasBookBar = document.getElementById('mobile-book-bar') !== null;
-    waButton.className = `fixed w-14 h-14 bottom-5 right-5 bg-[#25d366] text-white rounded-full ${hasBookBar ? 'hidden lg:flex' : 'flex'} items-center justify-center z-[900] transition-transform hover:-translate-y-0.5 active:scale-95`;
+    waButton.className = `fixed w-12 h-12 bottom-4 right-4 sm:w-14 sm:h-14 sm:bottom-5 sm:right-5 bg-[#25d366] text-white rounded-full ${hasBookBar ? 'hidden lg:flex' : 'flex'} items-center justify-center z-[900] transition-transform hover:-translate-y-0.5 active:scale-95`;
     waButton.target = "_blank";
     waButton.rel = "noopener";
     waButton.setAttribute('aria-label', 'WhatsApp');
-    waButton.innerHTML = `<svg class="w-7 h-7 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>`;
+    waButton.innerHTML = `<svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>`;
     document.body.appendChild(waButton);
 });
