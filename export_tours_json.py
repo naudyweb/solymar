@@ -53,12 +53,32 @@ for slug, t in tours.items():
         "price": t["price"],
         "price_val": t["price_val"],
         "price_cur": t["price_cur"],
+        "price_options": t.get("price_options", []),
         "quote_only": bool(t.get("quote_only", False)),
         "schedule_es": t["es"].get("schedule_label", ""),
         "schedule_en": t["en"].get("schedule_label", ""),
         "url_es": f"https://solymarparacas.com/{clean_filename}",
         "url_en": f"https://solymarparacas.com/en/{clean_filename}",
     })
+
+# Variantes que solo se venden desde la herramienta de reservas (no tienen pagina
+# publica): copian los datos de un tour base y sobrescriben slug, titulo y precio.
+RESERVAS_ONLY_VARIANTS = [
+    {
+        "base": "buggies-sandboard-huacachina",
+        "slug": "buggies-sandboard-huacachina-desde-paracas",
+        "title_es": "Buggies y Sandboard en Huacachina desde Paracas",
+        "title_en": "Huacachina Dune Buggy & Sandboarding from Paracas",
+        "price": "S/ 100",
+        "price_val": "100",
+        "schedule_es": "* Incluye traslado desde Paracas a Huacachina. Turnos recomendados a las 4:00 PM y 4:30 PM para disfrutar de la puesta del sol.",
+        "schedule_en": "* Includes transfer from Paracas to Huacachina. Best times are 4:00 PM and 4:30 PM to enjoy the sunset.",
+    },
+]
+
+for variant in RESERVAS_ONLY_VARIANTS:
+    base = next(t for t in out if t["slug"] == variant["base"])
+    out.append({**base, **{k: v for k, v in variant.items() if k != "base"}})
 
 out.sort(key=lambda x: (x["category_order"], x["title_es"]))
 

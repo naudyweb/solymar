@@ -474,34 +474,38 @@ tours = {
     "buceo": {
         "filename": "buceo.html",
         "image": "img/buceo.jpg",
-        "price": "S/ 400",
-        "price_val": "400",
+        "price": "S/ 480",
+        "price_val": "480",
         "price_cur": "PEN",
+        "price_options": [
+            {"label_es": "Bahía de Paracas", "label_en": "Paracas Bay", "price_val": "480"},
+            {"label_es": "Islas Blanca", "label_en": "Islas Blanca", "price_val": "850"},
+        ],
         "category": "mar",
         "es": {
             "title": "Buceo en Paracas 2026: Bautizo de Mar con Instructor | SolyMar Paracas",
-            "desc": "Bautizo de buceo y salidas guiadas en Bahía de Paracas ($120 USD / S/ 400) e Islas Blanca ($220 USD / S/ 745). Instructor, equipo completo y fotos bajo el agua. Reserva por WhatsApp.",
+            "desc": "Bautizo de buceo y salidas guiadas en Bahía de Paracas ($145 USD / S/ 480) e Islas Blanca ($255 USD / S/ 850). Instructor, equipo completo y fotos bajo el agua. Reserva por WhatsApp.",
             "h1": "Buceo en Paracas",
             "keywords": "buceo paracas, buceo paracas precio, buceo islas blanca, bautizo de buceo peru, donde bucear en peru, discover scuba diving peru, buceo con lobos marinos",
             "subtitle": "Sumérgete en los ecosistemas de la corriente de Humboldt: bosques de algas, estrellas de mar y lobos marinos curiosos.",
             "intro": "El <strong>buceo en Paracas</strong> te abre las puertas a uno de los mares más productivos del planeta: las aguas frías y ricas en nutrientes de la corriente de Humboldt concentran una vida marina que sorprende incluso a buzos experimentados.",
-            "intro_p2": "Ofrecemos el <strong>Bautizo de Buceo (Discover Scuba Diving)</strong> para principiantes sin licencia y <strong>salidas guiadas para buzos certificados y aficionados</strong> en dos puntos principales: la <strong>Bahía de Paracas</strong> ($120 USD / S/ 400 soles) e <strong>Islas Blanca</strong> ($220 USD / S/ 745 soles).",
+            "intro_p2": "Ofrecemos el <strong>Bautizo de Buceo (Discover Scuba Diving)</strong> para principiantes sin licencia y <strong>salidas guiadas para buzos certificados y aficionados</strong> en dos puntos principales: la <strong>Bahía de Paracas</strong> ($145 USD / S/ 480 soles) e <strong>Islas Blanca</strong> ($255 USD / S/ 850 soles).",
             "intro_p3": "Todas las salidas van acompañadas de instructores certificados que controlan tu flotabilidad y te guían paso a paso, con fotos y videos subacuáticos incluidos para que te lleves el recuerdo.",
             "why_title": "Opciones y puntos de inmersión",
             "why_items": [
-                {"icon": "water_drop", "title": "Bahía de Paracas ($120 USD / S/ 400)", "desc": "Inmersión en la Bahía de Paracas. Ideal para principiantes y bautizos de buceo en aguas tranquilas con variada fauna marina."},
-                {"icon": "landscape", "title": "Islas Blanca ($220 USD / S/ 745)", "desc": "Navegación a Islas Blanca para sumergirte en aguas cristalinas con paisajes rocosos y abundantes especies marinas."},
+                {"icon": "water_drop", "title": "Bahía de Paracas ($145 USD / S/ 480)", "desc": "Inmersión en la Bahía de Paracas. Ideal para principiantes y bautizos de buceo en aguas tranquilas con variada fauna marina."},
+                {"icon": "landscape", "title": "Islas Blanca ($255 USD / S/ 850)", "desc": "Navegación a Islas Blanca para sumergirte en aguas cristalinas con paisajes rocosos y abundantes especies marinas."},
                 {"icon": "photo_camera", "title": "Fotos Subacuáticas", "desc": "Te tomamos fotos y videos bajo el agua con cámaras especiales para que compartas tu experiencia."},
                 {"icon": "shield", "title": "Equipamiento Completo", "desc": "Traje de neopreno de 5mm, tanque, regulador, chaleco compensador (BCD), máscara, aletas y plomos incluidos."}
             ],
             "custom_price_html": """<div class="flex flex-col gap-3 mb-2">
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Bahía de Paracas:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$120 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 400)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$145 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 480)</span></span>
     </div>
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Islas Blanca:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$220 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 745)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$255 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 850)</span></span>
     </div>
 </div>""",
             "price_sub_label": "Precio por persona según punto de inmersión",
@@ -510,7 +514,7 @@ tours = {
             "schedule_label": "* Salidas diarias a las 8:30 AM. Duración total de la actividad: 3.5 horas aprox.",
             "faq_title": "Preguntas Frecuentes",
             "faqs": [
-                {"q": "¿Cuánto cuesta el buceo en Paracas?", "a": "El precio del buceo en Paracas varía según el punto de inmersión seleccionado:<br>• <strong>Bahía de Paracas:</strong> $120 USD ó S/ 400 soles por persona.<br>• <strong>Islas Blanca:</strong> $220 USD ó S/ 745 soles por persona.<br><br>Ambas opciones incluyen clase teórica y práctica, inmersión guiada con instructor certificado, equipo completo de buceo (traje de neopreno 5mm, tanque, regulador, BCD, plomos), fotos y videos digitales bajo el agua y navegación al punto de buceo. Solo se paga aparte la entrada a la Reserva Nacional SERNANP (S/ 16.00 soles por persona)."},
+                {"q": "¿Cuánto cuesta el buceo en Paracas?", "a": "El precio del buceo en Paracas varía según el punto de inmersión seleccionado:<br>• <strong>Bahía de Paracas:</strong> $145 USD ó S/ 480 soles por persona.<br>• <strong>Islas Blanca:</strong> $255 USD ó S/ 850 soles por persona.<br><br>Ambas opciones incluyen clase teórica y práctica, inmersión guiada con instructor certificado, equipo completo de buceo (traje de neopreno 5mm, tanque, regulador, BCD, plomos), fotos y videos digitales bajo el agua y navegación al punto de buceo. Solo se paga aparte la entrada a la Reserva Nacional SERNANP (S/ 16.00 soles por persona)."},
                 {"q": "¿Necesito saber nadar para el Bautizo?", "a": "Es recomendable sentirse cómodo en el agua, pero no necesitas ser un nadador experto. El instructor te sostiene y controla tu flotabilidad durante toda la inmersión."},
                 {"q": "¿A qué profundidad descendemos?", "a": "Para el bautizo de buceo descendemos a una profundidad máxima de entre 5 y 10 metros, ideal para observar la fauna marina con luz natural y total seguridad."},
                 {"q": "¿Qué fauna se puede ver bajo el agua?", "a": "El fondo marino de Paracas alberga erizos, estrellas de mar rojas, pulpos, cangrejos, lenguados, caballitos de mar en temporada, bosques de algas y, con frecuencia, lobos marinos juveniles curiosos que se acercan a los buzos."},
@@ -521,28 +525,28 @@ tours = {
         },
         "en": {
             "title": "Scuba Diving in Paracas 2026: Discover Dive & Fun Dives | SolyMar",
-            "desc": "Discover Scuba dives and guided trips in Paracas Bay ($120 USD / S/ 400) and Islas Blanca ($220 USD / S/ 745). Instructor, full gear, and underwater photos included. Book via WhatsApp.",
+            "desc": "Discover Scuba dives and guided trips in Paracas Bay ($145 USD / S/ 480) and Islas Blanca ($255 USD / S/ 850). Instructor, full gear, and underwater photos included. Book via WhatsApp.",
             "h1": "Scuba Diving in Paracas",
             "keywords": "scuba diving paracas, scuba diving paracas price, diving islas blanca, discovery dive peru, where to dive in peru, diving with sea lions peru",
             "subtitle": "Dive into the Humboldt Current ecosystems: kelp forests, red starfish, and curious sea lions.",
             "intro": "<strong>Scuba diving in Paracas</strong> opens the door to one of the most productive seas on Earth: the cold, nutrient-rich waters of the Humboldt Current concentrate marine life that surprises even experienced divers.",
-            "intro_p2": "We offer the <strong>Discover Scuba Diving</strong> experience for beginners without certification, as well as <strong>guided dives for certified divers</strong> in two main locations: <strong>Paracas Bay</strong> ($120 USD / S/ 400 soles) and <strong>Islas Blanca</strong> ($220 USD / S/ 745 soles).",
+            "intro_p2": "We offer the <strong>Discover Scuba Diving</strong> experience for beginners without certification, as well as <strong>guided dives for certified divers</strong> in two main locations: <strong>Paracas Bay</strong> ($145 USD / S/ 480 soles) and <strong>Islas Blanca</strong> ($255 USD / S/ 850 soles).",
             "intro_p3": "Every trip is led by certified instructors who manage your buoyancy and guide you step by step, with underwater photos and videos included so you take the memory home.",
             "why_title": "Diving Options & Dive Spots",
             "why_items": [
-                {"icon": "water_drop", "title": "Paracas Bay ($120 USD / S/ 400)", "desc": "Diving experience in Paracas Bay. Perfect for beginners and discovery dives in calm, protected waters rich in marine life."},
-                {"icon": "landscape", "title": "Islas Blanca ($220 USD / S/ 745)", "desc": "Boat trip to Islas Blanca to dive in clear island waters with underwater rock structures and diverse wildlife."},
+                {"icon": "water_drop", "title": "Paracas Bay ($145 USD / S/ 480)", "desc": "Diving experience in Paracas Bay. Perfect for beginners and discovery dives in calm, protected waters rich in marine life."},
+                {"icon": "landscape", "title": "Islas Blanca ($255 USD / S/ 850)", "desc": "Boat trip to Islas Blanca to dive in clear island waters with underwater rock structures and diverse wildlife."},
                 {"icon": "photo_camera", "title": "GoPro Photos & Videos", "desc": "We capture underwater HD photos and videos of your dive so you can remember and share your adventure."},
                 {"icon": "shield", "title": "Complete Equipment", "desc": "5mm wetsuit, tanks, regulator, BCD jacket, mask, fins, and weights are fully provided."}
             ],
             "custom_price_html": """<div class="flex flex-col gap-3 mb-2">
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Paracas Bay:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$120 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 400)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$145 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 480)</span></span>
     </div>
     <div class="flex justify-between items-baseline border-b border-black/10 pb-3">
         <span class="text-base font-bold text-primary">Islas Blanca:</span>
-        <span class="text-2xl font-extrabold text-on-surface">$220 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 745)</span></span>
+        <span class="text-2xl font-extrabold text-on-surface">$255 USD <span class="text-sm font-semibold text-on-surface-variant">(S/ 850)</span></span>
     </div>
 </div>""",
             "price_sub_label": "Price per person based on selected dive spot",
@@ -551,7 +555,7 @@ tours = {
             "schedule_label": "* Daily departures at 8:30 AM. Total activity duration: approx. 3.5 hours.",
             "faq_title": "Frequently Asked Questions",
             "faqs": [
-                {"q": "How much does scuba diving in Paracas cost?", "a": "The price for scuba diving in Paracas depends on the selected dive spot:<br>• <strong>Paracas Bay:</strong> $120 USD or S/ 400 soles per person.<br>• <strong>Islas Blanca:</strong> $220 USD or S/ 745 soles per person.<br><br>Both options include theoretical and practical instruction, a guided dive with a certified instructor, full dive gear (5mm wetsuit, tank, regulator, BCD, weights), digital underwater photos/videos, and boat transport. The SERNANP Paracas Reserve entrance fee (S/ 16.00 soles per person) is paid separately."},
+                {"q": "How much does scuba diving in Paracas cost?", "a": "The price for scuba diving in Paracas depends on the selected dive spot:<br>• <strong>Paracas Bay:</strong> $145 USD or S/ 480 soles per person.<br>• <strong>Islas Blanca:</strong> $255 USD or S/ 850 soles per person.<br><br>Both options include theoretical and practical instruction, a guided dive with a certified instructor, full dive gear (5mm wetsuit, tank, regulator, BCD, weights), digital underwater photos/videos, and boat transport. The SERNANP Paracas Reserve entrance fee (S/ 16.00 soles per person) is paid separately."},
                 {"q": "Do I need to know how to swim for the Discovery Dive?", "a": "Basic water comfort is recommended, but you don't need to be an expert swimmer. Your instructor holds you and manages your buoyancy throughout the dive."},
                 {"q": "How deep do we go?", "a": "For first-time divers, the maximum depth is restricted to 5-10 meters (15-30 feet), which is optimal for natural light, wildlife viewing, and safety."},
                 {"q": "What marine life will we see?", "a": "The cold waters host red starfish, sea urchins, octopuses, crabs, flounders, seasonal seahorses, kelp forests, and frequently curious juvenile sea lions that approach divers."},
@@ -822,6 +826,38 @@ tours = {
     "trekking": {
         "filename": "trekking.html",
         "image": "img/trekking.jpg",
+        "hero_gallery": [
+            {
+                "image": "img/trekking.jpg",
+                "alt_es": "Trekking Sombras Doradas en Paracas - Vista panorámica al mar desde los acantilados",
+                "alt_en": "Golden Shadows Trek in Paracas - Panoramic ocean view from the cliffs",
+            },
+            {
+                "image": "img/trekking-2.jpg",
+                "alt_es": "Grupo de senderistas recorriendo la cresta de acantilados dorados",
+                "alt_en": "Group of hikers walking along the golden cliff crest",
+            },
+            {
+                "image": "img/trekking-3.jpg",
+                "alt_es": "Silueta al atardecer sosteniendo el sol sobre el mar de Paracas",
+                "alt_en": "Sunset silhouette holding the sun above the Paracas ocean",
+            },
+            {
+                "image": "img/trekking-4.jpg",
+                "alt_es": "Acantilados y playas vírgenes de la Reserva Nacional de Paracas",
+                "alt_en": "Cliffs and untouched shores of the Paracas National Reserve",
+            },
+            {
+                "image": "img/trekking-5.jpg",
+                "alt_es": "Salto de celebración frente a la puesta de sol en Paracas",
+                "alt_en": "Celebration jump facing the golden sunset in Paracas",
+            },
+            {
+                "image": "img/trekking-6.jpg",
+                "alt_es": "Olas gigantes rompiendo al anochecer frente a los senderistas",
+                "alt_en": "Giant ocean waves crashing at dusk before the hikers",
+            },
+        ],
         "price": "S/ 120",
         "price_val": "120",
         "price_cur": "PEN",
@@ -1030,7 +1066,7 @@ PRICE_USD_MAP = {
     "ruta-del-pisco-bodegas-ica": "≈ US$ 22",
     "paracas-huacachina-full-day": "≈ US$ 52",
     "parapente": "≈ US$ 68",
-    "buceo": "≈ US$ 109",
+    "buceo": "≈ US$ 131",
     "kayak-paddle-paracas": "≈ US$ 16",
     "mini-buggies-paracas": "≈ US$ 33",
     "tambo-colorado": "≈ US$ 22",
@@ -1197,8 +1233,14 @@ WHAT_TO_BRING = {
 # Responsive images: optimize_images.py writes img/w/<name>-<width>.webp variants.
 def img_variants(image):
     name = os.path.splitext(os.path.basename(image))[0]
-    widths = sorted(int(p.rsplit("-", 1)[1][:-5]) for p in glob.glob(f"img/w/{name}-*.webp"))
-    return name, widths
+    matched = []
+    for p in glob.glob(f"img/w/{name}-*.webp"):
+        base = os.path.basename(p)
+        prefix, suffix = base.rsplit("-", 1)
+        if prefix == name and suffix[:-5].isdigit():
+            matched.append(int(suffix[:-5]))
+    return name, sorted(matched)
+
 
 
 def img_attrs(root_prefix, image, sizes):
@@ -1210,6 +1252,20 @@ def img_attrs(root_prefix, image, sizes):
     return f'src="{root_prefix}img/w/{name}-{widths[-1]}.webp" srcset="{srcset}" sizes="{sizes}"'
 
 
+def hero_slideshow(root_prefix, slides, label):
+    """Hero background slideshow: slides is a list of (image, alt); js/hero-slider.js cross-fades them."""
+    imgs = []
+    for idx, (image, alt) in enumerate(slides):
+        if idx == 0:
+            imgs.append(f'                <img class="hero-slide is-active" {img_attrs(root_prefix, image, "100vw")} alt="{alt}" fetchpriority="high" decoding="async" />')
+        else:
+            imgs.append(f'                <img class="hero-slide" {img_attrs(root_prefix, image, "100vw")} alt="{alt}" decoding="async" />')
+    joined = "\n".join(imgs)
+    return f'''<div id="hero-slider" class="absolute inset-0 w-full h-full overflow-hidden" aria-label="{label}">
+{joined}
+            </div>'''
+
+
 def img_preload(root_prefix, image):
     name, widths = img_variants(image)
     if not widths:
@@ -1219,6 +1275,9 @@ def img_preload(root_prefix, image):
 
 
 # Shared SVG snippets (WhatsApp mark from Simple Icons; Candelabro de Paracas line mark)
+# Hero photos of tours.html / en/tours.html (add more to turn it into a slideshow)
+TOURS_INDEX_HERO_GALLERY = ["img/reserva-nacional-paracas.jpg"]
+
 WA_ICON = '<svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>'
 CANDELABRO = ('<svg viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" '
               'stroke-linejoin="round" aria-hidden="true" class="hidden md:block absolute right-8 lg:right-24 bottom-0 h-[85%] w-auto text-sand/35">'
@@ -1327,10 +1386,10 @@ template = """<!DOCTYPE html>
     <main>
         <!-- Hero -->
         <section class="relative min-h-[min(78dvh,760px)] flex items-end overflow-hidden bg-deep">
-            <img class="absolute inset-0 w-full h-full object-cover" {hero_img_attrs} alt="{h1}" fetchpriority="high" decoding="async" />
-            <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/55 to-deep/10"></div>
-            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-deep/80 to-transparent"></div>
-            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-24 pb-14 md:pb-20">
+            {hero_bg_html}
+            <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/55 to-deep/10 pointer-events-none"></div>
+            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-deep/80 to-transparent pointer-events-none"></div>
+            <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-24 pb-14 md:pb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
                 <div class="max-w-[860px] text-white">
                     <nav aria-label="Breadcrumb" class="rise-in text-sm text-white/75 mb-5">
                         <a href="{home_link}" class="hover:text-white hover:underline">{home_label}</a>
@@ -1587,6 +1646,7 @@ template = """<!DOCTYPE html>
 
     <script src="{root_prefix}js/header.js"></script>
     <script src="{root_prefix}js/footer.js"></script>
+    {hero_slider_js}
 </body>
 
 </html>
@@ -1870,6 +1930,14 @@ for tour_key, tour_info in tours_formatted.items():
             rev_text = comm["featured_review_text"]
             rev_author = comm["featured_review_author"]
         
+        # Hero slideshow: hero_gallery if the tour has one, otherwise just its main photo
+        gallery = tour_info.get("hero_gallery") or [{"image": tour_info["image"]}]
+        hero_bg_html = hero_slideshow(
+            root_prefix,
+            [(item["image"], item.get(f"alt_{lang}", item.get("alt_es", content["h1"]))) for item in gallery],
+            "Galería de fotos" if lang == "es" else "Photo gallery",
+        )
+
         # Render page
         rendered_html = template.format(
             lang=lang,
@@ -1965,7 +2033,8 @@ for tour_key, tour_info in tours_formatted.items():
             offers_json=offers_json,
             wa_icon=WA_ICON,
             candelabro=CANDELABRO,
-            hero_img_attrs=img_attrs(root_prefix, tour_info["image"], "100vw"),
+            hero_bg_html=hero_bg_html,
+            hero_slider_js=f'<script src="{root_prefix}js/hero-slider.js" defer></script>',
             bar_price=price_display,
             hero_preload=img_preload(root_prefix, tour_info["image"]),
             faq_schema=faq_schema
@@ -2069,7 +2138,7 @@ index_template = """<!DOCTYPE html>
     <main>
         <!-- Hero -->
         <section class="relative min-h-[min(56dvh,560px)] flex items-end overflow-hidden bg-deep">
-            <img class="absolute inset-0 w-full h-full object-cover" {hero_img_attrs} alt="{h1}" fetchpriority="high" decoding="async" />
+            {hero_bg_html}
             <div class="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/60 to-deep/15"></div>
             <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-deep/80 to-transparent"></div>
             <div class="relative w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-20 pb-14 md:pb-20">
@@ -2112,6 +2181,7 @@ index_template = """<!DOCTYPE html>
 
     <script src="{root_prefix}js/header.js"></script>
     <script src="{root_prefix}js/footer.js"></script>
+    <script src="{root_prefix}js/hero-slider.js" defer></script>
 </body>
 
 </html>
@@ -2242,8 +2312,12 @@ for lang in ["es", "en"]:
         cta_button_label=texts["cta_button_label"],
         wa_icon=WA_ICON,
         candelabro=CANDELABRO,
-        hero_img_attrs=img_attrs(root_prefix, "img/reserva-nacional-paracas.jpg", "100vw"),
-        hero_preload=img_preload(root_prefix, "img/reserva-nacional-paracas.jpg")
+        hero_bg_html=hero_slideshow(
+            root_prefix,
+            [(image, texts["h1"]) for image in TOURS_INDEX_HERO_GALLERY],
+            "Galería de fotos" if lang == "es" else "Photo gallery",
+        ),
+        hero_preload=img_preload(root_prefix, TOURS_INDEX_HERO_GALLERY[0])
     )
     
     out_dir = "en" if lang == "en" else "."

@@ -71,11 +71,18 @@ reservas_render_flash();
                             <option value="<?= htmlspecialchars($tour['slug'], ENT_QUOTES) ?>"
                                 <?= (isset($editing) && $editing['tour_slug'] === $tour['slug']) ? 'selected' : '' ?>>
                                 <?= htmlspecialchars($tour['title_es'], ENT_QUOTES) ?>
-                                (<?= htmlspecialchars($tour['price'], ENT_QUOTES) ?>)
+                                (<?= !empty($tour['price_options']) ? 'desde ' : '' ?><?= htmlspecialchars($tour['price'], ENT_QUOTES) ?>)
                             </option>
                         <?php endforeach; ?>
                     </optgroup>
                 <?php endforeach; ?>
+            </select>
+        </div>
+
+        <div id="price-option-field" class="hidden">
+            <label for="price_option" class="block text-sm font-medium mb-1">Opción / precio por persona</label>
+            <select id="price_option"
+                    class="w-full border border-surface-container rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
             </select>
         </div>
 
@@ -260,8 +267,29 @@ trasladoOrigen.addEventListener('change', () => toggleTrasladoOtro(trasladoOrige
 trasladoDestino.addEventListener('change', () => toggleTrasladoOtro(trasladoDestino, trasladoDestinoOtro));
 updateTrasladoVisibility();
 
+const priceOptionField = document.getElementById('price-option-field');
+const priceOption = document.getElementById('price_option');
+
+// Tours con varios precios (p. ej. buceo: Bahía / Islas Blanca) muestran un selector de opción
+function updatePriceOptions(tour) {
+    const options = (tour && tour.price_options) || [];
+    priceOption.innerHTML = '';
+    options.forEach(opt => {
+        const symbol = tour.price_cur === 'USD' ? '$' : 'S/';
+        priceOption.add(new Option(`${opt.label_es} (${symbol} ${opt.price_val})`, opt.price_val));
+    });
+    priceOptionField.classList.toggle('hidden', options.length === 0);
+}
+
+priceOption.addEventListener('change', function () {
+    if (isEditing) return;
+    const tour = TOURS.find(t => t.slug === document.getElementById('tour_slug').value);
+    if (tour && !tour.quote_only) recalcPrice(tour);
+});
+
 document.getElementById('tour_slug').addEventListener('change', function () {
     updateTrasladoVisibility();
+    updatePriceOptions(TOURS.find(t => t.slug === this.value));
     if (isEditing) return; // no pisar datos ya guardados al editar
 
     if (this.value === TRASLADO_VIP_SLUG) {
@@ -293,7 +321,8 @@ document.getElementById('num_people').addEventListener('input', function () {
 
 function recalcPrice(tour) {
     const people = parseInt(document.getElementById('num_people').value || '1', 10);
-    const total = parseFloat(tour.price_val) * (people || 1);
+    const unit = (tour.price_options || []).length ? priceOption.value : tour.price_val;
+    const total = parseFloat(unit) * (people || 1);
     const symbol = tour.price_cur === 'USD' ? '$' : 'S/';
     document.getElementById('price_total').value = `${symbol} ${total.toFixed(2)}`;
 }
