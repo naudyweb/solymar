@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerHTML = `
         <div class="max-w-[1344px] mx-auto px-4 sm:px-8 h-16 flex justify-between items-center gap-6">
             <a href="${homePath}" class="shrink-0">
-                <img class="h-9 w-auto dark:box-content dark:bg-on-surface dark:rounded-full dark:px-3 dark:py-1" src="${rootPath}img/SolyMar-web.webp" alt="SolyMar Paracas" width="310" height="100" fetchpriority="high" decoding="async" />
+                <img class="h-9 w-auto dark:box-content dark:bg-on-surface dark:rounded-full dark:px-3 dark:py-1" src="${rootPath}img/SolyMar-web.webp" alt="SolyMar Paracas" width="310" height="100" decoding="async" />
             </a>
 
             <!-- Mobile: idioma + menú -->
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <span class="flex dark:hidden"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">dark_mode</span></span>
                     <span class="hidden dark:flex"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">light_mode</span></span>
                 </button>
-                <a href="${otherLangLink}" hreflang="${otherLangCode}" title="${otherLangTitle}" aria-label="${otherLangTitle}" class="text-sm px-4 py-1.5 rounded-full border border-on-surface text-on-surface transition-colors hover:bg-on-surface hover:text-surface">${otherLangText}</a>
+                <a href="${otherLangLink}" hreflang="${otherLangCode}" title="${otherLangTitle}" aria-label="${otherLangText} — ${otherLangTitle}" class="text-sm px-4 py-1.5 rounded-full border border-on-surface text-on-surface transition-colors hover:bg-on-surface hover:text-surface">${otherLangText}</a>
                 <button type="button" class="relative w-11 h-11 flex items-center justify-center rounded-full z-[1100]" aria-label="${t.menu}" aria-expanded="false" aria-controls="mobile-nav" id="mobile-menu-btn">
                     <span class="w-6 h-0.5 bg-on-surface relative transition-all duration-300 before:content-[''] before:absolute before:w-6 before:h-0.5 before:bg-on-surface before:-top-2 before:left-0 before:transition-all before:duration-300 after:content-[''] after:absolute after:w-6 after:h-0.5 after:bg-on-surface after:top-2 after:left-0 after:transition-all after:duration-300" id="hamburger-icon"></span>
                 </button>
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <span class="flex dark:hidden"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">dark_mode</span></span>
                     <span class="hidden dark:flex"><span class="material-symbols-outlined text-[1.375rem]" aria-hidden="true">light_mode</span></span>
                 </button>
-                <a href="${otherLangLink}" hreflang="${otherLangCode}" title="${otherLangTitle}" aria-label="${otherLangTitle}" class="text-sm px-4 py-1.5 rounded-full border border-on-surface text-on-surface transition-colors hover:bg-on-surface hover:text-surface">${otherLangText}</a>
+                <a href="${otherLangLink}" hreflang="${otherLangCode}" title="${otherLangTitle}" aria-label="${otherLangText} — ${otherLangTitle}" class="text-sm px-4 py-1.5 rounded-full border border-on-surface text-on-surface transition-colors hover:bg-on-surface hover:text-surface">${otherLangText}</a>
                 <a href="https://wa.me/51961542547?text=${t.waText}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-tertiary text-on-tertiary py-2.5 px-5 rounded-full text-sm whitespace-nowrap transition-colors hover:bg-tertiary-container active:scale-[0.98]">${waIcon}${t.book}</a>
             </div>
         </div>

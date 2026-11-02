@@ -10,8 +10,8 @@ hand-written pages). Re-run after adding or replacing a photo:
 import os
 from PIL import Image
 
-WIDTHS = (480, 960, 1264, 1600)
-QUALITY = 76
+WIDTHS = (480, 680, 960, 1264, 1600)
+QUALITY = 68
 OUT_DIR = "img/w"
 SOURCES = [
     "img/adrenarena.jpg", "img/atv-gokart.jpg", "img/ballestas-y-reserva-full-day.jpg",
@@ -32,13 +32,15 @@ def variant_widths(original_width):
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
+    script_mtime = os.path.getmtime(__file__)
     for src in SOURCES:
         name = os.path.splitext(os.path.basename(src))[0]
+        src_mtime = max(os.path.getmtime(src), script_mtime)
         with Image.open(src) as im:
             im = im.convert("RGB")
             for w in variant_widths(im.width):
                 out = os.path.join(OUT_DIR, f"{name}-{w}.webp")
-                if os.path.exists(out) and os.path.getmtime(out) >= os.path.getmtime(src):
+                if os.path.exists(out) and os.path.getmtime(out) >= src_mtime:
                     continue
                 h = round(im.height * w / im.width)
                 im.resize((w, h), Image.LANCZOS).save(out, "WEBP", quality=QUALITY, method=6)

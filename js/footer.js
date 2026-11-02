@@ -1,14 +1,26 @@
 (function () {
-    const gtagScript = document.createElement('script');
-    gtagScript.async = true;
-    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-M8XTGFB65Y";
-    document.head.appendChild(gtagScript);
-
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', 'G-M8XTGFB65Y');
+
+    let loaded = false;
+    function loadGtag() {
+        if (loaded) return;
+        loaded = true;
+        const gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-M8XTGFB65Y";
+        document.head.appendChild(gtagScript);
+    }
+
+    ['pointerdown', 'touchstart', 'scroll', 'keydown'].forEach((ev) => {
+        window.addEventListener(ev, loadGtag, { once: true, passive: true });
+    });
+    window.addEventListener('load', () => {
+        setTimeout(loadGtag, 5500);
+    }, { once: true });
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -91,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="max-w-[1280px] mx-auto grid grid-cols-1 gap-10 pb-12 md:pb-16 md:grid-cols-12">
                 <div class="md:col-span-5 flex flex-col gap-6 max-w-[420px]">
                     <a href="${homePath}" class="self-start">
-                        <img alt="SolyMar Paracas" class="h-10 w-auto dark:box-content dark:bg-on-surface dark:rounded-full dark:px-3 dark:py-1" width="310" height="100" loading="lazy" decoding="async" src="${pathPrefix}img/SolyMar-web.png" />
+                        <img alt="SolyMar Paracas" class="h-10 w-auto dark:box-content dark:bg-on-surface dark:rounded-full dark:px-3 dark:py-1" width="310" height="100" loading="lazy" decoding="async" src="${pathPrefix}img/SolyMar-web.webp" />
                     </a>
                     <p class="text-sm text-on-surface-variant leading-relaxed">${t.description}</p>
                     <div class="flex flex-col gap-3 text-sm">

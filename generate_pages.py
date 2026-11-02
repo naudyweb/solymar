@@ -1252,8 +1252,8 @@ def img_attrs(root_prefix, image, sizes):
     return f'src="{root_prefix}img/w/{name}-{widths[-1]}.webp" srcset="{srcset}" sizes="{sizes}"'
 
 
-# Hero photo card: ~58% of the width on desktop (lg:col-span-7), full width below.
-HERO_SIZES = "(min-width: 1024px) 58vw, 100vw"
+# Hero photo card: ~58% of the width on desktop (lg:col-span-7), full width minus 2rem padding below.
+HERO_SIZES = "(min-width: 1024px) 58vw, calc(100vw - 2rem)"
 
 
 def hero_slideshow(root_prefix, slides, label):
@@ -1261,9 +1261,9 @@ def hero_slideshow(root_prefix, slides, label):
     imgs = []
     for idx, (image, alt) in enumerate(slides):
         if idx == 0:
-            imgs.append(f'                <img class="hero-slide is-active" {img_attrs(root_prefix, image, HERO_SIZES)} alt="{alt}" fetchpriority="high" decoding="async" />')
+            imgs.append(f'                <img class="hero-slide is-active" {img_attrs(root_prefix, image, HERO_SIZES)} width="1264" height="848" alt="{alt}" fetchpriority="high" decoding="async" />')
         else:
-            imgs.append(f'                <img class="hero-slide" {img_attrs(root_prefix, image, HERO_SIZES)} alt="{alt}" decoding="async" />')
+            imgs.append(f'                <img class="hero-slide" {img_attrs(root_prefix, image, HERO_SIZES)} width="1264" height="848" alt="{alt}" loading="lazy" decoding="async" />')
     joined = "\n".join(imgs)
     return f'''<div class="hero-slider absolute inset-0 w-full h-full overflow-hidden" aria-label="{label}">
 {joined}
@@ -1301,7 +1301,7 @@ HERO_GALLERIES = {
 }
 
 # Bump when css/style.css or js/*.js change: the server caches them for a month.
-ASSET_VERSION = "2026101902"
+ASSET_VERSION = "2026110201"
 
 # Shared SVG snippet (WhatsApp mark from Simple Icons)
 WA_ICON = '<svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>'
@@ -1340,10 +1340,6 @@ template = """<!DOCTYPE html>
     <meta name="twitter:description" content="{desc}">
     <meta name="twitter:image" content="https://solymarparacas.com/{image}">
     <!-- ===== FIN SEO ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,dark_mode,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,light_mode,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block" rel="stylesheet" />
     <link rel="stylesheet" href="{root_prefix}css/style.css?v={asset_version}" />
     {hero_preload}
 
@@ -1664,8 +1660,8 @@ template = """<!DOCTYPE html>
 
     <footer class="footer"></footer>
 
-    <script src="{root_prefix}js/header.js?v={asset_version}"></script>
-    <script src="{root_prefix}js/footer.js?v={asset_version}"></script>
+    <script src="{root_prefix}js/header.js?v={asset_version}" defer></script>
+    <script src="{root_prefix}js/footer.js?v={asset_version}" defer></script>
     {hero_slider_js}
 </body>
 
@@ -2109,10 +2105,6 @@ index_template = """<!DOCTYPE html>
     <meta name="twitter:description" content="{desc}">
     <meta name="twitter:image" content="https://solymarparacas.com/img/og-solymar-paracas.jpg">
     <!-- ===== FIN SEO ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=access_time,account_circle,add,air,airport_shuttle,architecture,arrow_downward,arrow_forward,attractions,auto_awesome,badge,battery_charging_full,call,check,checkroom,cloud_sync,coffee,credit_card,dark_mode,departure_board,directions_boat,directions_bus,directions_car,directions_walk,domain,egg,event_available,expand_more,explore,flutter_dash,group,groups,health_and_safety,hiking,history_edu,info,landscape,light_mode,local_activity,local_bar,local_shipping,location_on,mail,map,medication,museum,payments,pets,photo_camera,pool,record_voice_over,restaurant,restaurant_menu,route,rowing,schedule,security,sell,shield,speed,sports_motorsports,sports_skateboarding,surfing,terrain,timelapse,toys,verified,verified_user,video_camera_back,visibility,water,water_drop,water_slide,wb_sunny,wb_twilight,wind_power,wine_bar,workspace_premium&display=block" rel="stylesheet" />
     <link rel="stylesheet" href="{root_prefix}css/style.css?v={asset_version}" />
     {hero_preload}
 
@@ -2198,8 +2190,8 @@ index_template = """<!DOCTYPE html>
 
     <footer class="footer"></footer>
 
-    <script src="{root_prefix}js/header.js?v={asset_version}"></script>
-    <script src="{root_prefix}js/footer.js?v={asset_version}"></script>
+    <script src="{root_prefix}js/header.js?v={asset_version}" defer></script>
+    <script src="{root_prefix}js/footer.js?v={asset_version}" defer></script>
     <script src="{root_prefix}js/hero-slider.js?v={asset_version}" defer></script>
 </body>
 
@@ -2279,7 +2271,7 @@ for lang in ["es", "en"]:
         
         card_html = f"""                <a href="{tour_info['filename'].removesuffix('.html')}" class="group grid grid-cols-[112px_1fr] gap-4 sm:flex sm:flex-col">
                     <div class="h-28 sm:h-60 md:h-64 overflow-hidden rounded-chip sm:rounded-card bg-surface-container">
-                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" {img_attrs(root_prefix, tour_info['image'], "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, (min-width: 640px) 100vw, 112px")} alt="{tour_content['h1']}" loading="lazy" decoding="async" />
+                        <img class="w-full h-full object-cover transition-transform duration-700 ease-out-soft group-hover:scale-[1.03]" {img_attrs(root_prefix, tour_info['image'], "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, (min-width: 640px) 100vw, 112px")} width="1264" height="848" alt="{tour_content['h1']}" loading="lazy" decoding="async" />
                     </div>
                     <div class="flex flex-col gap-1 sm:gap-2 flex-1 min-w-0">
                         <span class="text-xs uppercase tracking-[0.04em] text-on-surface-variant">{cat_label}</span>
